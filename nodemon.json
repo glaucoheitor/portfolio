@@ -1,0 +1,10 @@
+{
+  "env": {
+    "PORT": 3001,
+    "MONGO_DB": "stocks",
+    "MONGO_USER": "glauco",
+    "MONGO_PASSWORD": "wFBWBc2EfoaH8B8p",
+    "JWT_KEY": "NcgV9pmSDTKd66xj5baSQWCeA9DH7kCp",
+    "JWT_EXP": 3600
+  }
+}

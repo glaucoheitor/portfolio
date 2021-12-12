@@ -1,39 +1,36 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const { graphqlHTTP } = require("express-graphql");
-const { buildSchema } = require("graphql");
+
+const mongoose = require("mongoose");
+
+const graphQlSchema = require("./graphql/schema/index");
+const graphQlResolvers = require("./graphql/resolvers/index");
+const isAuth = require("./middleware/auth");
 
 const app = express();
 
+const { PORT, MONGO_DB, MONGO_USER, MONGO_PASSWORD } = process.env;
+
 app.use(bodyParser.json());
+
+app.use(isAuth);
 
 app.use(
   "/graphql",
   graphqlHTTP({
-    schema: buildSchema(`
-        type RootQuery {
-            trades: [String!]!
-        }
-
-        type RootMutation {
-            addTrade(type: String): String
-        }
-        schema {
-            query: RootQuery
-            mutation: RootMutation
-        }
-    `),
-    rootValue: {
-      trades: () => {
-        return ["C", "C", "V"];
-      },
-      addTrade: (args) => {
-        const tradeType = args.type;
-        return tradeType;
-      },
-    },
+    schema: graphQlSchema,
+    rootValue: graphQlResolvers,
     graphiql: true,
   })
 );
 
-app.listen(3001);
+mongoose
+  .connect(
+    `mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}@cluster0.pwa2d.mongodb.net/${MONGO_DB}?retryWrites=true&w=majority`
+  )
+  .then(() => {
+    app.listen(PORT);
+    console.log(`MongoDB connected and server listening on port ${PORT}`);
+  })
+  .catch(console.log);
