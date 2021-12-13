@@ -94,6 +94,12 @@ function Basic() {
             <MDBox mb={2}>
               <MDInput type="password" label="Password" fullWidth />
             </MDBox>
+            <MDBox mb={2}>
+              <MDInput type="password" label="Password" fullWidth />
+            </MDBox>
+            <MDBox mb={2}>
+              <MDInput type="password" label="Password" fullWidth />
+            </MDBox>
 
             <MDBox display="flex" alignItems="center" ml={-1}>
               <Switch checked={rememberMe} onChange={handleSetRememberMe} />

@@ -37,11 +37,11 @@ function BasicLayout({ image, children }) {
         width="calc(100% - 1em)"
         minHeight="calc(100vh - 1em)"
         borderRadius="xl"
-        zIndex={-1}
+        shadow="xl"
         ml={1}
         mr={0}
         mt={1}
-        mb={0}
+        mb={10}
         sx={{
           backgroundImage: ({
             functions: { linearGradient, rgba },
@@ -55,6 +55,8 @@ function BasicLayout({ image, children }) {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         <MDBox
@@ -63,9 +65,9 @@ function BasicLayout({ image, children }) {
           mt={8}
           mb={4}
           width="100%"
-          minHeight="calc(100vh - 70px)"
           //height="100vh"
           mx="auto"
+          sx={{ flex: "1 0 auto" }}
         >
           <Grid
             container

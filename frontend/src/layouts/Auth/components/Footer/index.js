@@ -32,7 +32,7 @@ function Footer({ light }) {
   const { size } = typography;
 
   return (
-    <MDBox position="relative" width="100%" bottom={0} py={4}>
+    <MDBox position="relative" width="100%" my={4} sx={{ flexShrink: 0 }}>
       <Container>
         <MDBox
           width="100%"
