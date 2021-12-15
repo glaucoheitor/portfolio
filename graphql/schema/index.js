@@ -15,8 +15,7 @@ module.exports = buildSchema(`
 
         type User {
             _id: ID!
-            firstName: String!
-            lastName: String
+            name: String!
             email: String!
             password: String
             role: String
@@ -68,8 +67,7 @@ module.exports = buildSchema(`
         }
 
         input UserInput {
-            firstName: String!
-            lastName: String
+            name: String!
             email: String!
             password: String!
             role: String

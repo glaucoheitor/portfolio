@@ -11,8 +11,8 @@ import MuiLink from "@mui/material/Link";
 
 // @mui icons
 import FacebookIcon from "@mui/icons-material/Facebook";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import GoogleIcon from "@mui/icons-material/Google";
+import SendIcon from "@mui/icons-material/Send";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
@@ -31,16 +31,42 @@ import isEmail from "validator/lib/isEmail";
 
 function Basic() {
   const [rememberMe, setRememberMe] = useState(false);
+  const [loading, setLoading] = useState(false);
   const emailEl = useRef();
   const passwordEl = useRef();
+
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
+
     const email = emailEl.current.value;
     const password = passwordEl.current.value;
     console.log(email, password);
     if (!isEmail(email)) return;
+
+    setLoading(true);
+
+    const requestBody = {
+      query: `
+      query {
+        login(email:"${email}",password:"${password}") {
+          userId
+          token
+          tokenExpiration
+        }
+      }`,
+    };
+
+    const res = await fetch("http://localhost:3001/graphql", {
+      method: "POST",
+      body: JSON.stringify(requestBody),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then((res) => res.json());
+    console.log(res);
+    setLoading(false);
   };
 
   return (
@@ -74,16 +100,6 @@ function Basic() {
                 color="white"
               >
                 <FacebookIcon color="inherit" />
-              </MDTypography>
-            </Grid>
-            <Grid item xs={2}>
-              <MDTypography
-                component={MuiLink}
-                href="#"
-                variant="body1"
-                color="white"
-              >
-                <GitHubIcon color="inherit" />
               </MDTypography>
             </Grid>
             <Grid item xs={2}>
@@ -130,13 +146,21 @@ function Basic() {
               </MDTypography>
             </MDBox>
             <MDBox mt={4} mb={1}>
-              <MDButton type="submit" variant="gradient" color="info" fullWidth>
+              <MDButton
+                type="submit"
+                variant="gradient"
+                color="info"
+                fullWidth
+                isLoadingButton
+                loading={loading}
+                endIcon={<SendIcon />}
+              >
                 Log in
               </MDButton>
             </MDBox>
             <MDBox mt={3} mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
-                Don&apos;t have an account?{" "}
+                Don&apos;t have an account?
                 <MDTypography
                   component={Link}
                   to="/auth/signup"
@@ -144,6 +168,7 @@ function Basic() {
                   color="info"
                   fontWeight="medium"
                   textGradient
+                  sx={{ ml: 1 }}
                 >
                   Sign up
                 </MDTypography>

@@ -19,24 +19,49 @@ import { forwardRef } from "react";
 import PropTypes from "prop-types";
 
 // Custom styles for MDButton
+import Button from "@mui/material/Button";
+import LoadingButton from "@mui/lab/LoadingButton";
 import MDButtonRoot from "components/MDButton/MDButtonRoot";
 
 // Material Dashboard 2 React contexts
 import { useMaterialUIController } from "context";
 
 const MDButton = forwardRef(
-  ({ color, variant, size, circular, iconOnly, children, ...rest }, ref) => {
+  (
+    {
+      color,
+      variant,
+      size,
+      circular,
+      iconOnly,
+      children,
+      isLoadingButton,
+      loading,
+      ...rest
+    },
+    ref
+  ) => {
     const [controller] = useMaterialUIController();
     const { darkMode } = controller;
 
     return (
       <MDButtonRoot
         {...rest}
+        {...(isLoadingButton
+          ? { as: LoadingButton, loading, loadingPosition: "end" }
+          : null)}
         ref={ref}
         color="primary"
         variant={variant === "gradient" ? "contained" : variant}
         size={size}
-        ownerState={{ color, variant, size, circular, iconOnly, darkMode }}
+        ownerState={{
+          color,
+          variant,
+          size,
+          circular,
+          iconOnly,
+          darkMode,
+        }}
       >
         {children}
       </MDButtonRoot>

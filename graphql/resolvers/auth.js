@@ -7,14 +7,13 @@ const { JWT_KEY, JWT_EXP } = process.env;
 
 module.exports = {
   createUser: async (args) => {
-    const { firstName, lastName, email, password, role } = args.userInput;
+    const { name, email, password, role } = args.userInput;
     try {
       const existingUser = await User.findOne({ email: email });
       if (existingUser) throw new Error("User with that email already exists");
       const hashedPassword = await bcrypt.hash(password, 12);
       const user = new User({
-        firstName,
-        lastName,
+        name,
         email,
         password: hashedPassword,
         role,
@@ -30,7 +29,7 @@ module.exports = {
     if (!user) {
       throw new Error("User doesn't exist.");
     }
-    console.log(user);
+
     const isEqual = await bcrypt.compare(password, user.password);
     if (!isEqual) {
       throw new Error("Password is incorrect.");

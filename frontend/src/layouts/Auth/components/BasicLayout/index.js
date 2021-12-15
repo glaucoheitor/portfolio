@@ -62,7 +62,7 @@ function BasicLayout({ image, children }) {
         <MDBox
           position="relative"
           px={1}
-          mt={8}
+          mt={10}
           mb={4}
           width="100%"
           //height="100vh"
