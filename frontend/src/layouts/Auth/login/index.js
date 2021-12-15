@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 // react-router-dom components
 import { Link } from "react-router-dom";
@@ -26,10 +26,22 @@ import BasicLayout from "layouts/Auth/components/BasicLayout";
 // Images
 import bgImage from "assets/images/bg-sign-in-basic.jpeg";
 
+//Validator
+import isEmail from "validator/lib/isEmail";
+
 function Basic() {
   const [rememberMe, setRememberMe] = useState(false);
-
+  const emailEl = useRef();
+  const passwordEl = useRef();
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    const email = emailEl.current.value;
+    const password = passwordEl.current.value;
+    console.log(email, password);
+    if (!isEmail(email)) return;
+  };
 
   return (
     <BasicLayout image={bgImage}>
@@ -46,7 +58,7 @@ function Basic() {
           textAlign="center"
         >
           <MDTypography variant="h4" fontWeight="medium" color="white" mt={1}>
-            Sign in
+            Log in
           </MDTypography>
           <Grid
             container
@@ -87,18 +99,22 @@ function Basic() {
           </Grid>
         </MDBox>
         <MDBox pt={4} pb={3} px={3}>
-          <MDBox component="form" role="form">
+          <MDBox component="form" role="form" onSubmit={submitHandler}>
             <MDBox mb={2}>
-              <MDInput type="email" label="Email" fullWidth />
+              <MDInput
+                type="email"
+                label="Email"
+                inputRef={emailEl}
+                fullWidth
+              />
             </MDBox>
             <MDBox mb={2}>
-              <MDInput type="password" label="Password" fullWidth />
-            </MDBox>
-            <MDBox mb={2}>
-              <MDInput type="password" label="Password" fullWidth />
-            </MDBox>
-            <MDBox mb={2}>
-              <MDInput type="password" label="Password" fullWidth />
+              <MDInput
+                type="password"
+                label="Password"
+                inputRef={passwordEl}
+                fullWidth
+              />
             </MDBox>
 
             <MDBox display="flex" alignItems="center" ml={-1}>
@@ -114,8 +130,8 @@ function Basic() {
               </MDTypography>
             </MDBox>
             <MDBox mt={4} mb={1}>
-              <MDButton variant="gradient" color="info" fullWidth>
-                sign in
+              <MDButton type="submit" variant="gradient" color="info" fullWidth>
+                Log in
               </MDButton>
             </MDBox>
             <MDBox mt={3} mb={1} textAlign="center">
@@ -123,7 +139,7 @@ function Basic() {
                 Don&apos;t have an account?{" "}
                 <MDTypography
                   component={Link}
-                  to="/Auth/sign-up"
+                  to="/auth/signup"
                   variant="button"
                   color="info"
                   fontWeight="medium"

@@ -189,18 +189,24 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
         }
       />
       <List>{renderRoutes}</List>
-      <MDBox p={2} mt="auto">
-        <MDButton
-          component="a"
-          href="https://www.creative-tim.com/product/material-dashboard-pro-react"
-          target="_blank"
-          rel="noreferrer"
-          variant="gradient"
-          color={sidenavColor}
-          fullWidth
-        >
-          upgrade to pro
-        </MDButton>
+      <MDBox py={2} mt="auto">
+        <NavLink key="logout" to="#">
+          <SidenavCollapse
+            color="error"
+            name={
+              <MDTypography
+                component="h6"
+                variant="button"
+                fontWeight="medium"
+                color={textColor}
+              >
+                Logout
+              </MDTypography>
+            }
+            icon="logout"
+            active={true}
+          />
+        </NavLink>
       </MDBox>
     </SidenavRoot>
   );

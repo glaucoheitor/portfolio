@@ -143,9 +143,6 @@ function DashboardNavbar({ absolute, light, isMini }) {
                   <Icon sx={iconsStyle} fontSize="medium">
                     account_circle
                   </Icon>
-                  <MDTypography variant="h6" color="secondary">
-                    Login
-                  </MDTypography>
                 </IconButton>
               </Link>
               <IconButton

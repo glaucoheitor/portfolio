@@ -26,10 +26,10 @@ import Tables from "layouts/tables";
 import Billing from "layouts/billing";
 import RTL from "layouts/rtl";
 import Notifications from "layouts/notifications";
-import Profile from "layouts/profile";
+import Profile from "layouts/profile";*/
 
-import SignUp from "layouts/Auth/sign-up";*/
-import SignIn from "layouts/Auth/sign-in";
+import SignUp from "layouts/Auth/signup";
+import LogIn from "layouts/Auth/login";
 import Forgot from "layouts/Auth/reset-password/cover";
 import AuthPage from "pages/Auth";
 import TradesPage from "pages/Trades";
@@ -41,7 +41,7 @@ const routes = [
   {
     type: "collapse",
     name: "Trades",
-    key: "Trades",
+    key: "trades",
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/trades",
     component: <TradesPage />,
@@ -51,8 +51,8 @@ const routes = [
     name: "Sign In",
     key: "sign-in",
     icon: <Icon fontSize="small">login</Icon>,
-    route: "/auth/sign-in",
-    component: <SignIn />,
+    route: "/auth/login",
+    component: <LogIn />,
   },
   {
     type: "collapse",
@@ -61,6 +61,14 @@ const routes = [
     icon: <Icon fontSize="small">login</Icon>,
     route: "/auth/forgot",
     component: <Forgot />,
+  },
+  {
+    type: "collapse",
+    name: "Forgot",
+    key: "forgot",
+    icon: <Icon fontSize="small">login</Icon>,
+    route: "/auth/signup",
+    component: <SignUp />,
   },
   /*{
     type: "collapse",

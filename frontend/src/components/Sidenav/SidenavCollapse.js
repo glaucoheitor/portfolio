@@ -36,7 +36,7 @@ import {
 // Material Dashboard 2 PRO React context
 import { useMaterialUIController } from "context";
 
-function SidenavCollapse({ icon, name, active, ...rest }) {
+function SidenavCollapse({ icon, color, name, active, ...rest }) {
   const [controller] = useMaterialUIController();
   const {
     miniSidenav,
@@ -57,7 +57,7 @@ function SidenavCollapse({ icon, name, active, ...rest }) {
               transparentSidenav,
               whiteSidenav,
               darkMode,
-              sidenavColor,
+              sidenavColor: color ? color : sidenavColor,
             })
           }
         >
