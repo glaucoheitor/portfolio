@@ -29,11 +29,16 @@ import bgImage from "assets/images/bg-sign-in-basic.jpeg";
 //Validator
 import isEmail from "validator/lib/isEmail";
 
+import { useMaterialUIController, setUserToken } from "context";
+
 function Basic() {
+  const [controller, dispatch] = useMaterialUIController();
   const [rememberMe, setRememberMe] = useState(false);
   const [loading, setLoading] = useState(false);
   const emailEl = useRef();
   const passwordEl = useRef();
+
+  const { userToken } = controller;
 
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
 
