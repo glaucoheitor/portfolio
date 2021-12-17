@@ -4,6 +4,7 @@
 */
 
 import { createContext, useContext, useReducer } from "react";
+import TokenService from "../services/token.service";
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
@@ -47,12 +48,24 @@ function reducer(state, action) {
     case "DARKMODE": {
       return { ...state, darkMode: action.value };
     }
-    case "AUTH": {
+    case "LOGIN": {
+      const user = {
+        token: action.value.token,
+        userId: action.value.userId,
+      };
+      TokenService.setUser(user);
+      return {
+        ...state,
+        authData: user,
+      };
+    }
+    case "LOGOUT": {
+      TokenService.removeUser();
       return {
         ...state,
         authData: {
-          ...state.authData,
-          [key]: action.value,
+          token: null,
+          userId: null,
         },
       };
     }
@@ -64,18 +77,29 @@ function reducer(state, action) {
 
 // Material Dashboard 2 PRO React context provider
 function MaterialUIControllerProvider({ children }) {
+  const user = TokenService.getUser();
+  const authData = user
+    ? {
+        token: user.token,
+        userId: user.userId,
+      }
+    : {
+        token: null,
+        userId: null,
+      };
+
   const initialState = {
     miniSidenav: true,
     transparentSidenav: false,
     whiteSidenav: false,
-    sidenavColor: "",
+    sidenavColor: "info",
     transparentNavbar: true,
     fixedNavbar: true,
     openConfigurator: false,
     direction: "ltr",
     layout: "dashboard",
     darkMode: false,
-    authData: {},
+    authData: authData,
   };
 
   const [controller, dispatch] = useReducer(reducer, initialState);
@@ -124,8 +148,8 @@ const setDirection = (dispatch, value) =>
   dispatch({ type: "DIRECTION", value });
 const setLayout = (dispatch, value) => dispatch({ type: "LAYOUT", value });
 const setDarkMode = (dispatch, value) => dispatch({ type: "DARKMODE", value });
-const setAuthData = (dispatch, value, key) =>
-  dispatch({ type: "AUTH", value, key });
+const login = (dispatch, value) => dispatch({ type: "LOGIN", value });
+const logout = (dispatch, value) => dispatch({ type: "LOGOUT" });
 
 export {
   MaterialUIControllerProvider,
@@ -140,5 +164,6 @@ export {
   setDirection,
   setLayout,
   setDarkMode,
-  setAuthData,
+  login,
+  logout,
 };

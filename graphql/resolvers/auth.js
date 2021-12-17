@@ -45,4 +45,10 @@ module.exports = {
       tokenExpiration: Number(JWT_EXP),
     };
   },
+  verifyUser: async (args, req) => {
+    if (!req.isAuth) {
+      return false;
+    }
+    return true;
+  },
 };

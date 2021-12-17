@@ -83,6 +83,7 @@ module.exports = buildSchema(`
             users: [User!]!
             stockData(symbolId: ID!): [StockData!]!
             login(email:String!,password: String!): AuthData!
+            verifyUser: Boolean!
         }
 
         type RootMutation {

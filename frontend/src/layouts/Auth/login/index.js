@@ -1,7 +1,7 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 // react-router-dom components
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // @mui material components
 import Card from "@mui/material/Card";
@@ -29,7 +29,7 @@ import bgImage from "assets/images/bg-sign-in-basic.jpeg";
 //Validator
 import isEmail from "validator/lib/isEmail";
 
-import { useMaterialUIController, setUserToken } from "context";
+import { useMaterialUIController, login } from "context";
 
 function Basic() {
   const [controller, dispatch] = useMaterialUIController();
@@ -37,8 +37,29 @@ function Basic() {
   const [loading, setLoading] = useState(false);
   const emailEl = useRef();
   const passwordEl = useRef();
+  let navigate = useNavigate();
 
-  const { userToken } = controller;
+  useEffect(async () => {
+    const { authData } = controller;
+    if (authData.token) {
+      setLoading(true);
+
+      try {
+        const { data } = await fetch("http://localhost:3001/graphql", {
+          method: "POST",
+          body: JSON.stringify({ query: `query {verifyUser}` }),
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "Bearer " + authData.token,
+          },
+        }).then((res) => res.json());
+        data.verifyUser && navigate("/trades");
+      } catch (e) {
+        setLoading(false);
+      }
+      setLoading(false);
+    }
+  }, []);
 
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
 
@@ -62,15 +83,24 @@ function Basic() {
         }
       }`,
     };
-
-    const res = await fetch("http://localhost:3001/graphql", {
-      method: "POST",
-      body: JSON.stringify(requestBody),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }).then((res) => res.json());
-    console.log(res);
+    try {
+      const { data, errors } = await fetch("http://localhost:3001/graphql", {
+        method: "POST",
+        body: JSON.stringify(requestBody),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }).then((res) => res.json());
+      console.log(data);
+      if (!data) throw new Error(errors[0].message);
+      login(dispatch, {
+        token: data.login.token,
+        userId: data.login.userId,
+      });
+      navigate("/trades");
+    } catch (error) {
+      console.log(error);
+    }
     setLoading(false);
   };
 
@@ -127,6 +157,7 @@ function Basic() {
                 label="Email"
                 inputRef={emailEl}
                 fullWidth
+                disabled={loading}
               />
             </MDBox>
             <MDBox mb={2}>
@@ -135,6 +166,7 @@ function Basic() {
                 label="Password"
                 inputRef={passwordEl}
                 fullWidth
+                disabled={loading}
               />
             </MDBox>
 
