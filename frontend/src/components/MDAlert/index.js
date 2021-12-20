@@ -13,7 +13,7 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
@@ -28,10 +28,24 @@ import MDBox from "components/MDBox";
 import MDAlertRoot from "components/MDAlert/MDAlertRoot";
 import MDAlertCloseIcon from "components/MDAlert/MDAlertCloseIcon";
 
-function MDAlert({ color, dismissible, children, ...rest }) {
-  const [alertStatus, setAlertStatus] = useState("mount");
+function MDAlert({
+  color,
+  dismissible,
+  children,
+  open,
+  handleAlertCloseButton,
+  ...rest
+}) {
+  const [alertStatus, setAlertStatus] = useState("unmount");
 
-  const handleAlertStatus = () => setAlertStatus("fadeOut");
+  useEffect(() => {
+    setAlertStatus(open ? "mount" : "unmount");
+  }, [open]);
+
+  const handleAlertStatus = () => {
+    setAlertStatus("fadeOut");
+    handleAlertCloseButton();
+  };
 
   // The base template for the alert
   const alertTemplate = (mount = true) => (
@@ -41,7 +55,9 @@ function MDAlert({ color, dismissible, children, ...rest }) {
           {children}
         </MDBox>
         {dismissible ? (
-          <MDAlertCloseIcon onClick={mount ? handleAlertStatus : null}>&times;</MDAlertCloseIcon>
+          <MDAlertCloseIcon onClick={mount ? handleAlertStatus : null}>
+            &times;
+          </MDAlertCloseIcon>
         ) : null}
       </MDAlertRoot>
     </Fade>

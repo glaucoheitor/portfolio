@@ -27,7 +27,7 @@ export default styled("span")(({ theme }) => {
     color: white.main,
     fontSize: size.xl,
     padding: `${pxToRem(9)} ${pxToRem(6)} ${pxToRem(8)}`,
-    marginLeft: pxToRem(40),
+    marginLeft: pxToRem(20),
     fontWeight: fontWeightMedium,
     cursor: "pointer",
     lineHeight: 0,

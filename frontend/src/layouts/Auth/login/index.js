@@ -36,7 +36,9 @@ function Basic() {
   const [controller, dispatch] = useMaterialUIController();
   const [rememberMe, setRememberMe] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
+  const [error, setError] = useState(null);
+  const [emailError, setEmailError] = useState(null);
+  const [passwordError, setPasswordError] = useState(null);
   const emailEl = useRef();
   const passwordEl = useRef();
   let navigate = useNavigate();
@@ -64,14 +66,23 @@ function Basic() {
   }, []);
 
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
+  const handleAlertCloseButton = () => setError(false);
 
   const submitHandler = async (e) => {
     e.preventDefault();
 
     const email = emailEl.current.value;
     const password = passwordEl.current.value;
-    console.log(email, password);
-    if (!isEmail(email)) return;
+
+    if (!isEmail(email)) {
+      setEmailError(true);
+    }
+    if (password.length < 8) {
+      setPasswordError(true);
+      setError("Password must be at least 8 characters long.");
+    }
+
+    if (!isEmail(email) || password.length < 8) return;
 
     setLoading(true);
 
@@ -102,7 +113,11 @@ function Basic() {
       navigate("/trades");
     } catch (error) {
       console.log(error);
+      setError(error.message);
+      if (error.message.includes("User")) setEmailError(true);
+      if (error.message.includes("Password")) setPasswordError(true);
     }
+
     setLoading(false);
   };
 
@@ -159,7 +174,9 @@ function Basic() {
                 label="Email"
                 inputRef={emailEl}
                 fullWidth
+                error={emailError}
                 disabled={loading}
+                onChange={() => setEmailError(false)}
               />
             </MDBox>
             <MDBox mb={2}>
@@ -168,7 +185,9 @@ function Basic() {
                 label="Password"
                 inputRef={passwordEl}
                 fullWidth
+                error={passwordError}
                 disabled={loading}
+                onChange={() => setPasswordError(false)}
               />
             </MDBox>
 
@@ -196,21 +215,15 @@ function Basic() {
               >
                 Log in
               </MDButton>
-              <MDButton
-                fullWidth
-                type="button"
-                variant="gradient"
-                color="error"
-                onClick={() => setError(!error)}
-              >
-                Error alert
-              </MDButton>
             </MDBox>
-            {error && (
-              <MDAlert color="error" dismissible>
-                This is a dismissible alert!
-              </MDAlert>
-            )}
+            <MDAlert
+              color="error"
+              dismissible
+              open={error ? true : false}
+              handleAlertCloseButton={handleAlertCloseButton}
+            >
+              {error}
+            </MDAlert>
             <MDBox mt={3} mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
                 Don&apos;t have an account?

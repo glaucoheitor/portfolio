@@ -22,7 +22,7 @@ export default styled(Box)(({ theme, ownerState }) => {
   const { color } = ownerState;
 
   const { white, gradients } = palette;
-  const { fontSizeRegular, fontWeightMedium } = typography;
+  const { size, fontSizeRegular, fontWeightMedium } = typography;
   const { borderRadius } = borders;
   const { pxToRem, linearGradient } = functions;
 
@@ -42,7 +42,7 @@ export default styled(Box)(({ theme, ownerState }) => {
     padding: pxToRem(16),
     marginBottom: pxToRem(16),
     borderRadius: borderRadius.md,
-    fontSize: fontSizeRegular,
+    fontSize: size.sm,
     fontWeight: fontWeightMedium,
   };
 });
