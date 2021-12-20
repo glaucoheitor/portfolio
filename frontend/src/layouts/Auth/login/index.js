@@ -19,6 +19,7 @@ import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import MDInput from "components/MDInput";
 import MDButton from "components/MDButton";
+import MDAlert from "components/MDAlert";
 
 // Authentication layout components
 import BasicLayout from "layouts/Auth/components/BasicLayout";
@@ -35,6 +36,7 @@ function Basic() {
   const [controller, dispatch] = useMaterialUIController();
   const [rememberMe, setRememberMe] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const emailEl = useRef();
   const passwordEl = useRef();
   let navigate = useNavigate();
@@ -194,7 +196,21 @@ function Basic() {
               >
                 Log in
               </MDButton>
+              <MDButton
+                fullWidth
+                type="button"
+                variant="gradient"
+                color="error"
+                onClick={() => setError(!error)}
+              >
+                Error alert
+              </MDButton>
             </MDBox>
+            {error && (
+              <MDAlert color="error" dismissible>
+                This is a dismissible alert!
+              </MDAlert>
+            )}
             <MDBox mt={3} mb={1} textAlign="center">
               <MDTypography variant="button" color="text">
                 Don&apos;t have an account?

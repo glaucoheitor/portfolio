@@ -59,16 +59,18 @@ function Basic() {
         }
       }`,
     };
-
-    const res = await fetch("http://localhost:3001/graphql", {
-      method: "POST",
-      body: JSON.stringify(requestBody),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }).then((res) => res.json());
-    console.log(res);
-
+    try {
+      const res = await fetch("http://localhost:3001/graphql", {
+        method: "POST",
+        body: JSON.stringify(requestBody),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }).then((res) => res.json());
+      console.log(res);
+    } catch (e) {
+      setLoading(false);
+    }
     setLoading(false);
   };
 
