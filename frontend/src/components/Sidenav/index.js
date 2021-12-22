@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 // react-router-dom components
-import { useLocation, NavLink } from "react-router-dom";
+import { useLocation, useNavigate, NavLink } from "react-router-dom";
 
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
@@ -30,6 +30,7 @@ import {
   setMiniSidenav,
   setTransparentSidenav,
   setWhiteSidenav,
+  logout,
 } from "context";
 
 function Sidenav({ color, brand, brandName, routes, ...rest }) {
@@ -43,6 +44,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
   } = controller;
   const location = useLocation();
   const collapseName = location.pathname.replace("/", "");
+  let navigate = useNavigate();
 
   let textColor = "white";
 
@@ -51,6 +53,11 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
   } else if (whiteSidenav && darkMode) {
     textColor = "inherit";
   }
+
+  const handleLogout = () => {
+    logout(dispatch);
+    navigate("/auth/login");
+  };
 
   const closeSidenav = () => setMiniSidenav(dispatch, true);
 
@@ -190,23 +197,22 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
       />
       <List>{renderRoutes}</List>
       <MDBox py={2} mt="auto">
-        <NavLink key="logout" to="#">
-          <SidenavCollapse
-            color="error"
-            name={
-              <MDTypography
-                component="h6"
-                variant="button"
-                fontWeight="medium"
-                color={textColor}
-              >
-                Logout
-              </MDTypography>
-            }
-            icon="logout"
-            active={true}
-          />
-        </NavLink>
+        <SidenavCollapse
+          color="error"
+          name={
+            <MDTypography
+              component="h6"
+              variant="button"
+              fontWeight="medium"
+              color={textColor}
+            >
+              Logout
+            </MDTypography>
+          }
+          icon="logout"
+          active={true}
+          onClick={handleLogout}
+        />
       </MDBox>
     </SidenavRoot>
   );

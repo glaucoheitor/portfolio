@@ -8,6 +8,7 @@ module.exports = buildSchema(`
             total: Float!
             user: User
             symbol: Symbol!
+            symbolName: String
             date: Float!
             createdAt: String
             updatedAt: String
@@ -80,6 +81,7 @@ module.exports = buildSchema(`
 
         type RootQuery {
             trades: [Trade!]!
+            tradesByUserId(userId: ID!): [Trade!]!
             users: [User!]!
             stockData(symbolId: ID!): [StockData!]!
             login(email:String!,password: String!): AuthData!

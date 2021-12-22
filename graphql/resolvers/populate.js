@@ -2,11 +2,11 @@ const Trade = require("../../models/trade");
 const User = require("../../models/user");
 const Symbol = require("../../models/symbol");
 
-const transformTrade = (trade) => {
+const transformTrade = ({ _doc }) => {
   return {
-    ...trade._doc,
-    user: () => user(trade._doc.user),
-    symbol: () => symbol(trade._doc.symbol),
+    ..._doc,
+    user: () => user(_doc.user),
+    //symbol: () => symbol(_doc.symbol),
   };
 };
 

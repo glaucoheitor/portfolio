@@ -31,7 +31,7 @@ import Profile from "layouts/profile";*/
 import SignUp from "layouts/Auth/signup";
 import LogIn from "layouts/Auth/login";
 import Forgot from "layouts/Auth/reset-password/cover";
-import AuthPage from "pages/Auth";
+
 import TradesPage from "pages/Trades";
 
 // @mui icons
@@ -64,8 +64,8 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Forgot",
-    key: "forgot",
+    name: "Sign Up",
+    key: "sign-up",
     icon: <Icon fontSize="small">login</Icon>,
     route: "/auth/signup",
     component: <SignUp />,

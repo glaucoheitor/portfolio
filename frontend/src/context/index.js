@@ -149,7 +149,7 @@ const setDirection = (dispatch, value) =>
 const setLayout = (dispatch, value) => dispatch({ type: "LAYOUT", value });
 const setDarkMode = (dispatch, value) => dispatch({ type: "DARKMODE", value });
 const login = (dispatch, value) => dispatch({ type: "LOGIN", value });
-const logout = (dispatch, value) => dispatch({ type: "LOGOUT" });
+const logout = (dispatch) => dispatch({ type: "LOGOUT" });
 
 export {
   MaterialUIControllerProvider,

@@ -9,6 +9,8 @@ const graphQlSchema = require("./graphql/schema/index");
 const graphQlResolvers = require("./graphql/resolvers/index");
 const isAuth = require("./middleware/auth");
 
+const test = require("./test");
+
 const app = express();
 
 const { PORT, MONGO_DB, MONGO_USER, MONGO_PASSWORD } = process.env;
@@ -27,6 +29,8 @@ app.use(
     graphiql: true,
   })
 );
+
+app.get("/test", test);
 
 mongoose
   .connect(
