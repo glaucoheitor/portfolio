@@ -27,5 +27,6 @@ export default {
     lg: 992,
     xl: 1200,
     xxl: 1400,
+    xxxl: 1600,
   },
 };

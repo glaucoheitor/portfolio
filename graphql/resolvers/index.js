@@ -1,9 +1,5 @@
-const authResolver = require("./auth");
-const tradesResolver = require("./trades");
-const stockDataResolver = require("./stockData");
+import * as authResolver from "./auth.js";
+import * as tradesResolver from "./trades.js";
+import * as stockDataResolver from "./stockData.js";
 
-module.exports = rootResolver = {
-  ...authResolver,
-  ...tradesResolver,
-  ...stockDataResolver,
-};
+export default { ...authResolver, ...tradesResolver, ...stockDataResolver };

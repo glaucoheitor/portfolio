@@ -1,0 +1,3877 @@
+[
+  {
+    "symbolId": "60d829a61533b4a353a46f4d",
+    "symbol": "MGLU3",
+    "companyName": "MAGAZINE LUIZA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f4f",
+    "symbol": "VALE3",
+    "companyName": "VALE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f56",
+    "symbol": "BBRK3",
+    "companyName": "BRASIL BROKERS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f60",
+    "symbol": "HAPV3",
+    "companyName": "HAPVIDA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f8e",
+    "symbol": "RADL3",
+    "companyName": "RAIA DROGASIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f97",
+    "symbol": "SULA11",
+    "companyName": "SUL AMERICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fdb",
+    "symbol": "DIRR3",
+    "companyName": "DIRECIONAL ENGENHARIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe2",
+    "symbol": "ALPA4",
+    "companyName": "ALPARGATAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe3",
+    "symbol": "BMGB4",
+    "companyName": "BANCO BMG S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46feb",
+    "symbol": "IFCM3",
+    "companyName": "INFRACOMMERCE CXAAS S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47054",
+    "symbol": "POWE3",
+    "companyName": "FOCUS ENERGIA HOLDING PARTICIPAÇÕES S.A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4705d",
+    "symbol": "IRDM11",
+    "companyName": "Iridium Recebíveis Imobiliários"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4708a",
+    "symbol": "HGRU11",
+    "companyName": "CSHG Renda Urbana"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47097",
+    "symbol": "HGCR11",
+    "companyName": "CGHG Recebíveis Imobiliários"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4709e",
+    "symbol": "VILG11",
+    "companyName": "VINCI LOGÍSTICA FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a9",
+    "symbol": "ATMP3",
+    "companyName": "ATMA SA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470af",
+    "symbol": "RCFA11",
+    "companyName": "GRUPO RCFA FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470db",
+    "symbol": "BOVB11",
+    "companyName": "ETF Bradesco Ibovespa Fundo de Índice"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e1",
+    "symbol": "PTNT3",
+    "companyName": "PETTENATI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e9",
+    "symbol": "EQPA3",
+    "companyName": "EQUATORIAL PARA DISTRIBUIDORA DE ENERGIA S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ed",
+    "symbol": "BEES3",
+    "companyName": "BANCO BANESTES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47104",
+    "symbol": "ALUP3",
+    "companyName": "ALUPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47106",
+    "symbol": "GOGL35",
+    "companyName": "ALPHABET INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47111",
+    "symbol": "LFTT11",
+    "companyName": "LOFT II FUNDO DE INVESTIMENTO IMOBILIÁRIO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4711c",
+    "symbol": "BBOV11",
+    "companyName": "BB ETF IBOVESPA FUNDO DE ÍNDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47131",
+    "symbol": "ENGI3",
+    "companyName": "ENERGISA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f7f",
+    "symbol": "BBSE3",
+    "companyName": "BB SEGURIDADE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f85",
+    "symbol": "UGPA3",
+    "companyName": "ULTRAPAR PARTICIPAÇÕES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f8b",
+    "symbol": "NTCO3",
+    "companyName": "NATURA &CO HOLDING S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f91",
+    "symbol": "HASH11",
+    "companyName": "HASHDEX NASDAQ CRYPTO INDEX"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc2",
+    "symbol": "LAME3",
+    "companyName": "LOJAS AMERICANAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff7",
+    "symbol": "AESB3",
+    "companyName": "AES BRASIL ENERGIA S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47002",
+    "symbol": "PLPL3",
+    "companyName": "PLANO & PLANO DESENVOLVIMENTO IMOBILIÁRIO S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47007",
+    "symbol": "SEQL3",
+    "companyName": "SEQUOIA LOGISTICA E TRANSPORTES S.A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4701d",
+    "symbol": "ITUB3",
+    "companyName": "BANCO ITAU UNIBANCO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47028",
+    "symbol": "EURP11",
+    "companyName": "TREND ETF MSCI EUROPA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47031",
+    "symbol": "GOLD11",
+    "companyName": "TREND ETF LBMA OURO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47047",
+    "symbol": "SOJA3",
+    "companyName": "BOA SAFRA SEMENTES S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47050",
+    "symbol": "DMMO11",
+    "companyName": "DOMMO ENERGIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47069",
+    "symbol": "RECR11",
+    "companyName": "FII REC Recebíveis Imobiliários"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4707d",
+    "symbol": "ELMD3",
+    "companyName": "ELETROMIDIA S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4707f",
+    "symbol": "BRAP3",
+    "companyName": "BRADESPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47086",
+    "symbol": "BRCR11",
+    "companyName": "BTG Pactual Corporate Office"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4708d",
+    "symbol": "XPML11",
+    "companyName": "XP Malls"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4709c",
+    "symbol": "DEVA11",
+    "companyName": "DEVANT RECEBÍVEIS IMOBILIÁRIOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a1",
+    "symbol": "SULA4",
+    "companyName": "SUL AMERICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a2",
+    "symbol": "JSRE11",
+    "companyName": "JS Real Estate Multigestão"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470aa",
+    "symbol": "AIRB34",
+    "companyName": "Airbnb Inc"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b2",
+    "symbol": "HABT11",
+    "companyName": "HABITAT II - FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f3",
+    "symbol": "BKNG34",
+    "companyName": "BOOKING HOLDINGS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47114",
+    "symbol": "BTAL11",
+    "companyName": "BTG PACTUAL AGRO LOGÍSTICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47135",
+    "symbol": "MSCD34",
+    "companyName": "MASTERCARD INCORPORATED"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f63",
+    "symbol": "MRFG3",
+    "companyName": "MARFRIG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f68",
+    "symbol": "POSI3",
+    "companyName": "POSITIVO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f71",
+    "symbol": "EQTL3",
+    "companyName": "EQUATORIAL ENERGIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f72",
+    "symbol": "ELET3",
+    "companyName": "ELETROBRAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f74",
+    "symbol": "TIMS3",
+    "companyName": "TIM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f95",
+    "symbol": "NEOE3",
+    "companyName": "NEOENERGIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa1",
+    "symbol": "YDUQ3",
+    "companyName": "YDUQS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fac",
+    "symbol": "IGTA3",
+    "companyName": "IGUATEMI EMPRESA DE SHOPPING CENTERS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb3",
+    "symbol": "LCAM3",
+    "companyName": "LOCAMERICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4700e",
+    "symbol": "BOBR4",
+    "companyName": "BOMBRIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4701a",
+    "symbol": "ROMI3",
+    "companyName": "INDÚSTRIAS ROMI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4701f",
+    "symbol": "BIDI3",
+    "companyName": "BANCO INTER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4703a",
+    "symbol": "UNIP6",
+    "companyName": "UNIPAR CARBOCLORO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47045",
+    "symbol": "G2DI33",
+    "companyName": "G2D INVESTMENTS LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4704b",
+    "symbol": "CAMB3",
+    "companyName": "CAMBUCI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47066",
+    "symbol": "KNIP11",
+    "companyName": "Kinea Índice de Preços"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47067",
+    "symbol": "COCE5",
+    "companyName": "COELCE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4707c",
+    "symbol": "VGHF11",
+    "companyName": "VALORA HEDGE FUND"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47087",
+    "symbol": "KNCR11",
+    "companyName": "Kinea Rendimentos Imobiliários"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47092",
+    "symbol": "RBRF11",
+    "companyName": "RBR ALPHA MULTIESTRATÉGIA REAL ESTATE FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4709d",
+    "symbol": "CRIV4",
+    "companyName": "FINANCEIRA ALFA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4709f",
+    "symbol": "APER3",
+    "companyName": "ALPER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a7",
+    "symbol": "RBRP11",
+    "companyName": "RBR Properties"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470bb",
+    "symbol": "DOHL4",
+    "companyName": "DOHLER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470bf",
+    "symbol": "FBOK34",
+    "companyName": "FACEBOOK. INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c3",
+    "symbol": "DISB34",
+    "companyName": "THE WALT DISNEY COMPANY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f8",
+    "symbol": "RBVA11",
+    "companyName": "Rio Bravo Renda Varejo"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f9",
+    "symbol": "QAGR11",
+    "companyName": "QUASAR AGRO - FDO INV. IMOB."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4710d",
+    "symbol": "MILL11",
+    "companyName": "IT NOW MSCI USA IMI MILLENIALS SELECT 50"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4712c",
+    "symbol": "HSAF11",
+    "companyName": "HSI ATIVOS FINANCEIROS FUNDO DE INVESTIMENTO IMOBI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f59",
+    "symbol": "AMAR3",
+    "companyName": "LOJAS MARISA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f5e",
+    "symbol": "GGBR4",
+    "companyName": "GERDAU"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f5f",
+    "symbol": "BIDI11",
+    "companyName": "BANCO INTER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f64",
+    "symbol": "POMO4",
+    "companyName": "MARCOPOLO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f67",
+    "symbol": "CMIG4",
+    "companyName": "CEMIG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f6a",
+    "symbol": "CSAN3",
+    "companyName": "COSAN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f6e",
+    "symbol": "ECOR3",
+    "companyName": "ECORODOVIAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f7c",
+    "symbol": "ENEV3",
+    "companyName": "ENEVA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f88",
+    "symbol": "MEAL3",
+    "companyName": "INTERNATIONAL MEAL COMPANY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa0",
+    "symbol": "HBSA3",
+    "companyName": "HIDROVIAS DO BRASIL S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46faa",
+    "symbol": "RENT3",
+    "companyName": "LOCALIZA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc3",
+    "symbol": "CPLE3",
+    "companyName": "COPEL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd6",
+    "symbol": "MDIA3",
+    "companyName": "M.DIAS BRANCO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47000",
+    "symbol": "RCSL3",
+    "companyName": "RECRUSUL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4704c",
+    "symbol": "CSED3",
+    "companyName": "CRUZEIRO DO SUL EDUCACIONAL S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47062",
+    "symbol": "CRIV3",
+    "companyName": "FINANCEIRA ALFA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47073",
+    "symbol": "BOVX11",
+    "companyName": "TREND ETF IBOVESPA FUNDO DE ÍNDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47088",
+    "symbol": "EALT4",
+    "companyName": "ELECTRO ACO ALTONA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47098",
+    "symbol": "MODL3",
+    "companyName": "BANCO MODAL S.A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4709b",
+    "symbol": "GOAU3",
+    "companyName": "METALURGICA GERDAU"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ea",
+    "symbol": "RZAK11",
+    "companyName": "RIZA AKIN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470fd",
+    "symbol": "SHOT11",
+    "companyName": "IT NOW S&P KENSHO MOONSHOTS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47100",
+    "symbol": "RBRL11",
+    "companyName": "RBR LOG FUNDO DE INVESTIMENTO IMOBILIÁRIO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47107",
+    "symbol": "MFII11",
+    "companyName": "Mérito Desenvolvimento Imobiliário"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4711a",
+    "symbol": "VISA34",
+    "companyName": "VISA INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47123",
+    "symbol": "BCIA11",
+    "companyName": "Bradesco Carteira Imobiliária Ativa"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47126",
+    "symbol": "BMEB4",
+    "companyName": "BANCO MERCANTIL DO BRASIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4712a",
+    "symbol": "A1ZN34",
+    "companyName": "ASTRAZENECA PLC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47136",
+    "symbol": "MGEL4",
+    "companyName": "MANGELS INDUSTRIAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f65",
+    "symbol": "RCSL4",
+    "companyName": "RECRUSUL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f66",
+    "symbol": "EMBR3",
+    "companyName": "EMBRAER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f69",
+    "symbol": "LAME4",
+    "companyName": "LOJAS AMERICANAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f83",
+    "symbol": "TECN3",
+    "companyName": "TECHNOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f92",
+    "symbol": "BRAP4",
+    "companyName": "BRADESPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f9a",
+    "symbol": "GMAT3",
+    "companyName": "GRUPO MATEUS S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f9f",
+    "symbol": "CXSE3",
+    "companyName": "CAIXA SEGURIDADE PARTICIPAÇÕES S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe1",
+    "symbol": "PSSA3",
+    "companyName": "PORTO SEGURO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fec",
+    "symbol": "RRRP3",
+    "companyName": "3R PETROLEUM ÓLEO E GÁS S.A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4700d",
+    "symbol": "VAMO3",
+    "companyName": "VAMOS LOCAÇÃO DE CAMINHÕES. MÁQUINAS E EQUIP."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4700f",
+    "symbol": "HOOT4",
+    "companyName": "HOTEIS OTHON S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4701e",
+    "symbol": "NASD11",
+    "companyName": "TREND ETF NASDAQ 100"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47025",
+    "symbol": "BMOB3",
+    "companyName": "BEMOBI MOBILE TECH S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4703f",
+    "symbol": "PARD3",
+    "companyName": "INSTITUTO HERMES PARDINI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4704e",
+    "symbol": "CARD3",
+    "companyName": "CSU CARDSYSTEM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47061",
+    "symbol": "BCFF11",
+    "companyName": "BTG Fundo de Fundos"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47065",
+    "symbol": "ITSA3",
+    "companyName": "ITAUSA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4706b",
+    "symbol": "FRAS3",
+    "companyName": "FRAS-LE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47095",
+    "symbol": "DOTZ3",
+    "companyName": "Dotz S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a3",
+    "symbol": "XFIX11",
+    "companyName": "TREND ETF IFIX FUNDO DE ÍNDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f2",
+    "symbol": "MATB11",
+    "companyName": "IT NOW IMAT FUNDO DE ÍNDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f7",
+    "symbol": "PLCR11",
+    "companyName": "FDO INV. IMOB. PLURAL RECEBIVEIS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f51",
+    "symbol": "DMMO3",
+    "companyName": "DOMMO ENERGIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f6d",
+    "symbol": "BPAN4",
+    "companyName": "BANCO PAN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f77",
+    "symbol": "LWSA3",
+    "companyName": "LOCAWEB SERVIÇOS DE INTERNET S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f7b",
+    "symbol": "WEGE3",
+    "companyName": "WEG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f7d",
+    "symbol": "CMIN3",
+    "companyName": "CSN MINERAÇÃO S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f80",
+    "symbol": "DASA3",
+    "companyName": "DASA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f8a",
+    "symbol": "CASH3",
+    "companyName": "MÉLIUZ S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f8c",
+    "symbol": "ENAT3",
+    "companyName": "ENAUTA PARTICIPAÇÕES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f98",
+    "symbol": "STBP3",
+    "companyName": "SANTOS BRASIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f9d",
+    "symbol": "AERI3",
+    "companyName": "AERIS IND. E COM. DE EQUIP. GERACAO DE ENERGIA S.A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb7",
+    "symbol": "JALL3",
+    "companyName": "JALLES MACHADO S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb8",
+    "symbol": "TAEE11",
+    "companyName": "TAESA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fcd",
+    "symbol": "TCNO4",
+    "companyName": "TECNOSOLO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47001",
+    "symbol": "BRBI11",
+    "companyName": "BR ADVISORY PARTNERS PARTICIPAÇÕES S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47009",
+    "symbol": "AGRO3",
+    "companyName": "BRASILAGRO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47010",
+    "symbol": "PRNR3",
+    "companyName": "PRINER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47018",
+    "symbol": "CURY3",
+    "companyName": "CURY CONSTRUTORA E INCORPORADORA S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47020",
+    "symbol": "LEVE3",
+    "companyName": "MAHLE-METAL LEVE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4702e",
+    "symbol": "BLAU3",
+    "companyName": "BLAU FARMACÊUTICA S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4705b",
+    "symbol": "CPTS11",
+    "companyName": "Capitania Securities II"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47068",
+    "symbol": "ATOM3",
+    "companyName": "ATOM EMPREENDIMENTOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47075",
+    "symbol": "GGBR3",
+    "companyName": "GERDAU"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47090",
+    "symbol": "CTSA3",
+    "companyName": "SANTANENSE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47096",
+    "symbol": "HETA4",
+    "companyName": "HERCULES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ac",
+    "symbol": "BZLI11",
+    "companyName": "Brazil Realty"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470bd",
+    "symbol": "NFLX34",
+    "companyName": "NETFLIX. INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c0",
+    "symbol": "BBPO11",
+    "companyName": "BB Progressivo II"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ca",
+    "symbol": "CPFF11",
+    "companyName": "CAPITÂNIA REIT FOF - FDO. INVEST. IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470cb",
+    "symbol": "XPSF11",
+    "companyName": "XP SELECTION FDO DE FUNDOS INV IMOB - FII"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f4",
+    "symbol": "BRAX11",
+    "companyName": "iShares IBrX - Índice Brasil (IBrX-100) Fundo de Índice"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4710c",
+    "symbol": "DTCY3",
+    "companyName": "DTCOM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47125",
+    "symbol": "GSFI11",
+    "companyName": "GENERAL SHOP E OUTLETS DO BRASIL FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fca",
+    "symbol": "LJQQ3",
+    "companyName": "LOJAS QUERO-QUERO S/A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff5",
+    "symbol": "MYPK3",
+    "companyName": "IOCHPE MAXION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff6",
+    "symbol": "ALUP11",
+    "companyName": "ALUPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ffd",
+    "symbol": "USIM3",
+    "companyName": "USIMINAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47023",
+    "symbol": "POMO3",
+    "companyName": "MARCOPOLO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4702d",
+    "symbol": "LOGG3",
+    "companyName": "LOG COMMERCIAL PROPERTIES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47032",
+    "symbol": "BABA34",
+    "companyName": "ALIBABA GROUP HOLDING LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47037",
+    "symbol": "MODL4",
+    "companyName": "BANCO MODAL S.A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47042",
+    "symbol": "TSLA34",
+    "companyName": "TESLA. INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47048",
+    "symbol": "MDNE3",
+    "companyName": "MOURA DUBEUX ENGENHARIA S/A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4704a",
+    "symbol": "TGMA3",
+    "companyName": "TEGMA GESTÃO LOGÍSTICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47058",
+    "symbol": "CPLE11",
+    "companyName": "COPEL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4705e",
+    "symbol": "RSID3",
+    "companyName": "ROSSI RESIDENCIAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4706f",
+    "symbol": "TAEE3",
+    "companyName": "TAESA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4707e",
+    "symbol": "IGBR3",
+    "companyName": "IGB ELETRÔNICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ae",
+    "symbol": "FIND11",
+    "companyName": "IT NOW IFNC FUNDO DE ÍNDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b0",
+    "symbol": "MSFT34",
+    "companyName": "MICROSOFT CORPORATION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d2",
+    "symbol": "GTWR11",
+    "companyName": "FDO INV IMOB GREEN TOWERS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47133",
+    "symbol": "VERZ34",
+    "companyName": "VERIZON COMMUNICATIONS INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47137",
+    "symbol": "MWET4",
+    "companyName": "WETZEL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f4b",
+    "symbol": "ITUB4",
+    "companyName": "BANCO ITAU UNIBANCO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f70",
+    "symbol": "BBDC3",
+    "companyName": "BRADESCO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f87",
+    "symbol": "CVCB3",
+    "companyName": "CVC BRASIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f94",
+    "symbol": "TOTS3",
+    "companyName": "TOTVS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f96",
+    "symbol": "SAPR4",
+    "companyName": "SANEPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f9e",
+    "symbol": "AZUL4",
+    "companyName": "AZUL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fab",
+    "symbol": "BPAC11",
+    "companyName": "BTG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb4",
+    "symbol": "MRVE3",
+    "companyName": "MRV ENGENHARIA E PARTICIPAÇÕES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc1",
+    "symbol": "SHOW3",
+    "companyName": "TIME FOR FUN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4701c",
+    "symbol": "QBTC11",
+    "companyName": "QR CME CF BITCOIN REFERENCE RATE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47022",
+    "symbol": "MATD3",
+    "companyName": "HOSPITAL MATER DEI SA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4702a",
+    "symbol": "NINJ3",
+    "companyName": "GETNINJAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47033",
+    "symbol": "MELI34",
+    "companyName": "MERCADOLIBRE INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47039",
+    "symbol": "KEPL3",
+    "companyName": "KEPLER WEBER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4703b",
+    "symbol": "OPCT3",
+    "companyName": "OCEANPACT SERVICOS MARITIMOS S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47044",
+    "symbol": "IVVB11",
+    "companyName": "ISHARES S&P 500 FDO INV COTAS FDO INDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47049",
+    "symbol": "XINA11",
+    "companyName": "TREND ETF MSCI CHINA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47060",
+    "symbol": "CTSA4",
+    "companyName": "SANTANENSE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4706c",
+    "symbol": "SMAL11",
+    "companyName": "ISHARES BMFBOVESPA SMALL CAP FUNDO DE ÍNDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4706e",
+    "symbol": "UCAS3",
+    "companyName": "UNICASA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47070",
+    "symbol": "BACW39",
+    "companyName": "ISHARES MSCI ACWI ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47079",
+    "symbol": "SMAC11",
+    "companyName": "IT NOW SMALL FDO ÍNDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4708f",
+    "symbol": "AURA33",
+    "companyName": "AURA MINERALS INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a6",
+    "symbol": "RIGG34",
+    "companyName": "TRANSOCEAN LTD."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b6",
+    "symbol": "VGIP11",
+    "companyName": "VALORA CRI ÍNDICE DE PREÇO FDO INVEST. IMOB. FII"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ba",
+    "symbol": "HGRE11",
+    "companyName": "CSHG Real Estate"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470cf",
+    "symbol": "SNFF11",
+    "companyName": "SUNO FUNDO DE FUNDOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d4",
+    "symbol": "FEXC11",
+    "companyName": "BTG Pactual Fundo de CRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e4",
+    "symbol": "ALZR11",
+    "companyName": "Alianza Trust Renda Imobiliária"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ee",
+    "symbol": "CMCS34",
+    "companyName": "COMCAST CORPORATION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ef",
+    "symbol": "RDNI3",
+    "companyName": "RNI NEGÓCIOS IMOBILIÁRIOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47103",
+    "symbol": "PFIZ34",
+    "companyName": "PFIZER INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47117",
+    "symbol": "HOME34",
+    "companyName": "THE HOME DEPOT. INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47121",
+    "symbol": "MNPR3",
+    "companyName": "MINUPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f4e",
+    "symbol": "BBDC4",
+    "companyName": "BRADESCO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f57",
+    "symbol": "PETR3",
+    "companyName": "PETROBRAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f6b",
+    "symbol": "MULT3",
+    "companyName": "MULTIPLAN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f82",
+    "symbol": "BEEF3",
+    "companyName": "MINERVA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f90",
+    "symbol": "WIZS3",
+    "companyName": "WIZ"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa5",
+    "symbol": "GNDI3",
+    "companyName": "NOTRE DAME INTERMEDICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fad",
+    "symbol": "PETZ3",
+    "companyName": "PETZ"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fba",
+    "symbol": "EZTC3",
+    "companyName": "EZ TEC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fdf",
+    "symbol": "EGIE3",
+    "companyName": "ENGIE BRASIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe5",
+    "symbol": "VULC3",
+    "companyName": "VULCABRAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe8",
+    "symbol": "RANI3",
+    "companyName": "Irani Papel e Embalagem S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ffa",
+    "symbol": "VIVA3",
+    "companyName": "VIVARA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47017",
+    "symbol": "ESPA3",
+    "companyName": "MPM CORPÓREOS S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47029",
+    "symbol": "OMGE3",
+    "companyName": "OMEGA GERAÇÃO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4703e",
+    "symbol": "CMIG3",
+    "companyName": "CEMIG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47040",
+    "symbol": "VSLH11",
+    "companyName": "VERSALHES RECEBÍVEIS IMOBILIÁRIOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4706a",
+    "symbol": "EUCA4",
+    "companyName": "EUCATEX"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a8",
+    "symbol": "HFOF11",
+    "companyName": "Hedge Top FOFII 3"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b9",
+    "symbol": "RECT11",
+    "companyName": "FDO INV IMOB - FII UBS (BR) OFFICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c4",
+    "symbol": "CGRA4",
+    "companyName": "GRAZZIOTIN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c5",
+    "symbol": "TRXF11",
+    "companyName": "TRX Real Estate"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c8",
+    "symbol": "BEEM39",
+    "companyName": "ISHARES MSCI EMERGING MARKETS ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470de",
+    "symbol": "PYPL34",
+    "companyName": "PAYPAL HOLDINGS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470eb",
+    "symbol": "XPIN11",
+    "companyName": "XP Industrial"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f1",
+    "symbol": "GALG11",
+    "companyName": "GUARDIAN LOGISTICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47110",
+    "symbol": "HBRE3",
+    "companyName": "HBR REALTY EMPREENDIMENTOS IMOBILIARIOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47113",
+    "symbol": "TESA3",
+    "companyName": "TERRA SANTA AGRO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4711b",
+    "symbol": "SDIL11",
+    "companyName": "SDI Logística Rio"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4712e",
+    "symbol": "MORE11",
+    "companyName": "MORE REAL ESTATE FOF FII FDO. INV. IMOB."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f46",
+    "symbol": "OIBR3",
+    "companyName": "OI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f6f",
+    "symbol": "LINX3",
+    "companyName": "LINX"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f76",
+    "symbol": "SUZB3",
+    "companyName": "SUZANO S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb2",
+    "symbol": "BKBR3",
+    "companyName": "BK BRASIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fbe",
+    "symbol": "BRPR3",
+    "companyName": "BR PROPERTIES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc9",
+    "symbol": "ALSO3",
+    "companyName": "ALIANSCSONAE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fde",
+    "symbol": "SOMA3",
+    "companyName": "GRUPO DE MODA SOMA S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47011",
+    "symbol": "SQIA3",
+    "companyName": "SINQIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47012",
+    "symbol": "SAPR3",
+    "companyName": "SANEPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47015",
+    "symbol": "SLCE3",
+    "companyName": "SLC AGRICOLA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4701b",
+    "symbol": "GGPS3",
+    "companyName": "GPS PARTICIPACOES E EMPREENDIMENTOS S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4703c",
+    "symbol": "PDTC3",
+    "companyName": "PADTEC HOLDING S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4703d",
+    "symbol": "PFRM3",
+    "companyName": "PROFARMA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4704f",
+    "symbol": "HCTR11",
+    "companyName": "HECTARE CE - FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47051",
+    "symbol": "ARZZ3",
+    "companyName": "AREZZO&CO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47076",
+    "symbol": "DMVF3",
+    "companyName": "D1000 VAREJO FARMA PARTICIPAÇÕES S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47083",
+    "symbol": "HGLG11",
+    "companyName": "CGHG Logística"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47085",
+    "symbol": "RZTR11",
+    "companyName": "FUNDO DE INVESTIMENTO IMOBILIÁRIO RIZA TERRAX"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4708b",
+    "symbol": "TGAR11",
+    "companyName": "TG Ativo Real"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ab",
+    "symbol": "VRTA11",
+    "companyName": "Fator Verita"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470bc",
+    "symbol": "PVBI11",
+    "companyName": "FDO. INV. IMOB. VBI PRIME PROPERTIES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c1",
+    "symbol": "JPMC34",
+    "companyName": "JPMORGAN CHASE & CO."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c6",
+    "symbol": "COCA34",
+    "companyName": "THE COCA-COLA COMPANY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d1",
+    "symbol": "URPR11",
+    "companyName": "URCA PRIME RENDA FUNDO DE INVESTIMENTO IMOBILIÁRIO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d5",
+    "symbol": "RBRR11",
+    "companyName": "RBR Rendimento High Grade"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e7",
+    "symbol": "BPFF11",
+    "companyName": "Brasil Plural Absoluto Fundo de Fundos"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f0",
+    "symbol": "BEZU39",
+    "companyName": "ISHARES MSCI EUROZONE ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470fc",
+    "symbol": "HGBS11",
+    "companyName": "CSHG Brasil Shopping"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47102",
+    "symbol": "BOAC34",
+    "companyName": "BANK OF AMERICA CORPORATION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47115",
+    "symbol": "RBRY11",
+    "companyName": "FDO INV IMOB RBR PRIVATE CRÉDITO IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47119",
+    "symbol": "BIEU39",
+    "companyName": "ISHARES CORE MSCI EUROPE ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f5d",
+    "symbol": "BBAS3",
+    "companyName": "BANCO BRASIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f75",
+    "symbol": "LREN3",
+    "companyName": "LOJAS RENNER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f84",
+    "symbol": "CPLE6",
+    "companyName": "COPEL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f9c",
+    "symbol": "GPIV33",
+    "companyName": "GP INVESTMENTS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa4",
+    "symbol": "BIDI4",
+    "companyName": "BANCO INTER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb9",
+    "symbol": "TPIS3",
+    "companyName": "TPI - TRIUNFO PARTICIP. E INVEST. S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fbd",
+    "symbol": "RDOR3",
+    "companyName": "REDE D OR SÃO LUIZ S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc0",
+    "symbol": "ANIM3",
+    "companyName": "ANIMA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc8",
+    "symbol": "PTBL3",
+    "companyName": "PORTOBELLO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fea",
+    "symbol": "TEND3",
+    "companyName": "CONSTRUTORA TENDA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff0",
+    "symbol": "MOVI3",
+    "companyName": "MOVIDA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47005",
+    "symbol": "TCNO3",
+    "companyName": "TECNOSOLO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47026",
+    "symbol": "GUAR3",
+    "companyName": "GUARARAPES CONFECÇÕES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4702c",
+    "symbol": "LOGN3",
+    "companyName": "LOG-IN LOGÍSTICA INTERMODAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47038",
+    "symbol": "TAEE4",
+    "companyName": "TAESA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47046",
+    "symbol": "PMAM3",
+    "companyName": "PARANAPANEMA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47052",
+    "symbol": "JSLG3",
+    "companyName": "JSL S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4705c",
+    "symbol": "ORVR3",
+    "companyName": "ORIZON VALORIZACAO DE RESIDUOS S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47063",
+    "symbol": "MBLY3",
+    "companyName": "Mobly S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47074",
+    "symbol": "PTNT4",
+    "companyName": "PETTENATI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47077",
+    "symbol": "BERK34",
+    "companyName": "BERKSHIRE HATHAWAY INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47081",
+    "symbol": "SGPS3",
+    "companyName": "SPRINGS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47084",
+    "symbol": "KNSC11",
+    "companyName": "KINEA SECURITIES FDO. DE INV. IMOB. - FII"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47093",
+    "symbol": "KNRI11",
+    "companyName": "Kinea Renda Imobiliária"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ad",
+    "symbol": "XPCI11",
+    "companyName": "XP CREDITO IMOBILIÁRIO - FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b3",
+    "symbol": "BCRI11",
+    "companyName": "Banestes Recebíveis Imobiliários"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b5",
+    "symbol": "TASA3",
+    "companyName": "TAURUS ARMAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470be",
+    "symbol": "SPXI11",
+    "companyName": "IT NOW S&P500 TRN FUNDO DE INDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d7",
+    "symbol": "BLMR11",
+    "companyName": "BLUEMACAW RENDA + FOF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d9",
+    "symbol": "ALUP4",
+    "companyName": "ALUPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470da",
+    "symbol": "NVDC34",
+    "companyName": "NVIDIA CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470dd",
+    "symbol": "INEP3",
+    "companyName": "INEPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470fe",
+    "symbol": "FIVN11",
+    "companyName": "Vida Nova"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4710a",
+    "symbol": "RBFF11",
+    "companyName": "RIO BRAVO IFIX FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4710f",
+    "symbol": "RPAD3",
+    "companyName": "ALFA HOLDINGS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47112",
+    "symbol": "RAPT3",
+    "companyName": "RANDON"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47120",
+    "symbol": "MSBR34",
+    "companyName": "MORGAN STANLEY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f5b",
+    "symbol": "USIM5",
+    "companyName": "USIMINAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f44",
+    "symbol": "PETR4",
+    "companyName": "PETROBRAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f7a",
+    "symbol": "BRFS3",
+    "companyName": "BRF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f93",
+    "symbol": "PINE4",
+    "companyName": "BANCO PINE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb5",
+    "symbol": "GRND3",
+    "companyName": "GRENDENE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb6",
+    "symbol": "SANB11",
+    "companyName": "BANCO SANTANDER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc6",
+    "symbol": "ODPV3",
+    "companyName": "ODONTOPREV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc7",
+    "symbol": "HGTX3",
+    "companyName": "CIA HERING"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd2",
+    "symbol": "ENJU3",
+    "companyName": "ENJOEI.COM.BR ATIVIDADES DE INTERNET S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd3",
+    "symbol": "BOVV11",
+    "companyName": "IT NOW IBOVESPA FUNDO DE ÍNDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd4",
+    "symbol": "ENGI11",
+    "companyName": "ENERGISA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fda",
+    "symbol": "BRSR6",
+    "companyName": "BANCO BANRISUL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fdc",
+    "symbol": "CEAB3",
+    "companyName": "CEA MODAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe6",
+    "symbol": "LUPA3",
+    "companyName": "LUPATECH"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff4",
+    "symbol": "ASAI3",
+    "companyName": "SENDAS DISTRIBUIDORA S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff8",
+    "symbol": "CESP6",
+    "companyName": "CESP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4700a",
+    "symbol": "EVEN3",
+    "companyName": "EVEN CONSTRUTORA E INCORPORADORA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47030",
+    "symbol": "FESA4",
+    "companyName": "FERBASA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a0",
+    "symbol": "BRCO11",
+    "companyName": "BRESCO LOGÍSTICA - FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f5",
+    "symbol": "ALPK3",
+    "companyName": "ALLPARK EMPREENDIMENTOS PARTICIPACOES SERVICOS S.A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4711d",
+    "symbol": "BALM4",
+    "companyName": "BAUMER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f48",
+    "symbol": "VIVR3",
+    "companyName": "VIVER INCORPORADORA E CONSTRUTORA "
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f53",
+    "symbol": "BRML3",
+    "companyName": "BR MALLS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f5c",
+    "symbol": "RAIL3",
+    "companyName": "RUMO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f73",
+    "symbol": "CCRO3",
+    "companyName": "CCR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f78",
+    "symbol": "GFSA3",
+    "companyName": "GAFISA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f81",
+    "symbol": "BOVA11",
+    "companyName": "ISHARES IBOVESPA FUNDO DE ÍNDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f86",
+    "symbol": "HYPE3",
+    "companyName": "HYPERA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa2",
+    "symbol": "MODL11",
+    "companyName": "BANCO MODAL S.A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa7",
+    "symbol": "CRFB3",
+    "companyName": "ATACADÃO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa8",
+    "symbol": "SBSP3",
+    "companyName": "SABESP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb1",
+    "symbol": "MXRF11",
+    "companyName": "Maxi Renda"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fbf",
+    "symbol": "HBOR3",
+    "companyName": "HELBOR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fcb",
+    "symbol": "ETER3",
+    "companyName": "ETERNIT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fcf",
+    "symbol": "SAPR11",
+    "companyName": "SANEPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd9",
+    "symbol": "OIBR4",
+    "companyName": "OI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe0",
+    "symbol": "NGRD3",
+    "companyName": "NEOGRID"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe4",
+    "symbol": "TRIS3",
+    "companyName": "TRISUL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe9",
+    "symbol": "CAML3",
+    "companyName": "CAMIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff9",
+    "symbol": "LPSB3",
+    "companyName": "LOPES BRASIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ffc",
+    "symbol": "RECV3",
+    "companyName": "PETRORECÔNCAVO S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4700c",
+    "symbol": "SBFG3",
+    "companyName": "CENTAURO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47053",
+    "symbol": "RNEW3",
+    "companyName": "RENOVA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47057",
+    "symbol": "JFEN3",
+    "companyName": "JOÃO FORTES ENGENHARIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4705a",
+    "symbol": "DEXP3",
+    "companyName": "DEXXOS PARTICIPACOES S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47071",
+    "symbol": "CARE11",
+    "companyName": "Brazilian Graveyard and Death Care"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4707b",
+    "symbol": "BTLG11",
+    "companyName": "BTG PACTUAL LOGISTICA FDO INV IMOB - FII"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47080",
+    "symbol": "BARI11",
+    "companyName": "FDO INV IMOB BARIGUI RENDIMENTOS IMOB I FII"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47089",
+    "symbol": "VINO11",
+    "companyName": "VINCI OFFICES FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47094",
+    "symbol": "GOGL34",
+    "companyName": "ALPHABET INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47099",
+    "symbol": "KNHY11",
+    "companyName": "Kinea High Yield CRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b1",
+    "symbol": "HAGA3",
+    "companyName": "HAGA S/A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b7",
+    "symbol": "RNEW11",
+    "companyName": "RENOVA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470cd",
+    "symbol": "SULA3",
+    "companyName": "SUL AMERICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d0",
+    "symbol": "CEDO4",
+    "companyName": "CEDRO TÊXTIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e0",
+    "symbol": "BAAX39",
+    "companyName": "ISHARES MSCI ALL COUNTRY ASIA EX JAPAN ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47116",
+    "symbol": "VCJR11",
+    "companyName": "VECTIS JUROS REAL FDO INV. IMOB. - FII"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4711f",
+    "symbol": "SARE11",
+    "companyName": "SANTANDER RENDA DE ALUGUÉIS FDO. INVEST. IMOB."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4712d",
+    "symbol": "PGCO34",
+    "companyName": "PROCTER & GAMBLE COMPANY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f45",
+    "symbol": "ABEV3",
+    "companyName": "AMBEV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f7e",
+    "symbol": "CYRE3",
+    "companyName": "CYRELA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa6",
+    "symbol": "FHER3",
+    "companyName": "FERTILIZANTES HERINGER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa9",
+    "symbol": "LLIS3",
+    "companyName": "RESTOQUE COMÉRCIO E CONFECÇÕES DE ROUPAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fae",
+    "symbol": "VIVT3",
+    "companyName": "TELEFÔNICA BRASIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46faf",
+    "symbol": "PCAR3",
+    "companyName": "CIA BRASILEIRA DE DISTRIBUIÇÃO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc5",
+    "symbol": "LIGT3",
+    "companyName": "LIGHT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd0",
+    "symbol": "MOSI3",
+    "companyName": "Mosaico Tecnologia ao Consumidor S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd5",
+    "symbol": "RPMG3",
+    "companyName": "REFINARIA DE PETROLEOS MANGUINHOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff3",
+    "symbol": "TASA4",
+    "companyName": "TAURUS ARMAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ffb",
+    "symbol": "LAVV3",
+    "companyName": "LAVVI EMPREENDIMENTOS IMOBILIÁRIOS S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ffe",
+    "symbol": "FLRY3",
+    "companyName": "FLEURY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47003",
+    "symbol": "BOAS3",
+    "companyName": "BOA VISTA SERVIÇOS S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47006",
+    "symbol": "RNEW4",
+    "companyName": "RENOVA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47008",
+    "symbol": "PGMN3",
+    "companyName": "EMPREENDIMENTOS PAGUE MENOS S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47013",
+    "symbol": "WEST3",
+    "companyName": "WESTWING COMERCIO VAREJISTA S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47016",
+    "symbol": "PNVL3",
+    "companyName": "DIMED"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a4",
+    "symbol": "CVBI11",
+    "companyName": "FDO INV. IMOB. VBI CRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a5",
+    "symbol": "INEP4",
+    "companyName": "INEPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c9",
+    "symbol": "ENGI4",
+    "companyName": "ENERGISA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470cc",
+    "symbol": "VISC11",
+    "companyName": "Vinci Shopping Centers"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470dc",
+    "symbol": "UNIP3",
+    "companyName": "UNIPAR CARBOCLORO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e2",
+    "symbol": "M1RN34",
+    "companyName": "MODERNA INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e6",
+    "symbol": "R1KU34",
+    "companyName": "ROKU INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470fb",
+    "symbol": "PATL11",
+    "companyName": "PÁTRIA LOGÍSTICA FUNDO DE INVESTIMENTO IMOBILIÁRIO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47105",
+    "symbol": "VGIR11",
+    "companyName": "Valora RE III"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47109",
+    "symbol": "SSFO34",
+    "companyName": "SALESFORCE.COM. INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47118",
+    "symbol": "OUJP11",
+    "companyName": "OURINVEST JPP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f47",
+    "symbol": "ITSA4",
+    "companyName": "ITAUSA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f49",
+    "symbol": "B3SA3",
+    "companyName": "B3"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f52",
+    "symbol": "IRBR3",
+    "companyName": "IRB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f79",
+    "symbol": "GOLL4",
+    "companyName": "GOL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f8d",
+    "symbol": "JHSF3",
+    "companyName": "JHSF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd1",
+    "symbol": "BRKM5",
+    "companyName": "BRASKEM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe7",
+    "symbol": "SMTO3",
+    "companyName": "SÃO MARTINHO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fed",
+    "symbol": "TRPL4",
+    "companyName": "ISA CTEEP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fef",
+    "symbol": "AZEV4",
+    "companyName": "AZEVEDO E TRAVASSOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47024",
+    "symbol": "ALLD3",
+    "companyName": "ALLIED TECNOLOGIA S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4702b",
+    "symbol": "ABCB4",
+    "companyName": "BANCO ABC BRASIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47036",
+    "symbol": "AMBP3",
+    "companyName": "AMBIPAR PARTICIPACOES E EMPREENDIMENTOS S/A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4708e",
+    "symbol": "AAPL34",
+    "companyName": "APPLE INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b4",
+    "symbol": "ACWI11",
+    "companyName": "TREND ETF MSCI ACWI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c2",
+    "symbol": "MGFF11",
+    "companyName": "Mogno Fundo de Fundos"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d8",
+    "symbol": "MALL11",
+    "companyName": "Malls Brasil Plural"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470df",
+    "symbol": "JNJB34",
+    "companyName": "JOHNSON & JOHNSON"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e3",
+    "symbol": "SANB4",
+    "companyName": "BANCO SANTANDER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470fa",
+    "symbol": "T2TD34",
+    "companyName": "THE TRADE DESK INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4712f",
+    "symbol": "DIVO11",
+    "companyName": "IT NOW IDIV FUNDO DE ÍNDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47130",
+    "symbol": "BIOM3",
+    "companyName": "BIOMM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f54",
+    "symbol": "CIEL3",
+    "companyName": "CIELO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f61",
+    "symbol": "JBSS3",
+    "companyName": "JBS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f62",
+    "symbol": "GOAU4",
+    "companyName": "METALURGICA GERDAU"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f89",
+    "symbol": "ELET6",
+    "companyName": "ELETROBRAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f9b",
+    "symbol": "SLED4",
+    "companyName": "SARAIVA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fbc",
+    "symbol": "CSMG3",
+    "companyName": "COPASA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc4",
+    "symbol": "CPFE3",
+    "companyName": "CPFL ENERGIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fee",
+    "symbol": "INTB3",
+    "companyName": "INTELBRAS S.A. IND DE TELEC ELETRONICA BRASILEIRA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff1",
+    "symbol": "SLED3",
+    "companyName": "SARAIVA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47034",
+    "symbol": "TORD11",
+    "companyName": "TORDESILHAS EI FDO. INV. IMOB."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47043",
+    "symbol": "HAGA4",
+    "companyName": "HAGA S/A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47064",
+    "symbol": "PDGR3",
+    "companyName": "PDG REALTY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4706d",
+    "symbol": "NIKE34",
+    "companyName": "NIKE INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47072",
+    "symbol": "XPLG11",
+    "companyName": "XP Log"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4708c",
+    "symbol": "AMZO34",
+    "companyName": "AMAZON.COM. INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4709a",
+    "symbol": "HSML11",
+    "companyName": "HSI MALL FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b8",
+    "symbol": "XPPR11",
+    "companyName": "XP PROPERTIES FDO. INV. IMOB."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47128",
+    "symbol": "E1DU34",
+    "companyName": "NEW ORIENTAL EDUCATION & TECHNOLOGY GROUP INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47145",
+    "symbol": "AFHI11",
+    "companyName": "AF INVEST CRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4716b",
+    "symbol": "PAGS34",
+    "companyName": "Pagseguro Digital Ltd"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471fa",
+    "symbol": "BIYW39",
+    "companyName": "ISHARES US TECHNOLOGY ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47203",
+    "symbol": "CHCM34",
+    "companyName": "CHARTER COMMUNICATIONS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4720c",
+    "symbol": "B1PP34",
+    "companyName": "BP PLC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47221",
+    "symbol": "V1IP34",
+    "companyName": "VIPSHOP HOLDINGS LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47230",
+    "symbol": "T1FX34",
+    "companyName": "TELEFLEX INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47248",
+    "symbol": "RBRS11",
+    "companyName": "RIO BRAVO RENDA RESIDENCIAL FDO. INVEST. IMOB."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47272",
+    "symbol": "ATVI34",
+    "companyName": "ACTIVISION BLIZZARD INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47273",
+    "symbol": "BEWU39",
+    "companyName": "ISHARES MSCI UNITED KINGDOM ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47282",
+    "symbol": "M1UF34",
+    "companyName": "MITSUBISHI UFJ FINANCIAL GROUP INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472b7",
+    "symbol": "MNDL3",
+    "companyName": "MUNDIAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c2",
+    "symbol": "L1MN34",
+    "companyName": "LUMEN TECHNOLOGIES. INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e0",
+    "symbol": "N1VO34",
+    "companyName": "NOVO NORDISK"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47312",
+    "symbol": "N1VS34",
+    "companyName": "NOVARTIS AG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47336",
+    "symbol": "WUNI34",
+    "companyName": "THE WESTERN UNION COMPANY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4736e",
+    "symbol": "D1OM34",
+    "companyName": "DOMINION ENERGY INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47152",
+    "symbol": "PIBB11",
+    "companyName": "IT NOW PIBB IBRX-50 - FUNDO DE ÍNDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4718b",
+    "symbol": "D1EX34",
+    "companyName": "DEXCOM INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4718d",
+    "symbol": "PNVL4",
+    "companyName": "DIMED"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ba",
+    "symbol": "MGCR11",
+    "companyName": "MOGNO CRI HIGH GRADE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471c5",
+    "symbol": "PRSN11B",
+    "companyName": "Lateres"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471d0",
+    "symbol": "NOKI34",
+    "companyName": "NOKIA CORPORATION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471d3",
+    "symbol": "VCRR11",
+    "companyName": "VECTIS RENDA RESIDENCIAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e6",
+    "symbol": "CTXT11",
+    "companyName": "Centro Têxtil Internacional"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ea",
+    "symbol": "HBRH11",
+    "companyName": "FDO.INVEST. IMOB. MULTI RENDA URBANA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4723b",
+    "symbol": "PQDP11",
+    "companyName": "Parque Dom Pedro Shopping Center"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4725c",
+    "symbol": "MKLC34",
+    "companyName": "MARKEL CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47266",
+    "symbol": "G1FI34",
+    "companyName": "GOLD FIELDS LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47293",
+    "symbol": "MMMC34",
+    "companyName": "3M COMPANY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47295",
+    "symbol": "R1IN34",
+    "companyName": "REALTY INCOME CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472da",
+    "symbol": "AXPB34",
+    "companyName": "AMERICAN EXPRESS COMPANY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e1",
+    "symbol": "HREC11",
+    "companyName": "HEDGE RECEBIVEIS IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e8",
+    "symbol": "B2YN34",
+    "companyName": "BEYOND MEAT INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472fa",
+    "symbol": "XBOV11",
+    "companyName": "CAIXA ETF IBOVESPA FUNDO DE INDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47317",
+    "symbol": "ASML34",
+    "companyName": "ASML HOLDING NV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47326",
+    "symbol": "DGCO34",
+    "companyName": "DOLLAR GENERAL CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4733d",
+    "symbol": "W1BO34",
+    "companyName": "WEIBO CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47343",
+    "symbol": "CPRL34",
+    "companyName": "CANADIAN PACIFIC RAILWAY LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4735b",
+    "symbol": "MINT11",
+    "companyName": "MINT EDUCACIONAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47376",
+    "symbol": "HCST11",
+    "companyName": "HECTARE DESENV. STUDENT HOUSING"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47381",
+    "symbol": "W1DC34",
+    "companyName": "WESTERN DIGITAL CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47155",
+    "symbol": "RBCO11",
+    "companyName": "RB CAPITAL OFFICE INCOME FDO INV. IMOB."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4716f",
+    "symbol": "EQIX34",
+    "companyName": "EQUINIX INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4719f",
+    "symbol": "TEKA4",
+    "companyName": "TEKA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a7",
+    "symbol": "BIXN39",
+    "companyName": "ISHARES GLOBAL TECH ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471c1",
+    "symbol": "KHCB34",
+    "companyName": "THE KRAFT HEINZ COMPANY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471c9",
+    "symbol": "MAXR11",
+    "companyName": "Max Retail"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471d5",
+    "symbol": "BEES4",
+    "companyName": "BANCO BANESTES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f2",
+    "symbol": "LUGG11",
+    "companyName": "LUGGO FDO. INV. IMOB."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4721e",
+    "symbol": "BPML11",
+    "companyName": "FDO INV IMOB BTG PACTUAL SHOPPINGS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4723a",
+    "symbol": "SBUB34",
+    "companyName": "STARBUCKS CORPORATION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4723e",
+    "symbol": "BNBR3",
+    "companyName": "BANCO NORDESTE DO BRASIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4725b",
+    "symbol": "BPRP11",
+    "companyName": "FDO INV IMOB - FII BRLPROP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4726a",
+    "symbol": "ISUS11",
+    "companyName": "IT NOW ISE FUNDO DE ÍNDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4726d",
+    "symbol": "PLRI11",
+    "companyName": "Polo Recebíveis Imobiliários I"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47271",
+    "symbol": "BIHI39",
+    "companyName": "iShares U.S. Medical Devices ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47275",
+    "symbol": "BIVW39",
+    "companyName": "iShares S&P 500 Growth ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4728d",
+    "symbol": "ULEV34",
+    "companyName": "UNILEVER PLC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47290",
+    "symbol": "BIJH39",
+    "companyName": "ISHARES CORE S&P MID-CAP ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47294",
+    "symbol": "NEWU11",
+    "companyName": "NEWPORT RENDA URBANA FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47298",
+    "symbol": "D1LR34",
+    "companyName": "DIGITAL REALTY TRUST INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ba",
+    "symbol": "PEAB3",
+    "companyName": "CIA PARTICIPAÇÕES ALIANCA DA BAHIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c7",
+    "symbol": "GPRO34",
+    "companyName": "GOPRO. INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472de",
+    "symbol": "E1TN34",
+    "companyName": "EATON CORP PLC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4730f",
+    "symbol": "BLMC11",
+    "companyName": "BLUEMACAW CRÉDITO IMOBILIÁRIO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4731e",
+    "symbol": "NETE34",
+    "companyName": "NETEASE INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4732f",
+    "symbol": "UPSS34",
+    "companyName": "UNITED PARCEL SERVICE. INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4734b",
+    "symbol": "C1HI34",
+    "companyName": "CHINA PETROLEUM & CHEMICAL CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4735c",
+    "symbol": "PHMO34",
+    "companyName": "PHILIP MORRIS INTERNATIONAL INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4736a",
+    "symbol": "BIIB34",
+    "companyName": "BIOGEN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4737e",
+    "symbol": "S1RP34",
+    "companyName": "SAREPTA THERAPEUTICS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47178",
+    "symbol": "ITLC34",
+    "companyName": "INTEL CORPORATION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47180",
+    "symbol": "ALPA3",
+    "companyName": "ALPARGATAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47189",
+    "symbol": "VIUR11",
+    "companyName": "VINCI IMÓVEIS URBANOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47199",
+    "symbol": "IBFF11",
+    "companyName": "FDO INV. IMOB. FOF INTEGRAL BREI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b1",
+    "symbol": "MACY34",
+    "companyName": "MACYS INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471bf",
+    "symbol": "BBFO11",
+    "companyName": "BB FUNDO DE FUNDOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e1",
+    "symbol": "GSGI34",
+    "companyName": "GOLDMAN SACHS GROUP INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f5",
+    "symbol": "HLOG11",
+    "companyName": "HEDGE LOGÍSTICA FDO. INV. IMOB."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f8",
+    "symbol": "CEDO3",
+    "companyName": "CEDRO TÊXTIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47209",
+    "symbol": "A1MD34",
+    "companyName": "ADVANCED MICRO DEVICES INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4720e",
+    "symbol": "CTKA4",
+    "companyName": "KARSTEN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4725e",
+    "symbol": "E1QN34",
+    "companyName": "EQUINOR ASA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4726c",
+    "symbol": "N1WS34",
+    "companyName": "NEWS CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d8",
+    "symbol": "BITO39",
+    "companyName": "ISHARES CORE S&P TOTAL US STOCK MARKET ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e7",
+    "symbol": "B1SA34",
+    "companyName": "BANCO SANTANDER CHILE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47305",
+    "symbol": "CAPH34",
+    "companyName": "CAPRI HOLDINGS LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4730c",
+    "symbol": "T1WL34",
+    "companyName": "TWILIO INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47338",
+    "symbol": "BLAK34",
+    "companyName": "BLACKROCK. INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4734e",
+    "symbol": "K1EL34",
+    "companyName": "KELLOGG CO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4714d",
+    "symbol": "HSLG11",
+    "companyName": "HSI LOGÍSTICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47149",
+    "symbol": "NAVT11",
+    "companyName": "NAVI IMOBILIÁRIO TOTAL RETURN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47154",
+    "symbol": "USSX34",
+    "companyName": "UNITED STATES STEEL CORPORATION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4717e",
+    "symbol": "CEOC11",
+    "companyName": "Cyrela Commercial Properties"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47182",
+    "symbol": "PEPB34",
+    "companyName": "PEPSICO. INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47190",
+    "symbol": "BBRC11",
+    "companyName": "BB Renda Corporativa"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47198",
+    "symbol": "BCHI39",
+    "companyName": "ISHARES MSCI CHINA ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471c8",
+    "symbol": "EDGA11",
+    "companyName": "Edifício Galeria"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471df",
+    "symbol": "HGPO11",
+    "companyName": "CSHG PRIME OFFICES FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f4",
+    "symbol": "BNFS11",
+    "companyName": "Banrisul Novas Fronteiras"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47210",
+    "symbol": "BEWT39",
+    "companyName": "ISHARES MSCI TAIWAN ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47245",
+    "symbol": "CBEE3",
+    "companyName": "AMPLA ENERGIA E SERVICOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47253",
+    "symbol": "RDPD11",
+    "companyName": "BB Renda de Papeis Imobiliários II"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47274",
+    "symbol": "MBRF11",
+    "companyName": "Mercantil do Brasil"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472a2",
+    "symbol": "ERCR11",
+    "companyName": "ESTOQUE RESIDENCIAL E COMERCIAL RJ"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ae",
+    "symbol": "BRGE6",
+    "companyName": "CONSÓRCIO ALFA DE ADMINISTRAÇÃO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ca",
+    "symbol": "HUSC11",
+    "companyName": "Hospital Unimed Sul Capixaba"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e3",
+    "symbol": "TOUR11",
+    "companyName": "FDO INV IMOB TOURMALET II"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47311",
+    "symbol": "B1MR34",
+    "companyName": "BIOMARIN PHARMACEUTICAL INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47320",
+    "symbol": "RSPD11",
+    "companyName": "RB CAPITAL DESENV RESID III FDO INV IMOB - FII"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47330",
+    "symbol": "ALMI11",
+    "companyName": "Torre Almirante"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4737f",
+    "symbol": "SRXM34",
+    "companyName": "SIRIUS XM HOLDINGS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47380",
+    "symbol": "UPAC34",
+    "companyName": "UNION PACIFIC CORPORATION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47166",
+    "symbol": "PORD11",
+    "companyName": "Polo Recebíveis Imobiliários II"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47174",
+    "symbol": "XPCM11",
+    "companyName": "XP Corporate Macaé"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47191",
+    "symbol": "RCRB11",
+    "companyName": "FDO INV IMOB RIO BRAVO RENDA CORPORATIVA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a3",
+    "symbol": "EXXO34",
+    "companyName": "EXXON MOBIL CORPORATION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b2",
+    "symbol": "FLMA11",
+    "companyName": "Continental Square Faria Lima"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b3",
+    "symbol": "SCPF11",
+    "companyName": "SCP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e8",
+    "symbol": "FLCR11",
+    "companyName": "FARIA LIMA CAPITAL RECEB. IMOB. I"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e9",
+    "symbol": "AVLL3",
+    "companyName": "ALPHAVILLE S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47200",
+    "symbol": "OXYP34",
+    "companyName": "OCCIDENTAL PETROLEUM CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47211",
+    "symbol": "IFIE11",
+    "companyName": "IFI-E FUNDO DE INVESTIMENTO IMOBILIARIO - FII"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47217",
+    "symbol": "COWC34",
+    "companyName": "COSTCO WHOLESALE CORPORATION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4721b",
+    "symbol": "S1PL34",
+    "companyName": "SPLUNK INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4721c",
+    "symbol": "ARMT34",
+    "companyName": "ARCELORMITTAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47227",
+    "symbol": "EURO11",
+    "companyName": "EUROPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4722c",
+    "symbol": "FESA3",
+    "companyName": "FERBASA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4723d",
+    "symbol": "WPLZ11",
+    "companyName": "Shopping West Plaza"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47249",
+    "symbol": "CJCT11",
+    "companyName": "CIDADE JARDIM CONTINENAL TOWER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47254",
+    "symbol": "GOVE11",
+    "companyName": "IT NOW IGCT FUNDO DE ÍNDICE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4725f",
+    "symbol": "RBVO11",
+    "companyName": "Rio Bravo Crédito Imobiliário II"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47279",
+    "symbol": "BIVE39",
+    "companyName": "iShares S&P 500 Value ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ac",
+    "symbol": "A1MB34",
+    "companyName": "AMERISOURCEBERGEN CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472b9",
+    "symbol": "PATI3",
+    "companyName": "PANATLANTICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d9",
+    "symbol": "E1RI34",
+    "companyName": "ERICSSON LM TELEPHONE CO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47344",
+    "symbol": "HOND34",
+    "companyName": "HONDA MOTOR CO LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47346",
+    "symbol": "TMCO34",
+    "companyName": "TOYOTA MOTOR CORP."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47349",
+    "symbol": "B1CS34",
+    "companyName": "BARCLAYS PLC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4734f",
+    "symbol": "L1EG34",
+    "companyName": "LEGGETT PLATT INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47354",
+    "symbol": "VSEC11",
+    "companyName": "FDO INV IMOB VOTORANTIM SECURITIES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47355",
+    "symbol": "BEWA39",
+    "companyName": "ISHARES MSCI AUSTRALIA ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47356",
+    "symbol": "D1VN34",
+    "companyName": "DEVON ENERGY CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4735d",
+    "symbol": "SLBG34",
+    "companyName": "SCHLUMBERGER LIMITED"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47365",
+    "symbol": "APTV34",
+    "companyName": "APTIV PLC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47375",
+    "symbol": "GPRK34",
+    "companyName": "GEOPARK LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47384",
+    "symbol": "Z1TO34",
+    "companyName": "ZTO EXPRESS CAYMAN INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47175",
+    "symbol": "TXRX4",
+    "companyName": "TÊXTIL RENAUXVIEW"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4717b",
+    "symbol": "FCFL11",
+    "companyName": "Campus Faria Lima"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47185",
+    "symbol": "RBBV11",
+    "companyName": "JHSF Rio Bravo Fazenda Boa Vista Capital Protegido"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4719b",
+    "symbol": "RFOF11",
+    "companyName": "FDO. INVEST. IMOB. RB CAPITAL I FUNDO DE FUNDOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471db",
+    "symbol": "NSLU11",
+    "companyName": "Hospital Nossa Sra Lourdes"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47214",
+    "symbol": "MOSC34",
+    "companyName": "THE MOSAIC COMPANY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47238",
+    "symbol": "RBGS11",
+    "companyName": "RB Capital General Shopping Sulacap"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4724d",
+    "symbol": "ENMT3",
+    "companyName": "ENERGISA MATO GROSSO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4727f",
+    "symbol": "DOHL3",
+    "companyName": "DOHLER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472a3",
+    "symbol": "RECX11",
+    "companyName": "FDO. INV. IMOB. REC FUNDO DE FUNDOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ea",
+    "symbol": "BVLU39",
+    "companyName": "iShares MSCI USA Value Factor ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47302",
+    "symbol": "S2HO34",
+    "companyName": "SHOPIFY INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47303",
+    "symbol": "P1KX34",
+    "companyName": "POSCO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47309",
+    "symbol": "M1GM34",
+    "companyName": "MGM RESORTS INTERNATIONAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4731b",
+    "symbol": "HAAA11",
+    "companyName": "HEDGE AAA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4731d",
+    "symbol": "N1LS34",
+    "companyName": "NIELSEN HOLDINGS PLC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47323",
+    "symbol": "X1EL34",
+    "companyName": "XCEL ENERGY INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47367",
+    "symbol": "BEGD39",
+    "companyName": "ISHARES ESG AWARE MSCI EAFE ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47368",
+    "symbol": "BEGE39",
+    "companyName": "ISHARES ESG AWARE MSCI EM ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47374",
+    "symbol": "G1PI34",
+    "companyName": "GLOBAL PAYMENTS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47382",
+    "symbol": "W1SO34",
+    "companyName": "WATSCO INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4713d",
+    "symbol": "HTEK11",
+    "companyName": "IT NOW MORNINGSTAR XT US HEALTHCARE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47150",
+    "symbol": "SPTW11",
+    "companyName": "SP Downtown"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47165",
+    "symbol": "SNSY5",
+    "companyName": "SANSUY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4717f",
+    "symbol": "AVGO34",
+    "companyName": "BROADCOM INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47192",
+    "symbol": "CTGP34",
+    "companyName": "CITIGROUP INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a0",
+    "symbol": "BPAC3",
+    "companyName": "BTG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a9",
+    "symbol": "IFID11",
+    "companyName": "IFI-D FUNDO DE INVESTIMENTO IMOBILIARIO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b5",
+    "symbol": "MUTC34",
+    "companyName": "MICRON TECHNOLOGY INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471eb",
+    "symbol": "BAHI3",
+    "companyName": "BAHEMA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471fb",
+    "symbol": "SEQR11",
+    "companyName": "SEQUOIA III RENDA IMOBILIÁRIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47208",
+    "symbol": "GEOO34",
+    "companyName": "GENERAL ELECTRIC COMPANY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47232",
+    "symbol": "BSLI3",
+    "companyName": "BRB BCO DE BRASILIA S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47242",
+    "symbol": "HONB34",
+    "companyName": "HONEYWELL INTERNATIONAL INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4727a",
+    "symbol": "BMIN4",
+    "companyName": "BANCO MERCANTIL DE INVESTIMENTOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47280",
+    "symbol": "F1BH34",
+    "companyName": "FORTUNE BRANDS HOME & SECURITY INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47287",
+    "symbol": "C1BS34",
+    "companyName": "VIACOMCBS INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4728a",
+    "symbol": "K1SS34",
+    "companyName": "KOHLS CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4728e",
+    "symbol": "PRSV11",
+    "companyName": "Presidente Vargas"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d1",
+    "symbol": "LILY34",
+    "companyName": "ELI LILLY AND COMPANY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ee",
+    "symbol": "M2PW34",
+    "companyName": "MEDICAL PROPERTIES TRUST INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47307",
+    "symbol": "A1LN34",
+    "companyName": "ALNYLAM PHARMACEUTICALS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47314",
+    "symbol": "T1TW34",
+    "companyName": "TAKE-TWO INTERACTIVE SOFTWARE INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4732d",
+    "symbol": "V1NO34",
+    "companyName": "VORNADO REALTY TRUST"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4732e",
+    "symbol": "E1CL34",
+    "companyName": "ECOLAB INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47339",
+    "symbol": "FLRP11",
+    "companyName": "Floripa Shopping"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47350",
+    "symbol": "L1FC34",
+    "companyName": "CHINA LIFE INSURANCE CO LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47363",
+    "symbol": "A1NS34",
+    "companyName": "ANSYS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47144",
+    "symbol": "BLMG11",
+    "companyName": "BLUEMACAW LOGÍSTICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4714f",
+    "symbol": "BILF39",
+    "companyName": "ISHARES LATIN AMERICA 40 ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47159",
+    "symbol": "BEWJ39",
+    "companyName": "ISHARES MSCI JAPAN ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4715b",
+    "symbol": "BDLL3",
+    "companyName": "BARDELLA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4718e",
+    "symbol": "PATC11",
+    "companyName": "PÁTRIA EDIFÍCIOS CORPORATIVOS FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b6",
+    "symbol": "A1UT34",
+    "companyName": "AUTODESK INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471cb",
+    "symbol": "NEWL11",
+    "companyName": "Newport Logística"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e5",
+    "symbol": "KMIC34",
+    "companyName": "KINDER MORGAN INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f6",
+    "symbol": "BAZA3",
+    "companyName": "BANCO AMAZONIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47220",
+    "symbol": "THRA11",
+    "companyName": "Cyrela Thera Corporate"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47243",
+    "symbol": "CBOP11",
+    "companyName": "Castello Branco Office Park"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4724a",
+    "symbol": "VVPR11",
+    "companyName": "FDO INV IMOB - V2 PROPERTIES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47250",
+    "symbol": "N1RG34",
+    "companyName": "NRG ENERGY INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47257",
+    "symbol": "A1IV34",
+    "companyName": "APARTMENT INVESTMENT & MANAGEMENT CO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47262",
+    "symbol": "CEED3",
+    "companyName": "CEEE-D"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47270",
+    "symbol": "EVBI11",
+    "companyName": "VBI CONSUMO ESSEN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47289",
+    "symbol": "MOOO34",
+    "companyName": "ALTRIA GROUP. INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4729b",
+    "symbol": "VRTX34",
+    "companyName": "VERTEX PHARMACEUTICALS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d6",
+    "symbol": "T1RI34",
+    "companyName": "TRIPADVISOR INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472dc",
+    "symbol": "A1MT34",
+    "companyName": "APPLIED MATERIALS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e9",
+    "symbol": "N1CL34",
+    "companyName": "NORWEGIAN CRUISE LINE HOLDINGS LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47377",
+    "symbol": "I1HG34",
+    "companyName": "INTERCONTINENTAL HOTELS GROUP PLC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4737b",
+    "symbol": "O1KT34",
+    "companyName": "OKTA INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4715c",
+    "symbol": "MCDC34",
+    "companyName": "MCDONALDS CORP."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47169",
+    "symbol": "B1NT34",
+    "companyName": "BIONTECH SE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47176",
+    "symbol": "C1CL34",
+    "companyName": "CARNIVAL CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b0",
+    "symbol": "MTSA4",
+    "companyName": "METISA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471bb",
+    "symbol": "ONEF11",
+    "companyName": "The One"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e3",
+    "symbol": "DEXP4",
+    "companyName": "DEXXOS PARTICIPACOES S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f1",
+    "symbol": "OURE11",
+    "companyName": "Ourinvest Cyrela"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f3",
+    "symbol": "EALT3",
+    "companyName": "ELECTRO ACO ALTONA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47255",
+    "symbol": "P1LD34",
+    "companyName": "PROLOGIS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4725a",
+    "symbol": "F1RI34",
+    "companyName": "FEDERAL REALTY INVESTMENT TRUST"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47264",
+    "symbol": "PATI4",
+    "companyName": "PANATLANTICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47277",
+    "symbol": "BAUH4",
+    "companyName": "EXCELSIOR ALIMENTOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4729f",
+    "symbol": "M1KT34",
+    "companyName": "MARKETAXESS HOLDINGS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472a9",
+    "symbol": "BEWH39",
+    "companyName": "ISHARES MSCI HONG KONG ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d3",
+    "symbol": "TLNC34",
+    "companyName": "TELEFONICA SA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472dd",
+    "symbol": "B1BL34",
+    "companyName": "BHP GROUP PLC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472f3",
+    "symbol": "FSLR34",
+    "companyName": "FIRST SOLAR. INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47313",
+    "symbol": "S2NW34",
+    "companyName": "SNOWFLAKE INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47316",
+    "symbol": "AMGN34",
+    "companyName": "AMGEN INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47345",
+    "symbol": "S1NA34",
+    "companyName": "SNAP-ON INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4735f",
+    "symbol": "U2ST34",
+    "companyName": "UNITY SOFTWARE INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4736c",
+    "symbol": "C1CI34",
+    "companyName": "CROWN CASTLE INTERNATIONAL CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47139",
+    "symbol": "HGFF11",
+    "companyName": "CSHG IMOB. FOF - FDO INV. IMOB. - FII"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4713e",
+    "symbol": "OUFF11",
+    "companyName": "FDO INV IMOB - OURINVEST FUNDO DE FUNDOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47167",
+    "symbol": "HTMX11",
+    "companyName": "Hotel Maxinvest"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47173",
+    "symbol": "SCAR3",
+    "companyName": "SÃO CARLOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47179",
+    "symbol": "I1RM34",
+    "companyName": "IRON MOUNTAIN INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4717a",
+    "symbol": "BIBB39",
+    "companyName": "ISHARES BIOTECHNOLOGY ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ad",
+    "symbol": "S2EA34",
+    "companyName": "SEA LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ec",
+    "symbol": "HETA3",
+    "companyName": "HERCULES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47225",
+    "symbol": "FCXO34",
+    "companyName": "FREEPORT-MCMORAN INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4724b",
+    "symbol": "GCRI11",
+    "companyName": "GALAPAGOS RECEBÍVEIS IMOBILIÁRIOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47259",
+    "symbol": "ABTT34",
+    "companyName": "ABBOTT LABORATORIES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47267",
+    "symbol": "M1MC34",
+    "companyName": "MARSH & MCLENNAN COS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4729a",
+    "symbol": "E1QR34",
+    "companyName": "EQUITY RESIDENTIAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472a6",
+    "symbol": "RMAI11",
+    "companyName": "REAG MULTI ATIVOS IMOBILIÁRIOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472b3",
+    "symbol": "CSXC34",
+    "companyName": "CSX CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e5",
+    "symbol": "N1EM34",
+    "companyName": "NEWMONT CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ef",
+    "symbol": "SIMN34",
+    "companyName": "SIMON PROPERTY GROUP INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4730b",
+    "symbol": "P1SA34",
+    "companyName": "PUBLIC STORAGE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47342",
+    "symbol": "C1OU34",
+    "companyName": "COUPA SOFTWARE INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47357",
+    "symbol": "F1RA34",
+    "companyName": "FRANKLIN RESOURCES INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47366",
+    "symbol": "ATSA11",
+    "companyName": "Hedge Atrium Shopping Santo André"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47157",
+    "symbol": "KNRE11",
+    "companyName": "Kinea II Real Estate Equity"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47164",
+    "symbol": "ADBE34",
+    "companyName": "ADOBE INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4719a",
+    "symbol": "C1SU34",
+    "companyName": "CREDIT SUISSE GROUP AG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e7",
+    "symbol": "DMAC11",
+    "companyName": "MAC FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ed",
+    "symbol": "T2DH34",
+    "companyName": "TELADOC HEALTH INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4720f",
+    "symbol": "ELCI34",
+    "companyName": "ESTEE LAUDER COMPANIES INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4721a",
+    "symbol": "EBAY34",
+    "companyName": "EBAY INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47244",
+    "symbol": "FATN11",
+    "companyName": "FUNDO DE INVESTIMENTO IMOBILIÁRIO ATHENA I"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4728c",
+    "symbol": "SHPH11",
+    "companyName": "Shopping Patio Higienopolis"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c3",
+    "symbol": "WGBA34",
+    "companyName": "WALGREENS BOOTS ALLIANCE INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d4",
+    "symbol": "EAIN34",
+    "companyName": "ELECTRONIC ARTS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47329",
+    "symbol": "CVSH34",
+    "companyName": "CVS HEALTH CORPORATION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47379",
+    "symbol": "MCOR34",
+    "companyName": "MOODYS CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4717c",
+    "symbol": "BSUS39",
+    "companyName": "iShares ESG MSCI USA Leaders ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47207",
+    "symbol": "HRDF11",
+    "companyName": "HEDGE REALTY DEVELOPMENT FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4722d",
+    "symbol": "TJXC34",
+    "companyName": "TJX COMPANIES INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47246",
+    "symbol": "ROST34",
+    "companyName": "ROSS STORES. INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47263",
+    "symbol": "I1PC34",
+    "companyName": "INTERNATIONAL PAPER CO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4727b",
+    "symbol": "C1ER34",
+    "companyName": "CERNER CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47299",
+    "symbol": "PTCH34",
+    "companyName": "PETROCHINA CO LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ad",
+    "symbol": "BRGE11",
+    "companyName": "CONSÓRCIO ALFA DE ADMINISTRAÇÃO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c4",
+    "symbol": "AFOF11",
+    "companyName": "ALIANZA FOF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c9",
+    "symbol": "F1TN34",
+    "companyName": "FORTINET INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d5",
+    "symbol": "COLG34",
+    "companyName": "COLGATE-PALMOLIVE COMPANY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47310",
+    "symbol": "DBAG34",
+    "companyName": "DEUTSCHE BANK AKTIENGESELLSCHAFT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47318",
+    "symbol": "BEWZ39",
+    "companyName": "ISHARES MSCI BRAZIL ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4733e",
+    "symbol": "Z1TS34",
+    "companyName": "ZOETIS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47359",
+    "symbol": "KEVE11",
+    "companyName": "EVEN II KINEA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4737d",
+    "symbol": "RCFF11",
+    "companyName": "RBR DESENV COMERCIAL FEEDER FOF FDO INVEST IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47193",
+    "symbol": "BIAU39",
+    "companyName": "ISHARES GOLD TRUST"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47194",
+    "symbol": "EMEG11",
+    "companyName": "Trend ETF MSCI Mercados Emergentes"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4721f",
+    "symbol": "D1OC34",
+    "companyName": "DOCUSIGN INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47231",
+    "symbol": "A1LL34",
+    "companyName": "ALLIANCE DATA SYSTEMS CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47281",
+    "symbol": "JOPA3",
+    "companyName": "JOSAPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47296",
+    "symbol": "TEXA34",
+    "companyName": "TEXAS INSTRUMENTS INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472cb",
+    "symbol": "EDFO11B",
+    "companyName": "Edifício Ouroinvest"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472f0",
+    "symbol": "CINF34",
+    "companyName": "CINCINNATI FINANCIAL CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47301",
+    "symbol": "BLCP11",
+    "companyName": "BLUECAP RENDA LOG. FDO INV. IMOB. - FII"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4733b",
+    "symbol": "S1OU34",
+    "companyName": "SOUTHWEST AIRLINES CO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471de",
+    "symbol": "PLOG11",
+    "companyName": "PLURAL LOGÍSTICA FDO. INV. IMOB."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e2",
+    "symbol": "LOWC34",
+    "companyName": "LOWES COMPANIES INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47224",
+    "symbol": "PPLA11",
+    "companyName": "PPLA PARTICIPATIONS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4722b",
+    "symbol": "BSLI4",
+    "companyName": "BRB BCO DE BRASILIA S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4729e",
+    "symbol": "U1AL34",
+    "companyName": "UNITED AIRLINES HOLDINGS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472b6",
+    "symbol": "LUXM4",
+    "companyName": "TREVISA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e2",
+    "symbol": "BONY34",
+    "companyName": "THE BANK OF NEW YORK MELLON CORPORATION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47300",
+    "symbol": "T1EV34",
+    "companyName": "TEVA PHARMACEUTICAL INDUSTRIES LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47308",
+    "symbol": "L1VS34",
+    "companyName": "LAS VEGAS SANDS CORPORATION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47332",
+    "symbol": "C1RR34",
+    "companyName": "CARRIER GLOBAL CORPORATION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47372",
+    "symbol": "E1DI34",
+    "companyName": "CONSOLIDATED EDISON INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4713a",
+    "symbol": "TSMC34",
+    "companyName": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47141",
+    "symbol": "TEPP11",
+    "companyName": "TELLUS PROPERTIES - FDO INV. IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4714a",
+    "symbol": "CEEB3",
+    "companyName": "COELBA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47151",
+    "symbol": "WHRL4",
+    "companyName": "WHIRLPOOL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47170",
+    "symbol": "BIEM39",
+    "companyName": "ISHARES CORE MSCI EMERGING MARKETS ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4717d",
+    "symbol": "BMLC11",
+    "companyName": "BM Brascan Lajes Corporativas"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47183",
+    "symbol": "MRCK34",
+    "companyName": "MERCK & CO.. INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a5",
+    "symbol": "TELB4",
+    "companyName": "TELEBRAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471d6",
+    "symbol": "LGCP11",
+    "companyName": "LOGCP INTER FDO INV IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471dc",
+    "symbol": "GMCO34",
+    "companyName": "GENERAL MOTORS COMPANY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47204",
+    "symbol": "CORM11",
+    "companyName": "CORE METROPOLIS FUNDO DE INVESTIMENTO IMOBILIÁRIO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47213",
+    "symbol": "PABY11",
+    "companyName": "Panamby"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47229",
+    "symbol": "ABBV34",
+    "companyName": "ABBVIE INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4726b",
+    "symbol": "W1IX34",
+    "companyName": "WIX.COM LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472bd",
+    "symbol": "UNIP5",
+    "companyName": "UNIPAR CARBOCLORO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4730a",
+    "symbol": "NEXT34",
+    "companyName": "NEXTERA ENERGY INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4733f",
+    "symbol": "A1EG34",
+    "companyName": "AEGON NV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47362",
+    "symbol": "A1DM34",
+    "companyName": "ARCHER-DANIELS-MIDLAND CO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4737a",
+    "symbol": "N1GG34",
+    "companyName": "NATIONAL GRID PLC"
+  },
+  {
+    "symbolId": "61c2396d9ada4fc1f7fdeb6e",
+    "symbol": "VIIA3",
+    "companyName": "VIA S.A"
+  },
+  {
+    "symbolId": "61c2396d9ada4fc1f7fdeb81",
+    "symbol": "SMFT3",
+    "companyName": "SMARTFIT ESCOLA DE GINÁSTICA E DANÇA S.A."
+  }
+]

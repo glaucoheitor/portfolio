@@ -36,12 +36,19 @@ function ComplexStatisticsCard({
   logo,
   logoFallback,
   symbolName,
+  companyName,
 }) {
   const [logoSrc, setLogoSrc] = useState(logo);
   const handleLogoOnError = () => setLogoSrc(logoFallback);
   return (
-    <Card>
-      <MDBox display="flex" justifyContent="space-between" pt={1} px={2}>
+    <Card sx={{ minHeight: "12rem", justifyContent: "space-around" }}>
+      <MDBox
+        display="flex"
+        justifyContent="space-between"
+        alignItems="center"
+        pt={1}
+        px={2}
+      >
         <MDBox
           variant="gradient"
           bgColor={color}
@@ -52,7 +59,7 @@ function ComplexStatisticsCard({
           flexDirection="column"
           justifyContent="center"
           alignItems="center"
-          width="8rem"
+          width="7rem"
           height="4.5rem"
           mt={-3}
         >
@@ -60,23 +67,41 @@ function ComplexStatisticsCard({
             component="img"
             src={logoSrc}
             alt="Brand"
-            width="6rem"
+            width="5.5rem"
             height="2.5rem"
             onError={handleLogoOnError}
           />
-          <MDBox textAlign="center" width="6rem" py={0.5}>
-            <MDTypography component="p" variant="caption" color="light">
+          <MDBox textAlign="center" width="5.5rem" py={0.5}>
+            <MDTypography
+              component="p"
+              variant="button"
+              color={color === "light" ? "dark" : "white"}
+            >
               {symbolName}
             </MDTypography>
           </MDBox>
         </MDBox>
 
         <MDBox textAlign="right" lineHeight={1.25}>
-          <MDTypography variant="button" fontWeight="light" color="text">
-            {title}
-          </MDTypography>
           <MDTypography variant="h4">{count}</MDTypography>
         </MDBox>
+      </MDBox>
+      <MDBox textAlign="right" lineHeight={1.25} pt={1} px={2}>
+        <MDTypography
+          variant="button"
+          //fontWeight="light"
+          color="text"
+          textGradient
+          sx={{
+            visibility: "visible",
+            display: "-webkit-box",
+            "-webkit-line-clamp": "1",
+            "-webkit-box-orient": "vertical",
+            overflow: "hidden",
+          }}
+        >
+          {companyName}
+        </MDTypography>
       </MDBox>
       <Divider />
       <MDBox pb={2} px={2}>

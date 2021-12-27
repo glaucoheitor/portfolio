@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 
 // @mui material components
 import Grid from "@mui/material/Grid";
+import Skeleton from "@mui/material/Skeleton";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
@@ -12,7 +13,9 @@ import StockCard from "components/Cards/StockCard";
 
 import { buildPortfolioFromTrades } from "services/portfolio.service";
 
-import { useMaterialUIController, login } from "context";
+import NumberFormat from "utils/NumberFormat";
+
+import { useMaterialUIController, login, setDarkMode } from "context";
 
 function TradesPage() {
   const [controller, dispatch] = useMaterialUIController();
@@ -20,13 +23,13 @@ function TradesPage() {
   const [trades, setTrades] = useState(null);
   const [portfolio, setPortifolio] = useState({});
 
+  const { authData, darkMode } = controller;
+
   useEffect(() => {
-    const { authData } = controller;
-    setLoading(true);
     fetchData();
-    setLoading(false);
 
     async function fetchData() {
+      setLoading(true);
       try {
         const { data } = await fetch("http://localhost:3001/graphql", {
           method: "POST",
@@ -40,6 +43,10 @@ function TradesPage() {
                 symbol{
                   _id
                   symbol
+                  companyName {
+                    longName
+                    shortName
+                  }
                 }
               }
             }`,
@@ -51,29 +58,42 @@ function TradesPage() {
         }).then((res) => res.json());
 
         setTrades(data.tradesByUserId);
+
+        setPortifolio(buildPortfolioFromTrades(data.tradesByUserId));
       } catch (e) {
         setLoading(false);
       }
+      setLoading(false);
     }
   }, []);
 
-  useEffect(() => {
-    if (!trades) return;
-    setPortifolio(buildPortfolioFromTrades(trades));
-  }, [trades]);
+  const renderSkeleton = () => {
+    let array = [];
+    for (let i = 0; i <= 15; i++) {
+      array.push(
+        <Grid item xs={12} sm={6} lg={4} xxxl={3}>
+          <MDBox mb={1.5}>
+            <Skeleton variant="rectangular" animation="wave" height="8.5rem" />
+          </MDBox>
+        </Grid>
+      );
+    }
+    return array;
+  };
 
   const renderStockCards = Object.entries(portfolio).map(
-    ([symbolId, { symbolName, total, totalQty }]) => {
+    ([symbolId, { symbolName, companyName, total, totalQty }]) => {
       if (totalQty > 0) {
         return (
-          <Grid item xs={12} md={6} lg={3}>
+          <Grid item xs={12} sm={6} lg={4} xxxl={3}>
             <MDBox mb={1.5}>
               <StockCard
-                color="dark"
+                color={darkMode ? "dark" : "light"}
                 icon="weekend"
                 title={symbolName}
                 symbolName={symbolName}
-                count={total.toFixed(2)}
+                companyName={companyName}
+                count={<NumberFormat value={total} type={"$"} />}
                 logo={`https://cdn.toroinvestimentos.com.br/corretora/images/quote/${symbolName.slice(
                   0,
                   4
@@ -88,6 +108,8 @@ function TradesPage() {
             </MDBox>
           </Grid>
         );
+      } else {
+        return null;
       }
     }
   );
@@ -97,70 +119,75 @@ function TradesPage() {
       <DashboardNavbar />
       <MDBox py={3}>
         <Grid container spacing={3}>
-          {portfolio && renderStockCards}
-          <Grid item xs={12} md={6} lg={3}>
-            <MDBox mb={1.5}>
-              <StockCard
-                color="dark"
-                icon="weekend"
-                title="Bookings"
-                count={281}
-                percentage={{
-                  color: "success",
-                  amount: "+55%",
-                  label: "than lask week",
-                }}
-              />
-            </MDBox>
-          </Grid>
-          <Grid item xs={12} md={6} lg={3}>
-            <MDBox mb={1.5}>
-              <StockCard
-                icon="leaderboard"
-                title="Today's Users"
-                count="2,300"
-                percentage={{
-                  color: "success",
-                  amount: "+3%",
-                  label: "than last month",
-                }}
-              />
-            </MDBox>
-          </Grid>
-          <Grid item xs={12} md={6} lg={3}>
-            <MDBox mb={1.5}>
-              <StockCard
-                color="success"
-                icon="store"
-                title="Revenue"
-                count="34k"
-                percentage={{
-                  color: "success",
-                  amount: "+1%",
-                  label: "than yesterday",
-                }}
-              />
-            </MDBox>
-          </Grid>
-          <Grid item xs={12} md={6} lg={3}>
-            <MDBox mb={1.5}>
-              <StockCard
-                color="primary"
-                icon="person_add"
-                title="Followers"
-                count="+91"
-                percentage={{
-                  color: "success",
-                  amount: "",
-                  label: "Just updated",
-                }}
-              />
-            </MDBox>
-          </Grid>
+          {loading && renderSkeleton()}
+
+          {Object.keys(portfolio).length !== 0 && (
+            <>
+              {renderStockCards}
+              <Grid item xs={12} md={6} lg={3}>
+                <MDBox mb={1.5}>
+                  <StockCard
+                    color="dark"
+                    icon="weekend"
+                    title="Bookings"
+                    count={281}
+                    percentage={{
+                      color: "success",
+                      amount: "+55%",
+                      label: "than lask week",
+                    }}
+                  />
+                </MDBox>
+              </Grid>
+              <Grid item xs={12} md={6} lg={3}>
+                <MDBox mb={1.5}>
+                  <StockCard
+                    icon="leaderboard"
+                    title="Today's Users"
+                    count="2,300"
+                    percentage={{
+                      color: "success",
+                      amount: "+3%",
+                      label: "than last month",
+                    }}
+                  />
+                </MDBox>
+              </Grid>
+              <Grid item xs={12} md={6} lg={3}>
+                <MDBox mb={1.5}>
+                  <StockCard
+                    color="success"
+                    icon="store"
+                    title="Revenue"
+                    count="34k"
+                    percentage={{
+                      color: "success",
+                      amount: "+1%",
+                      label: "than yesterday",
+                    }}
+                  />
+                </MDBox>
+              </Grid>
+              <Grid item xs={12} md={6} lg={3}>
+                <MDBox mb={1.5}>
+                  <StockCard
+                    color="primary"
+                    icon="person_add"
+                    title="Followers"
+                    count="+91"
+                    percentage={{
+                      color: "success",
+                      amount: "",
+                      label: "Just updated",
+                    }}
+                  />
+                </MDBox>
+              </Grid>
+            </>
+          )}
         </Grid>
       </MDBox>
 
-      {loading && "Loading"}
       {/* trades && JSON.stringify(trades, null, 4) */}
     </LayoutContainer>
   );

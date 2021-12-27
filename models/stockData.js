@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const { Schema } = mongoose;
 
@@ -13,4 +13,4 @@ const stockDataSchema = new Schema({
   symbol: { type: Schema.Types.ObjectId, ref: "Symbol", required: true },
 });
 
-module.exports = mongoose.model("StockData", stockDataSchema);
+export default mongoose.model("StockData", stockDataSchema);

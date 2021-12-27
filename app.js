@@ -1,15 +1,15 @@
-const express = require("express");
-const cors = require("cors");
-const bodyParser = require("body-parser");
-const { graphqlHTTP } = require("express-graphql");
+import express from "express";
+import cors from "cors";
+import bodyParser from "body-parser";
+import { graphqlHTTP } from "express-graphql";
 
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
-const graphQlSchema = require("./graphql/schema/index");
-const graphQlResolvers = require("./graphql/resolvers/index");
-const isAuth = require("./middleware/auth");
+import graphQlSchema from "./graphql/schema/index.js";
+import graphQlResolvers from "./graphql/resolvers/index.js";
+import isAuth from "./middleware/auth.js";
 
-const test = require("./test");
+import test from "./test.js";
 
 const app = express();
 

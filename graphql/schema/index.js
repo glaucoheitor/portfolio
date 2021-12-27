@@ -1,5 +1,5 @@
-const { buildSchema } = require("graphql");
-module.exports = buildSchema(`
+import { buildSchema } from "graphql";
+export default buildSchema(`
         type Trade {
             _id: ID!
             type: String!
@@ -27,6 +27,12 @@ module.exports = buildSchema(`
             _id: ID!
             symbol: String
             lastRefreshed: Float
+            companyName: CompanyName
+        }
+
+        type CompanyName {
+            longName: String
+            shortName: String
         }
 
         type StockData {

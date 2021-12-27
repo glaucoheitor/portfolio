@@ -1,0 +1,5442 @@
+[
+  {
+    "symbolId": "60d829a61533b4a353a46f4d",
+    "symbol": "MGLU3",
+    "companyName": "Magazine Luiza"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f4f",
+    "symbol": "VALE3",
+    "companyName": "Vale "
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f56",
+    "symbol": "BBRK3",
+    "companyName": "BR BROKERS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f60",
+    "symbol": "HAPV3",
+    "companyName": "HAPVIDA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f8e",
+    "symbol": "RADL3",
+    "companyName": "Raia Drogasil "
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f97",
+    "symbol": "SULA11",
+    "companyName": "Sul America"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fdb",
+    "symbol": "DIRR3",
+    "companyName": "Direcional"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fdd",
+    "symbol": "QUAL3",
+    "companyName": "Qualicorp "
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe2",
+    "symbol": "ALPA4",
+    "companyName": "Alpargatas"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe3",
+    "symbol": "BMGB4",
+    "companyName": "BANCO BMG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46feb",
+    "symbol": "IFCM3",
+    "companyName": "INFRACOMM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4704d",
+    "symbol": "KLBN3",
+    "companyName": "Klabin"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47054",
+    "symbol": "POWE3",
+    "companyName": "FOCUS ON"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4705d",
+    "symbol": "IRDM11",
+    "companyName": "FII IRIDIUM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4708a",
+    "symbol": "HGRU11",
+    "companyName": "FII CSHG URB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47097",
+    "symbol": "HGCR11",
+    "companyName": "FII CSHG CRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4709e",
+    "symbol": "VILG11",
+    "companyName": "FII VINCI LG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a9",
+    "symbol": "ATMP3",
+    "companyName": "ATMASA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470af",
+    "symbol": "RCFA11",
+    "companyName": "FII GP RCFA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470db",
+    "symbol": "BOVB11",
+    "companyName": "ETF BRAD BOV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e1",
+    "symbol": "PTNT3",
+    "companyName": "PETTENATI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e9",
+    "symbol": "EQPA3",
+    "companyName": "EQTL PARA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ed",
+    "symbol": "BEES3",
+    "companyName": "BANESTES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47104",
+    "symbol": "ALUP3",
+    "companyName": "Alupar Investimento"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47106",
+    "symbol": "GOGL35",
+    "companyName": "ALPHABET"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47111",
+    "symbol": "LFTT11",
+    "companyName": "FII LOFT II"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4711c",
+    "symbol": "BBOV11",
+    "companyName": "BB ETF IBOV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47131",
+    "symbol": "ENGI3",
+    "companyName": "ENERGISA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f55",
+    "symbol": "FNAM11",
+    "companyName": "FINAM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f7f",
+    "symbol": "BBSE3",
+    "companyName": "BB Seguridade"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f85",
+    "symbol": "UGPA3",
+    "companyName": "Ultrapar"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f8b",
+    "symbol": "NTCO3",
+    "companyName": "GRUPO NATURA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f91",
+    "symbol": "HASH11",
+    "companyName": "HASHDEX NCI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc2",
+    "symbol": "LAME3",
+    "companyName": "Lojas Americanas"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fce",
+    "symbol": "MILS3",
+    "companyName": "Mills"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff7",
+    "symbol": "AESB3",
+    "companyName": "AES BRASIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47002",
+    "symbol": "PLPL3",
+    "companyName": "PLANOEPLANO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47007",
+    "symbol": "SEQL3",
+    "companyName": "SEQUOIA LOG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4701d",
+    "symbol": "ITUB3",
+    "companyName": "Banco Itaú"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47028",
+    "symbol": "EURP11",
+    "companyName": "TREND EUROPA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47031",
+    "symbol": "GOLD11",
+    "companyName": "TREND OURO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47047",
+    "symbol": "SOJA3",
+    "companyName": "BOA SAFRA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47050",
+    "symbol": "DMMO11",
+    "companyName": "DOMMO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47056",
+    "symbol": "JPSA3",
+    "companyName": "JEREISSATI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47069",
+    "symbol": "RECR11",
+    "companyName": "FII REC RECE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4707d",
+    "symbol": "ELMD3",
+    "companyName": "ELETROMIDIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4707f",
+    "symbol": "BRAP3",
+    "companyName": "Bradespar"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47086",
+    "symbol": "BRCR11",
+    "companyName": "FII BC FUND"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4708d",
+    "symbol": "XPML11",
+    "companyName": "FII XP MALLS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4709c",
+    "symbol": "DEVA11",
+    "companyName": "FII DEVANT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a1",
+    "symbol": "SULA4",
+    "companyName": "Sul America"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a2",
+    "symbol": "JSRE11",
+    "companyName": "FII JS REAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470aa",
+    "symbol": "AIRB34",
+    "companyName": "AIRBNB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b2",
+    "symbol": "HABT11",
+    "companyName": "FII HABIT II"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f3",
+    "symbol": "BKNG34",
+    "companyName": "BOOKING"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47114",
+    "symbol": "BTAL11",
+    "companyName": "FII BTG AGRO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47135",
+    "symbol": "MSCD34",
+    "companyName": "MASTERCARD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f63",
+    "symbol": "MRFG3",
+    "companyName": "Marfrig"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f68",
+    "symbol": "POSI3",
+    "companyName": "POSITIVO TEC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f71",
+    "symbol": "EQTL3",
+    "companyName": "Equatorial Energia"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f72",
+    "symbol": "ELET3",
+    "companyName": "Eletrobras"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f74",
+    "symbol": "TIMS3",
+    "companyName": "Tim"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f95",
+    "symbol": "NEOE3",
+    "companyName": "NEOENERGIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa1",
+    "symbol": "YDUQ3",
+    "companyName": "YDUQS PART"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fac",
+    "symbol": "IGTA3",
+    "companyName": "Iguatemi"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb3",
+    "symbol": "LCAM3",
+    "companyName": "LOCAMERICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4700e",
+    "symbol": "BOBR4",
+    "companyName": "BOMBRIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4701a",
+    "symbol": "ROMI3",
+    "companyName": "INDS ROMI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4701f",
+    "symbol": "BIDI3",
+    "companyName": "BANCO INTER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4703a",
+    "symbol": "UNIP6",
+    "companyName": "UNIPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47045",
+    "symbol": "G2DI33",
+    "companyName": "G2D INVEST"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4704b",
+    "symbol": "CAMB3",
+    "companyName": "CAMBUCI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47066",
+    "symbol": "KNIP11",
+    "companyName": "FII KINEA IP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47067",
+    "symbol": "COCE5",
+    "companyName": "COELCE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4707c",
+    "symbol": "VGHF11",
+    "companyName": "FII VALOR HE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47087",
+    "symbol": "KNCR11",
+    "companyName": "FII KINEA RI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47091",
+    "symbol": "JBDU3",
+    "companyName": "J B DUARTE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47092",
+    "symbol": "RBRF11",
+    "companyName": "FII RBRALPHA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4709d",
+    "symbol": "CRIV4",
+    "companyName": "ALFA FINANC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4709f",
+    "symbol": "APER3",
+    "companyName": "ALPER S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a7",
+    "symbol": "RBRP11",
+    "companyName": "FII RBR PROP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470bb",
+    "symbol": "DOHL4",
+    "companyName": "DOHLER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470bf",
+    "symbol": "FBOK34",
+    "companyName": "FACEBOOK"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c3",
+    "symbol": "DISB34",
+    "companyName": "WALT DISNEY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f8",
+    "symbol": "RBVA11",
+    "companyName": "FII RIOB VA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f9",
+    "symbol": "QAGR11",
+    "companyName": "FII QUASAR A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4710d",
+    "symbol": "MILL11",
+    "companyName": "IT NOW MILL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4712c",
+    "symbol": "HSAF11",
+    "companyName": "FII HSI CRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f59",
+    "symbol": "AMAR3",
+    "companyName": "Lojas Marisa"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f50",
+    "symbol": "FNOR11",
+    "companyName": "FINOR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f5e",
+    "symbol": "GGBR4",
+    "companyName": "Gerdau"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f5f",
+    "symbol": "BIDI11",
+    "companyName": "BANCO INTER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f64",
+    "symbol": "POMO4",
+    "companyName": "Marcopolo "
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f67",
+    "symbol": "CMIG4",
+    "companyName": "Cemig"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f6a",
+    "symbol": "CSAN3",
+    "companyName": "Cosan"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f6e",
+    "symbol": "ECOR3",
+    "companyName": "Ecorodovias"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f7c",
+    "symbol": "ENEV3",
+    "companyName": "ENEVA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f88",
+    "symbol": "MEAL3",
+    "companyName": "IMC Alimentação"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa0",
+    "symbol": "HBSA3",
+    "companyName": "HIDROVIAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46faa",
+    "symbol": "RENT3",
+    "companyName": "Localiza"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc3",
+    "symbol": "CPLE3",
+    "companyName": "Copel"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd6",
+    "symbol": "MDIA3",
+    "companyName": "M. Dias Branco"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47000",
+    "symbol": "RCSL3",
+    "companyName": "RECRUSUL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47014",
+    "symbol": "SHUL4",
+    "companyName": "SCHULZ"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47021",
+    "symbol": "HGCR12",
+    "companyName": "FII CSHG CRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4704c",
+    "symbol": "CSED3",
+    "companyName": "CRUZEIRO EDU"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47062",
+    "symbol": "CRIV3",
+    "companyName": "Alfa financ"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47073",
+    "symbol": "BOVX11",
+    "companyName": "TREND IBOVX"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47088",
+    "symbol": "EALT4",
+    "companyName": "ACO ALTONA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47098",
+    "symbol": "MODL3",
+    "companyName": "MODALMAIS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4709b",
+    "symbol": "GOAU3",
+    "companyName": "Metalúrgica Gerdau"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d6",
+    "symbol": "LVBI11",
+    "companyName": "FII VBI LOG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ea",
+    "symbol": "RZAK11",
+    "companyName": "FII RIZA AKN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ec",
+    "symbol": "OFSA3",
+    "companyName": "OUROFINO S/A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470fd",
+    "symbol": "SHOT11",
+    "companyName": "IT NOW SHOT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47100",
+    "symbol": "RBRL11",
+    "companyName": "FII RBR LOG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47107",
+    "symbol": "MFII11",
+    "companyName": "FII MERITO I"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4711a",
+    "symbol": "VISA34",
+    "companyName": "VISA INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47123",
+    "symbol": "BCIA11",
+    "companyName": "FII BCIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47126",
+    "symbol": "BMEB4",
+    "companyName": "MERC BRASIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47129",
+    "symbol": "KDIF11",
+    "companyName": "KINEA INFRAF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4712a",
+    "symbol": "A1ZN34",
+    "companyName": "ASTRAZENECA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47136",
+    "symbol": "MGEL4",
+    "companyName": "MANGELS INDL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f65",
+    "symbol": "RCSL4",
+    "companyName": "RECRUSUL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f66",
+    "symbol": "EMBR3",
+    "companyName": "Embraer"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f69",
+    "symbol": "LAME4",
+    "companyName": "Lojas Americanas"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f6c",
+    "symbol": "BRDT3",
+    "companyName": "Petrobras Distribuidora"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f83",
+    "symbol": "TECN3",
+    "companyName": "Technos "
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f92",
+    "symbol": "BRAP4",
+    "companyName": "Bradespar"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f9a",
+    "symbol": "GMAT3",
+    "companyName": "GRUPO MATEUS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f9f",
+    "symbol": "CXSE3",
+    "companyName": "CAIXA SEGURI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe1",
+    "symbol": "PSSA3",
+    "companyName": "Porto Seguro "
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fec",
+    "symbol": "RRRP3",
+    "companyName": "3R PETROLEUM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4700d",
+    "symbol": "VAMO3",
+    "companyName": "VAMOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4700f",
+    "symbol": "HOOT4",
+    "companyName": "HOTEIS OTHON"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4701e",
+    "symbol": "NASD11",
+    "companyName": "TREND NASDAQ"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47025",
+    "symbol": "BMOB3",
+    "companyName": "BEMOBI TECH"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4703f",
+    "symbol": "PARD3",
+    "companyName": "Hermes Pardin"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4704e",
+    "symbol": "CARD3",
+    "companyName": "CSU Cardsystem"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47061",
+    "symbol": "BCFF11",
+    "companyName": "FII BC FFII"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47065",
+    "symbol": "ITSA3",
+    "companyName": "Itausa"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4706b",
+    "symbol": "FRAS3",
+    "companyName": "FRAS-LE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47078",
+    "symbol": "TFCO4",
+    "companyName": "TRACK FIELD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47095",
+    "symbol": "DOTZ3",
+    "companyName": "DOTZ SA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a3",
+    "symbol": "XFIX11",
+    "companyName": "TREND IFIX-L"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f2",
+    "symbol": "MATB11",
+    "companyName": "IT NOW IMAT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f7",
+    "symbol": "PLCR11",
+    "companyName": "FII PLURAL R"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47108",
+    "symbol": "XPIE11",
+    "companyName": "FIP XP INFRA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f51",
+    "symbol": "DMMO3",
+    "companyName": "DOMMO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f6d",
+    "symbol": "BPAN4",
+    "companyName": "BANCO PAN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f77",
+    "symbol": "LWSA3",
+    "companyName": "LOCAWEB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f7b",
+    "symbol": "WEGE3",
+    "companyName": "Weg"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f7d",
+    "symbol": "CMIN3",
+    "companyName": "CSNMINERACAO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f80",
+    "symbol": "DASA3",
+    "companyName": "DASA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f8a",
+    "symbol": "CASH3",
+    "companyName": "MELIUZ"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f8c",
+    "symbol": "ENAT3",
+    "companyName": "ENAUTA PART"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f98",
+    "symbol": "STBP3",
+    "companyName": "Santos Brasil"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f9d",
+    "symbol": "AERI3",
+    "companyName": "AERIS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb7",
+    "symbol": "JALL3",
+    "companyName": "JALLESMACHAD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb8",
+    "symbol": "TAEE11",
+    "companyName": "Taesa"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fcd",
+    "symbol": "TCNO4",
+    "companyName": "TECNOSOLO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47001",
+    "symbol": "BRBI11",
+    "companyName": "BR PARTNERS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47009",
+    "symbol": "AGRO3",
+    "companyName": "BRASILAGRO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4700b",
+    "symbol": "AALR3",
+    "companyName": "ALLIAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47010",
+    "symbol": "PRNR3",
+    "companyName": "PRINER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47018",
+    "symbol": "CURY3",
+    "companyName": "CURY S/A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47020",
+    "symbol": "LEVE3",
+    "companyName": "METAL LEVE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4702e",
+    "symbol": "BLAU3",
+    "companyName": "BLAU"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4705b",
+    "symbol": "CPTS11",
+    "companyName": "FII CAPI SEC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47068",
+    "symbol": "ATOM3",
+    "companyName": "ATOMPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47075",
+    "symbol": "GGBR3",
+    "companyName": "Gerdau"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47090",
+    "symbol": "CTSA3",
+    "companyName": "SANTANENSE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47096",
+    "symbol": "HETA4",
+    "companyName": "HERCULES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ac",
+    "symbol": "BZLI11",
+    "companyName": "FII BRREALTY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470bd",
+    "symbol": "NFLX34",
+    "companyName": "NETFLIX"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c0",
+    "symbol": "BBPO11",
+    "companyName": "FII BB PRGII"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ca",
+    "symbol": "CPFF11",
+    "companyName": "FII CAP REIT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470cb",
+    "symbol": "XPSF11",
+    "companyName": "FII XP SELEC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f4",
+    "symbol": "BRAX11",
+    "companyName": "ISHARES BRAX"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4710c",
+    "symbol": "DTCY3",
+    "companyName": "DTCOM-DIRECT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47125",
+    "symbol": "GSFI11",
+    "companyName": "FII GENERAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fca",
+    "symbol": "LJQQ3",
+    "companyName": "QUERO-QUERO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd7",
+    "symbol": "TCSA3",
+    "companyName": "Tecnisa "
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd8",
+    "symbol": "KLBN4",
+    "companyName": "Klabin"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff2",
+    "symbol": "VLID3",
+    "companyName": "Valid"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff5",
+    "symbol": "MYPK3",
+    "companyName": "Iochpe Maxion"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff6",
+    "symbol": "ALUP11",
+    "companyName": "Alupar Investimento"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ffd",
+    "symbol": "USIM3",
+    "companyName": "Usiminas"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47023",
+    "symbol": "POMO3",
+    "companyName": "Marcopolo "
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4702d",
+    "symbol": "LOGG3",
+    "companyName": "LOG COM PROP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47032",
+    "symbol": "BABA34",
+    "companyName": "ALIBABAGR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47037",
+    "symbol": "MODL4",
+    "companyName": "MODALMAIS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47042",
+    "symbol": "TSLA34",
+    "companyName": "TESLA INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47048",
+    "symbol": "MDNE3",
+    "companyName": "MOURA DUBEUX"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4704a",
+    "symbol": "TGMA3",
+    "companyName": "Tegma"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47058",
+    "symbol": "CPLE11",
+    "companyName": "Copel"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4705e",
+    "symbol": "RSID3",
+    "companyName": "Rossi Residencial"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4705f",
+    "symbol": "CCPR3",
+    "companyName": "CYRE COM-CCP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4706f",
+    "symbol": "TAEE3",
+    "companyName": "Taesa"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4707a",
+    "symbol": "VLID11",
+    "companyName": "Valid"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4707e",
+    "symbol": "IGBR3",
+    "companyName": "IGB S/A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ae",
+    "symbol": "FIND11",
+    "companyName": "IT NOW IFNC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b0",
+    "symbol": "MSFT34",
+    "companyName": "MICROSOFT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d2",
+    "symbol": "GTWR11",
+    "companyName": "FII G TOWERS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47133",
+    "symbol": "VERZ34",
+    "companyName": "VERIZON"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47137",
+    "symbol": "MWET4",
+    "companyName": "WETZEL S/A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f4b",
+    "symbol": "ITUB4",
+    "companyName": "Banco Itaú"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f70",
+    "symbol": "BBDC3",
+    "companyName": "Banco Bradesco"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f87",
+    "symbol": "CVCB3",
+    "companyName": "CVC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f94",
+    "symbol": "TOTS3",
+    "companyName": "Totvs"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f96",
+    "symbol": "SAPR4",
+    "companyName": "Sanepar"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f9e",
+    "symbol": "AZUL4",
+    "companyName": "Azul"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fab",
+    "symbol": "BPAC11",
+    "companyName": "Banco BTG Pactual     "
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb4",
+    "symbol": "MRVE3",
+    "companyName": "MRV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc1",
+    "symbol": "SHOW3",
+    "companyName": "Time For Fun"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4701c",
+    "symbol": "QBTC11",
+    "companyName": "QR BITCOIN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47022",
+    "symbol": "MATD3",
+    "companyName": "MATER DEI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4702a",
+    "symbol": "NINJ3",
+    "companyName": "GETNINJAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47033",
+    "symbol": "MELI34",
+    "companyName": "MERCADOLIBRE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47035",
+    "symbol": "SIMH3",
+    "companyName": "SIMPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47039",
+    "symbol": "KEPL3",
+    "companyName": "Kepler Weber"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4703b",
+    "symbol": "OPCT3",
+    "companyName": "OCEANPACT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47044",
+    "symbol": "IVVB11",
+    "companyName": "ISHARE SP500"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47049",
+    "symbol": "XINA11",
+    "companyName": "TREND CHINA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47060",
+    "symbol": "CTSA4",
+    "companyName": "SANTANENSE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4706c",
+    "symbol": "SMAL11",
+    "companyName": "ISHARES SMAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4706e",
+    "symbol": "UCAS3",
+    "companyName": "UNICASA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47070",
+    "symbol": "BACW39",
+    "companyName": "MSCI ACWI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47079",
+    "symbol": "SMAC11",
+    "companyName": "IT NOW SMALL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4708f",
+    "symbol": "AURA33",
+    "companyName": "AURA 360"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a6",
+    "symbol": "RIGG34",
+    "companyName": "TRANSOCEAN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b6",
+    "symbol": "VGIP11",
+    "companyName": "FII VALORAIP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ba",
+    "symbol": "HGRE11",
+    "companyName": "FII HG REAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470cf",
+    "symbol": "SNFF11",
+    "companyName": "FII SUNOFOFI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d4",
+    "symbol": "FEXC11",
+    "companyName": "FII EXCELLEN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e4",
+    "symbol": "ALZR11",
+    "companyName": "FII ALIANZA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ee",
+    "symbol": "CMCS34",
+    "companyName": "COMCAST"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ef",
+    "symbol": "RDNI3",
+    "companyName": "Rodobens"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47103",
+    "symbol": "PFIZ34",
+    "companyName": "PFIZER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47117",
+    "symbol": "HOME34",
+    "companyName": "HOME DEPOT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47121",
+    "symbol": "MNPR3",
+    "companyName": "MINUPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f4e",
+    "symbol": "BBDC4",
+    "companyName": "Banco Bradesco"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f57",
+    "symbol": "PETR3",
+    "companyName": "Petrobras"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f6b",
+    "symbol": "MULT3",
+    "companyName": "Multiplan"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f82",
+    "symbol": "BEEF3",
+    "companyName": "Minerva"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f90",
+    "symbol": "WIZS3",
+    "companyName": "WIZ S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa5",
+    "symbol": "GNDI3",
+    "companyName": "INTERMEDICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fad",
+    "symbol": "PETZ3",
+    "companyName": "PETZ"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb0",
+    "symbol": "DTEX3",
+    "companyName": "Duratex"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fba",
+    "symbol": "EZTC3",
+    "companyName": "Eztec"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fdf",
+    "symbol": "EGIE3",
+    "companyName": "Tractebel"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe5",
+    "symbol": "VULC3",
+    "companyName": "VULCABRAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe8",
+    "symbol": "RANI3",
+    "companyName": "IRANI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ffa",
+    "symbol": "VIVA3",
+    "companyName": "VIVARA S.A."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47017",
+    "symbol": "ESPA3",
+    "companyName": "ESPACOLASER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47029",
+    "symbol": "OMGE3",
+    "companyName": "Omega ger"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4703e",
+    "symbol": "CMIG3",
+    "companyName": "Cemig"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47040",
+    "symbol": "VSLH11",
+    "companyName": "FII VERS CRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4706a",
+    "symbol": "EUCA4",
+    "companyName": "Eucatex"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a8",
+    "symbol": "HFOF11",
+    "companyName": "FII HEDGEFOF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b9",
+    "symbol": "RECT11",
+    "companyName": "FII REC REND"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c4",
+    "symbol": "CGRA4",
+    "companyName": "GRAZZIOTIN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c5",
+    "symbol": "TRXF11",
+    "companyName": "FII TRX REAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c8",
+    "symbol": "BEEM39",
+    "companyName": "MSCI EMGMARK"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470de",
+    "symbol": "PYPL34",
+    "companyName": "PAYPAL HOLD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470eb",
+    "symbol": "XPIN11",
+    "companyName": "FII XP INDL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f1",
+    "symbol": "GALG11",
+    "companyName": "FII GUARDIAN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47110",
+    "symbol": "HBRE3",
+    "companyName": "HBR REALTY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47113",
+    "symbol": "TESA3",
+    "companyName": "TERRA SANTA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4711b",
+    "symbol": "SDIL11",
+    "companyName": "FII SDI LOG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4712e",
+    "symbol": "MORE11",
+    "companyName": "FII MORE RE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f46",
+    "symbol": "OIBR3",
+    "companyName": "Oi"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f58",
+    "symbol": "CSNA3",
+    "companyName": "CSN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f6f",
+    "symbol": "LINX3",
+    "companyName": "LINX"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f76",
+    "symbol": "SUZB3",
+    "companyName": "Suzano"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb2",
+    "symbol": "BKBR3",
+    "companyName": "Burguer King"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fbe",
+    "symbol": "BRPR3",
+    "companyName": "BR Properties"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc9",
+    "symbol": "ALSO3",
+    "companyName": "ALIANSCSONAE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fde",
+    "symbol": "SOMA3",
+    "companyName": "GRUPO SOMA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47011",
+    "symbol": "SQIA3",
+    "companyName": "SINQIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47012",
+    "symbol": "SAPR3",
+    "companyName": "Sanepar"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47015",
+    "symbol": "SLCE3",
+    "companyName": "SLC Agrícola"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47019",
+    "symbol": "SEER3",
+    "companyName": "Ser Educacional"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4701b",
+    "symbol": "GGPS3",
+    "companyName": "GPS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4703c",
+    "symbol": "PDTC3",
+    "companyName": "PADTEC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4703d",
+    "symbol": "PFRM3",
+    "companyName": "Profarma"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4704f",
+    "symbol": "HCTR11",
+    "companyName": "FII HECTARE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47051",
+    "symbol": "ARZZ3",
+    "companyName": "Arezzo"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47055",
+    "symbol": "JBDU4",
+    "companyName": "J B DUARTE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47076",
+    "symbol": "DMVF3",
+    "companyName": "D1000VFARMA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47083",
+    "symbol": "HGLG11",
+    "companyName": "FII CSHG Logística"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47085",
+    "symbol": "RZTR11",
+    "companyName": "FII RIZA TX"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4708b",
+    "symbol": "TGAR11",
+    "companyName": "FII TG ATIVO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ab",
+    "symbol": "VRTA11",
+    "companyName": "FII FATOR VE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470bc",
+    "symbol": "PVBI11",
+    "companyName": "FII VBI PRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c1",
+    "symbol": "JPMC34",
+    "companyName": "JPMORGAN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c6",
+    "symbol": "COCA34",
+    "companyName": "COCA COLA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d1",
+    "symbol": "URPR11",
+    "companyName": "FII URCA REN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d5",
+    "symbol": "RBRR11",
+    "companyName": "FII RBRHGRAD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e7",
+    "symbol": "BPFF11",
+    "companyName": "FII ABSOLUTO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f0",
+    "symbol": "BEZU39",
+    "companyName": "MSCIEUROZONE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470fc",
+    "symbol": "HGBS11",
+    "companyName": "FII HEDGEBS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47101",
+    "symbol": "WSON33",
+    "companyName": "WILSON SONS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47102",
+    "symbol": "BOAC34",
+    "companyName": "BANK AMERICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47115",
+    "symbol": "RBRY11",
+    "companyName": "FII RBR PCRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47119",
+    "symbol": "BIEU39",
+    "companyName": "COREMSCI EUR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4712b",
+    "symbol": "PFIN11",
+    "companyName": "FIP PERFIN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f5d",
+    "symbol": "BBAS3",
+    "companyName": "Banco do Brasil"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f75",
+    "symbol": "LREN3",
+    "companyName": "Lojas Renner"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f84",
+    "symbol": "CPLE6",
+    "companyName": "Copel"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f9c",
+    "symbol": "GPIV33",
+    "companyName": "GP Investments"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa4",
+    "symbol": "BIDI4",
+    "companyName": "BANCO INTER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb9",
+    "symbol": "TPIS3",
+    "companyName": "TRIUNFO PART"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fbd",
+    "symbol": "RDOR3",
+    "companyName": "REDE D OR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc0",
+    "symbol": "ANIM3",
+    "companyName": "Anima"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc8",
+    "symbol": "PTBL3",
+    "companyName": "Portobello"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fea",
+    "symbol": "TEND3",
+    "companyName": "Tenda"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff0",
+    "symbol": "MOVI3",
+    "companyName": "Movida"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47005",
+    "symbol": "TCNO3",
+    "companyName": "TECNOSOLO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47026",
+    "symbol": "GUAR3",
+    "companyName": "Guararapes"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4702c",
+    "symbol": "LOGN3",
+    "companyName": "Log-in Logística"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47038",
+    "symbol": "TAEE4",
+    "companyName": "Taesa"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47046",
+    "symbol": "PMAM3",
+    "companyName": "Paranapanema "
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47052",
+    "symbol": "JSLG3",
+    "companyName": "JSL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4705c",
+    "symbol": "ORVR3",
+    "companyName": "ORIZON"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47063",
+    "symbol": "MBLY3",
+    "companyName": "MOBLY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47074",
+    "symbol": "PTNT4",
+    "companyName": "PETTENATI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47077",
+    "symbol": "BERK34",
+    "companyName": "BERKSHIRE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47081",
+    "symbol": "SGPS3",
+    "companyName": "SPRINGS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47084",
+    "symbol": "KNSC11",
+    "companyName": "FII KINEA SC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47093",
+    "symbol": "KNRI11",
+    "companyName": "FII KINEA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ad",
+    "symbol": "XPCI11",
+    "companyName": "FII XP CRED"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b3",
+    "symbol": "BCRI11",
+    "companyName": "FII BEES CRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b5",
+    "symbol": "TASA3",
+    "companyName": "TAURUS ARMAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470be",
+    "symbol": "SPXI11",
+    "companyName": "IT NOW SPXI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d7",
+    "symbol": "BLMR11",
+    "companyName": "FII BLUE FOF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d9",
+    "symbol": "ALUP4",
+    "companyName": "Alupar Investimento"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470da",
+    "symbol": "NVDC34",
+    "companyName": "NVIDIA CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470dd",
+    "symbol": "INEP3",
+    "companyName": "INEPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470fe",
+    "symbol": "FIVN11",
+    "companyName": "FII VIDANOVA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4710a",
+    "symbol": "RBFF11",
+    "companyName": "FII RIOB FF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4710f",
+    "symbol": "RPAD3",
+    "companyName": "ALFA HOLDING"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47112",
+    "symbol": "RAPT3",
+    "companyName": "Randon"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47120",
+    "symbol": "MSBR34",
+    "companyName": "MORGAN STAN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f5b",
+    "symbol": "USIM5",
+    "companyName": "Usiminas"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f44",
+    "symbol": "PETR4",
+    "companyName": "Petrobras"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f7a",
+    "symbol": "BRFS3",
+    "companyName": "BRF Foods"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f8f",
+    "symbol": "KLBN11",
+    "companyName": "Klabin"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f93",
+    "symbol": "PINE4",
+    "companyName": "PINE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb5",
+    "symbol": "GRND3",
+    "companyName": "Grendene"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb6",
+    "symbol": "SANB11",
+    "companyName": "Banco Santander"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc6",
+    "symbol": "ODPV3",
+    "companyName": "Odontoprev"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc7",
+    "symbol": "HGTX3",
+    "companyName": "Hering"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd2",
+    "symbol": "ENJU3",
+    "companyName": "ENJOEI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd3",
+    "symbol": "BOVV11",
+    "companyName": "IT NOW IBOV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd4",
+    "symbol": "ENGI11",
+    "companyName": "ENERGISA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fda",
+    "symbol": "BRSR6",
+    "companyName": "Banco Banrisul"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fdc",
+    "symbol": "CEAB3",
+    "companyName": "CEA MODAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe6",
+    "symbol": "LUPA3",
+    "companyName": "Lupatech"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff4",
+    "symbol": "ASAI3",
+    "companyName": "ASSAI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff8",
+    "symbol": "CESP6",
+    "companyName": "CESP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4700a",
+    "symbol": "EVEN3",
+    "companyName": "Even"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47030",
+    "symbol": "FESA4",
+    "companyName": "Ferbasa"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47082",
+    "symbol": "MCCI11",
+    "companyName": "FII MAUA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a0",
+    "symbol": "BRCO11",
+    "companyName": "FII BRESCO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e8",
+    "symbol": "VIGT11",
+    "companyName": "FIP VINCI IE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f5",
+    "symbol": "ALPK3",
+    "companyName": "ESTAPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4711d",
+    "symbol": "BALM4",
+    "companyName": "BAUMER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47132",
+    "symbol": "WHRL3",
+    "companyName": "WHIRLPOOL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f48",
+    "symbol": "VIVR3",
+    "companyName": "VIVER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f53",
+    "symbol": "BRML3",
+    "companyName": "BR Malls"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f5c",
+    "symbol": "RAIL3",
+    "companyName": "Rumo"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f73",
+    "symbol": "CCRO3",
+    "companyName": "CCR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f78",
+    "symbol": "GFSA3",
+    "companyName": "Gafisa"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f81",
+    "symbol": "BOVA11",
+    "companyName": "ISHARES BOVA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f86",
+    "symbol": "HYPE3",
+    "companyName": "Hypera Pharma"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa2",
+    "symbol": "MODL11",
+    "companyName": "MODALMAIS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa7",
+    "symbol": "CRFB3",
+    "companyName": "Carrefour"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa8",
+    "symbol": "SBSP3",
+    "companyName": "Sabesp"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fb1",
+    "symbol": "MXRF11",
+    "companyName": "FII MAXI REN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fbf",
+    "symbol": "HBOR3",
+    "companyName": "Helbor"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fcb",
+    "symbol": "ETER3",
+    "companyName": "Eternit"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fcf",
+    "symbol": "SAPR11",
+    "companyName": "Sanepar"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd9",
+    "symbol": "OIBR4",
+    "companyName": "Oi"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe0",
+    "symbol": "NGRD3",
+    "companyName": "NEOGRID"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe4",
+    "symbol": "TRIS3",
+    "companyName": "TRISUL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe9",
+    "symbol": "CAML3",
+    "companyName": "CAMIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff9",
+    "symbol": "LPSB3",
+    "companyName": "LOPES BRASIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ffc",
+    "symbol": "RECV3",
+    "companyName": "PETRORECSA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47004",
+    "symbol": "MELK3",
+    "companyName": "MELNICK"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4700c",
+    "symbol": "SBFG3",
+    "companyName": "GRUPO SBF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47027",
+    "symbol": "FSRF11",
+    "companyName": "FISET FL REF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47053",
+    "symbol": "RNEW3",
+    "companyName": "RENOVA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47057",
+    "symbol": "JFEN3",
+    "companyName": "JOAO FORTES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4705a",
+    "symbol": "DEXP3",
+    "companyName": "DEXXOS PAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47071",
+    "symbol": "CARE11",
+    "companyName": "FII DEA CARE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4707b",
+    "symbol": "BTLG11",
+    "companyName": "FII BTLG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47080",
+    "symbol": "BARI11",
+    "companyName": "FII BARIGUI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47089",
+    "symbol": "VINO11",
+    "companyName": "FII VINCI OF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47094",
+    "symbol": "GOGL34",
+    "companyName": "ALPHABET"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47099",
+    "symbol": "KNHY11",
+    "companyName": "FII KINEA HY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b1",
+    "symbol": "HAGA3",
+    "companyName": "HAGA S/A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b7",
+    "symbol": "RNEW11",
+    "companyName": "RENOVA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470cd",
+    "symbol": "SULA3",
+    "companyName": "Sul America"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d0",
+    "symbol": "CEDO4",
+    "companyName": "CEDRO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e0",
+    "symbol": "BAAX39",
+    "companyName": "MSCI ASIA JP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47116",
+    "symbol": "VCJR11",
+    "companyName": "FII VECTIS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4711f",
+    "symbol": "SARE11",
+    "companyName": "FII SANT REN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47127",
+    "symbol": "VIFI11",
+    "companyName": "FII VINCI IF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4712d",
+    "symbol": "PGCO34",
+    "companyName": "PG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f4a",
+    "symbol": "COGN3",
+    "companyName": "Futuro de cogn3"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f45",
+    "symbol": "ABEV3",
+    "companyName": "Ambev"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f4c",
+    "symbol": "VVAR3",
+    "companyName": "Via Varejo"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f7e",
+    "symbol": "CYRE3",
+    "companyName": "Cyrela"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa6",
+    "symbol": "FHER3",
+    "companyName": "Heringer"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa9",
+    "symbol": "LLIS3",
+    "companyName": "Restoque"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fae",
+    "symbol": "VIVT3",
+    "companyName": "Telefonica"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46faf",
+    "symbol": "PCAR3",
+    "companyName": "Pão de Açúcar"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc5",
+    "symbol": "LIGT3",
+    "companyName": "Light"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd0",
+    "symbol": "MOSI3",
+    "companyName": "MOSAICO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd5",
+    "symbol": "RPMG3",
+    "companyName": "PET MANGUINH"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff3",
+    "symbol": "TASA4",
+    "companyName": "TAURUS ARMAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ffb",
+    "symbol": "LAVV3",
+    "companyName": "LAVVI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ffe",
+    "symbol": "FLRY3",
+    "companyName": "Fleury"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47003",
+    "symbol": "BOAS3",
+    "companyName": "BOA VISTA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47006",
+    "symbol": "RNEW4",
+    "companyName": "RENOVA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47008",
+    "symbol": "PGMN3",
+    "companyName": "PAGUE MENOS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47013",
+    "symbol": "WEST3",
+    "companyName": "WESTWING"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47016",
+    "symbol": "PNVL3",
+    "companyName": "DIMED"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47041",
+    "symbol": "MTRE3",
+    "companyName": "MITRE REALTY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a4",
+    "symbol": "CVBI11",
+    "companyName": "FII VBI CRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470a5",
+    "symbol": "INEP4",
+    "companyName": "INEPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c9",
+    "symbol": "ENGI4",
+    "companyName": "ENERGISA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470cc",
+    "symbol": "VISC11",
+    "companyName": "FII VINCI SC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470dc",
+    "symbol": "UNIP3",
+    "companyName": "UNIPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e2",
+    "symbol": "M1RN34",
+    "companyName": "MODERNA INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e6",
+    "symbol": "R1KU34",
+    "companyName": "ROKU INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470f6",
+    "symbol": "CRPG5",
+    "companyName": "CRISTAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470fb",
+    "symbol": "PATL11",
+    "companyName": "FII PATR LOG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47105",
+    "symbol": "VGIR11",
+    "companyName": "FII VALREIII"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47109",
+    "symbol": "SSFO34",
+    "companyName": "SALESFORCE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47118",
+    "symbol": "OUJP11",
+    "companyName": "FII OURI JPP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47134",
+    "symbol": "BRZP11",
+    "companyName": "FIP BRZ IE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f47",
+    "symbol": "ITSA4",
+    "companyName": "Itausa"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f49",
+    "symbol": "B3SA3",
+    "companyName": "B3 Brasil, Bolsa, Balcão"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f52",
+    "symbol": "IRBR3",
+    "companyName": "IRB Brasil Resseguros"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f5a",
+    "symbol": "PRIO3",
+    "companyName": "PetroRio "
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f79",
+    "symbol": "GOLL4",
+    "companyName": "Gol"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f8d",
+    "symbol": "JHSF3",
+    "companyName": "JHSF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f99",
+    "symbol": "RAPT4",
+    "companyName": "Randon"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fa3",
+    "symbol": "ENBR3",
+    "companyName": "EDP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fd1",
+    "symbol": "BRKM5",
+    "companyName": "Braskem"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fe7",
+    "symbol": "SMTO3",
+    "companyName": "São Martinho"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fed",
+    "symbol": "TRPL4",
+    "companyName": "CTEEP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fef",
+    "symbol": "AZEV4",
+    "companyName": "AZEVEDO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fff",
+    "symbol": "TUPY3",
+    "companyName": "Tupy"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47024",
+    "symbol": "ALLD3",
+    "companyName": "ALLIED"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4702b",
+    "symbol": "ABCB4",
+    "companyName": "Banco ABC Brasil"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47036",
+    "symbol": "AMBP3",
+    "companyName": "AMBIPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47059",
+    "symbol": "AZEV3",
+    "companyName": "AZEVEDO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4708e",
+    "symbol": "AAPL34",
+    "companyName": "APPLE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b4",
+    "symbol": "ACWI11",
+    "companyName": "TREND ACWI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c2",
+    "symbol": "MGFF11",
+    "companyName": "FII MOGNO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470ce",
+    "symbol": "REDE3",
+    "companyName": "REDE ENERGIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d3",
+    "symbol": "GGRC11",
+    "companyName": "FII GGRCOVEP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470d8",
+    "symbol": "MALL11",
+    "companyName": "FII MALLS BP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470df",
+    "symbol": "JNJB34",
+    "companyName": "JOHNSON"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e3",
+    "symbol": "SANB4",
+    "companyName": "Banco Santander"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470fa",
+    "symbol": "T2TD34",
+    "companyName": "TRADE DESK"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4710e",
+    "symbol": "FRTA3",
+    "companyName": "POMIFRUTAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4711e",
+    "symbol": "NCHB11",
+    "companyName": "FII NCH BRA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47122",
+    "symbol": "XPID11",
+    "companyName": "FIRF XP IE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47124",
+    "symbol": "CTNM4",
+    "companyName": "COTEMINAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4712f",
+    "symbol": "DIVO11",
+    "companyName": "IT NOW IDIV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47130",
+    "symbol": "BIOM3",
+    "companyName": "BIOMM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f54",
+    "symbol": "CIEL3",
+    "companyName": "Cielo"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f61",
+    "symbol": "JBSS3",
+    "companyName": "JBS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f62",
+    "symbol": "GOAU4",
+    "companyName": "Metalúrgica Gerdau"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f89",
+    "symbol": "ELET6",
+    "companyName": "Eletrobras"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46f9b",
+    "symbol": "SLED4",
+    "companyName": "Saraiva"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fbc",
+    "symbol": "CSMG3",
+    "companyName": "Copasa"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fc4",
+    "symbol": "CPFE3",
+    "companyName": "CPFL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46fee",
+    "symbol": "INTB3",
+    "companyName": "INTELBRAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a46ff1",
+    "symbol": "SLED3",
+    "companyName": "Saraiva"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47034",
+    "symbol": "TORD11",
+    "companyName": "FII TORDE EI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47043",
+    "symbol": "HAGA4",
+    "companyName": "HAGA S/A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47064",
+    "symbol": "PDGR3",
+    "companyName": "PDG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4706d",
+    "symbol": "NIKE34",
+    "companyName": "NIKE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47072",
+    "symbol": "XPLG11",
+    "companyName": "FII XP LOG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4708c",
+    "symbol": "AMZO34",
+    "companyName": "AMAZON"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4709a",
+    "symbol": "HSML11",
+    "companyName": "FII HSI MALL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470b8",
+    "symbol": "XPPR11",
+    "companyName": "FII XP PROP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470c7",
+    "symbol": "TECK11",
+    "companyName": "IT NOW TECK"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a470e5",
+    "symbol": "BTCR11",
+    "companyName": "FII BTG CRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47128",
+    "symbol": "E1DU34",
+    "companyName": "NEW ORIENTAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47145",
+    "symbol": "AFHI11",
+    "companyName": "FII AFHI CRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4713c",
+    "symbol": "WALM34",
+    "companyName": "WAL MART"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4714c",
+    "symbol": "BAHI11",
+    "companyName": "Bahema"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4716b",
+    "symbol": "PAGS34",
+    "companyName": "PAGSEGURO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47186",
+    "symbol": "FSPE11",
+    "companyName": "FISET PESCA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b4",
+    "symbol": "B1IL34",
+    "companyName": "BILIBILI INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471bd",
+    "symbol": "BIXJ39",
+    "companyName": "GLOBALHEALTH"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471fa",
+    "symbol": "BIYW39",
+    "companyName": "US TECHNOLOG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471fe",
+    "symbol": "AFLT3",
+    "companyName": "Afluente t"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47203",
+    "symbol": "CHCM34",
+    "companyName": "CHARTER COMM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47206",
+    "symbol": "CESP3",
+    "companyName": "CESP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4720c",
+    "symbol": "B1PP34",
+    "companyName": "BP PLC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47221",
+    "symbol": "V1IP34",
+    "companyName": "Vipshop hold"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47230",
+    "symbol": "T1FX34",
+    "companyName": "TELEFLEX INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47248",
+    "symbol": "RBRS11",
+    "companyName": "FII RIOB RR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47252",
+    "symbol": "TASA17",
+    "companyName": "TAURUS ARMAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47272",
+    "symbol": "ATVI34",
+    "companyName": "ACTIVISION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47273",
+    "symbol": "BEWU39",
+    "companyName": "MSCI UK"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4727c",
+    "symbol": "CEEB5",
+    "companyName": "Coelba"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4727d",
+    "symbol": "CSRN6",
+    "companyName": "Cosern"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47282",
+    "symbol": "M1UF34",
+    "companyName": "Mitsubishi u"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472a1",
+    "symbol": "P1DD34",
+    "companyName": "PINDUODUO IN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472a7",
+    "symbol": "ECOO11",
+    "companyName": "ISHARES ECOO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472aa",
+    "symbol": "FPAB11",
+    "companyName": "FII A BRANCA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472af",
+    "symbol": "CEGR3",
+    "companyName": "CEG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472b7",
+    "symbol": "MNDL3",
+    "companyName": "MUNDIAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472b8",
+    "symbol": "N1OW34",
+    "companyName": "SERVICENOW"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c2",
+    "symbol": "L1MN34",
+    "companyName": "LUMEN TECH"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c8",
+    "symbol": "BOXP34",
+    "companyName": "BOSTON PROP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e0",
+    "symbol": "N1VO34",
+    "companyName": "NOVO NORDISK"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472fb",
+    "symbol": "I1SR34",
+    "companyName": "INTUITIVE SU"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47304",
+    "symbol": "S1KM34",
+    "companyName": "Sk telecom c"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4730e",
+    "symbol": "S1MF34",
+    "companyName": "SUMITOMO MIT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47312",
+    "symbol": "N1VS34",
+    "companyName": "NOVARTIS AG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47321",
+    "symbol": "S1YM34",
+    "companyName": "NORTONLIFE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47325",
+    "symbol": "B1KR34",
+    "companyName": "BAKER HUGHES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47328",
+    "symbol": "BGWH39",
+    "companyName": "COREDIVGROWT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47336",
+    "symbol": "WUNI34",
+    "companyName": "WESTERNUNION"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47341",
+    "symbol": "BICR11",
+    "companyName": "FII INTER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47353",
+    "symbol": "USBC34",
+    "companyName": "US BANCORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47361",
+    "symbol": "A1CR34",
+    "companyName": "AMCOR PLC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4736e",
+    "symbol": "D1OM34",
+    "companyName": "DOMINION ENE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47152",
+    "symbol": "PIBB11",
+    "companyName": "IT NOW PIBB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4715e",
+    "symbol": "PLAS3",
+    "companyName": "Plascar part"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4718b",
+    "symbol": "D1EX34",
+    "companyName": "Dexcom inc"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4718d",
+    "symbol": "PNVL4",
+    "companyName": "DIMED"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47197",
+    "symbol": "Z1OM34",
+    "companyName": "ZOOM VIDEO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a8",
+    "symbol": "ESGB11",
+    "companyName": "ETF ESG BTG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ba",
+    "symbol": "MGCR11",
+    "companyName": "FII MOGNO HG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471c5",
+    "symbol": "PRSN11B",
+    "companyName": "FII PERSONAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471d0",
+    "symbol": "NOKI34",
+    "companyName": "NOKIA CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471d3",
+    "symbol": "VCRR11",
+    "companyName": "FII VECT REN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471d9",
+    "symbol": "FAED11",
+    "companyName": "FII ANH EDUC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e6",
+    "symbol": "CTXT11",
+    "companyName": "FII C TEXTIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ea",
+    "symbol": "HBRH11",
+    "companyName": "FII MULT REN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4723b",
+    "symbol": "PQDP11",
+    "companyName": "FII D PEDRO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4724c",
+    "symbol": "CRPG6",
+    "companyName": "CRISTAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4725c",
+    "symbol": "MKLC34",
+    "companyName": "MARKEL CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47266",
+    "symbol": "G1FI34",
+    "companyName": "GOLD FIELDS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47293",
+    "symbol": "MMMC34",
+    "companyName": "3M"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47295",
+    "symbol": "R1IN34",
+    "companyName": "REALTY INCOM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d0",
+    "symbol": "RBIR11",
+    "companyName": "FII RBRES IV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472da",
+    "symbol": "AXPB34",
+    "companyName": "AMERICAN EXP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e1",
+    "symbol": "HREC11",
+    "companyName": "FII HEDGEREC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e8",
+    "symbol": "B2YN34",
+    "companyName": "BEYOND MEAT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472fa",
+    "symbol": "XBOV11",
+    "companyName": "CAIXAETFXBOV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47317",
+    "symbol": "ASML34",
+    "companyName": "ASML HOLD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47326",
+    "symbol": "DGCO34",
+    "companyName": "DOLLAR GENER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4733d",
+    "symbol": "W1BO34",
+    "companyName": "Weibo corp"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47343",
+    "symbol": "CPRL34",
+    "companyName": "CANAD PACIFI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47358",
+    "symbol": "I1NF34",
+    "companyName": "IHS MARKIT L"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4735b",
+    "symbol": "MINT11",
+    "companyName": "Fii mint edu"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47369",
+    "symbol": "BEGU39",
+    "companyName": "TRUSTMSCI US"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47376",
+    "symbol": "HCST11",
+    "companyName": "Fii hect des"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47381",
+    "symbol": "W1DC34",
+    "companyName": "WESTERN DIG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47155",
+    "symbol": "RBCO11",
+    "companyName": "FII R INCOME"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4716f",
+    "symbol": "EQIX34",
+    "companyName": "EQUINIX INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47181",
+    "symbol": "BRIV4",
+    "companyName": "ALFA INVEST"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47184",
+    "symbol": "GCFF11",
+    "companyName": "FII GALAPAGO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4719f",
+    "symbol": "TEKA4",
+    "companyName": "Teka"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a7",
+    "symbol": "BIXN39",
+    "companyName": "GLOBAL TECH"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471c1",
+    "symbol": "KHCB34",
+    "companyName": "KRAFT HEINZ"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471c9",
+    "symbol": "MAXR11",
+    "companyName": "FII MAX RET"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471d1",
+    "symbol": "TRPL3",
+    "companyName": "CTEEP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471d5",
+    "symbol": "BEES4",
+    "companyName": "BANESTES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e0",
+    "symbol": "BBSD11",
+    "companyName": "BB ETF SP DV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f2",
+    "symbol": "LUGG11",
+    "companyName": "FII LUGGO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471fc",
+    "symbol": "RDSA34",
+    "companyName": "RD SHELL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47216",
+    "symbol": "TASA15",
+    "companyName": "TAURUS ARMAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4721d",
+    "symbol": "JFLL11",
+    "companyName": "FII JFL LIV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4721e",
+    "symbol": "BPML11",
+    "companyName": "FII BTG SHOP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4723a",
+    "symbol": "SBUB34",
+    "companyName": "STARBUCKS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4723e",
+    "symbol": "BNBR3",
+    "companyName": "Nord brasil"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4725b",
+    "symbol": "BPRP11",
+    "companyName": "FII BRLPROP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4726a",
+    "symbol": "ISUS11",
+    "companyName": "IT NOW ISE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4726d",
+    "symbol": "PLRI11",
+    "companyName": "FII POLO I"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47271",
+    "symbol": "BIHI39",
+    "companyName": "USMEDICDEVIC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47275",
+    "symbol": "BIVW39",
+    "companyName": "SP500GROWTH"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4728d",
+    "symbol": "ULEV34",
+    "companyName": "UNILEVER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47290",
+    "symbol": "BIJH39",
+    "companyName": "CORE MIDCAP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47294",
+    "symbol": "NEWU11",
+    "companyName": "FII NEWRU"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47298",
+    "symbol": "D1LR34",
+    "companyName": "DIGITAL REAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ba",
+    "symbol": "PEAB3",
+    "companyName": "PAR AL BAHIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c7",
+    "symbol": "GPRO34",
+    "companyName": "GOPRO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472de",
+    "symbol": "E1TN34",
+    "companyName": "EATON CORP P"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4730d",
+    "symbol": "P1YC34",
+    "companyName": "Paycom softw"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4730f",
+    "symbol": "BLMC11",
+    "companyName": "Fii blue cri"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4731e",
+    "symbol": "NETE34",
+    "companyName": "NETEASE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47322",
+    "symbol": "V1RS34",
+    "companyName": "VERISK ANALY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4732f",
+    "symbol": "UPSS34",
+    "companyName": "UPS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4734b",
+    "symbol": "C1HI34",
+    "companyName": "China petrol"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4735c",
+    "symbol": "PHMO34",
+    "companyName": "PHILIP MORRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4736a",
+    "symbol": "BIIB34",
+    "companyName": "BIOGEN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4737e",
+    "symbol": "S1RP34",
+    "companyName": "Sarepta ther"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47383",
+    "symbol": "XPHT11",
+    "companyName": "FII XP HOT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4714b",
+    "symbol": "DNAI11",
+    "companyName": "IT NOW DNA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47178",
+    "symbol": "ITLC34",
+    "companyName": "INTEL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47180",
+    "symbol": "ALPA3",
+    "companyName": "Alpargatas"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47188",
+    "symbol": "BCSA34",
+    "companyName": "SANTANDER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47189",
+    "symbol": "VIUR11",
+    "companyName": "FII VINCI IU"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47199",
+    "symbol": "IBFF11",
+    "companyName": "FII FOF BREI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b1",
+    "symbol": "MACY34",
+    "companyName": "MACY S"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471bf",
+    "symbol": "BBFO11",
+    "companyName": "FII BB FOF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e1",
+    "symbol": "GSGI34",
+    "companyName": "GOLDMANSACHS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f5",
+    "symbol": "HLOG11",
+    "companyName": "FII HEDGELOG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f8",
+    "symbol": "CEDO3",
+    "companyName": "CEDRO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47209",
+    "symbol": "A1MD34",
+    "companyName": "ADVANCED MIC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4720e",
+    "symbol": "CTKA4",
+    "companyName": "KARSTEN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4725e",
+    "symbol": "E1QN34",
+    "companyName": "EQUINOR ASA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4726c",
+    "symbol": "N1WS34",
+    "companyName": "NEWS CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4728f",
+    "symbol": "NVHO11",
+    "companyName": "FII NOVOHORI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472a4",
+    "symbol": "BUSR39",
+    "companyName": "CORE US REIT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472b1",
+    "symbol": "CRPG3",
+    "companyName": "Cristal"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472b5",
+    "symbol": "I1NC34",
+    "companyName": "INCYTE CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472bc",
+    "symbol": "SAET11",
+    "companyName": "SAFRAETFIBOV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d8",
+    "symbol": "BITO39",
+    "companyName": "CORE SP TOTA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e7",
+    "symbol": "B1SA34",
+    "companyName": "BANCO SANTAN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472f8",
+    "symbol": "BIEV39",
+    "companyName": "EUROPE ETF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47305",
+    "symbol": "CAPH34",
+    "companyName": "CAPRI HOLDI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4730c",
+    "symbol": "T1WL34",
+    "companyName": "TWILIO INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4732c",
+    "symbol": "T1AM34",
+    "companyName": "ATLASSIAN CO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47338",
+    "symbol": "BLAK34",
+    "companyName": "BLACKROCK"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4734d",
+    "symbol": "EXGR34",
+    "companyName": "EXPEDIA GROU"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4734e",
+    "symbol": "K1EL34",
+    "companyName": "KELLOGG CO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47360",
+    "symbol": "W1MB34",
+    "companyName": "WILLIAMS COS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4714d",
+    "symbol": "HSLG11",
+    "companyName": "FII HSI LOG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47142",
+    "symbol": "CHVX34",
+    "companyName": "CHEVRON"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47143",
+    "symbol": "BGRT39",
+    "companyName": "GLOBAL REIT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47146",
+    "symbol": "WFCO34",
+    "companyName": "WELLS FARGO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47148",
+    "symbol": "SADI11",
+    "companyName": "FII SANT PAP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47149",
+    "symbol": "NAVT11",
+    "companyName": "FII NAVI TOT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47154",
+    "symbol": "USSX34",
+    "companyName": "US STEEL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4717e",
+    "symbol": "CEOC11",
+    "companyName": "FII CEO CCP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4718c",
+    "symbol": "L1BT35",
+    "companyName": "Liberty glob"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47190",
+    "symbol": "BBRC11",
+    "companyName": "FII BB CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47198",
+    "symbol": "BCHI39",
+    "companyName": "MSCI CHINA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471c8",
+    "symbol": "EDGA11",
+    "companyName": "FII GALERIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471df",
+    "symbol": "HGPO11",
+    "companyName": "FII CSHGPRIM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f4",
+    "symbol": "BNFS11",
+    "companyName": "FII BANRISUL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47210",
+    "symbol": "BEWT39",
+    "companyName": "MSCI TAIWAN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47245",
+    "symbol": "CBEE3",
+    "companyName": "Ampla energ"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47253",
+    "symbol": "RDPD11",
+    "companyName": "FII BB PAPII"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47274",
+    "symbol": "MBRF11",
+    "companyName": "FII MERC BR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472a2",
+    "symbol": "ERCR11",
+    "companyName": "Fii estoq rj"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ae",
+    "symbol": "BRGE6",
+    "companyName": "Alfa consorc"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c0",
+    "symbol": "A1VB34",
+    "companyName": "AVALONBAY CO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ca",
+    "symbol": "HUSC11",
+    "companyName": "Fii h unimed"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d7",
+    "symbol": "A1AP34",
+    "companyName": "ADVANCE AUTO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e3",
+    "symbol": "TOUR11",
+    "companyName": "FII TOUR II"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ff",
+    "symbol": "RBDS11",
+    "companyName": "Fii rbresid2"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47311",
+    "symbol": "B1MR34",
+    "companyName": "BIOMARIN PHA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47320",
+    "symbol": "RSPD11",
+    "companyName": "Fii rbresid3"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47330",
+    "symbol": "ALMI11",
+    "companyName": "FII TORRE AL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47334",
+    "symbol": "N1BI34",
+    "companyName": "Neurocrine b"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4737f",
+    "symbol": "SRXM34",
+    "companyName": "SIRIUS XM HD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47380",
+    "symbol": "UPAC34",
+    "companyName": "UNIONPACIFIC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47166",
+    "symbol": "PORD11",
+    "companyName": "FII POLO CRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47174",
+    "symbol": "XPCM11",
+    "companyName": "FII XP MACAE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47191",
+    "symbol": "RCRB11",
+    "companyName": "FII RIOB RC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a3",
+    "symbol": "EXXO34",
+    "companyName": "EXXON MOBIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b2",
+    "symbol": "FLMA11",
+    "companyName": "FII S F LIMA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b3",
+    "symbol": "SCPF11",
+    "companyName": "FII SCP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471be",
+    "symbol": "FCCQ11",
+    "companyName": "FIP CONQUEST"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471c4",
+    "symbol": "BRKM3",
+    "companyName": "Braskem"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471c7",
+    "symbol": "LSXM35",
+    "companyName": "Liberty medi"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e8",
+    "symbol": "FLCR11",
+    "companyName": "FII FL RECEB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e9",
+    "symbol": "AVLL3",
+    "companyName": "ALPHAVILLE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47200",
+    "symbol": "OXYP34",
+    "companyName": "OCCIDENT PTR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47211",
+    "symbol": "IFIE11",
+    "companyName": "FII IFI-E"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47217",
+    "symbol": "COWC34",
+    "companyName": "COSTCO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4721b",
+    "symbol": "S1PL34",
+    "companyName": "SPLUNK INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4721c",
+    "symbol": "ARMT34",
+    "companyName": "ARCELOR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47227",
+    "symbol": "EURO11",
+    "companyName": "FII EUROPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4722c",
+    "symbol": "FESA3",
+    "companyName": "Ferbasa"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47236",
+    "symbol": "MGHT11",
+    "companyName": "FII MOGNO HT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4723d",
+    "symbol": "WPLZ11",
+    "companyName": "FII W PLAZA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47249",
+    "symbol": "CJCT11",
+    "companyName": "FII CJCTOWER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47254",
+    "symbol": "GOVE11",
+    "companyName": "IT NOW IGCT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47258",
+    "symbol": "CRIP34",
+    "companyName": "CTRIPCOM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4725f",
+    "symbol": "RBVO11",
+    "companyName": "FII RIOBCRI2"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47268",
+    "symbol": "R1LC34",
+    "companyName": "RALPH LAUREN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47279",
+    "symbol": "BIVE39",
+    "companyName": "SP500 VALUE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47286",
+    "symbol": "QIFF11",
+    "companyName": "FII QUATA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ac",
+    "symbol": "A1MB34",
+    "companyName": "AMERISOURCEB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472b9",
+    "symbol": "PATI3",
+    "companyName": "Panatlantica"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472bb",
+    "symbol": "PEAB4",
+    "companyName": "Par al bahia"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d9",
+    "symbol": "E1RI34",
+    "companyName": "ERICSSON LM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ec",
+    "symbol": "FDXB34",
+    "companyName": "FEDEX CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472fd",
+    "symbol": "TRNT11",
+    "companyName": "FII TORRE NO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472fe",
+    "symbol": "V1OD34",
+    "companyName": "VODAFONE GRO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47344",
+    "symbol": "HOND34",
+    "companyName": "HONDA MO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47346",
+    "symbol": "TMCO34",
+    "companyName": "TOYOTAMO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47349",
+    "symbol": "B1CS34",
+    "companyName": "BARCLAYS PLC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4734f",
+    "symbol": "L1EG34",
+    "companyName": "LEGGETT PL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47354",
+    "symbol": "VSEC11",
+    "companyName": "FII VOT SEC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47355",
+    "symbol": "BEWA39",
+    "companyName": "Msciaustrali"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47356",
+    "symbol": "D1VN34",
+    "companyName": "DEVON ENERGY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4735d",
+    "symbol": "SLBG34",
+    "companyName": "SCHLUMBERGER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47365",
+    "symbol": "APTV34",
+    "companyName": "APTIV PLC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47375",
+    "symbol": "GPRK34",
+    "companyName": "GEOPARK LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47384",
+    "symbol": "Z1TO34",
+    "companyName": "Zto express"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4715a",
+    "symbol": "AALL34",
+    "companyName": "AMERICAN AIR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4716c",
+    "symbol": "VTLT11",
+    "companyName": "FII VOT LOG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47175",
+    "symbol": "TXRX4",
+    "companyName": "Tex renaux"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4717b",
+    "symbol": "FCFL11",
+    "companyName": "FII CAMPUSFL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47185",
+    "symbol": "RBBV11",
+    "companyName": "FII JHSF FBV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47187",
+    "symbol": "FSTU11",
+    "companyName": "Fiset tur"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47196",
+    "symbol": "RELG11",
+    "companyName": "FII REC LOG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4719b",
+    "symbol": "RFOF11",
+    "companyName": "FII RB CFOF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4719e",
+    "symbol": "CATP34",
+    "companyName": "CATERPILLAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ae",
+    "symbol": "ABCP11",
+    "companyName": "FII ABC IMOB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471c0",
+    "symbol": "PICE11",
+    "companyName": "FIP PATR INF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ca",
+    "symbol": "RBRD11",
+    "companyName": "FII RB II"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471cd",
+    "symbol": "XTED11",
+    "companyName": "FII TRXE COR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471db",
+    "symbol": "NSLU11",
+    "companyName": "FII LOURDES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f7",
+    "symbol": "BEEF11",
+    "companyName": "Minerva"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f9",
+    "symbol": "HBTS5",
+    "companyName": "HABITASUL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47214",
+    "symbol": "MOSC34",
+    "companyName": "MOSAIC CO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47238",
+    "symbol": "RBGS11",
+    "companyName": "FII RB GSB I"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4724d",
+    "symbol": "ENMT3",
+    "companyName": "ENERGISA MT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47276",
+    "symbol": "CXTL11",
+    "companyName": "FII CX TRX"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4727f",
+    "symbol": "DOHL3",
+    "companyName": "Dohler"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472a3",
+    "symbol": "RECX11",
+    "companyName": "FII REC FOF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472b0",
+    "symbol": "CESP5",
+    "companyName": "CESP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ea",
+    "symbol": "BVLU39",
+    "companyName": "MSCIUSVALUEF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472f2",
+    "symbol": "DEEC34",
+    "companyName": "DEERE CO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47302",
+    "symbol": "S2HO34",
+    "companyName": "SHOPIFY INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47303",
+    "symbol": "P1KX34",
+    "companyName": "Posco"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47309",
+    "symbol": "M1GM34",
+    "companyName": "MGM RESORTS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4731b",
+    "symbol": "HAAA11",
+    "companyName": "FII HEDGEAAA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4731d",
+    "symbol": "N1LS34",
+    "companyName": "NIELSEN HOLD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4731f",
+    "symbol": "RDSA35",
+    "companyName": "RD SHELL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47323",
+    "symbol": "X1EL34",
+    "companyName": "XCEL ENERGY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47352",
+    "symbol": "SAPP34",
+    "companyName": "SAP SE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47367",
+    "symbol": "BEGD39",
+    "companyName": "TRTMSCI EAFE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47368",
+    "symbol": "BEGE39",
+    "companyName": "INC ESG AWAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47371",
+    "symbol": "DVAI34",
+    "companyName": "DAVITA INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47374",
+    "symbol": "G1PI34",
+    "companyName": "GLOBAL PAYME"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47382",
+    "symbol": "W1SO34",
+    "companyName": "Watsco inc"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4713d",
+    "symbol": "HTEK11",
+    "companyName": "IT NOW HCARE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4714e",
+    "symbol": "BEFA39",
+    "companyName": "MSCI EAFE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47150",
+    "symbol": "SPTW11",
+    "companyName": "FII SP DOWNT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47165",
+    "symbol": "SNSY5",
+    "companyName": "SANSUY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4717f",
+    "symbol": "AVGO34",
+    "companyName": "BROADCOM INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47192",
+    "symbol": "CTGP34",
+    "companyName": "CITIGROUP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a0",
+    "symbol": "BPAC3",
+    "companyName": "Banco BTG Pactual     "
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a9",
+    "symbol": "IFID11",
+    "companyName": "FII IFI-D"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471af",
+    "symbol": "FDMO34",
+    "companyName": "FORD MOTORS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b5",
+    "symbol": "MUTC34",
+    "companyName": "MICRON TECHN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b9",
+    "symbol": "WLMM4",
+    "companyName": "WLM IND COM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471c6",
+    "symbol": "CLSC4",
+    "companyName": "CELESC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471eb",
+    "symbol": "BAHI3",
+    "companyName": "BAHEMA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471fb",
+    "symbol": "SEQR11",
+    "companyName": "FII SEQUOIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47208",
+    "symbol": "GEOO34",
+    "companyName": "GE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47218",
+    "symbol": "BEWG39",
+    "companyName": "MSCI GERMANY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47232",
+    "symbol": "BSLI3",
+    "companyName": "BRB BANCO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47242",
+    "symbol": "HONB34",
+    "companyName": "HONEYWELL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4724e",
+    "symbol": "GSHP3",
+    "companyName": "General Shopping Brasil"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47251",
+    "symbol": "RPAD6",
+    "companyName": "ALFA HOLDING"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4727a",
+    "symbol": "BMIN4",
+    "companyName": "Merc invest"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47280",
+    "symbol": "F1BH34",
+    "companyName": "FORTUNE BRAN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47287",
+    "symbol": "C1BS34",
+    "companyName": "VIACOMCBS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4728a",
+    "symbol": "K1SS34",
+    "companyName": "KOHLS CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4728e",
+    "symbol": "PRSV11",
+    "companyName": "Fii p vargas"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4729d",
+    "symbol": "T1OW34",
+    "companyName": "AMERICAN TOW"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ce",
+    "symbol": "ABUD34",
+    "companyName": "AB INBEV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d1",
+    "symbol": "LILY34",
+    "companyName": "LILLY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ee",
+    "symbol": "M2PW34",
+    "companyName": "MEDICAL P TR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47307",
+    "symbol": "A1LN34",
+    "companyName": "ALNYLAM PHAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47314",
+    "symbol": "T1TW34",
+    "companyName": "TAKE-TWO INT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4732d",
+    "symbol": "V1NO34",
+    "companyName": "VORNADO REAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4732e",
+    "symbol": "E1CL34",
+    "companyName": "ECOLAB INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47339",
+    "symbol": "FLRP11",
+    "companyName": "FII FLORIPA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4733c",
+    "symbol": "SCHW34",
+    "companyName": "SCHWAB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47340",
+    "symbol": "BEWC39",
+    "companyName": "MSCI CANADA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47350",
+    "symbol": "L1FC34",
+    "companyName": "CHINA LIFE I"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4735e",
+    "symbol": "T1DG34",
+    "companyName": "TRANSDIGM GR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47363",
+    "symbol": "A1NS34",
+    "companyName": "ANSYS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47144",
+    "symbol": "BLMG11",
+    "companyName": "FII BLUE LOG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4714f",
+    "symbol": "BILF39",
+    "companyName": "Latin amer40"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47159",
+    "symbol": "BEWJ39",
+    "companyName": "MSCI JAPAN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4715b",
+    "symbol": "BDLL3",
+    "companyName": "Bardella"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4718e",
+    "symbol": "PATC11",
+    "companyName": "FII PATRIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a6",
+    "symbol": "RRCI11",
+    "companyName": "FII RBCAP RI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b6",
+    "symbol": "A1UT34",
+    "companyName": "AUTODESK INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471c2",
+    "symbol": "FIIB11",
+    "companyName": "FII INDL BR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471cb",
+    "symbol": "NEWL11",
+    "companyName": "FII NEWPORT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471cc",
+    "symbol": "CRFF11",
+    "companyName": "FII CX RBRA2"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e4",
+    "symbol": "BIDU34",
+    "companyName": "BAIDU INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e5",
+    "symbol": "KMIC34",
+    "companyName": "KINDER MORGA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f6",
+    "symbol": "BAZA3",
+    "companyName": "AMAZONIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47201",
+    "symbol": "BEWW39",
+    "companyName": "MSCI MEXICO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47202",
+    "symbol": "KNOX11",
+    "companyName": "FIP IE KNOX"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4720b",
+    "symbol": "B1TI34",
+    "companyName": "BRITISH AMER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47220",
+    "symbol": "THRA11",
+    "companyName": "FII BM THERA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4722a",
+    "symbol": "BRIV3",
+    "companyName": "ALFA INVEST"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47239",
+    "symbol": "S1PO34",
+    "companyName": "SPOTIFY TECH"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47243",
+    "symbol": "CBOP11",
+    "companyName": "FII C BRANCO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47247",
+    "symbol": "RIOT34",
+    "companyName": "RIO TINTO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4724a",
+    "symbol": "VVPR11",
+    "companyName": "FII V2 PROP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4724f",
+    "symbol": "LIPR3",
+    "companyName": "ELETROPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47250",
+    "symbol": "N1RG34",
+    "companyName": "NRG ENERGY I"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47257",
+    "symbol": "A1IV34",
+    "companyName": "APARTMENT IN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47262",
+    "symbol": "CEED3",
+    "companyName": "Ceee-d"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47270",
+    "symbol": "EVBI11",
+    "companyName": "FII VBI CON"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47289",
+    "symbol": "MOOO34",
+    "companyName": "ALTRIA GROUP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4729b",
+    "symbol": "VRTX34",
+    "companyName": "VERTEX PHARM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c6",
+    "symbol": "SNEC34",
+    "companyName": "SONY CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472cd",
+    "symbol": "V1TA34",
+    "companyName": "VENTAS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d2",
+    "symbol": "SBNY34",
+    "companyName": "SIGNATURE BK"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d6",
+    "symbol": "T1RI34",
+    "companyName": "TRIPADVISOR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472dc",
+    "symbol": "A1MT34",
+    "companyName": "APPLIED MATE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472df",
+    "symbol": "G1AR34",
+    "companyName": "GARTNER INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e6",
+    "symbol": "PQAG11",
+    "companyName": "FII PARQ ANH"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e9",
+    "symbol": "N1CL34",
+    "companyName": "NORWEGIAN CR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472f5",
+    "symbol": "A1RE34",
+    "companyName": "ALEXANDRIA R"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472fc",
+    "symbol": "TCIN11",
+    "companyName": "Fii tour v"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47315",
+    "symbol": "VLOE34",
+    "companyName": "VALERO ENER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4734a",
+    "symbol": "B1WA34",
+    "companyName": "BORGWARNER I"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47377",
+    "symbol": "I1HG34",
+    "companyName": "Int exchange"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47378",
+    "symbol": "LSXM34",
+    "companyName": "LIBERTY MEDI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4737b",
+    "symbol": "O1KT34",
+    "companyName": "OKTA INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4713b",
+    "symbol": "AIEC11",
+    "companyName": "FII AUTONOMY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4715c",
+    "symbol": "MCDC34",
+    "companyName": "MCDONALDS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4715f",
+    "symbol": "BDIF11",
+    "companyName": "FIC INFR BTG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47169",
+    "symbol": "B1NT34",
+    "companyName": "BIONTECH SE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47176",
+    "symbol": "C1CL34",
+    "companyName": "CARNIVAL COR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4718f",
+    "symbol": "BSLV39",
+    "companyName": "SILVER TRUST"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47195",
+    "symbol": "ARCT11",
+    "companyName": "FII ARCTIUM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a2",
+    "symbol": "W1MC34",
+    "companyName": "WASTE MANAG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471aa",
+    "symbol": "AFCR11",
+    "companyName": "FII AFINVCR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b0",
+    "symbol": "MTSA4",
+    "companyName": "METISA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471bb",
+    "symbol": "ONEF11",
+    "companyName": "FII THE ONE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e3",
+    "symbol": "DEXP4",
+    "companyName": "DEXXOS PAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f1",
+    "symbol": "OURE11",
+    "companyName": "FII OU RENDA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f3",
+    "symbol": "EALT3",
+    "companyName": "ACO ALTONA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47255",
+    "symbol": "P1LD34",
+    "companyName": "PROLOGIS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47256",
+    "symbol": "CNES11",
+    "companyName": "FII CENESP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4725a",
+    "symbol": "F1RI34",
+    "companyName": "FEDERAL REAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47264",
+    "symbol": "PATI4",
+    "companyName": "Panatlantica"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47277",
+    "symbol": "BAUH4",
+    "companyName": "Excelsior"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47297",
+    "symbol": "TGTB34",
+    "companyName": "TARGET CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4729f",
+    "symbol": "M1KT34",
+    "companyName": "MARKETAXESS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472a9",
+    "symbol": "BEWH39",
+    "companyName": "MSCIHONGKONG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472cc",
+    "symbol": "C1BO34",
+    "companyName": "CBOE GLOBAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d3",
+    "symbol": "TLNC34",
+    "companyName": "TELEFONIC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472dd",
+    "symbol": "B1BL34",
+    "companyName": "BHP GROUP PL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472f3",
+    "symbol": "FSLR34",
+    "companyName": "FIRST SOLAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47313",
+    "symbol": "S2NW34",
+    "companyName": "SNOWFLAKE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47316",
+    "symbol": "AMGN34",
+    "companyName": "AMGEN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4731a",
+    "symbol": "D1TE34",
+    "companyName": "DTE ENERGY C"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47337",
+    "symbol": "A1ES34",
+    "companyName": "AES CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47345",
+    "symbol": "S1NA34",
+    "companyName": "SNAP-ON INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47348",
+    "symbol": "AQLL11",
+    "companyName": "FII AQUILLA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4735f",
+    "symbol": "U2ST34",
+    "companyName": "UNITY SOFTWR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4736c",
+    "symbol": "C1CI34",
+    "companyName": "CROWN CASTLE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4736d",
+    "symbol": "C1OO34",
+    "companyName": "COOPER COMPA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47139",
+    "symbol": "HGFF11",
+    "companyName": "FII CSHG FOF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4713e",
+    "symbol": "OUFF11",
+    "companyName": "FII OURI FOF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47167",
+    "symbol": "HTMX11",
+    "companyName": "FII HOTEL MX"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47168",
+    "symbol": "RNGO11",
+    "companyName": "FII RIONEGRO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47173",
+    "symbol": "SCAR3",
+    "companyName": "São Carlos"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47179",
+    "symbol": "I1RM34",
+    "companyName": "IRON MOUNTAI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4717a",
+    "symbol": "BIBB39",
+    "companyName": "ICE BIOTECH"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4719d",
+    "symbol": "RBED11",
+    "companyName": "FII RIOB ED"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a1",
+    "symbol": "CGAS5",
+    "companyName": "Comgas"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ad",
+    "symbol": "S2EA34",
+    "companyName": "SEA LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471dd",
+    "symbol": "EUCA3",
+    "companyName": "Eucatex"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ec",
+    "symbol": "HETA3",
+    "companyName": "Hercules"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47205",
+    "symbol": "CEBR3",
+    "companyName": "CEB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4720a",
+    "symbol": "HOSI11",
+    "companyName": "FII HOUSI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47225",
+    "symbol": "FCXO34",
+    "companyName": "FREEPORT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47235",
+    "symbol": "JRDM11",
+    "companyName": "FII SHOPJSUL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4724b",
+    "symbol": "GCRI11",
+    "companyName": "FII GLPG CRI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47259",
+    "symbol": "ABTT34",
+    "companyName": "ABBOTT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47267",
+    "symbol": "M1MC34",
+    "companyName": "MARSH E MCLE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4726f",
+    "symbol": "VOTS11",
+    "companyName": "FII V MASTER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47285",
+    "symbol": "TKNO4",
+    "companyName": "Tekno"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4729a",
+    "symbol": "E1QR34",
+    "companyName": "EQUITY RESID"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472a6",
+    "symbol": "RMAI11",
+    "companyName": "FII REAGMULT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472b3",
+    "symbol": "CSXC34",
+    "companyName": "CSX CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472db",
+    "symbol": "INGG34",
+    "companyName": "ING GROEP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e5",
+    "symbol": "N1EM34",
+    "companyName": "NEWMONT GOLD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ef",
+    "symbol": "SIMN34",
+    "companyName": "SIMON PROP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472f1",
+    "symbol": "RNDP11",
+    "companyName": "FII BB R PAP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472f6",
+    "symbol": "D1EL34",
+    "companyName": "DELL TECHNOL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472f7",
+    "symbol": "COTY34",
+    "companyName": "COTY INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47306",
+    "symbol": "H1SB34",
+    "companyName": "HSBC HOLDING"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4730b",
+    "symbol": "P1SA34",
+    "companyName": "PUBLIC STORA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47324",
+    "symbol": "B1AM34",
+    "companyName": "BROOKFIELD A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47335",
+    "symbol": "RYTT34",
+    "companyName": "RAYTHEONTECH"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47342",
+    "symbol": "C1OU34",
+    "companyName": "COUPA SOFTWA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47357",
+    "symbol": "F1RA34",
+    "companyName": "FRANKLIN RES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47366",
+    "symbol": "ATSA11",
+    "companyName": "FII HATRIUM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47147",
+    "symbol": "RBIV11",
+    "companyName": "FII RBCRI IV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47157",
+    "symbol": "KNRE11",
+    "companyName": "FII KII REAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47158",
+    "symbol": "CGRA3",
+    "companyName": "GRAZZIOTIN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47160",
+    "symbol": "U1BE34",
+    "companyName": "UBER TECH IN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47161",
+    "symbol": "BRSR3",
+    "companyName": "Banco Banrisul"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47164",
+    "symbol": "ADBE34",
+    "companyName": "ADOBE INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4716a",
+    "symbol": "BIGF39",
+    "companyName": "GLOBAL INFRA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47171",
+    "symbol": "IFRA11",
+    "companyName": "FI ITAUINFRA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47172",
+    "symbol": "OSXB3",
+    "companyName": "OSX Brasil"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47177",
+    "symbol": "BDIV11",
+    "companyName": "FIP BTGDV IE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4719a",
+    "symbol": "C1SU34",
+    "companyName": "CREDIT SUISS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471bc",
+    "symbol": "UNHH34",
+    "companyName": "UNITEDHEALTH"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471d8",
+    "symbol": "COPH34",
+    "companyName": "COPHILLIPS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e7",
+    "symbol": "DMAC11",
+    "companyName": "FII MAC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ed",
+    "symbol": "T2DH34",
+    "companyName": "TELADOCHEALT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471fd",
+    "symbol": "VSHO11",
+    "companyName": "FII VOT SHOP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4720d",
+    "symbol": "CPLE5",
+    "companyName": "Copel"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4720f",
+    "symbol": "ELCI34",
+    "companyName": "ESTEE LAUDER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4721a",
+    "symbol": "EBAY34",
+    "companyName": "EBAY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47233",
+    "symbol": "GEPA3",
+    "companyName": "Ger paranap"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47244",
+    "symbol": "FATN11",
+    "companyName": "FII ATHENA I"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47269",
+    "symbol": "NPAR11",
+    "companyName": "FII NESTPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47284",
+    "symbol": "RSUL4",
+    "companyName": "RIOSULENSE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4728c",
+    "symbol": "SHPH11",
+    "companyName": "FII HIGIENOP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4729c",
+    "symbol": "A1LB34",
+    "companyName": "ALBEMARLE CO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c3",
+    "symbol": "WGBA34",
+    "companyName": "WALGREENS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d4",
+    "symbol": "EAIN34",
+    "companyName": "ELECTR ARTS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47319",
+    "symbol": "C1TX34",
+    "companyName": "CITRIX SYSTE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47329",
+    "symbol": "CVSH34",
+    "companyName": "CVS HEALTH"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4732a",
+    "symbol": "FMOF11",
+    "companyName": "Fii memorial"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4736f",
+    "symbol": "DDNB34",
+    "companyName": "DUPONT N INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47379",
+    "symbol": "MCOR34",
+    "companyName": "MOODYS CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47156",
+    "symbol": "BCWV39",
+    "companyName": "Msciglmivolf"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4715d",
+    "symbol": "ATTB34",
+    "companyName": "ATT INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47162",
+    "symbol": "KFOF11",
+    "companyName": "FII KINEAFOF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4716d",
+    "symbol": "EPAR3",
+    "companyName": "EMBPAR S/A"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4717c",
+    "symbol": "BSUS39",
+    "companyName": "ESGMSCIUSA L"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4719c",
+    "symbol": "CXCO11",
+    "companyName": "FII CEF CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a4",
+    "symbol": "BPAC5",
+    "companyName": "Banco BTG Pactual     "
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471b7",
+    "symbol": "GOLL11",
+    "companyName": "Gol"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471d4",
+    "symbol": "QCOM34",
+    "companyName": "QUALCOMM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471da",
+    "symbol": "RBHY11",
+    "companyName": "FII RB YIELD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ee",
+    "symbol": "ENDD11",
+    "companyName": "FIP END DEBT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ef",
+    "symbol": "MFAI11",
+    "companyName": "FII MERITOFA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47207",
+    "symbol": "HRDF11",
+    "companyName": "FII HREALTY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47219",
+    "symbol": "S2UI34",
+    "companyName": "SUN COMMUN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47222",
+    "symbol": "BALM3",
+    "companyName": "BAUMER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47223",
+    "symbol": "EMAE4",
+    "companyName": "EMAE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47228",
+    "symbol": "A1UA34",
+    "companyName": "ANGLOGOLD AS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4722d",
+    "symbol": "TJXC34",
+    "companyName": "TJX COMPANIE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47246",
+    "symbol": "ROST34",
+    "companyName": "ROSS STORES"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47260",
+    "symbol": "XPHT12",
+    "companyName": "FII XP HOT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47263",
+    "symbol": "I1PC34",
+    "companyName": "INTERNATIONA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4727b",
+    "symbol": "C1ER34",
+    "companyName": "CERNER CORP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4728b",
+    "symbol": "T1AL34",
+    "companyName": "TAL EDUCATIO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47299",
+    "symbol": "PTCH34",
+    "companyName": "PETROCHIN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ab",
+    "symbol": "GILD34",
+    "companyName": "GILEAD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ad",
+    "symbol": "BRGE11",
+    "companyName": "Alfa consorc"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472b2",
+    "symbol": "CSCO34",
+    "companyName": "CISCO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c1",
+    "symbol": "HCRI11",
+    "companyName": "FII CRIANCA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c4",
+    "symbol": "AFOF11",
+    "companyName": "FII ALIANZFF"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c9",
+    "symbol": "F1TN34",
+    "companyName": "FORTINET INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472d5",
+    "symbol": "COLG34",
+    "companyName": "COLGATE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47310",
+    "symbol": "DBAG34",
+    "companyName": "DEUTSCHE AK"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47318",
+    "symbol": "BEWZ39",
+    "companyName": "MSCI BRAZIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4732b",
+    "symbol": "M1NS34",
+    "companyName": "MONSTER BEVE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4733e",
+    "symbol": "Z1TS34",
+    "companyName": "ZOETIS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47347",
+    "symbol": "A1YX34",
+    "companyName": "ALTERYX INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4734c",
+    "symbol": "E1SS34",
+    "companyName": "ESSEX PROPER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47351",
+    "symbol": "M1DB34",
+    "companyName": "MONGODB INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47359",
+    "symbol": "KEVE11",
+    "companyName": "Fii even ii"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47373",
+    "symbol": "G1MI34",
+    "companyName": "GENERAL MILL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4737c",
+    "symbol": "P1GR34",
+    "companyName": "THE PROGRESS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4737d",
+    "symbol": "RCFF11",
+    "companyName": "Fii rbr feed"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47153",
+    "symbol": "PPEI11",
+    "companyName": "FIP PRISMA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4718a",
+    "symbol": "ARRI11",
+    "companyName": "FII ATRIO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47193",
+    "symbol": "BIAU39",
+    "companyName": "GOLD TRUST"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47194",
+    "symbol": "EMEG11",
+    "companyName": "TREND EMEG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471cf",
+    "symbol": "FIIP11B",
+    "companyName": "FII RB CAP I"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471d2",
+    "symbol": "BRGE3",
+    "companyName": "ALFA CONSORC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471d7",
+    "symbol": "FVPQ11",
+    "companyName": "FII V PARQUE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ff",
+    "symbol": "BIVB39",
+    "companyName": "CORE SP 500"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4721f",
+    "symbol": "D1OC34",
+    "companyName": "DOCUSIGN INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47231",
+    "symbol": "A1LL34",
+    "companyName": "ALLIANCE DAT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4723c",
+    "symbol": "TWTR34",
+    "companyName": "TWITTER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47240",
+    "symbol": "CXRI11",
+    "companyName": "FII CX RBRAV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47261",
+    "symbol": "ADPR34",
+    "companyName": "AUTOMATIC DT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47278",
+    "symbol": "BGIP4",
+    "companyName": "Banese"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47281",
+    "symbol": "JOPA3",
+    "companyName": "Josapar"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47283",
+    "symbol": "MERC3",
+    "companyName": "Merc financ"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47296",
+    "symbol": "TEXA34",
+    "companyName": "TEXAS INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472a0",
+    "symbol": "N1DA34",
+    "companyName": "NASDAQ INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472a5",
+    "symbol": "R1CL34",
+    "companyName": "ROYAL CARIBB"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472cb",
+    "symbol": "EDFO11B",
+    "companyName": "Fii ourinves"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472cf",
+    "symbol": "DEAI34",
+    "companyName": "DELTA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472ed",
+    "symbol": "BIJR39",
+    "companyName": "CORESMALLCAP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472f0",
+    "symbol": "CINF34",
+    "companyName": "CINCINNATI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472f4",
+    "symbol": "S1BS34",
+    "companyName": "SIBANYE STIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47301",
+    "symbol": "BLCP11",
+    "companyName": "FII BLUECAP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47333",
+    "symbol": "J1WN34",
+    "companyName": "NORDSTROM IN"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4733a",
+    "symbol": "REGN34",
+    "companyName": "REGENERON PH"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4733b",
+    "symbol": "S1OU34",
+    "companyName": "SOUTHWEST AI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47364",
+    "symbol": "A1TT34",
+    "companyName": "ALLSTATE COR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4736b",
+    "symbol": "BTWR11",
+    "companyName": "Fii btowers"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4713f",
+    "symbol": "KISU11",
+    "companyName": "FII KILIMA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47138",
+    "symbol": "FIGS11",
+    "companyName": "FII GEN SHOP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47163",
+    "symbol": "RVBI11",
+    "companyName": "FII VBI REIT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ac",
+    "symbol": "VLOL11",
+    "companyName": "FII OLIMPIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ce",
+    "symbol": "JDCO34",
+    "companyName": "JD COM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471de",
+    "symbol": "PLOG11",
+    "companyName": "FII PLURAL L"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471e2",
+    "symbol": "LOWC34",
+    "companyName": "LOWES COMPA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47224",
+    "symbol": "PPLA11",
+    "companyName": "PPLA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4722b",
+    "symbol": "BSLI4",
+    "companyName": "BRB BANCO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4722e",
+    "symbol": "BMKS3",
+    "companyName": "BIC MONARK"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47237",
+    "symbol": "MDTC34",
+    "companyName": "MEDTRONIC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47241",
+    "symbol": "BNDA39",
+    "companyName": "MSCI INDIA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47265",
+    "symbol": "VRSN34",
+    "companyName": "VERISIGN INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4726e",
+    "symbol": "BBFI11B",
+    "companyName": "FII BB PROGR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47291",
+    "symbol": "A1OS34",
+    "companyName": "AO SMITH COR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47292",
+    "symbol": "E1NI34",
+    "companyName": "ENEL AMERICA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4729e",
+    "symbol": "U1AL34",
+    "companyName": "UNITED AIRLI"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472a8",
+    "symbol": "IBMB34",
+    "companyName": "IBM"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472b4",
+    "symbol": "ENMT4",
+    "companyName": "Energisa mt"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472b6",
+    "symbol": "LUXM4",
+    "companyName": "TREVISA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472be",
+    "symbol": "BDVY39",
+    "companyName": "SELECT DIVID"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e2",
+    "symbol": "BONY34",
+    "companyName": "BNY MELLON"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472e4",
+    "symbol": "FAMB11B",
+    "companyName": "FII ALMIRANT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47300",
+    "symbol": "T1EV34",
+    "companyName": "TEVA PHARMAC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47308",
+    "symbol": "L1VS34",
+    "companyName": "Las vegas"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47332",
+    "symbol": "C1RR34",
+    "companyName": "Carrier glob"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4735a",
+    "symbol": "L1UL34",
+    "companyName": "LULULEMON AT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47372",
+    "symbol": "E1DI34",
+    "companyName": "CONSOLIDATED"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4713a",
+    "symbol": "TSMC34",
+    "companyName": "TAIWANSMFAC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47140",
+    "symbol": "BDLL4",
+    "companyName": "Bardella"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47141",
+    "symbol": "TEPP11",
+    "companyName": "FII TEL PROP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4714a",
+    "symbol": "CEEB3",
+    "companyName": "Coelba"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47151",
+    "symbol": "WHRL4",
+    "companyName": "WHIRLPOOL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4716e",
+    "symbol": "BIYF39",
+    "companyName": "US FINANCIAL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47170",
+    "symbol": "BIEM39",
+    "companyName": "COREMSCI EMK"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4717d",
+    "symbol": "BMLC11",
+    "companyName": "FII BMBRC LC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47183",
+    "symbol": "MRCK34",
+    "companyName": "MERCK"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471a5",
+    "symbol": "TELB4",
+    "companyName": "TELEBRAS"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471ab",
+    "symbol": "BAER39",
+    "companyName": "US AEROSPACE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471c3",
+    "symbol": "OULG11",
+    "companyName": "FII OURILOG"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471d6",
+    "symbol": "LGCP11",
+    "companyName": "FII LGCP INT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471dc",
+    "symbol": "GMCO34",
+    "companyName": "GENERAL MOT"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a471f0",
+    "symbol": "CXCE11B",
+    "companyName": "FII CX CEDAE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47204",
+    "symbol": "CORM11",
+    "companyName": "FII CORE MET"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47212",
+    "symbol": "K1RC34",
+    "companyName": "KROGER CO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47213",
+    "symbol": "PABY11",
+    "companyName": "FII PANAMBY"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47215",
+    "symbol": "GEPA4",
+    "companyName": "Ger paranap"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47226",
+    "symbol": "HPDP11",
+    "companyName": "FII HEDGEPDP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47229",
+    "symbol": "ABBV34",
+    "companyName": "ABBVIE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4722f",
+    "symbol": "JPPA11",
+    "companyName": "FII JPPMOGNO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47234",
+    "symbol": "S2QU34",
+    "companyName": "BLOCK INC."
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4723f",
+    "symbol": "TESA12",
+    "companyName": "TERRA SANTA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4725d",
+    "symbol": "QAMI11",
+    "companyName": "FII QUASAR C"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4726b",
+    "symbol": "W1IX34",
+    "companyName": "WIX.COM LTD"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4727e",
+    "symbol": "CTNM3",
+    "companyName": "Coteminas"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47288",
+    "symbol": "CPTI11",
+    "companyName": "FIC IE CAP"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472bd",
+    "symbol": "UNIP5",
+    "companyName": "UNIPAR"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472bf",
+    "symbol": "TXSA34",
+    "companyName": "TERNIUMSA"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472c5",
+    "symbol": "ORCL34",
+    "companyName": "ORACLE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472eb",
+    "symbol": "M1RO34",
+    "companyName": "MARATHON OIL"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a472f9",
+    "symbol": "D1OW34",
+    "companyName": "DOW INC"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4730a",
+    "symbol": "NEXT34",
+    "companyName": "NEXTERA ENER"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47327",
+    "symbol": "H1OG34",
+    "companyName": "HARLEY-DAVID"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47331",
+    "symbol": "BIWM39",
+    "companyName": "RUSSELL 2000"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4733f",
+    "symbol": "A1EG34",
+    "companyName": "AEGON NV"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47362",
+    "symbol": "A1DM34",
+    "companyName": "ARCHER DANIE"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a47370",
+    "symbol": "DRIT11B",
+    "companyName": "FII MTGESTAO"
+  },
+  {
+    "symbolId": "60d829a61533b4a353a4737a",
+    "symbol": "N1GG34",
+    "companyName": "NATIONAL GRI"
+  },
+  {
+    "symbolId": "61c2396d9ada4fc1f7fdeb63",
+    "symbol": "IRBR9",
+    "companyName": "IRB Brasil Resseguros"
+  },
+  {
+    "symbolId": "61c2396d9ada4fc1f7fdeb6e",
+    "symbol": "VIIA3",
+    "companyName": "Via"
+  },
+  {
+    "symbolId": "61c2396d9ada4fc1f7fdeb86",
+    "symbol": "XPBR31",
+    "companyName": "XP INC"
+  },
+  {
+    "symbolId": "61c2396d9ada4fc1f7fdeb84",
+    "symbol": "RAIZ4",
+    "companyName": "RAIZEN"
+  },
+  {
+    "symbolId": "61c2396d9ada4fc1f7fdeb81",
+    "symbol": "SMFT3",
+    "companyName": "SMART FIT"
+  },
+  {
+    "symbolId": "61c2396d9ada4fc1f7fdeb82",
+    "symbol": "MLAS3",
+    "companyName": "MULTILASER"
+  },
+  {
+    "symbolId": "61c2396d9ada4fc1f7fdeb89",
+    "symbol": "NUBR33",
+    "companyName": "NUBANK"
+  }
+]

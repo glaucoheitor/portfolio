@@ -51,19 +51,13 @@ import {
   useMaterialUIController,
   setTransparentNavbar,
   setMiniSidenav,
-  setOpenConfigurator,
+  setDarkMode,
 } from "context";
 
 function DashboardNavbar({ absolute, light, isMini }) {
   const [navbarType, setNavbarType] = useState();
   const [controller, dispatch] = useMaterialUIController();
-  const {
-    miniSidenav,
-    transparentNavbar,
-    fixedNavbar,
-    openConfigurator,
-    darkMode,
-  } = controller;
+  const { miniSidenav, transparentNavbar, fixedNavbar, darkMode } = controller;
   const [openMenu, setOpenMenu] = useState(false);
   const route = useLocation().pathname.split("/").slice(1);
 
@@ -97,10 +91,9 @@ function DashboardNavbar({ absolute, light, isMini }) {
   }, [dispatch, fixedNavbar]);
 
   const handleMiniSidenav = () => setMiniSidenav(dispatch, !miniSidenav);
-  const handleConfiguratorOpen = () =>
-    setOpenConfigurator(dispatch, !openConfigurator);
   const handleOpenMenu = (event) => setOpenMenu(event.currentTarget);
   const handleCloseMenu = () => setOpenMenu(false);
+  const handleDarkMode = () => setDarkMode(dispatch, !darkMode);
 
   // Styles for the navbar icons
   const iconsStyle = ({
@@ -149,10 +142,20 @@ function DashboardNavbar({ absolute, light, isMini }) {
                 sx={navbarIconButton}
                 size="medium"
                 disableRipple
+                onClick={handleDarkMode}
+              >
+                <Icon sx={iconsStyle} fontSize="medium">
+                  {darkMode ? "light_mode" : "dark_mode"}
+                </Icon>
+              </IconButton>
+              <IconButton
+                sx={navbarIconButton}
+                size="medium"
+                disableRipple
                 onClick={handleMiniSidenav}
               >
                 <Icon sx={iconsStyle} fontSize="medium">
-                  {miniSidenav ? "menu_open" : "menu"}
+                  {miniSidenav ? "menu" : "menu_open"}
                 </Icon>
               </IconButton>
             </MDBox>

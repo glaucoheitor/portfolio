@@ -1,8 +1,8 @@
-const Trade = require("../../models/trade");
-const User = require("../../models/user");
-const Symbol = require("../../models/symbol");
+import Trade from "../../models/trade.js";
+import User from "../../models/user.js";
+import Symbol from "../../models/symbol.js";
 
-const transformTrade = ({ _doc }) => {
+export const transformTrade = ({ _doc }) => {
   return {
     ..._doc,
     user: () => user(_doc.user),
@@ -19,7 +19,7 @@ const trades = async (tradeIds) => {
   }
 };
 
-const user = async (userId) => {
+export const user = async (userId) => {
   try {
     const user = await User.findById(userId);
     return {
@@ -31,7 +31,7 @@ const user = async (userId) => {
   }
 };
 
-const symbol = async (symbolId) => {
+export const symbol = async (symbolId) => {
   try {
     const symbol = await Symbol.findById(symbolId);
     return symbol._doc;
@@ -39,8 +39,3 @@ const symbol = async (symbolId) => {
     throw err;
   }
 };
-
-//exports.user = user;
-//exports.trades = trades;
-exports.symbol = symbol;
-exports.transformTrade = transformTrade;

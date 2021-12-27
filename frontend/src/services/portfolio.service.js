@@ -6,6 +6,11 @@ export const buildPortfolioFromTrades = (trades) => {
     if (!portfolio.hasOwnProperty(s)) {
       portfolio[s] = {
         symbolName: trade.symbol.symbol,
+        companyName: trade.symbol.companyName
+          ? trade.symbol.companyName.longName
+            ? trade.symbol.companyName.longName
+            : trade.symbol.companyName.shortName
+          : trade.symbol.symbol,
         total: 0,
         totalQty: 0,
         precoMedio: 0,
