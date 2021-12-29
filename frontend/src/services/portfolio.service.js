@@ -14,6 +14,8 @@ export const buildPortfolioFromTrades = (trades) => {
         total: 0,
         totalQty: 0,
         precoMedio: 0,
+        currentPrice: 0,
+        previousPrice: 0,
       };
     }
     if (trade.type === "C") {

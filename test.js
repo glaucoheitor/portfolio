@@ -39,8 +39,8 @@ export const test = async (req, res) => {
 };
 
 export default async (req, res) => {
-  const query = "AAPL";
-  const queryOptions = { period1: "2021-05-08", return: "object" /* ... */ };
+  const query = "B3SA3.SA";
+  const queryOptions = { period1: "2021-12-20", return: "array" /* ... */ };
   const result = await yahooFinance._chart(query, queryOptions);
   res.send(result);
   return;

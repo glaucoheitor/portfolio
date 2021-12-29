@@ -71,17 +71,21 @@ function DashboardNavbar({ absolute, light, isMini }) {
 
     // A function that sets the transparent state of the navbar.
     function handleTransparentNavbar() {
-      setTransparentNavbar(
-        dispatch,
-        (fixedNavbar && window.scrollY === 0) || !fixedNavbar
-      );
+      if (fixedNavbar) {
+        if (window.scrollY === 0) setTransparentNavbar(dispatch, true);
+        else if (transparentNavbar) setTransparentNavbar(dispatch, false);
+      } else {
+        setTransparentNavbar(dispatch, true);
+      }
     }
 
     /** 
      The event listener that's calling the handleTransparentNavbar function when 
      scrolling the window.
     */
-    window.addEventListener("scroll", handleTransparentNavbar);
+    window.addEventListener("scroll", handleTransparentNavbar, {
+      passive: true,
+    });
 
     // Call the handleTransparentNavbar function to set the state with the initial value.
     handleTransparentNavbar();

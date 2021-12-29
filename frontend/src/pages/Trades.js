@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useReducer } from "react";
 
 // @mui material components
 import Grid from "@mui/material/Grid";
@@ -21,9 +21,21 @@ function TradesPage() {
   const [controller, dispatch] = useMaterialUIController();
   const [loading, setLoading] = useState(false);
   const [trades, setTrades] = useState(null);
-  const [portfolio, setPortifolio] = useState({});
 
   const { authData, darkMode } = controller;
+
+  const [portfolio, portfolioDispatch] = useReducer(portfolioReducer, {});
+
+  function portfolioReducer(state, action) {
+    switch (action.type) {
+      case "set":
+        return action.value;
+      case "decrement":
+        return { count: state.count - 1 };
+      default:
+        throw new Error();
+    }
+  }
 
   useEffect(() => {
     fetchData();
@@ -59,7 +71,10 @@ function TradesPage() {
 
         setTrades(data.tradesByUserId);
 
-        setPortifolio(buildPortfolioFromTrades(data.tradesByUserId));
+        portfolioDispatch({
+          type: "set",
+          value: buildPortfolioFromTrades(data.tradesByUserId),
+        });
       } catch (e) {
         setLoading(false);
       }
@@ -93,7 +108,13 @@ function TradesPage() {
                 title={symbolName}
                 symbolName={symbolName}
                 companyName={companyName}
-                count={<NumberFormat value={total} type={"$"} />}
+                count={
+                  <Skeleton
+                    variant="rectangular"
+                    animation="wave"
+                    width="8rem"
+                  />
+                }
                 logo={`https://cdn.toroinvestimentos.com.br/corretora/images/quote/${symbolName.slice(
                   0,
                   4
@@ -101,8 +122,8 @@ function TradesPage() {
                 logoFallback="https://cdn.toroinvestimentos.com.br/corretora/images/quote/NO-LOGO.svg"
                 percentage={{
                   color: "success",
-                  amount: "+55%",
-                  label: "than lask week",
+                  amount: <NumberFormat value={total} type={"$"} />,
+                  label: "investido",
                 }}
               />
             </MDBox>
@@ -120,7 +141,7 @@ function TradesPage() {
       <MDBox py={3}>
         <Grid container spacing={3}>
           {loading && renderSkeleton()}
-
+          {console.log(portfolio)}
           {Object.keys(portfolio).length !== 0 && (
             <>
               {renderStockCards}
