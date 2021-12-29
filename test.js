@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 
 //const result = await yahooFinance.quote("BBDC4.SA");
 
-export default async (req, res) => {
+export const test = async (req, res) => {
   const symbols = await Symbol.find({});
   let bulk = await Promise.all(
     symbols.map(async (s) => {
@@ -38,5 +38,10 @@ export default async (req, res) => {
   return;
 };
 
-const auth =
-  "eyIkdHlwZSI6IlN5c3RlbS5JZGVudGl0eU1vZGVsLlRva2Vucy5Kd3QuSnd0SGVhZGVyLCBTeXN0ZW0uSWRlbnRpdHlNb2RlbC5Ub2tlbnMuSnd0IiwiYWxnIjoiaHR0cDovL3d3dy53My5vcmcvMjAwMS8wNC94bWxkc2lnLW1vcmUjaG1hYy1zaGEyNTYiLCJ0eXAiOiJKV1QifQ.eyIkdHlwZSI6IlN5c3RlbS5JZGVudGl0eU1vZGVsLlRva2Vucy5Kd3QuSnd0UGF5bG9hZCwgU3lzdGVtLklkZW50aXR5TW9kZWwuVG9rZW5zLkp3dCIsIm5hbWVpZCI6IkdsYXVjbyIsInJvbGUiOiJBY3RpdmF0ZWQiLCJQZXJzb25UeXBlIjoiSW5kaXZpZHVhbEN1c3RvbWVyIiwiVXNlcklEIjoiNzY1NjA3IiwiU2Vzc2lvbklEIjoiM2YzZjQ0ZGYtZDU1NC00MzAyLTg0ZDctMjUyOTQxZmViZTNlIiwiVXNlcklQIjoiMTcyLjExNS4xODUuMjA1IiwiQXBwbGljYXRpb25JRCI6IjE4IiwiMDUwOGEyODI3OTJiIjoiK1BlWi9ZL3JLV1ZFUllzM1lobytqZkovWFpGNFZCd003N3VjKzQwNnZFVWNsbUo2QVJ5MEYwaUYvQkQ3UVpUMXZ4dlliWitCOEo2T0FKeHJTVkJBNXc9PSIsIklzTW9iaWxlIjoiRmFsc2UiLCJDQkxDIjoiMzQyNTMwIiwiSXNGaXJzdEFjdGl2YXRlZExvZ2luIjoiRmFsc2UiLCJuYmYiOjE2NDA1MDA4NDUsImV4cCI6MTY0MDU0NDA0NSwiaXNzIjoiaHR0cHM6Ly93ZWJhcGllcXIudG9yb2ludmVzdGltZW50b3MuY29tLmJyLyIsImF1ZCI6Ikh1YiJ9.9Kz8kX-YPayTYgMyQ7PMENP89lhaqHzMeblOVHjdn2I";
+export default async (req, res) => {
+  const query = "AAPL";
+  const queryOptions = { period1: "2021-05-08", return: "object" /* ... */ };
+  const result = await yahooFinance._chart(query, queryOptions);
+  res.send(result);
+  return;
+};

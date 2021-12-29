@@ -17,14 +17,20 @@ export async function trades(args, req) {
 }
 export async function tradesByUserId({ userId }, req) {
   //if (!req.isAuth) {throw new Error("Unauthenticated!")}
+  console.time();
   try {
-    const { trades } = await User.findById(userId, "trades").populate({
+    const trades = await Trade.find({ user: userId })
+      .populate("symbol")
+      .sort("date");
+
+    return trades.map(transformTrade);
+    /*const { trades } = await User.findById(userId, "trades").populate({
       path: "trades",
       populate: { path: "symbol" },
       options: { sort: { date: 1 } },
     });
 
-    /*if (tradesIds.length === 0) {
+    if (tradesIds.length === 0) {
       return tradesIds;
     }
     const trades = await Trade
@@ -42,11 +48,11 @@ export async function tradesByUserId({ userId }, req) {
       symbolsNames[symbol._id] = symbol.symbol;
     }
     console.log(symbolsNames); */
-    return trades.map(transformTrade);
   } catch (err) {
     throw err;
   }
 }
+
 export async function addTrade(args, req) {
   if (!req.isAuth) {
     throw new Error("Unauthenticated!");
