@@ -38,10 +38,49 @@ export const test = async (req, res) => {
   return;
 };
 
-export default async (req, res) => {
-  const query = "B3SA3.SA";
-  const queryOptions = { period1: "2021-12-20", return: "array" /* ... */ };
-  const result = await yahooFinance._chart(query, queryOptions);
+const chart = async (req, res) => {
+  let result;
+  try {
+    const query = "NUBR33.SA";
+    const queryOptions = { period1: "2021-12-20" /* ... */ };
+    result = await yahooFinance.historical(query, queryOptions);
+  } catch (e) {
+    result = e.result;
+  }
   res.send(result);
   return;
 };
+
+const getCurrentPrice = async (req, res) => {
+  const { symbol } = req.body;
+
+  try {
+    const data = await yahooFinance.quoteCombine(`${symbol}.SA`, {
+      fields: [
+        "regularMarketPrice",
+        "regularMarketPreviousClose",
+        "regularMarketChangePercent",
+      ],
+    });
+
+    const {
+      regularMarketPrice,
+      regularMarketPreviousClose,
+      regularMarketChangePercent,
+    } = data;
+    console.log(data);
+    res.send(
+      JSON.stringify({
+        currentPrice: regularMarketPrice,
+        previousPrice: regularMarketPreviousClose,
+        priceChangePercent: regularMarketChangePercent,
+      })
+    );
+    return;
+  } catch (e) {
+    console.log(e);
+    res.send("0");
+    return;
+  }
+};
+export default getCurrentPrice;

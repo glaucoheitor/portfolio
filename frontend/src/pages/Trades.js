@@ -11,7 +11,10 @@ import LayoutContainer from "layouts/Containers/DashboardContainer";
 import DashboardNavbar from "layouts/Navbars/DashboardNavbar";
 import StockCard from "components/Cards/StockCard";
 
-import { buildPortfolioFromTrades } from "services/portfolio.service";
+import {
+  buildPortfolioFromTrades,
+  getCurrentPrice,
+} from "services/portfolio.service";
 
 import NumberFormat from "utils/NumberFormat";
 
@@ -26,12 +29,18 @@ function TradesPage() {
 
   const [portfolio, portfolioDispatch] = useReducer(portfolioReducer, {});
 
-  function portfolioReducer(state, action) {
-    switch (action.type) {
+  function portfolioReducer(state, { type, value }) {
+    switch (type) {
       case "set":
-        return action.value;
-      case "decrement":
-        return { count: state.count - 1 };
+        return { ...value, currentPrices: false, previousPrices: false };
+      case "currentPrice":
+        return {
+          ...state,
+          [value.symbolId]: {
+            ...state[value.symbolId],
+            ...value.prices,
+          },
+        };
       default:
         throw new Error();
     }
@@ -82,6 +91,27 @@ function TradesPage() {
     }
   }, []);
 
+  useEffect(() => {
+    const fetchCurrentPrices = async () => {
+      console.log("hey");
+      for (const [
+        symbolId,
+        { symbol, totalQty, currentPrice, previousPrice },
+      ] of Object.entries(portfolio)) {
+        if (totalQty > 0 && currentPrice === null) {
+          const data = await getCurrentPrice(symbol);
+          console.log(data);
+          portfolioDispatch({
+            type: "currentPrice",
+            value: { symbolId, prices: data },
+          });
+        }
+      }
+    };
+
+    fetchCurrentPrices();
+  }, [portfolio.currentPrices]);
+
   const renderSkeleton = () => {
     let array = [];
     for (let i = 0; i <= 15; i++) {
@@ -97,7 +127,19 @@ function TradesPage() {
   };
 
   const renderStockCards = Object.entries(portfolio).map(
-    ([symbolId, { symbolName, companyName, total, totalQty }]) => {
+    ([
+      symbolId,
+      {
+        symbol,
+        companyName,
+        total,
+        totalQty,
+        precoMedio,
+        currentPrice,
+        regularMarketPreviousClose,
+        priceChangePercent,
+      },
+    ]) => {
       if (totalQty > 0) {
         return (
           <Grid item xs={12} sm={6} lg={4} xxxl={3}>
@@ -105,26 +147,58 @@ function TradesPage() {
               <StockCard
                 color={darkMode ? "dark" : "light"}
                 icon="weekend"
-                title={symbolName}
-                symbolName={symbolName}
+                title={symbol}
+                symbol={symbol}
                 companyName={companyName}
-                count={
-                  <Skeleton
-                    variant="rectangular"
-                    animation="wave"
-                    width="8rem"
-                  />
+                priceChange={{
+                  color:
+                    !priceChangePercent || priceChangePercent === 0
+                      ? "text"
+                      : priceChangePercent > 0
+                      ? "success"
+                      : "error",
+                  amount:
+                    !priceChangePercent && priceChangePercent !== 0 ? (
+                      ""
+                    ) : typeof priceChangePercent !== "number" ? (
+                      priceChangePercent
+                    ) : (
+                      <NumberFormat value={priceChangePercent} type={"%"} />
+                    ),
+                }}
+                currentPrice={
+                  currentPrice ? (
+                    isNaN(currentPrice) ? (
+                      currentPrice
+                    ) : (
+                      <NumberFormat value={currentPrice} type={"$"} />
+                    )
+                  ) : (
+                    <Skeleton
+                      variant="rectangular"
+                      animation="wave"
+                      width="8rem"
+                      height="4rem"
+                    />
+                  )
                 }
-                logo={`https://cdn.toroinvestimentos.com.br/corretora/images/quote/${symbolName.slice(
+                logo={`https://cdn.toroinvestimentos.com.br/corretora/images/quote/${symbol.slice(
                   0,
                   4
                 )}.svg`}
                 logoFallback="https://cdn.toroinvestimentos.com.br/corretora/images/quote/NO-LOGO.svg"
-                percentage={{
-                  color: "success",
-                  amount: <NumberFormat value={total} type={"$"} />,
-                  label: "investido",
-                }}
+                extraData={[
+                  {
+                    color: "success",
+                    amount: <NumberFormat value={total} type={"$"} />,
+                    label: "Valor atual",
+                  },
+                  {
+                    color: "success",
+                    amount: <NumberFormat value={total} type={"$"} />,
+                    label: "Valor atual",
+                  },
+                ]}
               />
             </MDBox>
           </Grid>
@@ -142,70 +216,7 @@ function TradesPage() {
         <Grid container spacing={3}>
           {loading && renderSkeleton()}
           {console.log(portfolio)}
-          {Object.keys(portfolio).length !== 0 && (
-            <>
-              {renderStockCards}
-              <Grid item xs={12} md={6} lg={3}>
-                <MDBox mb={1.5}>
-                  <StockCard
-                    color="dark"
-                    icon="weekend"
-                    title="Bookings"
-                    count={281}
-                    percentage={{
-                      color: "success",
-                      amount: "+55%",
-                      label: "than lask week",
-                    }}
-                  />
-                </MDBox>
-              </Grid>
-              <Grid item xs={12} md={6} lg={3}>
-                <MDBox mb={1.5}>
-                  <StockCard
-                    icon="leaderboard"
-                    title="Today's Users"
-                    count="2,300"
-                    percentage={{
-                      color: "success",
-                      amount: "+3%",
-                      label: "than last month",
-                    }}
-                  />
-                </MDBox>
-              </Grid>
-              <Grid item xs={12} md={6} lg={3}>
-                <MDBox mb={1.5}>
-                  <StockCard
-                    color="success"
-                    icon="store"
-                    title="Revenue"
-                    count="34k"
-                    percentage={{
-                      color: "success",
-                      amount: "+1%",
-                      label: "than yesterday",
-                    }}
-                  />
-                </MDBox>
-              </Grid>
-              <Grid item xs={12} md={6} lg={3}>
-                <MDBox mb={1.5}>
-                  <StockCard
-                    color="primary"
-                    icon="person_add"
-                    title="Followers"
-                    count="+91"
-                    percentage={{
-                      color: "success",
-                      amount: "",
-                      label: "Just updated",
-                    }}
-                  />
-                </MDBox>
-              </Grid>
-            </>
-          )}
+          {Object.keys(portfolio).length !== 0 && <>{renderStockCards}</>}
         </Grid>
       </MDBox>
 

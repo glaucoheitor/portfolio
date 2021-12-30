@@ -1,3 +1,5 @@
+import yahooFinance from "yahoo-finance2";
+
 export const buildPortfolioFromTrades = (trades) => {
   let portfolio = {};
   let s;
@@ -5,7 +7,7 @@ export const buildPortfolioFromTrades = (trades) => {
     s = trade.symbol._id;
     if (!portfolio.hasOwnProperty(s)) {
       portfolio[s] = {
-        symbolName: trade.symbol.symbol,
+        symbol: trade.symbol.symbol,
         companyName: trade.symbol.companyName
           ? trade.symbol.companyName.longName
             ? trade.symbol.companyName.longName
@@ -14,8 +16,8 @@ export const buildPortfolioFromTrades = (trades) => {
         total: 0,
         totalQty: 0,
         precoMedio: 0,
-        currentPrice: 0,
-        previousPrice: 0,
+        currentPrice: null,
+        previousPrice: null,
       };
     }
     if (trade.type === "C") {
@@ -27,5 +29,46 @@ export const buildPortfolioFromTrades = (trades) => {
       portfolio[s].totalQty -= Number(trade.qty);
     }
   }
-  return portfolio;
+  return sortAndReducePortfolio(portfolio);
+};
+
+export const getCurrentPrice = async (symbol) => {
+  try {
+    const data = await fetch("http://localhost:3001/test", {
+      method: "POST", // or 'PUT'
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ symbol }),
+    }).then((res) => res.json());
+
+    return data;
+    /* const { regularMarketPrice } = await yahooFinance.quoteCombine(
+      `${symbolName}.SA`,
+      { fields: ["regularMarketPrice"] }
+    );
+    return regularMarketPrice; */
+  } catch (e) {
+    console.log(e);
+    return 0;
+  }
+};
+
+const sortAndReducePortfolio = (trades) => {
+  return Object.entries(trades)
+    .sort(([, a], [, b]) => {
+      if (a.symbol > b.symbol) {
+        return 1;
+      }
+      if (a.symbol < b.symbol) {
+        return -1;
+      }
+      return 0;
+    })
+    .reduce((obj, [symbolId, data]) => {
+      if (data.totalQty > 0) {
+        obj[symbolId] = trades[symbolId];
+      }
+      return obj;
+    }, {});
 };

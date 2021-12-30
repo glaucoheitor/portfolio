@@ -30,7 +30,7 @@ app.use(
   })
 );
 
-app.get("/test", test);
+app.use("/test", test);
 
 mongoose
   .connect(

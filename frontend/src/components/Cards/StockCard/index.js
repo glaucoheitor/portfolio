@@ -30,12 +30,14 @@ import MDTypography from "components/MDTypography";
 function ComplexStatisticsCard({
   color,
   title,
-  count,
-  percentage,
+  currentPrice,
+  priceChange,
+  extraData,
+
   icon,
   logo,
   logoFallback,
-  symbolName,
+  symbol,
   companyName,
 }) {
   const [logoSrc, setLogoSrc] = useState(logo);
@@ -77,13 +79,16 @@ function ComplexStatisticsCard({
               variant="button"
               color={color === "light" ? "dark" : "white"}
             >
-              {symbolName}
+              {symbol}
             </MDTypography>
           </MDBox>
         </MDBox>
 
         <MDBox textAlign="right" lineHeight={1.25}>
-          <MDTypography variant="h4">{count}</MDTypography>
+          <MDTypography variant="h4">{currentPrice}</MDTypography>
+          <MDTypography variant="h6" color={priceChange.color}>
+            {priceChange.amount}
+          </MDTypography>
         </MDBox>
       </MDBox>
       <MDBox textAlign="right" lineHeight={1.25} pt={1} px={2}>
@@ -104,24 +109,40 @@ function ComplexStatisticsCard({
         </MDTypography>
       </MDBox>
       <Divider />
-      <MDBox pb={2} px={2}>
-        <MDTypography
-          component="p"
-          variant="button"
-          color="text"
-          display="flex"
-        >
-          <MDTypography
-            component="span"
-            variant="button"
-            fontWeight="bold"
-            color={percentage.color}
+      {extraData &&
+        extraData.map((data) => (
+          <MDBox
+            pb={2}
+            px={2}
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
           >
-            {percentage.amount}
-          </MDTypography>
-          &nbsp;{percentage.label}
-        </MDTypography>
-      </MDBox>
+            <MDTypography
+              component="p"
+              variant="button"
+              color="text"
+              display="flex"
+            >
+              &nbsp;{data.label}
+            </MDTypography>
+            <MDTypography
+              component="p"
+              variant="button"
+              color="text"
+              display="flex"
+            >
+              <MDTypography
+                component="span"
+                variant="button"
+                fontWeight="bold"
+                color={data.color}
+              >
+                {data.amount}
+              </MDTypography>
+            </MDTypography>
+          </MDBox>
+        ))}
     </Card>
   );
 }
@@ -149,21 +170,23 @@ ComplexStatisticsCard.propTypes = {
     "dark",
   ]),
   title: PropTypes.string.isRequired,
-  count: PropTypes.node.isRequired,
-  percentage: PropTypes.shape({
-    color: PropTypes.oneOf([
-      "primary",
-      "secondary",
-      "info",
-      "success",
-      "warning",
-      "error",
-      "dark",
-      "white",
-    ]),
-    amount: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-    label: PropTypes.string,
-  }),
+  currentPrice: PropTypes.node.isRequired,
+  extraData: PropTypes.arrayOf(
+    PropTypes.shape({
+      color: PropTypes.oneOf([
+        "primary",
+        "secondary",
+        "info",
+        "success",
+        "warning",
+        "error",
+        "dark",
+        "white",
+      ]),
+      amount: PropTypes.node,
+      label: PropTypes.string,
+    })
+  ),
   icon: PropTypes.node.isRequired,
 };
 

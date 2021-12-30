@@ -6,6 +6,7 @@ export default function NumFormat({ value, type, decimalScale = 2, ...props }) {
   let prefix = type === "$" ? "R$ " : "";
   const suffix = type === "%" ? "%" : null;
   if (value < 0) prefix += "-";
+  if (value > 0 && type === "%") prefix += "+";
 
   return (
     <>

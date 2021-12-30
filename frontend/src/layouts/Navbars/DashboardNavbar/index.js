@@ -13,7 +13,7 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 // react-router components
 import { useLocation, Link } from "react-router-dom";
@@ -60,6 +60,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
   const { miniSidenav, transparentNavbar, fixedNavbar, darkMode } = controller;
   const [openMenu, setOpenMenu] = useState(false);
   const route = useLocation().pathname.split("/").slice(1);
+  const transparentNavbarRef = useRef(transparentNavbar);
 
   useEffect(() => {
     // Setting the navbar type
@@ -72,10 +73,17 @@ function DashboardNavbar({ absolute, light, isMini }) {
     // A function that sets the transparent state of the navbar.
     function handleTransparentNavbar() {
       if (fixedNavbar) {
-        if (window.scrollY === 0) setTransparentNavbar(dispatch, true);
-        else if (transparentNavbar) setTransparentNavbar(dispatch, false);
+        //when scrolling, set navbar to transparent or not and update the ref to avoid tons of re-renders
+        if (window.scrollY === 0) {
+          setTransparentNavbar(dispatch, true);
+          transparentNavbarRef.current = true;
+        } else if (transparentNavbarRef.current === true) {
+          setTransparentNavbar(dispatch, false);
+          transparentNavbarRef.current = false;
+        }
       } else {
         setTransparentNavbar(dispatch, true);
+        transparentNavbarRef.current = true;
       }
     }
 
