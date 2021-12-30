@@ -127,19 +127,12 @@ function ComplexStatisticsCard({
               &nbsp;{data.label}
             </MDTypography>
             <MDTypography
-              component="p"
+              component="span"
               variant="button"
-              color="text"
-              display="flex"
+              fontWeight="bold"
+              color={data.color}
             >
-              <MDTypography
-                component="span"
-                variant="button"
-                fontWeight="bold"
-                color={data.color}
-              >
-                {data.amount}
-              </MDTypography>
+              {data.amount}
             </MDTypography>
           </MDBox>
         ))}

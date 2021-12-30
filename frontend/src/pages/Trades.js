@@ -141,6 +141,10 @@ function TradesPage() {
       },
     ]) => {
       if (totalQty > 0) {
+        const result =
+          currentPrice && !isNaN(currentPrice)
+            ? totalQty * currentPrice - totalQty * precoMedio
+            : null;
         return (
           <Grid item xs={12} sm={6} lg={4} xxxl={3}>
             <MDBox mb={1.5}>
@@ -189,14 +193,28 @@ function TradesPage() {
                 logoFallback="https://cdn.toroinvestimentos.com.br/corretora/images/quote/NO-LOGO.svg"
                 extraData={[
                   {
-                    color: "success",
-                    amount: <NumberFormat value={total} type={"$"} />,
-                    label: "Valor atual",
+                    color: "text",
+                    amount: totalQty,
+                    label: "Quantidade",
                   },
                   {
-                    color: "success",
+                    color: "text",
+                    amount: result ? (
+                      <NumberFormat value={result} type={"$"} />
+                    ) : (
+                      <Skeleton
+                        variant="rectangular"
+                        animation="wave"
+                        width={75}
+                        height={21}
+                      />
+                    ),
+                    label: "Resultado atual",
+                  },
+                  {
+                    color: "text",
                     amount: <NumberFormat value={total} type={"$"} />,
-                    label: "Valor atual",
+                    label: "Valor atual investido",
                   },
                 ]}
               />
