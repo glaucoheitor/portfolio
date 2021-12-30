@@ -77,12 +77,12 @@ function Basic() {
     if (!isEmail(email)) {
       setEmailError(true);
     }
-    if (password.length < 8) {
+    /* if (password.length < 8) {
       setPasswordError(true);
       setError("Password must be at least 8 characters long.");
-    }
+    } */
 
-    if (!isEmail(email) || password.length < 8) return;
+    //if (!isEmail(email) || password.length < 8) return;
 
     setLoading(true);
 

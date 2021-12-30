@@ -69,7 +69,7 @@ function ComplexStatisticsCard({
             component="img"
             src={logoSrc}
             alt="Brand"
-            width="5.5rem"
+            width="auto"
             height="2.5rem"
             onError={handleLogoOnError}
           />

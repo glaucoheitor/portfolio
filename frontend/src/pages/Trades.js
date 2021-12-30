@@ -61,7 +61,7 @@ function TradesPage() {
                 date
                 qty
                 price
-                symbol{
+                symbol {
                   _id
                   symbol
                   companyName {
@@ -198,7 +198,12 @@ function TradesPage() {
                     label: "Quantidade",
                   },
                   {
-                    color: "text",
+                    color:
+                      !result || result === 0
+                        ? "text"
+                        : result > 0
+                        ? "success"
+                        : "error",
                     amount: result ? (
                       <NumberFormat value={result} type={"$"} />
                     ) : (

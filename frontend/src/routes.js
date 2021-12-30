@@ -33,6 +33,7 @@ import LogIn from "layouts/Auth/login";
 import Forgot from "layouts/Auth/reset-password/cover";
 
 import TradesPage from "pages/Trades";
+import TradesTest from "pages/TradesTest";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -45,6 +46,14 @@ const routes = [
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/trades",
     component: <TradesPage />,
+  },
+  {
+    type: "collapse",
+    name: "Trades Test",
+    key: "trades-test",
+    icon: <Icon fontSize="small">dashboard</Icon>,
+    route: "/trades-test",
+    component: <TradesTest />,
   },
   {
     type: "collapse",
