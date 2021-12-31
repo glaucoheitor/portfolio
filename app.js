@@ -10,6 +10,7 @@ import graphQlResolvers from "./graphql/resolvers/index.js";
 import isAuth from "./middleware/auth.js";
 
 import test from "./test.js";
+import insertTradesFromOldDB from "./insertTradesFromOldDB.js";
 
 const app = express();
 
@@ -31,6 +32,7 @@ app.use(
 );
 
 app.use("/test", test);
+app.use("/insertTrades", insertTradesFromOldDB);
 
 mongoose
   .connect(

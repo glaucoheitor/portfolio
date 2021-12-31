@@ -36,6 +36,7 @@ function TradesPage() {
       case "currentPrice":
         return {
           ...state,
+          currentPrices: true,
           [value.symbolId]: {
             ...state[value.symbolId],
             ...value.prices,
@@ -47,7 +48,7 @@ function TradesPage() {
   }
 
   useEffect(() => {
-    fetchData();
+    if (!trades) fetchData();
 
     async function fetchData() {
       setLoading(true);
@@ -89,7 +90,7 @@ function TradesPage() {
       }
       setLoading(false);
     }
-  }, []);
+  }, [trades]);
 
   useEffect(() => {
     const fetchCurrentPrices = async () => {
@@ -109,7 +110,7 @@ function TradesPage() {
       }
     };
 
-    fetchCurrentPrices();
+    if (!portfolio.currentPrices) fetchCurrentPrices();
   }, [portfolio.currentPrices]);
 
   const renderSkeleton = () => {

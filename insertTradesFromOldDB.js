@@ -1,50 +1,68 @@
-import Trade from "./models/trade";
-import User from "./models/user";
-import Symbol from "./models/symbol";
+import Trade from "./models/trade.js";
+import User from "./models/user.js";
+import Symbol from "./models/symbol.js";
+import fs from "fs";
 
-import { data } from "./negociacoes";
+const { data } = JSON.parse(fs.readFileSync("./negociacoes.json"));
 
 export default async function (req, res) {
-  //const obj = JSON.parse(negociacoes);
-  const symbols = data.map((trade) => {
+  const userId = "61c2311f9fd197cc682833f0";
+
+  const trades = await Trade.find({ user: userId }, "_id");
+
+  const user = await User.findById(userId);
+
+  user.trades = trades;
+  await user.save();
+
+  res.send(user);
+  return;
+
+  /*const symbols = data.map((trade) => {
     return trade.symbol;
   });
 
   const symbolsIds = await Symbol.find({ symbol: symbols });
 
-  const trades = data.map(
-    ({ date, type, symbol: symbolName, qty, price, total, id_user }, index) => {
-      const symbol = symbolsIds.find((s) => s.symbol === symbolName);
-      let symbolId;
-      if (!symbol) {
-        const insertSymbol = new Symbol({
-          symbol: symbolName,
-          lastRefreshed: null,
-        });
-        insertSymbol.save().then((result) => {
-          symbolId = result.id;
-        });
-      } else {
-        symbolId = symbol._id;
+  const trades = data
+    .map(
+      (
+        { date, type, symbol: symbolName, qty, price, total, id_user },
+        index
+      ) => {
+        if (id_user !== "1" && id_user !== "2") return null;
+        const symbol = symbolsIds.find((s) => s.symbol === symbolName);
+        let symbolId;
+        if (!symbol) {
+          const insertSymbol = new Symbol({
+            symbol: symbolName,
+            lastRefreshed: null,
+          });
+          insertSymbol.save().then((result) => {
+            symbolId = result.id;
+          });
+        } else {
+          symbolId = symbol._id;
+        }
+        return {
+          type: type,
+          symbol: symbolId,
+          qty: +qty,
+          price: +price,
+          total: +total,
+          user:
+            id_user === "1"
+              ? "61b9983b6e311026b7bf0776"
+              : "61c2311f9fd197cc682833f0",
+          date: new Date(date),
+        };
       }
-      return {
-        type: type,
-        symbol: symbolId,
-        qty: +qty,
-        price: +price,
-        total: +total,
-        user:
-          id_user === "1"
-            ? "61b9983b6e311026b7bf0776"
-            : "61c2311f9fd197cc682833f0",
-        date: new Date(date),
-      };
-    }
-  );
+    )
+    .filter((t) => t !== null);
 
   const insertedTrades = await Trade.insertMany(trades);
 
-  insertedTradesIds = insertedTrades.reduce(function (r, a) {
+    insertedTradesIds = insertedTrades.reduce(function (r, a) {
     r[a.user] = r[a.user] || [];
     r[a.user].push(a._id);
     return r;
@@ -59,6 +77,7 @@ export default async function (req, res) {
     await existingUser.save();
   });
 
-  res.send(insertedTradesIds);
+  res.send(insertedTradesIds); */
+  res.send(insertedTrades);
   return;
 }
