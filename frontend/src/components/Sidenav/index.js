@@ -27,6 +27,7 @@ import sidenavLogoLabel from "components/Sidenav/styles/sidenav";
 // Material Dashboard 2 PRO React context
 import {
   useMaterialUIController,
+  usePortfolioController,
   setMiniSidenav,
   setTransparentSidenav,
   setWhiteSidenav,
@@ -35,6 +36,7 @@ import {
 
 function Sidenav({ color, brand, brandName, routes, ...rest }) {
   const [controller, dispatch] = useMaterialUIController();
+  const [portfolioController, portfolioDispatch] = usePortfolioController();
   const {
     miniSidenav,
     transparentSidenav,
@@ -55,7 +57,7 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
   }
 
   const handleLogout = () => {
-    logout(dispatch);
+    logout(portfolioDispatch);
     navigate("/auth/login");
   };
 

@@ -30,10 +30,15 @@ import bgImage from "assets/images/bg-sign-in-basic.jpeg";
 //Validator
 import isEmail from "validator/lib/isEmail";
 
-import { useMaterialUIController, login } from "context";
+import {
+  useMaterialUIController,
+  usePortfolioController,
+  login,
+} from "context";
 
 function Basic() {
   const [controller, dispatch] = useMaterialUIController();
+  const [portfolioController, portfolioDispatch] = usePortfolioController();
   const [rememberMe, setRememberMe] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -44,7 +49,7 @@ function Basic() {
   let navigate = useNavigate();
 
   useEffect(async () => {
-    const { authData } = controller;
+    const { authData } = portfolioController;
     if (authData.token) {
       setLoading(true);
 
@@ -106,7 +111,7 @@ function Basic() {
       }).then((res) => res.json());
       console.log(data);
       if (!data) throw new Error(errors[0].message);
-      login(dispatch, {
+      login(portfolioDispatch, {
         token: data.login.token,
         userId: data.login.userId,
       });

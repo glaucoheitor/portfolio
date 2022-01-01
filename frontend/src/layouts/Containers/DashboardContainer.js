@@ -10,11 +10,13 @@ import PropTypes from "prop-types";
 import MDBox from "components/MDBox";
 
 // Material Dashboard 2 PRO React context
-import { useMaterialUIController, setLayout } from "context";
+import { useMaterialUIController, usePortfolioController,setLayout } from "context";
 
 function LayoutContainer({ children }) {
   const [controller, dispatch] = useMaterialUIController();
-  const { miniSidenav, authData } = controller;
+  const [portfolioController, portfolioDispatch] = usePortfolioController();
+  const { miniSidenav } = controller;
+  const { authData } = portfolioController;
   const { pathname } = useLocation();
   let navigate = useNavigate();
 

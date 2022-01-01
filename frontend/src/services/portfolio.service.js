@@ -32,7 +32,7 @@ export const buildPortfolioFromTrades = (trades) => {
   return sortAndReducePortfolio(portfolio);
 };
 
-export const getCurrentPrice = async (symbol) => {
+export const getPrices = async (symbol) => {
   try {
     const data = await fetch("http://localhost:3001/test", {
       method: "POST", // or 'PUT'

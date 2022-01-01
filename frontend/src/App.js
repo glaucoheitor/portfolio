@@ -8,7 +8,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Icon from "@mui/material/Icon";
 
-import TradesPage from "pages/Trades";
+import TradesPage from "pages/TradesTest";
 import Sidenav from "components/Sidenav";
 
 // Material Dashboard 2 React themes
@@ -17,9 +17,9 @@ import themeDark from "assets/theme-dark";
 
 // Material Dashboard 2 React contexts
 import {
+  PortfolioControllerProvider,
   useMaterialUIController,
   setMiniSidenav,
-  setOpenConfigurator,
 } from "context";
 
 // Images
@@ -33,7 +33,6 @@ export default function App() {
   const {
     miniSidenav,
     layout,
-    openConfigurator,
     sidenavColor,
     transparentSidenav,
     whiteSidenav,
@@ -86,25 +85,33 @@ export default function App() {
 
   return (
     <ThemeProvider theme={darkMode ? themeDark : theme}>
-      <CssBaseline />
-      {layout === "dashboard" && (
-        <Sidenav
-          color={sidenavColor}
-          brand={
-            (transparentSidenav && !darkMode) || whiteSidenav
-              ? brandDark
-              : brandWhite
-          }
-          brandName="Portfolio"
-          routes={routes}
-          onMouseEnter={handleOnMouseEnter}
-          onMouseLeave={handleOnMouseLeave}
-        />
-      )}
-      <Routes>
-        {getRoutes(routes)}
-        <Route path="*" element={<Navigate to="/auth/login" />} />
-      </Routes>
+      <PortfolioControllerProvider>
+        <CssBaseline />
+        {layout === "dashboard" && (
+          <Sidenav
+            color={sidenavColor}
+            brand={
+              (transparentSidenav && !darkMode) || whiteSidenav
+                ? brandDark
+                : brandWhite
+            }
+            brandName="Portfolio"
+            routes={routes}
+            onMouseEnter={handleOnMouseEnter}
+            onMouseLeave={handleOnMouseLeave}
+          />
+        )}
+        <Routes>
+          {getRoutes(routes)}
+          <Route
+            exact
+            path="/trades/:symbol"
+            element={<TradesPage />}
+            key="trades-detail"
+          />
+          <Route path="*" element={<Navigate to="/auth/login" />} />
+        </Routes>
+      </PortfolioControllerProvider>
     </ThemeProvider>
   );
 }

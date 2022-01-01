@@ -55,7 +55,7 @@ const getCurrentPrice = async (req, res) => {
   const { symbol } = req.body;
 
   try {
-    const data = await yahooFinance.quoteCombine(`${symbol}.SA`, {
+    /* const data = await yahooFinance.quoteCombine(`${symbol}.SA`, {
       fields: [
         "regularMarketPrice",
         "regularMarketPreviousClose",
@@ -68,12 +68,12 @@ const getCurrentPrice = async (req, res) => {
       regularMarketPreviousClose,
       regularMarketChangePercent,
     } = data;
-    console.log(data);
+    console.log(data); */
     res.send(
       JSON.stringify({
-        currentPrice: regularMarketPrice,
-        previousPrice: regularMarketPreviousClose,
-        priceChangePercent: regularMarketChangePercent,
+        currentPrice: 22,
+        previousPrice: 20,
+        priceChangePercent: 10,
       })
     );
     return;
