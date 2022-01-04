@@ -14,106 +14,26 @@ import LayoutContainer from "layouts/Containers/DashboardContainer";
 import DashboardNavbar from "layouts/Navbars/DashboardNavbar";
 import StockCard from "components/Cards/StockCard";
 
-import {
-  buildPortfolioFromTrades,
-  getPrices,
-} from "services/portfolio.service";
-
 import NumberFormat from "utils/NumberFormat";
 
-import {
-  useMaterialUIController,
-  usePortfolioController,
-  setTrades,
-  setPortfolio,
-  setPrices,
-} from "context";
+import { useMaterialUIController, usePortfolioController } from "context";
 
 function TradesPage() {
-  const [controller, dispatch] = useMaterialUIController();
-  const [portfolioController, portfolioDispatch] = usePortfolioController();
-  const [loading, setLoading] = useState(false);
+  const [controller] = useMaterialUIController();
+  const [portfolioController] = usePortfolioController();
 
   const { darkMode } = controller;
-  const { authData, trades, portfolio, prices } = portfolioController;
+  const { portfolio, prices } = portfolioController;
 
-  useEffect(() => {
-    console.log("trades");
-    if (!trades) fetchData();
-
-    async function fetchData() {
-      setLoading(true);
-      try {
-        const { data } = await fetch("http://localhost:3001/graphql", {
-          method: "POST",
-          body: JSON.stringify({
-            query: `query {
-              tradesByUserId(userId:"${authData.userId}") {
-                type
-                date
-                qty
-                price
-                symbol {
-                  _id
-                  symbol
-                  companyName {
-                    longName
-                    shortName
-                  }
-                }
-              }
-            }`,
-          }),
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: "Bearer " + authData.token,
-          },
-        }).then((res) => res.json());
-
-        setTrades(portfolioDispatch, data.tradesByUserId);
-        setPortfolio(
-          portfolioDispatch,
-          buildPortfolioFromTrades(data.tradesByUserId)
-        );
-      } catch (e) {
-        setLoading(false);
-      }
-      setLoading(false);
-    }
-  });
-
-  useEffect(() => {
-    const fetchPrices = async () => {
-      if (portfolio) {
-        for (const [symbolId, { symbol, totalQty }] of Object.entries(
-          portfolio
-        )) {
-          if (totalQty > 0) {
-            const data = await getPrices(symbol);
-            console.log(data);
-            setPrices(portfolioDispatch, { symbolId, prices: data });
-          }
-        }
-        console.log(prices);
-      }
-    };
-    console.log("fetchPrices");
-    if (!Object.keys(prices).length) fetchPrices();
-  }, [portfolio]);
-
-  const renderSkeleton = () => {
-    let array = [];
-    for (let i = 0; i <= 15; i++) {
-      array.push(
-        <Grid item xs={12} sm={6} lg={4} xxxl={3}>
-          <MDBox mb={1.5}>
-            <Skeleton variant="rectangular" animation="wave" height="8.5rem" />
-          </MDBox>
-        </Grid>
-      );
-    }
-    return array;
-  };
+  //create an array with 15 Skeletons
+  const renderSkeleton = () =>
+    Array.from({ length: 15 }, () => (
+      <Grid item xs={12} sm={6} lg={4} xxxl={3}>
+        <MDBox mb={1.5}>
+          <Skeleton variant="rectangular" animation="wave" height="8.5rem" />
+        </MDBox>
+      </Grid>
+    ));
 
   const renderStockCards = () =>
     portfolio &&
@@ -223,13 +143,9 @@ function TradesPage() {
       <DashboardNavbar />
       <MDBox py={3}>
         <Grid container spacing={3}>
-          {loading && renderSkeleton()}
-
-          {portfolio && <>{renderStockCards()}</>}
+          {portfolio ? <>{renderStockCards()}</> : renderSkeleton()}
         </Grid>
       </MDBox>
-
-      {/* trades && JSON.stringify(trades, null, 4) */}
     </LayoutContainer>
   );
 }

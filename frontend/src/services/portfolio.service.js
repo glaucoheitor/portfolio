@@ -1,10 +1,94 @@
 import yahooFinance from "yahoo-finance2";
 
+export const getTrades = async (authData) => {
+  try {
+    const { data } = await fetch("http://localhost:3001/graphql", {
+      method: "POST",
+      body: JSON.stringify({
+        query: `query {
+              tradesByUserId(userId:"${authData.userId}") {
+                type
+                date
+                qty
+                price
+                symbol {
+                  _id
+                  symbol
+                  companyName {
+                    longName
+                    shortName
+                  }
+                }
+              }
+            }`,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + authData.token,
+      },
+    }).then((res) => res.json());
+    return data.tradesByUserId;
+  } catch (e) {
+    return [];
+  }
+};
+
+export const getHistoricalStockData = async (
+  authData,
+  symbolId,
+  startDate,
+  endDate
+) => {
+  try {
+    const { data } = await fetch("http://localhost:3001/graphql", {
+      method: "POST",
+      body: JSON.stringify({
+        query: `query {
+              stockData(symbolId: "${symbolId}",startDate: "2021-12-01") {
+                _id
+                date
+                close
+              }
+            }`,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + authData.token,
+      },
+    }).then((res) => res.json());
+    console.log(data);
+    return data.stockData;
+  } catch (e) {
+    return [];
+  }
+};
+
+export const getPositionAtDay = (symbolId, date, trades) => {
+  const position = {
+    total: 0,
+    totalQty: 0,
+    precoMedio: 0,
+    priceAtDay: null,
+  };
+  for (const trade of trades) {
+    if (symbolId === trade.symbol._id && trade.date <= new Date(date)) {
+      if (trade.type === "C") {
+        position.total += Number(trade.qty) * Number(trade.price);
+        position.totalQty += Number(trade.qty);
+        position.precoMedio = position.total / position.totalQty;
+      } else if (trade.type === "V") {
+        position.total -= Number(trade.qty) * position.precoMedio;
+        position.totalQty -= Number(trade.qty);
+      }
+    }
+  }
+  return position;
+};
+
 export const buildPortfolioFromTrades = (trades) => {
   let portfolio = {};
-  let s;
   for (const trade of trades) {
-    s = trade.symbol._id;
+    const s = trade.symbol._id;
     if (!portfolio.hasOwnProperty(s)) {
       portfolio[s] = {
         symbol: trade.symbol.symbol,
@@ -35,7 +119,7 @@ export const buildPortfolioFromTrades = (trades) => {
 export const getPrices = async (symbol) => {
   try {
     const data = await fetch("http://localhost:3001/test", {
-      method: "POST", // or 'PUT'
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
       },

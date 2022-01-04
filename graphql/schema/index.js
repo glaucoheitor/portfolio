@@ -89,7 +89,8 @@ export default buildSchema(`
             trades: [Trade!]!
             tradesByUserId(userId: ID!): [Trade!]!
             users: [User!]!
-            stockData(symbolId: ID!): [StockData!]!
+            symbols: [Symbol!]!
+            stockData(symbolId: ID!,startDate: String, endDate: String): [StockData!]!
             login(email:String!,password: String!): AuthData!
             verifyUser: Boolean!
         }

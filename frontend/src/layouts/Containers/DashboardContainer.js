@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 // react-router-dom components
 import { useLocation, useNavigate } from "react-router-dom";
@@ -10,13 +10,26 @@ import PropTypes from "prop-types";
 import MDBox from "components/MDBox";
 
 // Material Dashboard 2 PRO React context
-import { useMaterialUIController, usePortfolioController,setLayout } from "context";
+import {
+  useMaterialUIController,
+  usePortfolioController,
+  setLayout,
+  setTrades,
+  setPortfolio,
+  setPrices,
+} from "context";
+
+import {
+  buildPortfolioFromTrades,
+  getPrices,
+  getTrades,
+} from "services/portfolio.service";
 
 function LayoutContainer({ children }) {
   const [controller, dispatch] = useMaterialUIController();
   const [portfolioController, portfolioDispatch] = usePortfolioController();
   const { miniSidenav } = controller;
-  const { authData } = portfolioController;
+  const { authData, trades, portfolio, prices } = portfolioController;
   const { pathname } = useLocation();
   let navigate = useNavigate();
 
@@ -24,6 +37,40 @@ function LayoutContainer({ children }) {
     !authData.token && navigate("/auth/login", { replace: true });
     setLayout(dispatch, "dashboard");
   }, [pathname]);
+
+  useEffect(() => {
+    console.log("trades");
+    if (!trades) fetchData();
+
+    async function fetchData() {
+      try {
+        const dataTrades = await getTrades(authData);
+        setTrades(portfolioDispatch, dataTrades);
+        setPortfolio(portfolioDispatch, buildPortfolioFromTrades(dataTrades));
+      } catch (e) {
+        //todo: show error message
+      }
+    }
+  });
+
+  useEffect(() => {
+    const fetchPrices = async () => {
+      if (portfolio) {
+        for (const [symbolId, { symbol, totalQty }] of Object.entries(
+          portfolio
+        )) {
+          if (totalQty > 0) {
+            const data = await getPrices(symbol);
+            console.log(data);
+            setPrices(portfolioDispatch, { symbolId, prices: data });
+          }
+        }
+        console.log(prices);
+      }
+    };
+    console.log("fetchPrices");
+    if (!Object.keys(prices).length) fetchPrices();
+  }, [portfolio]);
 
   return (
     <MDBox
