@@ -28,6 +28,7 @@ app.use(
     schema: graphQlSchema,
     rootValue: graphQlResolvers,
     graphiql: true,
+    customFormatErrorFn: (err) => ({ type: err.message }),
   })
 );
 

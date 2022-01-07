@@ -2,7 +2,7 @@ import Symbol from "../../models/symbol.js";
 
 export async function symbols(args, req) {
   if (!req.isAuth) {
-    throw new Error("Unauthenticated!");
+    throw new Error("UNAUTHENTICATED");
   }
   try {
     const symbols = await Symbol.find({});

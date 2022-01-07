@@ -31,10 +31,14 @@ function LayoutContainer({ children }) {
   const { miniSidenav } = controller;
   const { authData, trades, portfolio, prices } = portfolioController;
   const { pathname } = useLocation();
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    !authData.token && navigate("/auth/login", { replace: true });
+    !authData.token &&
+      navigate("/auth/login", {
+        state: { error: "UNAUTHENTICATED" },
+        replace: true,
+      });
     setLayout(dispatch, "dashboard");
   }, [pathname]);
 

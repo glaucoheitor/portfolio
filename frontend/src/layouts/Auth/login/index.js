@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
 // react-router-dom components
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 // @mui material components
 import Card from "@mui/material/Card";
@@ -20,6 +20,7 @@ import MDTypography from "components/MDTypography";
 import MDInput from "components/MDInput";
 import MDButton from "components/MDButton";
 import MDAlert from "components/MDAlert";
+import MDSnackbar from "components/MDSnackbar";
 
 // Authentication layout components
 import BasicLayout from "layouts/Auth/components/BasicLayout";
@@ -46,7 +47,14 @@ function Basic() {
   const [passwordError, setPasswordError] = useState(null);
   const emailEl = useRef();
   const passwordEl = useRef();
-  let navigate = useNavigate();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [unauthenticated, setUnauthenticated] = useState(false);
+
+  useEffect(() => {
+    if (location.state && location.state.error === "UNAUTHENTICATED")
+      setUnauthenticated(true);
+  }, [location]);
 
   useEffect(async () => {
     const { authData } = portfolioController;
@@ -248,6 +256,15 @@ function Basic() {
           </MDBox>
         </MDBox>
       </Card>
+      <MDSnackbar
+        color="error"
+        icon="error"
+        title="Please, log in."
+        content="You're not logged in or you session expired."
+        dateTime=""
+        open={unauthenticated}
+        close={() => setUnauthenticated(false)}
+      />
     </BasicLayout>
   );
 }

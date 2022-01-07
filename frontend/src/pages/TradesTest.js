@@ -70,13 +70,15 @@ function TradesTest() {
         <Grid container spacing={3}>
           {historical ? (
             <Table>
-              {console.log(historical)}
-              {historical.map((h) => (
-                <tr>
-                  <td>{new Date(h.date).toISOString()}</td>
-                  <td>{h.close}</td>
-                </tr>
-              ))}
+              <tbody>
+                {console.log(historical)}
+                {historical.map((h) => (
+                  <tr>
+                    <td>{new Date(h.date).toISOString()}</td>
+                    <td>{h.close}</td>
+                  </tr>
+                ))}
+              </tbody>
             </Table>
           ) : (
             <div>Loading...</div>
