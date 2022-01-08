@@ -4,8 +4,9 @@ import { styled } from "@mui/material/styles";
 import { alpha } from "@mui/system";
 
 export default styled(ToggleButton)(({ theme, ownerState }) => {
-  const { palette, functions, borders, boxShadows, components } = theme;
-  const { color, variant, size, circular, iconOnly, darkMode } = ownerState;
+  const { palette, functions, borders, boxShadows, components, typography } =
+    theme;
+  const { color, fullWidth, size, circular, iconOnly, darkMode } = ownerState;
 
   const { white, text, transparent, gradients, grey } = palette;
   const { boxShadow, linearGradient, pxToRem, rgba } = functions;
@@ -17,7 +18,6 @@ export default styled(ToggleButton)(({ theme, ownerState }) => {
 
   // styles for the button with variant="outlined"
   const outliedStyles = () => {
-    console.log(components.MuiButton);
     // background color value
     const backgroundValue =
       color === "white" ? rgba(white.main, 0.1) : transparent.main;
@@ -40,27 +40,15 @@ export default styled(ToggleButton)(({ theme, ownerState }) => {
     }
 
     return {
-      //...components.MuiButton.styleOverrides,
-      display: "inline-flex",
-      justifyContent: "center",
-      alignItems: "center",
-      fontSize: size.xs,
-      fontWeight: 800,
-      borderRadius: borderRadius.lg,
-      padding: `${pxToRem(6.302)} ${pxToRem(16.604)}`,
-      lineHeight: 1.4,
-      textAlign: "center",
-      textTransform: "uppercase",
-      userSelect: "none",
-      backgroundSize: "150% !important",
-      backgroundPositionX: "25% !important",
-      transition: "all 150ms ease-in",
-
+      ...components.MuiButton.styleOverrides.root,
+      ...typography.button,
       background: backgroundValue,
       color: colorValue,
       borderColor: borderColorValue,
       padding: 11,
-
+      ...(fullWidth && {
+        width: "100%",
+      }),
       "&:hover": {
         textDecoration: "none",
         // Reset on mouse devices

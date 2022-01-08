@@ -21,9 +21,17 @@ import PropTypes from "prop-types";
 // Custom styles for MDInput
 import MDInputRoot from "components/MDInput/MDInputRoot";
 
-const MDInput = forwardRef(({ error, success, disabled, ...rest }, ref) => (
-  <MDInputRoot {...rest} ref={ref} ownerState={{ error, success, disabled }} />
-));
+const MDInput = forwardRef((props, ref) => {
+  const { error, success, disabled, inputRef, ...rest } = props;
+  console.log(ref);
+  return (
+    <MDInputRoot
+      {...rest}
+      ref={inputRef ? inputRef : ref}
+      ownerState={{ error, success, disabled }}
+    />
+  );
+});
 
 // Setting default values for the props of MDInput
 MDInput.defaultProps = {

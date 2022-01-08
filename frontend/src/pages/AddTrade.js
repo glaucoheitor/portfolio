@@ -29,8 +29,6 @@ import SendIcon from "@mui/icons-material/Send";
 import LayoutContainer from "layouts/Containers/DashboardContainer";
 import DashboardNavbar from "layouts/Navbars/DashboardNavbar";
 
-import { getAllSymbols } from "services/symbols.service";
-
 import { useMaterialUIController, usePortfolioController } from "context";
 
 const errorReducer = (state, { type, value }) => {
@@ -80,10 +78,9 @@ function AddTrade() {
               <MDBox mb={2}>
                 {console.log(state)}
                 <ToggleButtonGroup
+                  fullWidth
                   value={state.type}
                   exclusive
-                  sx={{ display: "flex", justifyContent: "center" }}
-                  justifyContent="center"
                   onChange={(e, type) =>
                     dispatch({ type: "type", value: type })
                   }
@@ -104,7 +101,10 @@ function AddTrade() {
                     onChange={(date) => {
                       dispatch({ type: "date", value: date });
                     }}
-                    renderInput={(params) => <MDInput fullWidth {...params} />}
+                    renderInput={(params) => {
+                      console.log(params);
+                      return <MDInput fullWidth {...params} />;
+                    }}
                   />
                 </LocalizationProvider>
               </MDBox>

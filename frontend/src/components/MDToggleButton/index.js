@@ -3,6 +3,8 @@ import { forwardRef } from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
+import clsx from "clsx";
+
 import {
   generateUtilityClass,
   unstable_composeClasses as composeClasses,
@@ -39,22 +41,27 @@ const MDToggleButton = forwardRef((props, ref) => {
   const { darkMode } = controller;
 
   const {
+    children,
+    className,
     color,
-    variant,
     size,
+    disabled = false,
+    disableFocusRipple = false,
+    fullWidth = false,
     onChange,
     onClick,
     selected,
     value,
-    children,
     ...rest
   } = props;
 
   const ownerState = {
     ...props,
     color,
-    variant,
     size,
+    disabled,
+    disableFocusRipple,
+    fullWidth,
     darkMode,
   };
 
@@ -75,17 +82,16 @@ const MDToggleButton = forwardRef((props, ref) => {
 
   return (
     <MDToggleButtonRoot
-      {...rest}
-      className={classes.root}
+      className={clsx(classes.root, className)}
       ref={ref}
       color="primary"
-      variant={variant === "gradient" ? "contained" : variant}
       size={size}
       onClick={handleChange}
       onChange={onChange}
       value={value}
       aria-pressed={selected}
       ownerState={ownerState}
+      {...rest}
     >
       {children}
     </MDToggleButtonRoot>
@@ -95,14 +101,12 @@ const MDToggleButton = forwardRef((props, ref) => {
 // Setting default values for the props of MDToggleButton
 MDToggleButton.defaultProps = {
   size: "medium",
-  variant: "contained",
   color: "white",
 };
 
 // Typechecking props for the MDToggleButton
 MDToggleButton.propTypes = {
   size: PropTypes.oneOf(["small", "medium", "large"]),
-  variant: PropTypes.oneOf(["text", "contained", "outlined", "gradient"]),
   color: PropTypes.oneOf([
     "white",
     "primary",
