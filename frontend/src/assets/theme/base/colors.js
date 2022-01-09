@@ -25,6 +25,8 @@ export default {
   },
 
   text: {
+    primary: "rgba(0,0,0,0.87)",
+    secondary: "rgba(0,0,0,0.6)",
     main: "#7b809a",
     focus: "#7b809a",
   },
@@ -32,6 +34,8 @@ export default {
   transparent: {
     main: "transparent",
   },
+
+  divider: "rgba(0,0,0,0.12)",
 
   white: {
     main: "#ffffff",
@@ -45,8 +49,11 @@ export default {
   },
 
   primary: {
-    main: "#e91e63",
-    focus: "#e91e63",
+    //main: "#e91e63",
+    //focus: "#e91e63",
+    // replaced with info colors
+    main: "#1A73E8",
+    focus: "#1662C4",
   },
 
   secondary: {
@@ -257,5 +264,23 @@ export default {
 
   tabs: {
     indicator: { boxShadow: "#ddd" },
+  },
+  action: {
+    // The color of an active action like an icon button.
+    active: "rgba(0, 0, 0, 0.54)",
+    // The color of an hovered action.
+    hover: "rgba(0, 0, 0, 0.04)",
+    hoverOpacity: 0.04,
+    // The color of a selected action.
+    selected: "rgba(0, 0, 0, 0.08)",
+    selectedOpacity: 0.08,
+    // The color of a disabled action.
+    disabled: "rgba(0, 0, 0, 0.26)",
+    // The background color of a disabled action.
+    disabledBackground: "rgba(0, 0, 0, 0.12)",
+    disabledOpacity: 0.38,
+    focus: "rgba(0, 0, 0, 0.12)",
+    focusOpacity: 0.12,
+    activatedOpacity: 0.12,
   },
 };

@@ -9,11 +9,13 @@ import Grid from "@mui/material/Grid";
 import MuiLink from "@mui/material/Link";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+import InputAdornment from "@mui/material/InputAdornment";
 
 // date-fns
 import DateAdapter from "@mui/lab/AdapterDateFns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import DatePicker from "@mui/lab/DatePicker";
+import { subYears } from "date-fns";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
@@ -57,6 +59,7 @@ function AddTrade() {
   const [error, errorDispatch] = useReducer(errorReducer, {});
   const [loading, setLoading] = useState(false);
 
+  const { darkMode } = controller;
   const { authData } = portfolioController;
 
   const submitHandler = async (e) => {
@@ -98,11 +101,12 @@ function AddTrade() {
                   <DatePicker
                     label="Date"
                     value={state.date}
+                    minDate={subYears(new Date(), 5)}
+                    maxDate={new Date()}
                     onChange={(date) => {
                       dispatch({ type: "date", value: date });
                     }}
                     renderInput={(params) => {
-                      console.log(params);
                       return <MDInput fullWidth {...params} />;
                     }}
                   />
@@ -119,11 +123,16 @@ function AddTrade() {
                   onChange={() =>
                     errorDispatch({ type: "price", value: false })
                   }
+                  InputProps={{
+                    startAdornment: (
+                      <InputAdornment position="start">R$</InputAdornment>
+                    ),
+                  }}
                 />
               </MDBox>
               <MDBox mb={2}>
                 <MDInput
-                  type="qty"
+                  type="number"
                   label="Quantity"
                   //inputRef={}
                   fullWidth
@@ -133,7 +142,7 @@ function AddTrade() {
                 />
               </MDBox>
               <MDBox mb={2}>
-                <SymbolsSelect />
+                <SymbolsSelect tradeType={state.type} />
               </MDBox>
               <MDBox mt={4} mb={1}>
                 <MDButton

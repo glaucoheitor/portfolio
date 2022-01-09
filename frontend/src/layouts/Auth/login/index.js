@@ -83,7 +83,7 @@ function Basic() {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-
+    console.log(emailEl, passwordEl);
     const email = emailEl.current.value;
     const password = passwordEl.current.value;
 

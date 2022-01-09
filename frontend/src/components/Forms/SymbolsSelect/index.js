@@ -15,15 +15,16 @@ import { getAllSymbols } from "services/symbols.service";
 
 import { usePortfolioController } from "context";
 
-function SymbolsSelect() {
+function SymbolsSelect({ tradeType }) {
   const [portfolioController, portfolioDispatch] = usePortfolioController();
   const [symbols, setSymbols] = useState([]);
+  const [options, setOptions] = useState([]);
   const [open, setOpen] = useState(false);
   const [value, setValue] = useState(null);
   const loading = open && symbols.length === 0;
   const navigate = useNavigate();
 
-  const { authData } = portfolioController;
+  const { authData, portfolio } = portfolioController;
 
   useEffect(() => {
     let active = true;
@@ -39,12 +40,25 @@ function SymbolsSelect() {
           state: { error: data.error },
           replace: true,
         });
+      console.log(data.symbols);
       if (active && data.symbols) setSymbols(data.symbols);
     })();
     return () => {
       active = false;
     };
   }, [loading]);
+
+  useEffect(() => {
+    if (tradeType === "buy") setOptions(symbols);
+    if (tradeType === "sell") {
+      setOptions(
+        Object.entries(portfolio).map(([symbolId, value]) => ({
+          _id: symbolId,
+          symbol: value.symbol,
+        }))
+      );
+    }
+  }, [symbols, tradeType]);
 
   return (
     <Autocomplete
@@ -56,7 +70,7 @@ function SymbolsSelect() {
       autoHighlight
       isOptionEqualToValue={(option, value) => option.symbol === value.symbol}
       getOptionLabel={(s) => s.symbol}
-      options={symbols}
+      options={options}
       loading={loading}
       value={value}
       onChange={(event, newValue) => setValue(newValue)}

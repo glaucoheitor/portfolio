@@ -24,16 +24,21 @@ export default {
     default: "#1a2035",
     sidenav: "#1f283e",
     card: "#202940",
+    paper: "#202940",
   },
 
   text: {
-    main: "#ffffffcc",
+    primary: "#fff",
+    main: "#ffffffcc", // rgba(255,255,255,0.8)
+    secondary: "#ffffffb3", // rgba(255,255,255,0.7)
     focus: "#ffffffcc",
   },
 
   transparent: {
     main: "transparent",
   },
+
+  divider: "rgba(255,255,255,0.12)",
 
   white: {
     main: "#ffffff",
@@ -47,8 +52,11 @@ export default {
   },
 
   primary: {
-    main: "#e91e63",
-    focus: "#e91e63",
+    //main: "#e91e63",
+    //focus: "#e91e63",
+    // replaced with info colors
+    main: "#1A73E8",
+    focus: "#1662C4",
   },
 
   secondary: {
@@ -259,5 +267,18 @@ export default {
 
   tabs: {
     indicator: { boxShadow: "#ddd" },
+  },
+  action: {
+    active: "rgba(255, 255, 255, 0.6)",
+    hover: "rgba(255, 255, 255, 0.08)",
+    hoverOpacity: 0.08,
+    selected: "rgba(255, 255, 255, 0.16)",
+    selectedOpacity: 0.16,
+    disabled: "rgba(255, 255, 255, 0.3)",
+    disabledBackground: "rgba(255, 255, 255, 0.12)",
+    disabledOpacity: 0.38,
+    focus: "rgba(255, 255, 255, 0.12)",
+    focusOpacity: 0.12,
+    activatedOpacity: 0.24,
   },
 };

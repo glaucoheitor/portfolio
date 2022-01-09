@@ -22,9 +22,6 @@ export default {
   },
 
   styleOverrides: {
-    root: {
-      color: "#222222",
-    },
     fontSizeInherit: {
       fontSize: "inherit !important",
     },

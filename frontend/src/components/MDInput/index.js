@@ -22,12 +22,12 @@ import PropTypes from "prop-types";
 import MDInputRoot from "components/MDInput/MDInputRoot";
 
 const MDInput = forwardRef((props, ref) => {
-  const { error, success, disabled, inputRef, ...rest } = props;
-  console.log(ref);
+  const { error, success, disabled, ...rest } = props;
+
   return (
     <MDInputRoot
       {...rest}
-      ref={inputRef ? inputRef : ref}
+      ref={ref}
       ownerState={{ error, success, disabled }}
     />
   );

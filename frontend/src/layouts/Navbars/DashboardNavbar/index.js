@@ -144,7 +144,7 @@ function DashboardNavbar({ absolute, light, isMini }) {
           <MDBox sx={(theme) => navbarRow(theme, { isMini })}>
             <MDBox color={light ? "white" : "inherit"}>
               <Link to="/Auth/sign-in/basic">
-                <IconButton sx={navbarIconButton} size="medium" disableRipple>
+                <IconButton sx={navbarIconButton} size="medium">
                   <Icon sx={iconsStyle} fontSize="medium">
                     account_circle
                   </Icon>
@@ -153,7 +153,6 @@ function DashboardNavbar({ absolute, light, isMini }) {
               <IconButton
                 sx={navbarIconButton}
                 size="medium"
-                disableRipple
                 onClick={handleDarkMode}
               >
                 <Icon sx={iconsStyle} fontSize="medium">
@@ -163,7 +162,6 @@ function DashboardNavbar({ absolute, light, isMini }) {
               <IconButton
                 sx={navbarIconButton}
                 size="medium"
-                disableRipple
                 onClick={handleMiniSidenav}
               >
                 <Icon sx={iconsStyle} fontSize="medium">
