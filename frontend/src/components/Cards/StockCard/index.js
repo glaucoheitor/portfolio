@@ -96,7 +96,7 @@ function StockCard({
           variant="button"
           //fontWeight="light"
           color="text"
-          textGradient
+          //textGradient
           sx={{
             visibility: "visible",
             display: "-webkit-box",
@@ -161,6 +161,7 @@ StockCard.propTypes = {
     "error",
     "light",
     "dark",
+    "text",
   ]),
   title: PropTypes.string.isRequired,
   currentPrice: PropTypes.node.isRequired,

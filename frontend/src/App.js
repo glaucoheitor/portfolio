@@ -6,20 +6,21 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 // @mui material components
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
-import Icon from "@mui/material/Icon";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import TradesPage from "pages/TradesTest";
 import Sidenav from "components/Sidenav";
 
 // Material Dashboard 2 React themes
-import theme from "assets/theme";
-import themeDark from "assets/theme-dark";
+import lightTheme from "assets/theme";
+import darkTheme from "assets/theme-dark";
 
 // Material Dashboard 2 React contexts
 import {
   PortfolioControllerProvider,
   useMaterialUIController,
   setMiniSidenav,
+  setDarkMode,
 } from "context";
 
 // Images
@@ -40,6 +41,17 @@ export default function App() {
   } = controller;
   const [onMouseEnter, setOnMouseEnter] = useState(false);
   const { pathname } = useLocation();
+
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+
+  useMemo(() => {
+    if (prefersDarkMode) {
+      setDarkMode(dispatch, true);
+      return darkTheme;
+    }
+    setDarkMode(dispatch, false);
+    return lightTheme;
+  }, [prefersDarkMode]);
 
   // Open sidenav when mouse enter on mini sidenav
   const handleOnMouseEnter = () => {
@@ -84,7 +96,7 @@ export default function App() {
     });
 
   return (
-    <ThemeProvider theme={darkMode ? themeDark : theme}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <PortfolioControllerProvider>
         <CssBaseline />
         {layout === "dashboard" && (

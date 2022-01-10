@@ -15,7 +15,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import DateAdapter from "@mui/lab/AdapterDateFns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import DatePicker from "@mui/lab/DatePicker";
-import { subYears } from "date-fns";
+import { subYears, isWeekend } from "date-fns";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
@@ -55,7 +55,10 @@ const reducer = (state, { type, value }) => {
 function AddTrade() {
   const [controller] = useMaterialUIController();
   const [portfolioController, portfolioDispatch] = usePortfolioController();
-  const [state, dispatch] = useReducer(reducer, { type: "buy" });
+  const [state, dispatch] = useReducer(reducer, {
+    type: "buy",
+    date: new Date(),
+  });
   const [error, errorDispatch] = useReducer(errorReducer, {});
   const [loading, setLoading] = useState(false);
 
@@ -84,7 +87,7 @@ function AddTrade() {
                   fullWidth
                   value={state.type}
                   exclusive
-                  onChange={(e, type) =>
+                  onChange={(_, type) =>
                     dispatch({ type: "type", value: type })
                   }
                 >
@@ -103,6 +106,8 @@ function AddTrade() {
                     value={state.date}
                     minDate={subYears(new Date(), 5)}
                     maxDate={new Date()}
+                    shouldDisableDate={isWeekend}
+                    allowSameDateSelection
                     onChange={(date) => {
                       dispatch({ type: "date", value: date });
                     }}
@@ -120,8 +125,8 @@ function AddTrade() {
                   fullWidth
                   error={error.price}
                   disabled={loading}
-                  onChange={() =>
-                    errorDispatch({ type: "price", value: false })
+                  onChange={(_, price) =>
+                    dispatch({ type: "price", value: price })
                   }
                   InputProps={{
                     startAdornment: (
