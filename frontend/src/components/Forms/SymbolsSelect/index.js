@@ -5,11 +5,16 @@ import { useNavigate } from "react-router-dom";
 
 // @mui material components
 import TextField from "@mui/material/TextField";
-import Autocomplete from "@mui/material/Autocomplete";
+import Autocomplete, { autocompleteClasses } from "@mui/material/Autocomplete";
 import CircularProgress from "@mui/material/CircularProgress";
+import InputAdornment from "@mui/material/InputAdornment";
 
 // Material Dashboard 2 React components
+import MDBox from "components/MDBox";
 import MDInput from "components/MDInput";
+
+import StockLogo from "components/StockLogo";
+import ListboxComponent from "./ListboxComponent";
 
 import { getAllSymbols } from "services/symbols.service";
 
@@ -40,7 +45,6 @@ function SymbolsSelect({ tradeType }) {
           state: { error: data.error },
           replace: true,
         });
-      console.log(data.symbols);
       if (active && data.symbols) setSymbols(data.symbols);
     })();
     return () => {
@@ -61,38 +65,69 @@ function SymbolsSelect({ tradeType }) {
   }, [symbols, tradeType]);
 
   return (
-    <Autocomplete
-      id="symbols"
-      sx={{ width: "auto" }}
-      open={open}
-      onOpen={() => setOpen(true)}
-      onClose={() => setOpen(false)}
-      autoHighlight
-      isOptionEqualToValue={(option, value) => option.symbol === value.symbol}
-      getOptionLabel={(s) => s.symbol}
-      options={options}
-      loading={loading}
-      value={value}
-      onChange={(event, newValue) => setValue(newValue)}
-      renderInput={(params) => (
-        <MDInput
-          {...params}
-          label="Symbol"
-          InputProps={{
-            ...params.InputProps,
-            startAdornment: <CircularProgress color="inherit" size={20} />,
-            endAdornment: (
-              <>
-                {loading ? (
-                  <CircularProgress color="inherit" size={20} />
-                ) : null}
-                {params.InputProps.endAdornment}
-              </>
-            ),
-          }}
-        />
-      )}
-    />
+    <>
+      {console.log(value)}
+      <Autocomplete
+        id="symbols"
+        sx={{ width: "auto" }}
+        open={open}
+        onOpen={() => setOpen(true)}
+        onClose={() => setOpen(false)}
+        autoHighlight
+        disableListWrap
+        isOptionEqualToValue={(option, value) => option.symbol === value.symbol}
+        getOptionLabel={(s) => s.symbol}
+        options={options}
+        loading={loading}
+        value={value}
+        onChange={(event, newValue) => setValue(newValue)}
+        ListboxComponent={ListboxComponent}
+        ListboxProps={{
+          sx: { [`& .${autocompleteClasses.option}`]: { pl: 1 } },
+        }}
+        renderOption={(props, option) => (
+          <MDBox
+            component="li"
+            sx={{ "& > img": { flexShrink: 0 } }}
+            {...props}
+          >
+            <StockLogo symbol={option.symbol} width={80} />
+            {option.symbol}
+          </MDBox>
+        )}
+        renderInput={(params) => (
+          <MDInput
+            {...params}
+            label="Symbol"
+            InputProps={{
+              ...params.InputProps,
+              startAdornment: (
+                <>
+                  {value ? (
+                    <img
+                      width="20"
+                      src={
+                        require("assets/images/logos/stocks/NO-LOGO.svg")
+                          .default
+                      }
+                    />
+                  ) : null}
+                </>
+              ),
+
+              endAdornment: (
+                <>
+                  {loading ? (
+                    <CircularProgress color="inherit" size={20} />
+                  ) : null}
+                  {params.InputProps.endAdornment}
+                </>
+              ),
+            }}
+          />
+        )}
+      />
+    </>
   );
 }
 

@@ -2,6 +2,8 @@ import { useState, useRef, useEffect, useReducer } from "react";
 
 import { useParams } from "react-router-dom";
 
+import NumberFormat from "react-number-format";
+
 // @mui material components
 import Card from "@mui/material/Card";
 import Switch from "@mui/material/Switch";
@@ -58,6 +60,7 @@ function AddTrade() {
   const [state, dispatch] = useReducer(reducer, {
     type: "buy",
     date: new Date(),
+    price: 0,
   });
   const [error, errorDispatch] = useReducer(errorReducer, {});
   const [loading, setLoading] = useState(false);
@@ -118,21 +121,24 @@ function AddTrade() {
                 </LocalizationProvider>
               </MDBox>
               <MDBox mb={2}>
-                <MDInput
-                  type="price"
+                <NumberFormat
+                  customInput={MDInput}
+                  prefix="R$ "
+                  thousandSeparator="."
+                  decimalSeparator=","
+                  decimalScale={2}
+                  fixedDecimalScale
+                  allowNegative={false}
+                  allowEmptyFormatting={true}
                   label="Price"
                   //inputRef={}
+                  value={state.price}
                   fullWidth
                   error={error.price}
                   disabled={loading}
-                  onChange={(_, price) =>
-                    dispatch({ type: "price", value: price })
+                  onValueChange={({ floatValue }) =>
+                    dispatch({ type: "price", value: floatValue })
                   }
-                  InputProps={{
-                    startAdornment: (
-                      <InputAdornment position="start">R$</InputAdornment>
-                    ),
-                  }}
                 />
               </MDBox>
               <MDBox mb={2}>
@@ -143,7 +149,9 @@ function AddTrade() {
                   fullWidth
                   error={error.qty}
                   disabled={loading}
-                  onChange={() => errorDispatch({ type: "qty", value: false })}
+                  onChange={(e) =>
+                    dispatch({ type: "qty", value: +e.target.value })
+                  }
                 />
               </MDBox>
               <MDBox mb={2}>

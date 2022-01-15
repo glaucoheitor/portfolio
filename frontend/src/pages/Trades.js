@@ -3,9 +3,15 @@ import { useState, useRef, useEffect, useReducer } from "react";
 // @mui material components
 import Grid from "@mui/material/Grid";
 import Skeleton from "@mui/material/Skeleton";
+import Fab from "@mui/material/Fab";
+import Grow from "@mui/material/Grow";
+import Popover from "@mui/material/Popover";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
+
+//icons
+import AddIcon from "@mui/icons-material/Add";
 
 // react-router-dom components
 import { Link } from "react-router-dom";
@@ -24,6 +30,21 @@ function TradesPage() {
 
   const { darkMode } = controller;
   const { portfolio, prices } = portfolioController;
+
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [parentAnchorEl, setparentAnchorEl] = useState(null);
+
+  const handleClick = (event) => {
+    setparentAnchorEl(event.currentTarget.parentNode);
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
 
   //create an array with 15 Skeletons
   const renderSkeleton = () =>
@@ -144,6 +165,40 @@ function TradesPage() {
       <MDBox py={3}>
         <Grid container spacing={3}>
           {portfolio ? <>{renderStockCards()}</> : renderSkeleton()}
+          <Grow in={!open}>
+            <Fab
+              onClick={handleClick}
+              variant="extended"
+              sx={{
+                position: "fixed",
+                bottom: (theme) => theme.spacing(2),
+                right: (theme) => theme.spacing(2),
+              }}
+              color="secondary"
+            >
+              <AddIcon sx={{ mr: 1 }} />
+              Add Trade
+            </Fab>
+          </Grow>
+          <Popover
+            id={id}
+            open={open}
+            anchorEl={anchorEl}
+            onClose={handleClose}
+            container={parentAnchorEl}
+            anchorOrigin={{
+              vertical: "bottom",
+              horizontal: "right",
+            }}
+            transformOrigin={{
+              vertical: "bottom",
+              horizontal: "right",
+            }}
+          >
+            <MDBox sx={{ background: "white", height: 200 }}>
+              The content of the Popover.
+            </MDBox>
+          </Popover>
         </Grid>
       </MDBox>
     </LayoutContainer>

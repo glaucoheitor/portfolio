@@ -3,7 +3,6 @@ import Symbol from "./models/symbol.js";
 import StockData from "./models/stockData.js";
 import fetch from "node-fetch";
 import * as fs from "fs/promises";
-import { exit } from "process";
 
 const FILE_LOCATION_ACOES = "C:/projects/portfolio/acoes.json";
 const FILE_LOCATION_BDR = "C:/projects/bdr.json";

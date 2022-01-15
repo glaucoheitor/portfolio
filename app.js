@@ -11,6 +11,7 @@ import isAuth from "./middleware/auth.js";
 
 import test from "./test.js";
 import insertTradesFromOldDB from "./insertTradesFromOldDB.js";
+import download from "./download.js";
 
 const app = express();
 
@@ -34,6 +35,7 @@ app.use(
 
 app.use("/test", test);
 app.use("/insertTrades", insertTradesFromOldDB);
+app.use("/download", download);
 
 mongoose
   .connect(
