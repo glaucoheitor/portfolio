@@ -8,7 +8,8 @@ import {
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme, styled } from "@mui/material/styles";
 
-import MDTypography from "components/MDTypography";
+import MDBox from "components/MDBox";
+import StockLogo from "components/StockLogo";
 
 import { VariableSizeList } from "react-window";
 
@@ -36,13 +37,16 @@ function renderRow(props) {
       </ListSubheader>
     );
   } */
-
-  return dataSet;
-
   return (
-    <MDTypography component="li" {...dataSet[0]} noWrap style={inlineStyle}>
-      {dataSet[1]}
-    </MDTypography>
+    <MDBox
+      component="li"
+      sx={{ "& > img": { flexShrink: 0 } }}
+      {...dataSet.props}
+      style={inlineStyle}
+    >
+      <StockLogo symbol={dataSet.option.symbol} width={80} />
+      {dataSet.option.symbol}
+    </MDBox>
   );
 }
 

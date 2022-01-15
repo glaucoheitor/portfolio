@@ -13,7 +13,6 @@ import InputAdornment from "@mui/material/InputAdornment";
 import MDBox from "components/MDBox";
 import MDInput from "components/MDInput";
 
-import StockLogo from "components/StockLogo";
 import ListboxComponent from "./ListboxComponent";
 
 import { getAllSymbols } from "services/symbols.service";
@@ -85,16 +84,10 @@ function SymbolsSelect({ tradeType }) {
         ListboxProps={{
           sx: { [`& .${autocompleteClasses.option}`]: { pl: 1 } },
         }}
-        renderOption={(props, option) => (
-          <MDBox
-            component="li"
-            sx={{ "& > img": { flexShrink: 0 } }}
-            {...props}
-          >
-            <StockLogo symbol={option.symbol} width={80} />
-            {option.symbol}
-          </MDBox>
-        )}
+        renderOption={(props, option) => ({
+          props,
+          option,
+        })}
         renderInput={(params) => (
           <MDInput
             {...params}
