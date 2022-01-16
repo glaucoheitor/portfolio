@@ -105,13 +105,14 @@ function StockCard({
             overflow: "hidden",
           }}
         >
-          {companyName}
+          {companyName.toUpperCase()}
         </MDTypography>
       </MDBox>
       <Divider />
       {extraData &&
-        extraData.map((data) => (
+        extraData.map((data, i) => (
           <MDBox
+            key={`stock-card-extra-data-${i}`}
             pb={2}
             px={2}
             display="flex"

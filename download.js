@@ -6,19 +6,33 @@ import Symbol from "./models/symbol.js";
 const download = async (req, res) => {
   const symbolsDB = await Symbol.find({});
   const symbols = symbolsDB
-    .map((s) => s._doc.symbol)
+    .map((s) => {
+      if (
+        fs.existsSync(
+          `./frontend/src/assets/images/logos/stocks/${s._doc.symbol.slice(
+            0,
+            4
+          )}.svg`
+        )
+      ) {
+        return null;
+      }
+      return s._doc.symbol;
+    })
+    .filter((s) => s)
     .sort((a, b) => (a.symbol > b.symbol ? 1 : -1));
 
   const response = await Promise.all(
-    symbols.map((symbol) =>
-      downloadImage(
-        `https://cdn.toroinvestimentos.com.br/corretora/images/quote/${symbol.slice(
+    symbols.map((symbol) => {
+      console.log(symbol, typeof symbol);
+      return downloadImage(
+        `https://www.ivalor.com.br/media/emp/logos/${symbol.slice(0, 4)}.png`,
+        `./frontend/src/assets/images/logos/stocks/png/${symbol.slice(
           0,
           4
-        )}.svg`,
-        `./frontend/src/assets/images/logos/stocks/${symbol.slice(0, 4)}.svg`
-      )
-    )
+        )}.png`
+      );
+    })
   );
 
   res.send(JSON.stringify(response));

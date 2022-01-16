@@ -14,10 +14,7 @@ export const getTrades = async (authData) => {
                 symbol {
                   _id
                   symbol
-                  companyName {
-                    longName
-                    shortName
-                  }
+                  companyName
                 }
               }
             }`,
@@ -93,9 +90,7 @@ export const buildPortfolioFromTrades = (trades) => {
       portfolio[s] = {
         symbol: trade.symbol.symbol,
         companyName: trade.symbol.companyName
-          ? trade.symbol.companyName.longName
-            ? trade.symbol.companyName.longName
-            : trade.symbol.companyName.shortName
+          ? trade.symbol.companyName
           : trade.symbol.symbol,
         total: 0,
         totalQty: 0,

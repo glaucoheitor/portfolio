@@ -6,14 +6,14 @@ import {
   useContext,
 } from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { useTheme, styled } from "@mui/material/styles";
+import { useTheme } from "@mui/material/styles";
 
 import MDBox from "components/MDBox";
 import StockLogo from "components/StockLogo";
 
 import { VariableSizeList } from "react-window";
 
-const LISTBOX_PADDING = 8; //px
+const LISTBOX_PADDING = 0; //px
 
 const OuterElementContext = createContext({});
 
@@ -64,7 +64,7 @@ export default forwardRef(({ children, ...other }, ref) => {
   });
 
   const itemCount = itemData.length;
-  const itemSize = smUp ? 36 : 48;
+  const itemSize = smUp ? 52 : 64;
 
   const getChildSize = (child) => {
     /* if (child.hasOwnProperty("group")) {

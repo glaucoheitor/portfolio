@@ -27,12 +27,8 @@ export default buildSchema(`
             _id: ID!
             symbol: String
             lastRefreshed: Float
-            companyName: CompanyName
-        }
-
-        type CompanyName {
-            longName: String
-            shortName: String
+            type: String
+            companyName: String
         }
 
         type StockData {

@@ -4,20 +4,30 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 // @mui material components
-import TextField from "@mui/material/TextField";
 import Autocomplete, { autocompleteClasses } from "@mui/material/Autocomplete";
 import CircularProgress from "@mui/material/CircularProgress";
-import InputAdornment from "@mui/material/InputAdornment";
+import Popper from "@mui/material/Popper";
 
 // Material Dashboard 2 React components
-import MDBox from "components/MDBox";
 import MDInput from "components/MDInput";
+import StockLogo from "components/StockLogo";
 
 import ListboxComponent from "./ListboxComponent";
+import { styled } from "@mui/material/styles";
 
 import { getAllSymbols } from "services/symbols.service";
 
 import { usePortfolioController } from "context";
+
+const StyledPopper = styled(Popper)({
+  [`& .${autocompleteClasses.listbox}`]: {
+    boxSizing: "border-box",
+    "& ul": {
+      padding: 0,
+      margin: 0,
+    },
+  },
+});
 
 function SymbolsSelect({ tradeType }) {
   const [portfolioController, portfolioDispatch] = usePortfolioController();
@@ -80,6 +90,7 @@ function SymbolsSelect({ tradeType }) {
         loading={loading}
         value={value}
         onChange={(event, newValue) => setValue(newValue)}
+        PopperComponent={StyledPopper}
         ListboxComponent={ListboxComponent}
         ListboxProps={{
           sx: { [`& .${autocompleteClasses.option}`]: { pl: 1 } },
@@ -97,13 +108,7 @@ function SymbolsSelect({ tradeType }) {
               startAdornment: (
                 <>
                   {value ? (
-                    <img
-                      width="20"
-                      src={
-                        require("assets/images/logos/stocks/NO-LOGO.svg")
-                          .default
-                      }
-                    />
+                    <StockLogo symbol={value.symbol} width={80} />
                   ) : null}
                 </>
               ),

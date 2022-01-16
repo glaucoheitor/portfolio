@@ -5,10 +5,8 @@ const { Schema } = mongoose;
 const symbolSchema = new Schema({
   symbol: { type: String, required: true },
   lastRefreshed: { type: Date, required: false },
-  companyName: {
-    longName: { type: String },
-    shortName: { type: String },
-  },
+  companyName: { type: String, required: false },
+  type: { type: String, required: false },
   stockData: {},
 });
 

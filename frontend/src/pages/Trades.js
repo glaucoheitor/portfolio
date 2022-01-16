@@ -75,6 +75,7 @@ function TradesPage() {
               <MDBox mb={1.5}>
                 <Link to={`/trades/${symbol}`}>
                   <StockCard
+                    key={symbolId}
                     color={darkMode ? "dark" : "light"}
                     icon="weekend"
                     title={symbol}
