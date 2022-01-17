@@ -83,6 +83,7 @@ function SymbolsSelect({ tradeType }) {
         onOpen={() => setOpen(true)}
         onClose={() => setOpen(false)}
         autoHighlight
+        autoSelect
         disableListWrap
         isOptionEqualToValue={(option, value) => option.symbol === value.symbol}
         getOptionLabel={(s) => s.symbol}
@@ -93,7 +94,7 @@ function SymbolsSelect({ tradeType }) {
         PopperComponent={StyledPopper}
         ListboxComponent={ListboxComponent}
         ListboxProps={{
-          sx: { [`& .${autocompleteClasses.option}`]: { pl: 1 } },
+          sx: { [`& .${autocompleteClasses.option}`]: { pl: 0 } },
         }}
         renderOption={(props, option) => ({
           props,
@@ -108,7 +109,11 @@ function SymbolsSelect({ tradeType }) {
               startAdornment: (
                 <>
                   {value ? (
-                    <StockLogo symbol={value.symbol} width={80} />
+                    <StockLogo
+                      symbol={value.symbol}
+                      maxWidth={160}
+                      width={"auto"}
+                    />
                   ) : null}
                 </>
               ),

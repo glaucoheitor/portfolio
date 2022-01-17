@@ -1,17 +1,15 @@
 import MDBox from "components/MDBox";
 
-const StockLogo = ({ symbol, width }) => {
-  let imageSrc = require(`assets/images/logos/stocks/NO-LOGO.svg`);
+const StockLogo = ({ symbol, width, maxWidth }) => {
+  let image = require(`assets/images/logos/stocks/NO-LOGO.svg`);
   try {
     // Import image on demand
-    const image = require(`assets/images/logos/stocks/${symbol.slice(
-      0,
-      4
-    )}.svg`);
-
-    // If the image doesn't exist. return noLogo
-    if (image) imageSrc = image;
-  } catch (e) {}
+    image = require(`assets/images/logos/stocks/${symbol.slice(0, 4)}.svg`);
+  } catch {
+    try {
+      image = require(`assets/images/logos/stocks/${symbol.slice(0, 4)}.png`);
+    } catch {}
+  }
   return (
     <MDBox
       width={width}
@@ -24,8 +22,8 @@ const StockLogo = ({ symbol, width }) => {
         component="img"
         loading="lazy"
         height={40}
-        maxWidth={width}
-        src={imageSrc.default}
+        maxWidth={maxWidth ? maxWidth : width}
+        src={image.default}
         alt={`${symbol} Logo`}
       />
     </MDBox>

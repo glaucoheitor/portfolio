@@ -11,6 +11,7 @@ export default function NumFormat({ value, type, decimalScale = 2, ...props }) {
   return (
     <>
       <NumberFormat
+        {...props}
         value={Math.abs(value)}
         displayType={"text"}
         thousandSeparator={"."}
