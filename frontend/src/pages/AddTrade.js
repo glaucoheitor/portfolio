@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useReducer, StrictMode } from "react";
+import { useState, useRef, useEffect, useReducer } from "react";
 
 import { useParams } from "react-router-dom";
 
@@ -65,6 +65,8 @@ function AddTrade() {
     type: "buy",
     date: new Date(),
     price: 0,
+    qty: "",
+    symbol: "",
   });
   const [error, errorDispatch] = useReducer(errorReducer, {});
   const [loading, setLoading] = useState(false);
@@ -96,8 +98,9 @@ function AddTrade() {
               initialValues={{
                 type: "buy",
                 date: new Date(),
-                //price: 0,
+                price: 0,
                 qty: "",
+                symbol: null,
               }}
             >
               {({
@@ -155,7 +158,7 @@ function AddTrade() {
                       decimalScale={2}
                       fixedDecimalScale
                       allowNegative={false}
-                      allowEmptyFormatting={true}
+                      //allowEmptyFormatting={true}
                       label="Price"
                       fullWidth
                       value={values.price}
@@ -178,9 +181,11 @@ function AddTrade() {
                     />
                   </MDBox>
                   <MDBox mb={2}>
-                    <StrictMode>
-                      <SymbolsSelect tradeType={state.type} />
-                    </StrictMode>
+                    <Field
+                      name="symbol"
+                      component={SymbolsSelect}
+                      tradeType={values.type}
+                    />
                   </MDBox>
                   <MDBox mt={4} mb={1}>
                     <MDButton

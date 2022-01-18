@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 // @mui material components
-import Autocomplete, { autocompleteClasses } from "@mui/material/Autocomplete";
+import { autocompleteClasses } from "@mui/material/Autocomplete";
+import { Autocomplete } from "formik-mui";
 import CircularProgress from "@mui/material/CircularProgress";
 import Popper from "@mui/material/Popper";
 
@@ -18,6 +19,7 @@ import { styled } from "@mui/material/styles";
 import { getAllSymbols } from "services/symbols.service";
 
 import { usePortfolioController } from "context";
+import { handleBreakpoints } from "@mui/system";
 
 const StyledPopper = styled(Popper)({
   [`& .${autocompleteClasses.listbox}`]: {
@@ -29,12 +31,13 @@ const StyledPopper = styled(Popper)({
   },
 });
 
-function SymbolsSelect({ tradeType }) {
+function SymbolsSelect({ tradeType, ...props }) {
+  const { field, form } = props;
   const [portfolioController, portfolioDispatch] = usePortfolioController();
   const [symbols, setSymbols] = useState([]);
   const [options, setOptions] = useState([]);
   const [open, setOpen] = useState(false);
-  const [value, setValue] = useState(null);
+  const [shrinkLabel, setShrinkLabel] = useState(false);
   const loading = open && symbols.length === 0;
   const navigate = useNavigate();
 
@@ -43,7 +46,7 @@ function SymbolsSelect({ tradeType }) {
   useEffect(() => {
     let active = true;
 
-    if (!loading) {
+    if (!loading && tradeType === "sell") {
       return undefined;
     }
     //ugly, look for a better solution in the future
@@ -73,24 +76,37 @@ function SymbolsSelect({ tradeType }) {
     }
   }, [symbols, tradeType]);
 
+  const handleShrinkLabel = (event) => {
+    const { onFocus } = field;
+    setShrinkLabel(true);
+    onFocus && onFocus(event); // let the child do it's thing
+  };
+
+  const handleUnshrinkLabel = (event) => {
+    const { onBlur } = field;
+    if (event.target.value.length === 0) {
+      setShrinkLabel(false); //gotta make sure the input is empty before shrinking the label
+    }
+    onBlur && onBlur(event); // let the child do it's thing
+  };
   return (
     <>
-      {console.log(value)}
+      {console.log(props)}
       <Autocomplete
-        id="symbols"
+        {...props}
+        id="symbol"
         sx={{ width: "auto" }}
         open={open}
         onOpen={() => setOpen(true)}
         onClose={() => setOpen(false)}
         autoHighlight
-        autoSelect
         disableListWrap
+        //defaultvalue={form.initialValues.symbol ?? ""}
         isOptionEqualToValue={(option, value) => option.symbol === value.symbol}
-        getOptionLabel={(s) => s.symbol}
+        getOptionLabel={(s) => s.symbol ?? ""}
+        //onInputChange={console.log}
         options={options}
         loading={loading}
-        value={value}
-        onChange={(event, newValue) => setValue(newValue)}
         PopperComponent={StyledPopper}
         ListboxComponent={ListboxComponent}
         ListboxProps={{
@@ -100,35 +116,42 @@ function SymbolsSelect({ tradeType }) {
           props,
           option,
         })}
-        renderInput={(params) => (
-          <MDInput
-            {...params}
-            label="Symbol"
-            InputProps={{
-              ...params.InputProps,
-              startAdornment: (
-                <>
-                  {value ? (
-                    <StockLogo
-                      symbol={value.symbol}
-                      maxWidth={160}
-                      width={"auto"}
-                    />
-                  ) : null}
-                </>
-              ),
+        renderInput={(params) => {
+          return (
+            <MDInput
+              {...params}
+              label="Symbol"
+              name="symbol"
+              error={form.touched["symbol"] && !!form.errors["symbol"]}
+              InputLabelProps={{ shrink: shrinkLabel }}
+              InputProps={{
+                ...params.InputProps,
+                onFocus: handleShrinkLabel,
+                onBlur: handleUnshrinkLabel,
+                startAdornment: (
+                  <>
+                    {field.value ? (
+                      <StockLogo
+                        symbol={field.value.symbol}
+                        maxWidth={160}
+                        width={"auto"}
+                      />
+                    ) : null}
+                  </>
+                ),
 
-              endAdornment: (
-                <>
-                  {loading ? (
-                    <CircularProgress color="inherit" size={20} />
-                  ) : null}
-                  {params.InputProps.endAdornment}
-                </>
-              ),
-            }}
-          />
-        )}
+                endAdornment: (
+                  <>
+                    {loading ? (
+                      <CircularProgress color="inherit" size={20} />
+                    ) : null}
+                    {params.InputProps.endAdornment}
+                  </>
+                ),
+              }}
+            />
+          );
+        }}
       />
     </>
   );

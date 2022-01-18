@@ -96,7 +96,7 @@ export default forwardRef(({ children, ...other }, ref) => {
           itemSize={(index) => getChildSize(itemData[index])}
           overscanCount={5}
           itemCount={itemCount}
-          role="listbox"
+          //role="listbox"
         >
           {renderRow}
         </VariableSizeList>

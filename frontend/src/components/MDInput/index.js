@@ -23,7 +23,7 @@ import MDInputRoot from "components/MDInput/MDInputRoot";
 
 const MDInput = forwardRef((props, ref) => {
   const { error, success, disabled, ...rest } = props;
-
+  console.log(props, ref);
   return (
     <MDInputRoot
       {...rest}
