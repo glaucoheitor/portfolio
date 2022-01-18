@@ -1,6 +1,6 @@
 import MDBox from "components/MDBox";
 
-const StockLogo = ({ symbol, width, maxWidth }) => {
+const StockLogo = ({ symbol, height = 40, width, maxWidth }) => {
   let image = require(`assets/images/logos/stocks/NO-LOGO.svg`);
   try {
     // Import image on demand
@@ -21,7 +21,7 @@ const StockLogo = ({ symbol, width, maxWidth }) => {
       <MDBox
         component="img"
         loading="lazy"
-        height={40}
+        height={height}
         maxWidth={maxWidth ? maxWidth : width}
         src={image.default}
         alt={`${symbol} Logo`}

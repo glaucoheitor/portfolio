@@ -6,9 +6,11 @@ import Skeleton from "@mui/material/Skeleton";
 import Fab from "@mui/material/Fab";
 import Grow from "@mui/material/Grow";
 import Popover from "@mui/material/Popover";
+import Icon from "@mui/material/Icon";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
+import MDTypography from "components/MDTypography";
 
 //icons
 import AddIcon from "@mui/icons-material/Add";
@@ -19,6 +21,7 @@ import { Link } from "react-router-dom";
 import LayoutContainer from "layouts/Containers/DashboardContainer";
 import DashboardNavbar from "layouts/Navbars/DashboardNavbar";
 import StockCard from "components/Cards/StockCard";
+import AddTrade from "./AddTrade";
 
 import NumberFormat from "utils/NumberFormat";
 
@@ -195,10 +198,22 @@ function TradesPage() {
               vertical: "bottom",
               horizontal: "right",
             }}
+            PaperProps={{ sx: { backgroundColor: "background.default" } }}
           >
-            <MDBox sx={{ background: "white", height: 200 }}>
-              The content of the Popover.
+            <MDBox
+              display={{ xs: "block", xl: "none" }}
+              position="absolute"
+              top={0}
+              right={0}
+              p={1.625}
+              onClick={handleClose}
+              sx={{ cursor: "pointer" }}
+            >
+              <MDTypography variant="h6" color="secondary">
+                <Icon sx={{ fontWeight: "bold" }}>close</Icon>
+              </MDTypography>
             </MDBox>
+            <AddTrade />
           </Popover>
         </Grid>
       </MDBox>

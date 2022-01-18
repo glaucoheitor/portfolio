@@ -44,7 +44,7 @@ function renderRow(props) {
       {...dataSet.props}
       style={inlineStyle}
     >
-      <StockLogo symbol={dataSet.option.symbol} width={170} />
+      <StockLogo symbol={dataSet.option.symbol} width={125} />
       {dataSet.option.symbol}
     </MDBox>
   );
@@ -96,7 +96,6 @@ export default forwardRef(({ children, ...other }, ref) => {
           itemSize={(index) => getChildSize(itemData[index])}
           overscanCount={5}
           itemCount={itemCount}
-          //role="listbox"
         >
           {renderRow}
         </VariableSizeList>

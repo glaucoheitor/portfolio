@@ -66,7 +66,7 @@ function AddTrade() {
     date: new Date(),
     price: 0,
     qty: "",
-    symbol: "",
+    symbol: { symbol: "" },
   });
   const [error, errorDispatch] = useReducer(errorReducer, {});
   const [loading, setLoading] = useState(false);
@@ -85,143 +85,131 @@ function AddTrade() {
   });
 
   return (
-    <LayoutContainer>
-      <DashboardNavbar />
-      <MDBox py={3}>
-        <Grid container spacing={3}>
-          <MDBox pt={4} pb={3} px={3} width={300}>
-            <Formik
-              validationSchema={schema}
-              onSubmit={(values) => {
-                alert(JSON.stringify(values, null, 2));
-              }}
-              initialValues={{
-                type: "buy",
-                date: new Date(),
-                price: 0,
-                qty: "",
-                symbol: null,
-              }}
+    <MDBox
+      pt={4}
+      pb={3}
+      px={3}
+      width={300}
+      sx={{ backgroundColor: "background.default" }}
+    >
+      <Formik
+        validationSchema={schema}
+        onSubmit={(values) => {
+          alert(JSON.stringify(values, null, 2));
+        }}
+        initialValues={{
+          type: "buy",
+          date: new Date(),
+          price: "",
+          qty: "",
+          symbol: "",
+        }}
+      >
+        {({
+          values,
+          errors,
+          touched,
+          isSubmitting,
+          setFieldValue,
+          ...formik
+        }) => (
+          <Form>
+            <MDBox mb={2}>
+              <Field
+                component={ToggleButtonGroup}
+                fullWidth
+                name="type"
+                type="checkbox"
+                exclusive
+              >
+                <MDToggleButton color="success" value="buy">
+                  BUY
+                </MDToggleButton>
+                <MDToggleButton color="error" value="sell">
+                  SELL
+                </MDToggleButton>
+              </Field>
+            </MDBox>
+            <MDBox mb={2}>
+              <LocalizationProvider dateAdapter={DateAdapter}>
+                <DatePicker
+                  label="Date"
+                  value={state.date}
+                  minDate={subYears(new Date(), 5)}
+                  maxDate={new Date()}
+                  shouldDisableDate={isWeekend}
+                  allowSameDateSelection
+                  error={error.date}
+                  onChange={(date) => {
+                    dispatch({ type: "date", value: date });
+                  }}
+                  renderInput={(params) => {
+                    return <MDInput fullWidth {...params} />;
+                  }}
+                />
+              </LocalizationProvider>
+            </MDBox>
+            <MDBox mb={2}>
+              <Field
+                name="price"
+                component={NumberFormat}
+                customInput={MDInput}
+                prefix="R$ "
+                thousandSeparator="."
+                decimalSeparator=","
+                decimalScale={2}
+                fixedDecimalScale
+                allowNegative={false}
+                //allowEmptyFormatting={true}
+                label="Price"
+                fullWidth
+                value={values.price}
+                error={touched["price"] && !!errors["price"]}
+                disabled={loading}
+                onValueChange={({ floatValue }, sourceInfo) => {
+                  setFieldValue("price", floatValue);
+                  console.log(sourceInfo);
+                }}
+                //onBlur={formik.handleBlur}
+              />
+            </MDBox>
+            <MDBox mb={2}>
+              <Field
+                as={MDInput}
+                type="number"
+                label="Quantity"
+                name="qty"
+                fullWidth
+              />
+            </MDBox>
+            <MDBox mb={2}>
+              <Field name="symbol" component={SymbolsSelect} />
+            </MDBox>
+            <MDBox mt={4} mb={1}>
+              <MDButton
+                type="submit"
+                variant="gradient"
+                color="info"
+                fullWidth
+                isLoadingButton
+                loading={isSubmitting}
+                endIcon={<SendIcon />}
+              >
+                Submit
+              </MDButton>
+            </MDBox>
+            <MDAlert
+              color="error"
+              dismissible
+              open={Object.keys(error).length > 0 ? true : false}
+              handleAlertCloseButton={() => errorDispatch({ type: "reset" })}
             >
-              {({
-                values,
-                errors,
-                touched,
-                isSubmitting,
-                setFieldValue,
-                ...formik
-              }) => (
-                <Form>
-                  <MDBox mb={2}>
-                    <Field
-                      component={ToggleButtonGroup}
-                      fullWidth
-                      name="type"
-                      type="checkbox"
-                      exclusive
-                    >
-                      <MDToggleButton color="success" value="buy">
-                        BUY
-                      </MDToggleButton>
-                      <MDToggleButton color="error" value="sell">
-                        SELL
-                      </MDToggleButton>
-                    </Field>
-                  </MDBox>
-                  <MDBox mb={2}>
-                    <LocalizationProvider dateAdapter={DateAdapter}>
-                      <DatePicker
-                        label="Date"
-                        value={state.date}
-                        minDate={subYears(new Date(), 5)}
-                        maxDate={new Date()}
-                        shouldDisableDate={isWeekend}
-                        allowSameDateSelection
-                        error={error.date}
-                        onChange={(date) => {
-                          dispatch({ type: "date", value: date });
-                        }}
-                        renderInput={(params) => {
-                          return <MDInput fullWidth {...params} />;
-                        }}
-                      />
-                    </LocalizationProvider>
-                  </MDBox>
-                  <MDBox mb={2}>
-                    <Field
-                      name="price"
-                      component={NumberFormat}
-                      customInput={MDInput}
-                      prefix="R$ "
-                      thousandSeparator="."
-                      decimalSeparator=","
-                      decimalScale={2}
-                      fixedDecimalScale
-                      allowNegative={false}
-                      //allowEmptyFormatting={true}
-                      label="Price"
-                      fullWidth
-                      value={values.price}
-                      error={touched["price"] && !!errors["price"]}
-                      disabled={loading}
-                      onValueChange={({ floatValue }, sourceInfo) => {
-                        setFieldValue("price", floatValue);
-                        console.log(sourceInfo);
-                      }}
-                      //onBlur={formik.handleBlur}
-                    />
-                  </MDBox>
-                  <MDBox mb={2}>
-                    <Field
-                      as={MDInput}
-                      type="number"
-                      label="Quantity"
-                      name="qty"
-                      fullWidth
-                    />
-                  </MDBox>
-                  <MDBox mb={2}>
-                    <Field
-                      name="symbol"
-                      component={SymbolsSelect}
-                      tradeType={values.type}
-                    />
-                  </MDBox>
-                  <MDBox mt={4} mb={1}>
-                    <MDButton
-                      type="submit"
-                      variant="gradient"
-                      color="info"
-                      fullWidth
-                      isLoadingButton
-                      loading={isSubmitting}
-                      endIcon={<SendIcon />}
-                    >
-                      Submit
-                    </MDButton>
-                  </MDBox>
-                  <MDAlert
-                    color="error"
-                    dismissible
-                    open={Object.keys(error).length > 0 ? true : false}
-                    handleAlertCloseButton={() =>
-                      errorDispatch({ type: "reset" })
-                    }
-                  >
-                    {Object.values(error)}
-                  </MDAlert>
-                  <Grid item xs={12} sm={12} style={{ margin: "24px" }}>
-                    <pre>
-                      <code>{JSON.stringify({ errors, values }, null, 2)}</code>
-                    </pre>
-                  </Grid>
-                </Form>
-              )}
-            </Formik>
-          </MDBox>
-        </Grid>
-      </MDBox>
-    </LayoutContainer>
+              {Object.values(error)}
+            </MDAlert>
+          </Form>
+        )}
+      </Formik>
+    </MDBox>
   );
 }
 
