@@ -140,7 +140,7 @@ const getCurrentPrice = async (req, res) => {
         "regularMarketChangePercent",
       ],
     });
-    const date = new Date("2021-12-01");
+    const date = new Date("2020-12-01");
     const queryOptions = { period1: date };
     const result = await yahooFinance._chart(query, queryOptions);
 
@@ -161,7 +161,12 @@ const getCurrentPrice = async (req, res) => {
     return;
   } catch (e) {
     console.log(e);
-    res.send("0");
+    res.send({
+      currentPrice: null,
+      historical: {},
+      previousPrice: null,
+      priceChangePercent: null,
+    });
     return;
   }
 };

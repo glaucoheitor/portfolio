@@ -37,6 +37,7 @@ function TradesTest() {
   const { symbol } = useParams();
 
   useEffect(() => {
+    console.log(prices);
     if (portfolio) {
       const [sId, data] = Object.entries(portfolio).find(
         ([id, s]) => s.symbol === symbol
@@ -47,33 +48,21 @@ function TradesTest() {
   }, [portfolio]);
 
   useEffect(() => {
-    if (symbolId) {
-      const position = getPositionAtDay(symbolId, "2020-06-15", trades);
-      console.log(position);
-
-      //ugly, look for a better solution in the future
-      let disposed = false;
-      (async () => {
-        const historicalData = await getHistoricalStockData(authData, symbolId);
-        if (disposed) return;
-        setHistorical(historicalData);
-      })();
-      return () => (disposed = true);
-    }
-  }, [symbolId]);
+    symbolId && prices[symbolId] && setHistorical(prices[symbolId].historical);
+  }, [symbolId, prices]);
 
   return (
     <LayoutContainer>
-      {console.log(portfolio)}
+      {console.log(prices)}
       <DashboardNavbar />
       <MDBox py={3}>
         <Grid container spacing={3}>
-          {historical ? (
+          {historical && historical.quotes ? (
             <Table>
               <tbody>
                 {console.log(historical)}
-                {historical.map((h) => (
-                  <tr>
+                {historical.quotes.map((h) => (
+                  <tr key={h.date}>
                     <td>{new Date(h.date).toISOString()}</td>
                     <td>{h.close}</td>
                   </tr>

@@ -33,6 +33,8 @@ function LayoutContainer({ children }) {
   const { pathname } = useLocation();
   const navigate = useNavigate();
 
+  const [loadedPrices, setLoadedPrices] = useState(false);
+
   useEffect(() => {
     !authData.token &&
       navigate("/auth/login", {
@@ -43,38 +45,75 @@ function LayoutContainer({ children }) {
   }, [pathname]);
 
   useEffect(() => {
-    console.log("trades");
-    if (!trades) fetchData();
-
-    async function fetchData() {
+    const fetchData = async () => {
       try {
         const dataTrades = await getTrades(authData);
-        setTrades(portfolioDispatch, dataTrades);
-        setPortfolio(portfolioDispatch, buildPortfolioFromTrades(dataTrades));
+        if (active) {
+          setTrades(portfolioDispatch, dataTrades);
+          setPortfolio(portfolioDispatch, buildPortfolioFromTrades(dataTrades));
+        }
       } catch (e) {
         //todo: show error message
       }
-    }
-  });
+    };
+
+    let active = true;
+    if (!trades) fetchData();
+
+    return () => {
+      active = false;
+    };
+  }, []);
 
   useEffect(() => {
     const fetchPrices = async () => {
       if (portfolio) {
-        for (const [symbolId, { symbol, totalQty }] of Object.entries(
-          portfolio
-        )) {
-          if (totalQty > 0) {
-            const data = await getPrices(symbol);
-            console.log(data);
-            setPrices(portfolioDispatch, { symbolId, prices: data });
-          }
-        }
-        console.log(prices);
+        console.log(portfolio);
+        setLoadedPrices(false);
+
+        await Promise.all(
+          Object.entries(portfolio).map(
+            async ([symbolId, { symbol, totalQty }]) => {
+              if (totalQty > 0) {
+                try {
+                  const data = await getPrices(symbol);
+                  console.log(data);
+
+                  active &&
+                    setPrices(portfolioDispatch, { symbolId, prices: data });
+                } catch (e) {
+                  console.log(e);
+                }
+              }
+            }
+          )
+        );
+
+        setLoadedPrices(true);
       }
     };
-    console.log("fetchPrices");
+
+    let active = true;
     if (!Object.keys(prices).length) fetchPrices();
+
+    return () => {
+      active = false;
+    };
   }, [portfolio]);
+
+  useEffect(() => {
+    if (portfolio && loadedPrices) {
+      const total = Object.entries(portfolio).reduce(
+        (t, [symbolId, { total, totalQty }]) => ({
+          currentTotal:
+            t.currentTotal + prices[symbolId].currentPrice * totalQty,
+          investedTotal: t.investedTotal + total,
+        }),
+        { currentTotal: 0, investedTotal: 0 }
+      );
+      console.log(total);
+    }
+  }, [loadedPrices, portfolio]);
 
   return (
     <MDBox

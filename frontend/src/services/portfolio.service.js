@@ -129,7 +129,12 @@ export const getPrices = async (symbol) => {
     return regularMarketPrice; */
   } catch (e) {
     console.log(e);
-    return 0;
+    return {
+      currentPrice: null,
+      historical: {},
+      previousPrice: null,
+      priceChangePercent: null,
+    };
   }
 };
 
