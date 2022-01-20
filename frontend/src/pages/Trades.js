@@ -51,8 +51,8 @@ function TradesPage() {
 
   //create an array with 15 Skeletons
   const renderSkeleton = () =>
-    Array.from({ length: 15 }, () => (
-      <Grid item xs={12} sm={6} lg={4} xxxl={3}>
+    Array.from({ length: 15 }, (_, index) => (
+      <Grid item xs={12} sm={6} lg={4} xxxl={3} key={index}>
         <MDBox mb={1.5}>
           <Skeleton variant="rectangular" animation="wave" height="8.5rem" />
         </MDBox>
@@ -74,11 +74,10 @@ function TradesPage() {
               ? totalQty * currentPrice - totalQty * precoMedio
               : null;
           return (
-            <Grid item xs={12} sm={6} lg={4} xxxl={3}>
+            <Grid item xs={12} sm={6} lg={4} xxxl={3} key={symbolId}>
               <MDBox mb={1.5}>
                 <Link to={`/trades/${symbol}`}>
                   <StockCard
-                    key={symbolId}
                     color={darkMode ? "dark" : "light"}
                     icon="weekend"
                     title={symbol}
@@ -149,7 +148,7 @@ function TradesPage() {
                       {
                         color: "text",
                         amount: <NumberFormat value={total} type={"$"} />,
-                        label: "Valor atual investido",
+                        label: "Valor investido",
                       },
                     ]}
                   />

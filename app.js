@@ -9,7 +9,7 @@ import graphQlSchema from "./graphql/schema/index.js";
 import graphQlResolvers from "./graphql/resolvers/index.js";
 import isAuth from "./middleware/auth.js";
 
-import test from "./test.js";
+import getCurrentPrices from "./getCurrentPrices.js";
 import insertTradesFromOldDB from "./insertTradesFromOldDB.js";
 import download from "./download.js";
 
@@ -33,7 +33,7 @@ app.use(
   })
 );
 
-app.use("/test", test);
+app.use("/getCurrentPrices", getCurrentPrices);
 app.use("/insertTrades", insertTradesFromOldDB);
 app.use("/download", download);
 

@@ -121,7 +121,7 @@ export default function App() {
             element={<TradesPage />}
             key="trades-detail"
           />
-          <Route path="*" element={<Navigate to="/auth/login" />} />
+          <Route path="*" element={<Navigate to="/dashboard" />} />
         </Routes>
       </PortfolioControllerProvider>
     </ThemeProvider>

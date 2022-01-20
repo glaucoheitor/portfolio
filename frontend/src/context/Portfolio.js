@@ -17,8 +17,8 @@ function portfolioReducer(state, { type, value }) {
       return { ...state, trades: value };
     case "PORTFOLIO":
       return { ...state, portfolio: value };
-    case "CURRENTPRICES":
-      return { ...state, currentPrices: value };
+    case "TOTALS":
+      return { ...state, totals: value };
     case "PRICES":
       return {
         ...state,
@@ -46,6 +46,7 @@ function portfolioReducer(state, { type, value }) {
       return {
         trades: null,
         portfolio: null,
+        totals: null,
         prices: {},
         authData: {
           token: null,
@@ -108,8 +109,7 @@ PortfolioControllerProvider.propTypes = {
 const setTrades = (dispatch, value) => dispatch({ type: "TRADES", value });
 const setPortfolio = (dispatch, value) =>
   dispatch({ type: "PORTFOLIO", value });
-const setCurrentPrices = (dispatch, value) =>
-  dispatch({ type: "CURRENTPRICES", value });
+const setTotals = (dispatch, value) => dispatch({ type: "TOTALS", value });
 const setPrices = (dispatch, value) => dispatch({ type: "PRICES", value });
 const login = (dispatch, value) => dispatch({ type: "LOGIN", value });
 const logout = (dispatch) => dispatch({ type: "LOGOUT" });
@@ -120,7 +120,7 @@ export {
   setTrades,
   setPortfolio,
   setPrices,
-  setCurrentPrices,
+  setTotals,
   login,
   logout,
 };

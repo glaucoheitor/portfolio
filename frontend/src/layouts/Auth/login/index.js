@@ -70,7 +70,7 @@ function Basic() {
             Authorization: "Bearer " + authData.token,
           },
         }).then((res) => res.json());
-        data.verifyUser && navigate("/trades");
+        data.verifyUser && navigate("/dashboard");
       } catch (e) {
         setLoading(false);
       }
@@ -123,7 +123,7 @@ function Basic() {
         token: data.login.token,
         userId: data.login.userId,
       });
-      navigate("/trades");
+      navigate("/dashboard");
     } catch (error) {
       console.log(error);
       setError(error.message);

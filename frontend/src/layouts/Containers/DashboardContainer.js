@@ -17,6 +17,7 @@ import {
   setTrades,
   setPortfolio,
   setPrices,
+  setTotals,
 } from "context";
 
 import {
@@ -107,11 +108,13 @@ function LayoutContainer({ children }) {
         (t, [symbolId, { total, totalQty }]) => ({
           currentTotal:
             t.currentTotal + prices[symbolId].currentPrice * totalQty,
+          previousTotal:
+            t.previousTotal + prices[symbolId].previousPrice * totalQty,
           investedTotal: t.investedTotal + total,
         }),
-        { currentTotal: 0, investedTotal: 0 }
+        { currentTotal: 0, previousTotal: 0, investedTotal: 0 }
       );
-      console.log(total);
+      setTotals(portfolioDispatch, total);
     }
   }, [loadedPrices, portfolio]);
 

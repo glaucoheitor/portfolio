@@ -1,5 +1,3 @@
-import yahooFinance from "yahoo-finance2";
-
 export const getTrades = async (authData) => {
   try {
     const { data } = await fetch("http://localhost:3001/graphql", {
@@ -113,7 +111,7 @@ export const buildPortfolioFromTrades = (trades) => {
 
 export const getPrices = async (symbol) => {
   try {
-    const data = await fetch("http://localhost:3001/test", {
+    const data = await fetch("http://localhost:3001/getCurrentPrices", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -122,13 +120,8 @@ export const getPrices = async (symbol) => {
     }).then((res) => res.json());
 
     return data;
-    /* const { regularMarketPrice } = await yahooFinance.quoteCombine(
-      `${symbolName}.SA`,
-      { fields: ["regularMarketPrice"] }
-    );
-    return regularMarketPrice; */
   } catch (e) {
-    console.log(e);
+    console.log(e.result);
     return {
       currentPrice: null,
       historical: {},

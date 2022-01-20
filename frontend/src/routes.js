@@ -34,7 +34,7 @@ import Forgot from "layouts/Auth/reset-password/cover";
 
 import TradesPage from "pages/Trades";
 import TradesTest from "pages/TradesTest";
-import AddTrade from "pages/AddTrade";
+import DashboardPage from "pages/DashboardPage";
 import DataGrid from "pages/DataGrid";
 
 // @mui icons
@@ -59,11 +59,11 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Add Trade",
-    key: "add-trades",
+    name: "Dashboard",
+    key: "dashboard-page",
     icon: <Icon fontSize="small">dashboard</Icon>,
-    route: "/trades/add",
-    component: <AddTrade />,
+    route: "/dashboard",
+    component: <DashboardPage />,
   },
   {
     type: "collapse",
