@@ -33,15 +33,15 @@ const StyledPopper = styled(Popper)({
 
 function SymbolsSelect(props) {
   const { field, form } = props;
-  console.log(field, form);
-  const { type: tradeType } = form.values;
+  const { values, touched, errors, setFieldValue } = form;
+  const { type: tradeType } = values;
 
   const [portfolioController, portfolioDispatch] = usePortfolioController();
   const [symbols, setSymbols] = useState([]);
   const [options, setOptions] = useState([]);
   const [open, setOpen] = useState(false);
   const [shrinkLabel, setShrinkLabel] = useState(false);
-  const loading = open && symbols.length === 0;
+  const loading = open && options.length === 0;
   const navigate = useNavigate();
 
   const { authData, portfolio } = portfolioController;
@@ -68,7 +68,7 @@ function SymbolsSelect(props) {
   }, [loading]);
 
   useEffect(() => {
-    form.setFieldValue("symbol", null, false);
+    setFieldValue("symbol", null, false);
     if (tradeType === "buy") setOptions(symbols);
 
     if (tradeType === "sell")
@@ -93,7 +93,6 @@ function SymbolsSelect(props) {
     }
     onBlur && onBlur(event); // let the child do it's thing
   };
-  console.log(options);
   return (
     <Autocomplete
       {...props}
@@ -129,7 +128,8 @@ function SymbolsSelect(props) {
             {...params}
             label="Symbol"
             name="symbol"
-            error={form.touched["symbol"] && !!form.errors["symbol"]}
+            error={touched.symbol && !!errors.symbol && !open}
+            helperText={touched.symbol && !!errors.symbol ? errors.symbol : " "}
             InputLabelProps={{ shrink: shrinkLabel }}
             InputProps={{
               ...params.InputProps,

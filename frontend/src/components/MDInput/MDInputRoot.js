@@ -19,7 +19,7 @@ import { styled } from "@mui/material/styles";
 
 export default styled(TextField)(({ theme, ownerState }) => {
   const { palette, functions } = theme;
-  const { error, success, disabled } = ownerState;
+  const { error, success, disabled, endAdornment, helperText } = ownerState;
 
   const {
     grey,
@@ -34,7 +34,9 @@ export default styled(TextField)(({ theme, ownerState }) => {
     backgroundImage:
       "url(\"data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%23F44335' viewBox='0 0 12 12'%3E%3Ccircle cx='6' cy='6' r='4.5'/%3E%3Cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3E%3Ccircle cx='6' cy='8.2' r='.6' fill='%23F44335' stroke='none'/%3E%3C/svg%3E\")",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: `right ${pxToRem(12)} center`,
+    backgroundPosition: `right
+      ${endAdornment ? pxToRem(36) : pxToRem(16)}
+      ${helperText ? `bottom ${pxToRem(32)}` : "center"}`,
     backgroundSize: `${pxToRem(16)} ${pxToRem(16)}`,
 
     "& .Mui-focused": {
@@ -68,7 +70,8 @@ export default styled(TextField)(({ theme, ownerState }) => {
   });
 
   return {
-    backgroundColor: disabled ? `${grey[200]} !important` : transparent.main,
+    //backgroundColor: disabled ? `${grey[200]} !important` : transparent.main,
+    backgroundColor: transparent.main,
     pointerEvents: disabled ? "none" : "auto",
     ...(error && errorStyles()),
     ...(success && successStyles()),

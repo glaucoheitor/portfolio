@@ -1,105 +1,118 @@
-import { useState, useRef, useEffect, useReducer } from "react";
+import { useState } from "react";
 
-import { useParams } from "react-router-dom";
-
-import { date, number, object } from "yup";
+import { date, number, object, mixed } from "yup";
 
 import NumberFormat from "react-number-format";
-
-// @mui material components
-import Card from "@mui/material/Card";
-import Switch from "@mui/material/Switch";
-import Grid from "@mui/material/Grid";
-import MuiLink from "@mui/material/Link";
-//import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
-import InputAdornment from "@mui/material/InputAdornment";
 
 // date-fns
 import DateAdapter from "@mui/lab/AdapterDateFns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
-import DatePicker from "@mui/lab/DatePicker";
-import { subYears, isWeekend } from "date-fns";
+//import DatePicker from "@mui/lab/DatePicker";
+import {
+  subYears,
+  isWeekend,
+  subDays,
+  endOfDay,
+  parseISO,
+  formatISO,
+} from "date-fns";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
 import MDInput from "components/MDInput";
 import MDButton from "components/MDButton";
 import MDToggleButton from "components/MDToggleButton";
-import MDAlert from "components/MDAlert";
 import SymbolsSelect from "components/Forms/SymbolsSelect";
 
 import SendIcon from "@mui/icons-material/Send";
 
-import LayoutContainer from "layouts/Containers/DashboardContainer";
-import DashboardNavbar from "layouts/Navbars/DashboardNavbar";
-
-import { Formik, Form, Field, FieldProps } from "formik";
-import { ToggleButtonGroup, fieldToTextField } from "formik-mui";
+import { Formik, Form, Field } from "formik";
+import { ToggleButtonGroup } from "formik-mui";
+import { DatePicker } from "formik-mui-lab";
 
 import { useMaterialUIController, usePortfolioController } from "context";
 
-const errorReducer = (state, { type, value }) => {
-  if (type === "reset") return {};
-  else
-    return {
-      ...state,
-      [type]: value,
-    };
-};
-
-const reducer = (state, { type, value }) => {
-  console.log(type, value);
-  if (type === "reset") return {};
-  else
-    return {
-      ...state,
-      [type]: value,
-    };
-};
-
 function AddTrade() {
-  const [controller] = useMaterialUIController();
-  const [portfolioController, portfolioDispatch] = usePortfolioController();
-  const [state, dispatch] = useReducer(reducer, {
-    type: "buy",
-    date: new Date(),
-    price: 0,
-    qty: "",
-    symbol: { symbol: "" },
-  });
-  const [error, errorDispatch] = useReducer(errorReducer, {});
   const [loading, setLoading] = useState(false);
 
-  const { darkMode } = controller;
-  const { authData } = portfolioController;
+  const getMaxDate = () => {
+    let date = parseISO(
+      new Date().toLocaleDateString("sv-SE", {
+        timeZone: "America/Sao_Paulo",
+      })
+    );
 
-  const submitHandler = async (e) => {
-    e.preventDefault();
+    while (isWeekend(date)) {
+      date = subDays(date, 1);
+    }
+
+    return endOfDay(date);
+  };
+
+  const handleSubmit = async ({ type, date, price, qty, symbol }) => {
+    console.log(symbol);
+    const [year, month, day] = formatISO(date).substring(0, 10).split("-");
+    console.log(year, month, day);
+    const dateUTC = Date.UTC(year, month, day);
+
+    const requestBody = {
+      query: `
+      mutation {
+        addTrade( tradeInput: {
+          type: "${type}",
+          symbolId: "${symbol._id}",
+          qty: ${qty},
+          price: ${price},
+          total: ${price * qty},
+          date: ${dateUTC}
+        }) {
+          _id
+        }
+      }`,
+    };
+    try {
+      const { data, errors } = await fetch("http://localhost:3001/graphql", {
+        method: "POST",
+        body: JSON.stringify(requestBody),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }).then((res) => res.json());
+      console.log(data);
+      if (!data || !data.AddTrade) throw new Error(errors[0]);
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   const schema = object({
-    date: date().required().min(new Date()).max(new Date("2100-10-10")),
-    price: number().required().positive(),
-    qty: number().required().positive().integer(),
+    date: date()
+      .required("Select trade date.")
+      .min(subYears(new Date(), 5), "Date can't be older than 5 years.")
+      .max(getMaxDate(), "Date can't be in the future.")
+      .typeError("Invalid date"),
+    price: number()
+      .required("Enter the price")
+      .positive("Enter a price higher than 0.")
+      .typeError("Invalid price"),
+    qty: number()
+      .required("Enter a quantity.")
+      .positive("Enter a number higher than 0.")
+      .integer("Enter a integer number.")
+      .typeError("Invalid quantity"),
+    symbol: mixed().required("Select a symbol."),
   });
 
   return (
-    <MDBox
-      pt={4}
-      pb={3}
-      px={3}
-      width={300}
-      sx={{ backgroundColor: "background.default" }}
-    >
+    <MDBox p={3} width={300} sx={{ backgroundColor: "background.default" }}>
+      {console.log(getMaxDate())}
+
       <Formik
         validationSchema={schema}
-        onSubmit={(values) => {
-          alert(JSON.stringify(values, null, 2));
-        }}
+        onSubmit={console.log}
         initialValues={{
           type: "buy",
-          date: new Date(),
+          date: getMaxDate(),
           price: "",
           qty: "",
           symbol: "",
@@ -111,10 +124,11 @@ function AddTrade() {
           touched,
           isSubmitting,
           setFieldValue,
+          setFieldTouched,
           ...formik
         }) => (
           <Form>
-            <MDBox mb={2}>
+            <MDBox mb={3}>
               <Field
                 component={ToggleButtonGroup}
                 fullWidth
@@ -130,30 +144,37 @@ function AddTrade() {
                 </MDToggleButton>
               </Field>
             </MDBox>
-            <MDBox mb={2}>
+            <MDBox mb={1}>
               <LocalizationProvider dateAdapter={DateAdapter}>
-                <DatePicker
+                <Field
+                  component={DatePicker}
                   label="Date"
-                  value={state.date}
+                  name="date"
+                  value={values.date}
                   minDate={subYears(new Date(), 5)}
-                  maxDate={new Date()}
+                  maxDate={getMaxDate()}
                   shouldDisableDate={isWeekend}
                   allowSameDateSelection
-                  error={error.date}
-                  onChange={(date) => {
-                    dispatch({ type: "date", value: date });
-                  }}
+                  error={touched.date && errors.date}
                   renderInput={(params) => {
-                    return <MDInput fullWidth {...params} />;
+                    return (
+                      <MDInput
+                        fullWidth
+                        helperText={
+                          touched.date && !!errors.date ? errors.date : " "
+                        }
+                        {...params}
+                      />
+                    );
                   }}
                 />
               </LocalizationProvider>
             </MDBox>
-            <MDBox mb={2}>
+            <MDBox mb={1}>
               <Field
-                name="price"
                 component={NumberFormat}
                 customInput={MDInput}
+                name="price"
                 prefix="R$ "
                 thousandSeparator="."
                 decimalSeparator=","
@@ -164,30 +185,37 @@ function AddTrade() {
                 label="Price"
                 fullWidth
                 value={values.price}
-                error={touched["price"] && !!errors["price"]}
-                disabled={loading}
+                error={touched.price && !!errors.price}
+                disabled={isSubmitting}
                 onValueChange={({ floatValue }, sourceInfo) => {
                   setFieldValue("price", floatValue);
                   console.log(sourceInfo);
                 }}
-                //onBlur={formik.handleBlur}
+                helperText={
+                  touched.price && !!errors.price ? errors.price : " "
+                }
+                onBlur={() => setFieldTouched("price", true)}
               />
             </MDBox>
-            <MDBox mb={2}>
+            <MDBox mb={1}>
               <Field
                 as={MDInput}
                 type="number"
                 label="Quantity"
                 name="qty"
+                disabled={isSubmitting}
+                error={touched.qty && !!errors.qty}
                 fullWidth
+                helperText={touched.qty && !!errors.qty ? errors.qty : " "}
               />
             </MDBox>
-            <MDBox mb={2}>
+            <MDBox mb={1}>
               <Field name="symbol" component={SymbolsSelect} />
             </MDBox>
-            <MDBox mt={4} mb={1}>
+            <MDBox mt={2} mb={1}>
               <MDButton
-                type="submit"
+                onClick={() => handleSubmit(values)}
+                //type="submit"
                 variant="gradient"
                 color="info"
                 fullWidth
@@ -198,14 +226,6 @@ function AddTrade() {
                 Submit
               </MDButton>
             </MDBox>
-            <MDAlert
-              color="error"
-              dismissible
-              open={Object.keys(error).length > 0 ? true : false}
-              handleAlertCloseButton={() => errorDispatch({ type: "reset" })}
-            >
-              {Object.values(error)}
-            </MDAlert>
           </Form>
         )}
       </Formik>

@@ -10,6 +10,7 @@ const StockLogo = ({ symbol, height = 40, width, maxWidth }) => {
       image = require(`assets/images/logos/stocks/${symbol.slice(0, 4)}.png`);
     } catch {}
   }
+  console.log(image);
   return (
     <MDBox
       width={width}
@@ -23,7 +24,7 @@ const StockLogo = ({ symbol, height = 40, width, maxWidth }) => {
         loading="lazy"
         height={height}
         maxWidth={maxWidth ? maxWidth : width}
-        src={image.default}
+        src={image}
         alt={`${symbol} Logo`}
       />
     </MDBox>

@@ -200,7 +200,7 @@ function TradesPage() {
             PaperProps={{ sx: { backgroundColor: "background.default" } }}
           >
             <MDBox
-              display={{ xs: "block", xl: "none" }}
+              display="block"
               position="absolute"
               top={0}
               right={0}

@@ -70,11 +70,10 @@ export async function addTrade(args, req) {
     date: new Date(date),
   });
   try {
-    const result = await trade.save();
-    const createdTrade = transformTrade(result);
     const existingUser = await User.findById(userId);
     if (!existingUser) throw new Error("User not found.");
-
+    const result = await trade.save();
+    const createdTrade = transformTrade(result);
     existingUser.trades.push(trade);
     await existingUser.save();
     return createdTrade;
