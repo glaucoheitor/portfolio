@@ -38,6 +38,10 @@ function DashboardPage() {
   const { darkMode } = controller;
   const { authData, trades, portfolio, prices, totals } = portfolioController;
 
+  const getColor = (amount) => {
+    return !amount || amount === 0 ? "text" : amount > 0 ? "success" : "error";
+  };
+
   useEffect(() => {
     //symbolId && prices[symbolId] && setHistorical(prices[symbolId].historical);
   }, [symbolId, prices]);
@@ -74,16 +78,45 @@ function DashboardPage() {
                   }
                   extraData={[
                     {
-                      color,
+                      color: getColor(totalChangePercent),
                       amount: <NumberFormat value={totalChange} type={"$"} />,
                       label: "Variaçāo hoje",
                     },
                     {
-                      color,
+                      color: getColor(totalChangePercent),
                       amount: (
                         <NumberFormat value={totalChangePercent} type={"%"} />
                       ),
                       label: "Rentabilidade",
+                    },
+                  ]}
+                />
+              ) : (
+                <Skeleton
+                  variant="rectangular"
+                  animation="wave"
+                  height="8.5rem"
+                />
+              )}
+            </MDBox>
+          </Grid>
+          <Grid item xs={12} sm={6} lg={4} xxxl={3} key={symbolId}>
+            <MDBox mb={1.5}>
+              {prices && prices.IBOV ? (
+                <StatisticsCard
+                  icon="weekend"
+                  title="Ibovespa"
+                  count={<NumberFormat value={prices.IBOV.currentPrice} />}
+                  extraData={[
+                    {
+                      color: getColor(prices.IBOV.priceChangePercent),
+                      amount: (
+                        <NumberFormat
+                          value={prices.IBOV.priceChangePercent}
+                          type={"%"}
+                        />
+                      ),
+                      label: "Variaçāo hoje",
                     },
                   ]}
                 />

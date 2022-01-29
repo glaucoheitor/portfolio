@@ -30,6 +30,7 @@
     "react-router-dom": "6.0.2",
     "react-scripts": "5.0.0",
     "react-table": "7.7.0",
+    "react-transition-group": "^4.4.2",
     "react-window": "^1.8.6",
     "stylis": "4.0.10",
     "validator": "^13.7.0",

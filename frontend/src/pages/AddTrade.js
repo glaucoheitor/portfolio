@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { date, number, object, mixed } from "yup";
 
@@ -21,8 +21,10 @@ import {
 import MDBox from "components/MDBox";
 import MDInput from "components/MDInput";
 import MDButton from "components/MDButton";
+import MDTypography from "components/MDTypography";
 import MDToggleButton from "components/MDToggleButton";
 import SymbolsSelect from "components/Forms/SymbolsSelect";
+import AddTradeBackdrop from "components/Backdrops/AddTradeBackdrop";
 
 import SendIcon from "@mui/icons-material/Send";
 
@@ -30,10 +32,24 @@ import { Formik, Form, Field } from "formik";
 import { ToggleButtonGroup } from "formik-mui";
 import { DatePicker } from "formik-mui-lab";
 
-import { useMaterialUIController, usePortfolioController } from "context";
+import {
+  usePortfolioController,
+  setTrades,
+  setPortfolio,
+  setPrices,
+} from "context";
+
+import {
+  buildPortfolioFromTrades,
+  getTrades,
+  getPrices,
+} from "services/portfolio.service";
 
 function AddTrade() {
-  const [loading, setLoading] = useState(false);
+  const [portfolioController, portfolioDispatch] = usePortfolioController();
+  const [submitStatus, setSubmitStatus] = useState(null);
+
+  const { authData, prices } = portfolioController;
 
   const getMaxDate = () => {
     let date = parseISO(
@@ -49,11 +65,14 @@ function AddTrade() {
     return endOfDay(date);
   };
 
-  const handleSubmit = async ({ type, date, price, qty, symbol }) => {
-    console.log(symbol);
+  const handleSubmit = async (
+    { type, date, price, qty, symbol, ...props },
+    actions
+  ) => {
+    console.log(props, actions);
     const [year, month, day] = formatISO(date).substring(0, 10).split("-");
     console.log(year, month, day);
-    const dateUTC = Date.UTC(year, month, day);
+    const dateUTC = Date.UTC(year, month - 1, day);
 
     const requestBody = {
       query: `
@@ -76,12 +95,33 @@ function AddTrade() {
         body: JSON.stringify(requestBody),
         headers: {
           "Content-Type": "application/json",
+          Authorization: "Bearer " + authData?.token,
         },
       }).then((res) => res.json());
-      console.log(data);
-      if (!data || !data.AddTrade) throw new Error(errors[0]);
+      console.log(data, errors);
+      if (errors) throw new Error(errors[0]);
+      setSubmitStatus("success");
+      fetchTrades(symbol);
     } catch (error) {
+      setSubmitStatus("error");
       console.log(error);
+    }
+  };
+
+  const fetchTrades = async (symbol) => {
+    try {
+      const dataTrades = await getTrades(authData);
+      setTrades(portfolioDispatch, dataTrades);
+      setPortfolio(portfolioDispatch, buildPortfolioFromTrades(dataTrades));
+      if (!prices[symbol._id]) {
+        const dataPrices = await getPrices(symbol.symbol);
+        setPrices(portfolioDispatch, {
+          symbolId: symbol._id,
+          prices: dataPrices,
+        });
+      }
+    } catch (e) {
+      //todo: show error message
     }
   };
 
@@ -106,10 +146,9 @@ function AddTrade() {
   return (
     <MDBox p={3} width={300} sx={{ backgroundColor: "background.default" }}>
       {console.log(getMaxDate())}
-
       <Formik
         validationSchema={schema}
-        onSubmit={console.log}
+        onSubmit={handleSubmit}
         initialValues={{
           type: "buy",
           date: getMaxDate(),
@@ -128,6 +167,11 @@ function AddTrade() {
           ...formik
         }) => (
           <Form>
+            <AddTradeBackdrop
+              status={isSubmitting ? "loading" : submitStatus}
+              setSubmitStatus={setSubmitStatus}
+            />
+
             <MDBox mb={3}>
               <Field
                 component={ToggleButtonGroup}
@@ -214,8 +258,7 @@ function AddTrade() {
             </MDBox>
             <MDBox mt={2} mb={1}>
               <MDButton
-                onClick={() => handleSubmit(values)}
-                //type="submit"
+                type="submit"
                 variant="gradient"
                 color="info"
                 fullWidth

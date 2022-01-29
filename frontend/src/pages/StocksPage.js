@@ -27,7 +27,7 @@ import NumberFormat from "utils/NumberFormat";
 
 import { useMaterialUIController, usePortfolioController } from "context";
 
-function TradesPage() {
+function StocksPage() {
   const [controller] = useMaterialUIController();
   const [portfolioController] = usePortfolioController();
 
@@ -76,7 +76,7 @@ function TradesPage() {
           return (
             <Grid item xs={12} sm={6} lg={4} xxxl={3} key={symbolId}>
               <MDBox mb={1.5}>
-                <Link to={`/trades/${symbol}`}>
+                <Link to={`/stocks/${symbol}`}>
                   <StockCard
                     color={darkMode ? "dark" : "light"}
                     icon="weekend"
@@ -220,4 +220,4 @@ function TradesPage() {
   );
 }
 
-export default TradesPage;
+export default StocksPage;

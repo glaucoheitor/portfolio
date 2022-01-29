@@ -25,11 +25,12 @@ import {
   setPrices,
 } from "context";
 
-function TradesTest() {
+function StockDetailPage() {
   const [controller, dispatch] = useMaterialUIController();
   const [portfolioController, portfolioDispatch] = usePortfolioController();
   const [loading, setLoading] = useState(false);
   const [symbolId, setSymbolId] = useState(null);
+  const [symbolTrades, setSymbolTrades] = useState([]);
   const [historical, setHistorical] = useState(null);
 
   const { darkMode } = controller;
@@ -48,6 +49,8 @@ function TradesTest() {
   }, [portfolio]);
 
   useEffect(() => {
+    trades &&
+      setSymbolTrades(trades.filter((trade) => trade.symbol._id === symbolId));
     symbolId && prices[symbolId] && setHistorical(prices[symbolId].historical);
   }, [symbolId, prices]);
 
@@ -57,6 +60,28 @@ function TradesTest() {
       <DashboardNavbar />
       <MDBox py={3}>
         <Grid container spacing={3}>
+          <Grid item xs={12}>
+            {symbolTrades && (
+              <Table>
+                <tbody>
+                  {symbolTrades.map((trade, index) => (
+                    <tr key={`${symbolId}-${index}`}>
+                      <td>{new Date(trade.date).toISOString()}</td>
+                      <td>{trade.type.toUpperCase()}</td>
+                      <td>{trade.qty}</td>
+                      <td>{trade.price}</td>
+                    </tr>
+                  ))}
+                  <tr key={`${symbolId}-total`}>
+                    <td>TOTAL</td>
+                    <td></td>
+                    <td></td>
+                    <td>{portfolio[symbolId].total}</td>
+                  </tr>
+                </tbody>
+              </Table>
+            )}
+          </Grid>
           {historical && historical.quotes ? (
             <Table>
               <tbody>
@@ -78,4 +103,4 @@ function TradesTest() {
   );
 }
 
-export default TradesTest;
+export default StockDetailPage;

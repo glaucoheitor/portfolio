@@ -24,6 +24,7 @@ import {
   buildPortfolioFromTrades,
   getPrices,
   getTrades,
+  getIBOV,
 } from "services/portfolio.service";
 
 function LayoutContainer({ children }) {
@@ -89,6 +90,16 @@ function LayoutContainer({ children }) {
             }
           )
         );
+
+        try {
+          active &&
+            setPrices(portfolioDispatch, {
+              symbolId: "IBOV",
+              prices: await getIBOV(),
+            });
+        } catch (e) {
+          console.log(e);
+        }
 
         setLoadedPrices(true);
       }

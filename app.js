@@ -12,6 +12,7 @@ import isAuth from "./middleware/auth.js";
 import getCurrentPrices from "./getCurrentPrices.js";
 import insertTradesFromOldDB from "./insertTradesFromOldDB.js";
 import download from "./download.js";
+import ibov from "./ibov.js";
 
 const app = express();
 
@@ -36,6 +37,7 @@ app.use(
 app.use("/getCurrentPrices", getCurrentPrices);
 app.use("/insertTrades", insertTradesFromOldDB);
 app.use("/download", download);
+app.use("/ibov", ibov);
 
 mongoose
   .connect(

@@ -8,7 +8,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-import TradesPage from "pages/TradesTest";
+import StockDetailPage from "pages/StockDetailPage";
 import Sidenav from "components/Sidenav";
 
 // Material Dashboard 2 React themes
@@ -117,9 +117,9 @@ export default function App() {
           {getRoutes(routes)}
           <Route
             exact
-            path="/trades/:symbol"
-            element={<TradesPage />}
-            key="trades-detail"
+            path="/stocks/:symbol"
+            element={<StockDetailPage />}
+            key="stock-detail"
           />
           <Route path="*" element={<Navigate to="/dashboard" />} />
         </Routes>

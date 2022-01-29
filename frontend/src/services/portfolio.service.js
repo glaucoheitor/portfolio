@@ -67,11 +67,11 @@ export const getPositionAtDay = (symbolId, date, trades) => {
   };
   for (const trade of trades) {
     if (symbolId === trade.symbol._id && trade.date <= new Date(date)) {
-      if (trade.type === "C") {
+      if (trade.type === "buy") {
         position.total += Number(trade.qty) * Number(trade.price);
         position.totalQty += Number(trade.qty);
         position.precoMedio = position.total / position.totalQty;
-      } else if (trade.type === "V") {
+      } else if (trade.type === "sell") {
         position.total -= Number(trade.qty) * position.precoMedio;
         position.totalQty -= Number(trade.qty);
       }
@@ -97,11 +97,11 @@ export const buildPortfolioFromTrades = (trades) => {
         previousPrice: null,
       };
     }
-    if (trade.type === "C") {
+    if (trade.type === "buy") {
       portfolio[s].total += Number(trade.qty) * Number(trade.price);
       portfolio[s].totalQty += Number(trade.qty);
       portfolio[s].precoMedio = portfolio[s].total / portfolio[s].totalQty;
-    } else if (trade.type === "V") {
+    } else if (trade.type === "sell") {
       portfolio[s].total -= Number(trade.qty) * portfolio[s].precoMedio;
       portfolio[s].totalQty -= Number(trade.qty);
     }
@@ -117,6 +117,27 @@ export const getPrices = async (symbol) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ symbol }),
+    }).then((res) => res.json());
+
+    return data;
+  } catch (e) {
+    console.log(e.result);
+    return {
+      currentPrice: null,
+      historical: {},
+      previousPrice: null,
+      priceChangePercent: null,
+    };
+  }
+};
+
+export const getIBOV = async () => {
+  try {
+    const data = await fetch("http://localhost:3001/ibov", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
     }).then((res) => res.json());
 
     return data;
