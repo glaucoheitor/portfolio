@@ -1,6 +1,8 @@
-import { useState, useRef, useEffect, useReducer } from "react";
+import { useState, useEffect, useReducer } from "react";
 
 import { useParams } from "react-router-dom";
+
+import format from "date-fns/format";
 
 // @mui material components
 import Grid from "@mui/material/Grid";
@@ -11,6 +13,13 @@ import MDBox from "components/MDBox";
 
 import LayoutContainer from "layouts/Containers/DashboardContainer";
 import DashboardNavbar from "layouts/Navbars/DashboardNavbar";
+import TradesTimeline from "components/Cards/Timeline/TradesTimeline";
+import StockDetailChart from "components/Charts/StockDetailChart";
+import StatisticsCard from "components/Cards/StatisticsCard";
+
+import TimelineSkeleton from "components/Cards/Timeline/TimelineSkeleton";
+
+import NumberFormat from "utils/NumberFormat";
 
 import {
   getPositionAtDay,
@@ -28,75 +37,103 @@ import {
 function StockDetailPage() {
   const [controller, dispatch] = useMaterialUIController();
   const [portfolioController, portfolioDispatch] = usePortfolioController();
-  const [loading, setLoading] = useState(false);
+
   const [symbolId, setSymbolId] = useState(null);
-  const [symbolTrades, setSymbolTrades] = useState([]);
+  const [symbolTrades, setSymbolTrades] = useState(null);
   const [historical, setHistorical] = useState(null);
+  const [chartData, setChartData] = useState(null);
 
   const { darkMode } = controller;
   const { authData, trades, portfolio, prices } = portfolioController;
   const { symbol } = useParams();
 
   useEffect(() => {
-    console.log(prices);
     if (portfolio) {
-      const [sId, data] = Object.entries(portfolio).find(
-        ([id, s]) => s.symbol === symbol
-      );
-      setSymbolId(sId);
-      console.log(sId, data);
+      console.log(portfolio);
+      const [sId, data] =
+        Object.entries(portfolio).find(
+          ([id, s]) => s.symbol === symbol.toUpperCase()
+        ) || [];
+
+      if (sId) {
+        setSymbolId(sId);
+        console.log(sId, data);
+      } else {
+        setSymbolTrades([]);
+      }
     }
   }, [portfolio]);
 
   useEffect(() => {
-    trades &&
+    symbolId &&
+      trades &&
       setSymbolTrades(trades.filter((trade) => trade.symbol._id === symbolId));
-    symbolId && prices[symbolId] && setHistorical(prices[symbolId].historical);
-  }, [symbolId, prices]);
+  }, [symbolId]);
+
+  useEffect(() => {
+    const getHistorical = async () => {
+      setHistorical(
+        await getHistoricalStockData(authData, symbol.toUpperCase())
+      );
+    };
+    getHistorical();
+  }, [symbol]);
+
+  useEffect(() => {
+    console.log(historical);
+    historical &&
+      //reduce historical array to object for the chart
+      setChartData(
+        historical.reduce(
+          (obj, element) => {
+            console.log(obj);
+            obj.labels.push(format(new Date(element.date), "dd MMM"));
+            obj.datasets.data.push(element.close);
+            return obj;
+          },
+          {
+            labels: [],
+            datasets: { data: [] },
+          }
+        )
+      );
+  }, [historical]);
 
   return (
     <LayoutContainer>
-      {console.log(prices)}
+      {console.log(historical)}
       <DashboardNavbar />
       <MDBox py={3}>
         <Grid container spacing={3}>
-          <Grid item xs={12}>
-            {symbolTrades && (
-              <Table>
-                <tbody>
-                  {symbolTrades.map((trade, index) => (
-                    <tr key={`${symbolId}-${index}`}>
-                      <td>{new Date(trade.date).toISOString()}</td>
-                      <td>{trade.type.toUpperCase()}</td>
-                      <td>{trade.qty}</td>
-                      <td>{trade.price}</td>
-                    </tr>
-                  ))}
-                  <tr key={`${symbolId}-total`}>
-                    <td>TOTAL</td>
-                    <td></td>
-                    <td></td>
-                    <td>{portfolio[symbolId].total}</td>
-                  </tr>
-                </tbody>
-              </Table>
+          <Grid item container xs={12} md={7} lg={8} xl={7}>
+            <Grid item xs={12}>
+              <MDBox mb={3} height={100}>
+                Hello
+              </MDBox>
+            </Grid>
+            <Grid item xs={12}>
+              <MDBox mb={3}>
+                <StockDetailChart
+                  color="success"
+                  title="daily sales"
+                  description={
+                    <>
+                      (<strong>+15%</strong>) increase in today sales.
+                    </>
+                  }
+                  date="updated 4 min ago"
+                  chart={chartData}
+                />
+              </MDBox>
+            </Grid>
+          </Grid>
+          <Grid item xs={12} md={5} lg={4} xl={5}>
+            {symbolTrades ? (
+              <TradesTimeline trades={symbolTrades} />
+            ) : (
+              <TimelineSkeleton />
             )}
           </Grid>
-          {historical && historical.quotes ? (
-            <Table>
-              <tbody>
-                {console.log(historical)}
-                {historical.quotes.map((h) => (
-                  <tr key={h.date}>
-                    <td>{new Date(h.date).toISOString()}</td>
-                    <td>{h.close}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </Table>
-          ) : (
-            <div>Loading...</div>
-          )}
         </Grid>
       </MDBox>
     </LayoutContainer>

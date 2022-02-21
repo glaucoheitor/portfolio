@@ -35,7 +35,8 @@ function StatisticsCard({ color, title, count, percentage, icon, extraData }) {
           <MDTypography variant="button" fontWeight="light" color="text">
             {title}
           </MDTypography>
-          <MDTypography variant="h4">{count}</MDTypography>
+          {/* because this uses NumberFormat, the Typography component will be passed from DashboardPage */}
+          {count}
         </MDBox>
       </MDBox>
       <Divider />

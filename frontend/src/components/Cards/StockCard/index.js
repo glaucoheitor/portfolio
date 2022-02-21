@@ -26,6 +26,7 @@ import Icon from "@mui/material/Icon";
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
+import StockLogo from "components/StockLogo";
 
 function StockCard({
   color,
@@ -65,14 +66,7 @@ function StockCard({
           height="4.5rem"
           mt={-3}
         >
-          <MDBox
-            component="img"
-            src={logoSrc}
-            alt="Brand"
-            width="auto"
-            height="2.5rem"
-            onError={handleLogoOnError}
-          />
+          <StockLogo symbol={symbol} width="5rem" height="2.5rem" />
           <MDBox textAlign="center" width="5.5rem" py={0.5}>
             <MDTypography
               component="p"
@@ -100,8 +94,8 @@ function StockCard({
           sx={{
             visibility: "visible",
             display: "-webkit-box",
-            "-webkit-line-clamp": "1",
-            "-webkit-box-orient": "vertical",
+            WebkitLineClamp: "1",
+            WebkitBoxOrient: "vertical",
             overflow: "hidden",
           }}
         >

@@ -114,19 +114,6 @@ export const test = async (req, res) => {
   return;
 };
 
-export const chart = async (req, res) => {
-  let result;
-  try {
-    const query = "NUBR33.SA";
-    const queryOptions = { period1: "2021-12-20" /* ... */ };
-    result = await yahooFinance.historical(query, queryOptions);
-  } catch (e) {
-    res.send({ error: e });
-  }
-  res.send({ data: result });
-  return;
-};
-
 function stringToDate(dateString) {
   let dateArray = dateString.split("/");
 

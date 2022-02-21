@@ -30,29 +30,23 @@ export const getTrades = async (authData) => {
 
 export const getHistoricalStockData = async (
   authData,
-  symbolId,
+  symbol,
   startDate,
   endDate
 ) => {
   try {
-    const { data } = await fetch("http://localhost:3001/graphql", {
-      method: "POST",
-      body: JSON.stringify({
-        query: `query {
-              stockData(symbolId: "${symbolId}",startDate: "2021-12-01") {
-                _id
-                date
-                close
-              }
-            }`,
-      }),
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + authData.token,
-      },
-    }).then((res) => res.json());
+    const { data } = await fetch(
+      `http://localhost:3001/historical?symbol=${symbol}`,
+      {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Bearer " + authData.token,
+        },
+      }
+    ).then((res) => res.json());
     console.log(data);
-    return data.stockData;
+    return data;
   } catch (e) {
     return [];
   }

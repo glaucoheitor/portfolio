@@ -29,13 +29,19 @@ import MDTypography from "components/MDTypography";
 
 function Breadcrumbs({ icon, title, route, light }) {
   const routes = route.slice(0, -1);
+  console.log(routes);
+  let textTransform = "capitalize";
+  if (routes.length > 0 && routes[routes.length - 1] === "stocks") {
+    textTransform = "uppercase";
+  }
 
   return (
     <MDBox mr={{ xs: 0, xl: 8 }}>
       <MuiBreadcrumbs
         sx={{
           "& .MuiBreadcrumbs-separator": {
-            color: ({ palette: { white, grey } }) => (light ? white.main : grey[600]),
+            color: ({ palette: { white, grey } }) =>
+              light ? white.main : grey[600],
           },
         }}
       >
@@ -68,7 +74,7 @@ function Breadcrumbs({ icon, title, route, light }) {
         <MDTypography
           variant="button"
           fontWeight="regular"
-          textTransform="capitalize"
+          textTransform={textTransform}
           color={light ? "white" : "dark"}
           sx={{ lineHeight: 0 }}
         >
@@ -77,7 +83,7 @@ function Breadcrumbs({ icon, title, route, light }) {
       </MuiBreadcrumbs>
       <MDTypography
         fontWeight="bold"
-        textTransform="capitalize"
+        textTransform={textTransform}
         variant="h6"
         color={light ? "white" : "dark"}
         noWrap

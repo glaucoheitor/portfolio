@@ -2,11 +2,12 @@ import { useState, useRef, useEffect, useReducer } from "react";
 
 // @mui material components
 import Grid from "@mui/material/Grid";
-import Table from "@mui/material/Table";
-import Skeleton from "@mui/material/Skeleton";
+
+import { useTheme } from "@mui/styles";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
+import MDTypography from "components/MDTypography";
 
 import LayoutContainer from "layouts/Containers/DashboardContainer";
 import DashboardNavbar from "layouts/Navbars/DashboardNavbar";
@@ -31,9 +32,10 @@ import {
 function DashboardPage() {
   const [controller, dispatch] = useMaterialUIController();
   const [portfolioController, portfolioDispatch] = usePortfolioController();
-  const [loading, setLoading] = useState(false);
+  const [changes, setChanges] = useState({});
   const [symbolId, setSymbolId] = useState(null);
   const [historical, setHistorical] = useState(null);
+  const theme = useTheme();
 
   const { darkMode } = controller;
   const { authData, trades, portfolio, prices, totals } = portfolioController;
@@ -46,87 +48,100 @@ function DashboardPage() {
     //symbolId && prices[symbolId] && setHistorical(prices[symbolId].historical);
   }, [symbolId, prices]);
 
-  let totalChange, totalChangePercent;
+  useEffect(() => {
+    if (totals) {
+      const { investedTotal, currentTotal, previousTotal } = totals;
+      const totalChange = currentTotal - investedTotal;
+      const dailyChange = currentTotal - previousTotal;
 
-  if (totals) {
-    console.log(totals);
-    totalChange = totals.currentTotal - totals.previousTotal;
-    totalChangePercent = (totalChange / totals.previousTotal) * 100;
-  }
-
-  const color =
-    !totalChangePercent || totalChangePercent === 0
-      ? "text"
-      : totalChangePercent > 0
-      ? "success"
-      : "error";
+      setChanges({
+        total: totalChange,
+        totalPercent: (totalChange / investedTotal) * 100,
+        daily: dailyChange,
+        dailyPercent: (dailyChange / previousTotal) * 100,
+      });
+    }
+  }, [totals]);
 
   return (
     <LayoutContainer>
-      {console.log(prices)}
       <DashboardNavbar />
       <MDBox py={3}>
         <Grid container spacing={3}>
-          <Grid item xs={12} sm={6} lg={4} xxxl={3} key={symbolId}>
+          <Grid item xs={12} sm={6} lg={4} xxxl={3} key="total">
             <MDBox mb={1.5}>
-              {totals ? (
-                <StatisticsCard
-                  icon="weekend"
-                  title="Total"
-                  count={
-                    <NumberFormat value={totals.currentTotal} type={"$"} />
-                  }
-                  extraData={[
-                    {
-                      color: getColor(totalChangePercent),
-                      amount: <NumberFormat value={totalChange} type={"$"} />,
-                      label: "Variaçāo hoje",
-                    },
-                    {
-                      color: getColor(totalChangePercent),
-                      amount: (
-                        <NumberFormat value={totalChangePercent} type={"%"} />
-                      ),
-                      label: "Rentabilidade",
-                    },
-                  ]}
-                />
-              ) : (
-                <Skeleton
-                  variant="rectangular"
-                  animation="wave"
-                  height="8.5rem"
-                />
-              )}
+              <StatisticsCard
+                icon="attach_money"
+                title="Stocks Total"
+                count={
+                  <NumberFormat
+                    RenderTextAs={MDTypography}
+                    variant="h4"
+                    value={totals?.currentTotal}
+                    type={"$"}
+                  />
+                }
+                extraData={[
+                  {
+                    color: getColor(changes?.total),
+                    amount: <NumberFormat value={changes?.total} type={"$"} />,
+                    label: "Resultado atual",
+                  },
+                ]}
+              />
             </MDBox>
           </Grid>
-          <Grid item xs={12} sm={6} lg={4} xxxl={3} key={symbolId}>
+          <Grid item xs={12} sm={6} lg={4} xxxl={3} key="change">
             <MDBox mb={1.5}>
-              {prices && prices.IBOV ? (
-                <StatisticsCard
-                  icon="weekend"
-                  title="Ibovespa"
-                  count={<NumberFormat value={prices.IBOV.currentPrice} />}
-                  extraData={[
-                    {
-                      color: getColor(prices.IBOV.priceChangePercent),
-                      amount: (
-                        <NumberFormat
-                          value={prices.IBOV.priceChangePercent}
-                          type={"%"}
-                        />
-                      ),
-                      label: "Variaçāo hoje",
-                    },
-                  ]}
-                />
-              ) : (
-                <Skeleton
-                  variant="rectangular"
-                  animation="wave"
-                  height="8.5rem"
-                />
-              )}
+              <StatisticsCard
+                icon="show_chart"
+                title="Variaçāo hoje"
+                count={
+                  <NumberFormat
+                    RenderTextAs={MDTypography}
+                    variant="h4"
+                    color={getColor(changes?.daily)}
+                    value={changes?.daily}
+                    type="$"
+                  />
+                }
+                extraData={[
+                  {
+                    color: getColor(changes?.dailyPercent),
+                    amount: (
+                      <NumberFormat value={changes?.dailyPercent} type={"%"} />
+                    ),
+                    label: "Rentabilidade",
+                  },
+                ]}
+              />
+            </MDBox>
+          </Grid>
+          <Grid item xs={12} sm={6} lg={4} xxxl={3} key="ibov">
+            <MDBox mb={1.5}>
+              <StatisticsCard
+                icon="account_balance"
+                title="Ibovespa"
+                count={
+                  <NumberFormat
+                    RenderTextAs={MDTypography}
+                    variant="h4"
+                    value={prices?.IBOV?.currentPrice}
+                  />
+                }
+                extraData={[
+                  {
+                    color: getColor(prices?.IBOV?.priceChangePercent),
+                    amount: (
+                      <NumberFormat
+                        value={prices?.IBOV?.priceChangePercent}
+                        type={"%"}
+                      />
+                    ),
+                    label: "Variaçāo hoje",
+                  },
+                ]}
+              />
             </MDBox>
           </Grid>
         </Grid>

@@ -1,19 +1,37 @@
 import PropTypes from "prop-types";
 import NumberFormat from "react-number-format";
 
-export default function NumFormat({ value, type, decimalScale = 2, ...props }) {
+import Skeleton from "@mui/material/Skeleton";
+
+export default function NumFormat({
+  value,
+  type,
+  extraSuffix,
+  decimalScale = 2,
+  ...props
+}) {
   const { RenderTextAs, children } = props;
+
+  if (!value)
+    return RenderTextAs && RenderTextAs !== "none" ? (
+      <RenderTextAs {...props}>
+        <Skeleton animation="wave" width={100} />
+      </RenderTextAs>
+    ) : (
+      <Skeleton animation="wave" width={100} />
+    );
+
   let prefix = type === "$" ? "R$ " : "";
-  const suffix = type === "%" ? "%" : null;
+  let suffix = type === "%" ? "%" : "";
+  if (extraSuffix) suffix += extraSuffix;
   if (value < 0) prefix += "-";
   if (value > 0 && type === "%") prefix += "+";
 
   return (
     <>
       <NumberFormat
-        {...props}
         value={Math.abs(value)}
-        displayType={"text"}
+        displayType="text"
         thousandSeparator={"."}
         decimalSeparator={","}
         prefix={prefix}
@@ -30,6 +48,7 @@ export default function NumFormat({ value, type, decimalScale = 2, ...props }) {
                 )
             : undefined
         }
+        {...props}
       />
       {children}
     </>

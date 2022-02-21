@@ -115,17 +115,17 @@ function LayoutContainer({ children }) {
 
   useEffect(() => {
     if (portfolio && loadedPrices) {
-      const total = Object.entries(portfolio).reduce(
-        (t, [symbolId, { total, totalQty }]) => ({
+      const totals = Object.entries(portfolio).reduce(
+        (totals, [symbolId, { total, totalQty }]) => ({
           currentTotal:
-            t.currentTotal + prices[symbolId].currentPrice * totalQty,
+            totals.currentTotal + prices[symbolId].currentPrice * totalQty,
           previousTotal:
-            t.previousTotal + prices[symbolId].previousPrice * totalQty,
-          investedTotal: t.investedTotal + total,
+            totals.previousTotal + prices[symbolId].previousPrice * totalQty,
+          investedTotal: totals.investedTotal + total,
         }),
         { currentTotal: 0, previousTotal: 0, investedTotal: 0 }
       );
-      setTotals(portfolioDispatch, total);
+      setTotals(portfolioDispatch, totals);
     }
   }, [loadedPrices, portfolio]);
 
