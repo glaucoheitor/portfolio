@@ -44,7 +44,7 @@ export default function App() {
 
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
-  useMemo(() => {
+  useEffect(() => {
     if (prefersDarkMode) {
       setDarkMode(dispatch, true);
       return darkTheme;

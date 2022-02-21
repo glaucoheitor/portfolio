@@ -1,9 +1,7 @@
-import { useState, useRef, useEffect, useReducer } from "react";
+import { useState, useEffect } from "react";
 
 // @mui material components
 import Grid from "@mui/material/Grid";
-
-import { useTheme } from "@mui/styles";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
@@ -16,29 +14,14 @@ import StatisticsCard from "components/Cards/StatisticsCard";
 
 import NumberFormat from "utils/NumberFormat";
 
-import {
-  getPositionAtDay,
-  getHistoricalStockData,
-} from "services/portfolio.service";
-
-import {
-  useMaterialUIController,
-  usePortfolioController,
-  setTrades,
-  setPortfolio,
-  setPrices,
-} from "context";
+import { useMaterialUIController, usePortfolioController } from "context";
 
 function DashboardPage() {
-  const [controller, dispatch] = useMaterialUIController();
-  const [portfolioController, portfolioDispatch] = usePortfolioController();
+  const [portfolioController] = usePortfolioController();
   const [changes, setChanges] = useState({});
   const [symbolId, setSymbolId] = useState(null);
-  const [historical, setHistorical] = useState(null);
-  const theme = useTheme();
 
-  const { darkMode } = controller;
-  const { authData, trades, portfolio, prices, totals } = portfolioController;
+  const { prices, totals } = portfolioController;
 
   const getColor = (amount) => {
     return !amount || amount === 0 ? "text" : amount > 0 ? "success" : "error";

@@ -6,11 +6,10 @@ import { alpha } from "@mui/system";
 export default styled(ToggleButton)(({ theme, ownerState }) => {
   const { palette, functions, borders, boxShadows, components, typography } =
     theme;
-  const { color, fullWidth, size, circular, iconOnly, darkMode } = ownerState;
+  const { color, fullWidth } = ownerState;
 
-  const { white, text, transparent, gradients, grey } = palette;
-  const { boxShadow, linearGradient, pxToRem, rgba } = functions;
-  const { borderRadius } = borders;
+  const { white, text, transparent, gradients } = palette;
+  const { boxShadow, linearGradient, rgba } = functions;
   const { colored } = boxShadows;
 
   const selectedOpacity = 0.16;

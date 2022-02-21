@@ -45,7 +45,7 @@ export const getHistoricalStockData = async (
         },
       }
     ).then((res) => res.json());
-    console.log(data);
+
     return data;
   } catch (e) {
     return [];
@@ -115,7 +115,6 @@ export const getPrices = async (symbol) => {
 
     return data;
   } catch (e) {
-    console.log(e.result);
     return {
       currentPrice: null,
       historical: {},
@@ -136,7 +135,6 @@ export const getIBOV = async () => {
 
     return data;
   } catch (e) {
-    console.log(e.result);
     return {
       currentPrice: null,
       historical: {},

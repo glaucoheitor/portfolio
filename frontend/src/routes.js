@@ -33,10 +33,8 @@ import LogIn from "layouts/Auth/login";
 import Forgot from "layouts/Auth/reset-password/cover";
 
 import StocksPage from "pages/StocksPage";
-import StockDetailPage from "pages/StockDetailPage";
 import DashboardPage from "pages/DashboardPage";
 import TradesPage from "pages/TradesPage";
-import DataGrid from "pages/DataGrid";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -66,14 +64,6 @@ const routes = [
     icon: <Icon fontSize="small">dashboard</Icon>,
     route: "/trades",
     component: <TradesPage />,
-  },
-  {
-    type: "collapse",
-    name: "DataGrid",
-    key: "datagrid",
-    icon: <Icon fontSize="small">dashboard</Icon>,
-    route: "/datagrid",
-    component: <DataGrid />,
   },
   {
     type: "collapse",

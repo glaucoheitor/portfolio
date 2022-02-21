@@ -10,11 +10,11 @@ export default function NumFormat({
   decimalScale = 2,
   ...props
 }) {
-  const { RenderTextAs, children } = props;
+  const { RenderTextAs, children, ...rest } = props;
 
-  if (!value)
+  if (!value & (value !== 0))
     return RenderTextAs && RenderTextAs !== "none" ? (
-      <RenderTextAs {...props}>
+      <RenderTextAs {...rest}>
         <Skeleton animation="wave" width={100} />
       </RenderTextAs>
     ) : (
@@ -48,7 +48,7 @@ export default function NumFormat({
                 )
             : undefined
         }
-        {...props}
+        {...rest}
       />
       {children}
     </>
@@ -56,9 +56,9 @@ export default function NumFormat({
 }
 
 NumFormat.propTypes = {
-  value: PropTypes.number.isRequired,
-  type: PropTypes.string.isRequired,
+  value: PropTypes.number,
+  type: PropTypes.string,
   decimalScale: PropTypes.number,
-  RenderTextAs: PropTypes.string,
+  RenderTextAs: PropTypes.oneOfType([PropTypes.string, PropTypes.elementType]),
   children: PropTypes.node,
 };

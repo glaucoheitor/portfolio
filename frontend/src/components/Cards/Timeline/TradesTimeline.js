@@ -21,7 +21,6 @@ const getIcon = (type) => {
 };
 
 function TradesTimeline({ trades }) {
-  console.log(trades);
   return (
     <Card sx={{ maxHeight: "45rem", overflow: "auto" }}>
       <MDBox pt={3} px={3} mb={2}>

@@ -14,7 +14,6 @@ import useTimeout from "utils/useTimeout";
 
 function AddTradeBackdrop(props) {
   const { status } = props;
-  console.log(status);
 
   return (
     <Fade in={!!status} timeout={{ enter: 300, exit: 300 }}>
@@ -54,7 +53,7 @@ function AddTradeBackdrop(props) {
 }
 
 const StatusMessage = ({ status, setSubmitStatus }) => {
-  useTimeout(() => setSubmitStatus(null), 3000);
+  useTimeout(() => setSubmitStatus(null), 2000);
   return (
     <>
       {status === "success" && (

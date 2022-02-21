@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
+import dotenv from "dotenv";
 import { graphqlHTTP } from "express-graphql";
 
 import mongoose from "mongoose";
@@ -15,7 +16,7 @@ import download from "./download.js";
 import { ibov, historical } from "./services/yahooFinance.js";
 
 const app = express();
-
+dotenv.config();
 const { PORT, MONGO_DB, MONGO_USER, MONGO_PASSWORD } = process.env;
 
 app.use(cors());

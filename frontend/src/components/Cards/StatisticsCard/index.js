@@ -95,7 +95,7 @@ StatisticsCard.propTypes = {
     "dark",
   ]),
   title: PropTypes.string.isRequired,
-  count: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  count: PropTypes.node.isRequired,
   percentage: PropTypes.shape({
     color: PropTypes.oneOf([
       "primary",

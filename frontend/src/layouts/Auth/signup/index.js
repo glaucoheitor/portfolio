@@ -40,7 +40,7 @@ function Basic() {
     const name = nameEl.current.value;
     const email = emailEl.current.value;
     const password = passwordEl.current.value;
-    console.log(email, password);
+
     if (!isEmail(email)) return;
 
     setLoading(true);
@@ -67,7 +67,6 @@ function Basic() {
           "Content-Type": "application/json",
         },
       }).then((res) => res.json());
-      console.log(res);
     } catch (e) {
       setLoading(false);
     }

@@ -83,7 +83,7 @@ function Basic() {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    console.log(emailEl, passwordEl);
+
     const email = emailEl.current.value;
     const password = passwordEl.current.value;
 
@@ -117,7 +117,7 @@ function Basic() {
           "Content-Type": "application/json",
         },
       }).then((res) => res.json());
-      console.log(data);
+
       if (!data) throw new Error(errors[0].message);
       login(portfolioDispatch, {
         token: data.login.token,
@@ -125,7 +125,6 @@ function Basic() {
       });
       navigate("/dashboard");
     } catch (error) {
-      console.log(error);
       setError(error.message);
       if (error.message.includes("User")) setEmailError(true);
       if (error.message.includes("Password")) setPasswordError(true);

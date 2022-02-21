@@ -69,9 +69,8 @@ function AddTrade() {
     { type, date, price, qty, symbol, ...props },
     actions
   ) => {
-    console.log(props, actions);
     const [year, month, day] = formatISO(date).substring(0, 10).split("-");
-    console.log(year, month, day);
+
     const dateUTC = Date.UTC(year, month - 1, day);
 
     const requestBody = {
@@ -98,13 +97,12 @@ function AddTrade() {
           Authorization: "Bearer " + authData?.token,
         },
       }).then((res) => res.json());
-      console.log(data, errors);
+
       if (errors) throw new Error(errors[0]);
       setSubmitStatus("success");
       fetchTrades(symbol);
     } catch (error) {
       setSubmitStatus("error");
-      console.log(error);
     }
   };
 
@@ -145,7 +143,6 @@ function AddTrade() {
 
   return (
     <MDBox p={3} width={300} sx={{ backgroundColor: "background.default" }}>
-      {console.log(getMaxDate())}
       <Formik
         validationSchema={schema}
         onSubmit={handleSubmit}
@@ -233,7 +230,6 @@ function AddTrade() {
                 disabled={isSubmitting}
                 onValueChange={({ floatValue }, sourceInfo) => {
                   setFieldValue("price", floatValue);
-                  console.log(sourceInfo);
                 }}
                 helperText={
                   touched.price && !!errors.price ? errors.price : " "

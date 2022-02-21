@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
 
-// Material Dashboard 2 PRO React context
+// context
 import {
   useMaterialUIController,
   usePortfolioController,
@@ -17,6 +17,7 @@ import {
   setTrades,
   setPortfolio,
   setPrices,
+  setLoadedPrices,
   setTotals,
 } from "context";
 
@@ -31,11 +32,10 @@ function LayoutContainer({ children }) {
   const [controller, dispatch] = useMaterialUIController();
   const [portfolioController, portfolioDispatch] = usePortfolioController();
   const { miniSidenav } = controller;
-  const { authData, trades, portfolio, prices } = portfolioController;
+  const { authData, trades, portfolio, prices, loadedPrices } =
+    portfolioController;
   const { pathname } = useLocation();
   const navigate = useNavigate();
-
-  const [loadedPrices, setLoadedPrices] = useState(false);
 
   useEffect(() => {
     !authData.token &&
@@ -69,52 +69,39 @@ function LayoutContainer({ children }) {
 
   useEffect(() => {
     const fetchPrices = async () => {
-      if (portfolio) {
-        console.log(portfolio);
-        setLoadedPrices(false);
+      if (loadedPrices) setLoadedPrices(portfolioDispatch, false);
 
-        await Promise.all(
-          Object.entries(portfolio).map(
-            async ([symbolId, { symbol, totalQty }]) => {
-              if (totalQty > 0) {
-                try {
-                  const data = await getPrices(symbol);
-                  console.log(data);
+      await Promise.all(
+        Object.entries(portfolio).map(
+          async ([symbolId, { symbol, totalQty }]) => {
+            if (totalQty > 0) {
+              try {
+                const data = await getPrices(symbol);
 
-                  active &&
-                    setPrices(portfolioDispatch, { symbolId, prices: data });
-                } catch (e) {
-                  console.log(e);
-                }
-              }
+                active &&
+                  setPrices(portfolioDispatch, { symbolId, prices: data });
+              } catch (e) {}
             }
-          )
-        );
+          }
+        )
+      );
 
-        try {
-          active &&
-            setPrices(portfolioDispatch, {
-              symbolId: "IBOV",
-              prices: await getIBOV(),
-            });
-        } catch (e) {
-          console.log(e);
-        }
+      setLoadedPrices(portfolioDispatch, true);
 
-        setLoadedPrices(true);
-      }
+      try {
+        active &&
+          setPrices(portfolioDispatch, {
+            symbolId: "IBOV",
+            prices: await getIBOV(),
+          });
+      } catch (e) {}
     };
 
     let active = true;
-    if (!Object.keys(prices).length) fetchPrices();
+    if (portfolio && !loadedPrices && !Object.keys(prices).length)
+      fetchPrices();
 
-    return () => {
-      active = false;
-    };
-  }, [portfolio]);
-
-  useEffect(() => {
-    if (portfolio && loadedPrices) {
+    if (loadedPrices) {
       const totals = Object.entries(portfolio).reduce(
         (totals, [symbolId, { total, totalQty }]) => ({
           currentTotal:
@@ -127,6 +114,10 @@ function LayoutContainer({ children }) {
       );
       setTotals(portfolioDispatch, totals);
     }
+
+    return () => {
+      active = false;
+    };
   }, [loadedPrices, portfolio]);
 
   return (

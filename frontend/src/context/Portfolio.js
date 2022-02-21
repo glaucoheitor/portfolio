@@ -30,6 +30,12 @@ function portfolioReducer(state, { type, value }) {
           },
         },
       };
+    case "LOADED_PRICES": {
+      return { ...state, loadedPrices: value };
+    }
+    case "RESET_PRICES": {
+      return { ...state, loadedPrices: false, prices: {} };
+    }
     case "LOGIN": {
       const user = {
         token: value.token,
@@ -76,6 +82,7 @@ function PortfolioControllerProvider({ children }) {
     portfolio: null,
     prices: {},
     authData: authData,
+    loadedPrices: false,
   };
 
   const [controller, dispatch] = useReducer(portfolioReducer, initialState);
@@ -111,6 +118,9 @@ const setPortfolio = (dispatch, value) =>
   dispatch({ type: "PORTFOLIO", value });
 const setTotals = (dispatch, value) => dispatch({ type: "TOTALS", value });
 const setPrices = (dispatch, value) => dispatch({ type: "PRICES", value });
+const setLoadedPrices = (dispatch, value) =>
+  dispatch({ type: "LOADED_PRICES", value });
+const resetPrices = (dispatch) => dispatch({ type: "RESET_PRICES" });
 const login = (dispatch, value) => dispatch({ type: "LOGIN", value });
 const logout = (dispatch) => dispatch({ type: "LOGOUT" });
 
@@ -120,6 +130,8 @@ export {
   setTrades,
   setPortfolio,
   setPrices,
+  setLoadedPrices,
+  resetPrices,
   setTotals,
   login,
   logout,

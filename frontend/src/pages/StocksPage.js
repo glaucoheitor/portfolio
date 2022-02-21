@@ -1,10 +1,9 @@
-import { useState, useRef, useEffect, useReducer } from "react";
+import { useState } from "react";
 
 // @mui material components
 import Grid from "@mui/material/Grid";
 import Skeleton from "@mui/material/Skeleton";
 import Fab from "@mui/material/Fab";
-import Grow from "@mui/material/Grow";
 import Popover from "@mui/material/Popover";
 import Icon from "@mui/material/Icon";
 
@@ -14,6 +13,7 @@ import MDTypography from "components/MDTypography";
 
 //icons
 import AddIcon from "@mui/icons-material/Add";
+import RefreshIcon from "@mui/icons-material/Refresh";
 
 // react-router-dom components
 import { Link } from "react-router-dom";
@@ -25,11 +25,16 @@ import AddTrade from "./AddTrade";
 
 import NumberFormat from "utils/NumberFormat";
 
-import { useMaterialUIController, usePortfolioController } from "context";
+// Material Dashboard 2 PRO React context
+import {
+  useMaterialUIController,
+  usePortfolioController,
+  resetPrices,
+} from "context";
 
 function StocksPage() {
   const [controller] = useMaterialUIController();
-  const [portfolioController] = usePortfolioController();
+  const [portfolioController, portfolioDispatch] = usePortfolioController();
 
   const { darkMode } = controller;
   const { portfolio, prices } = portfolioController;
@@ -37,9 +42,13 @@ function StocksPage() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [parentAnchorEl, setparentAnchorEl] = useState(null);
 
-  const handleClick = (event) => {
+  const handleAddClick = (event) => {
     setparentAnchorEl(event.currentTarget.parentNode);
     setAnchorEl(event.currentTarget);
+  };
+
+  const handleRefreshClick = () => {
+    resetPrices(portfolioDispatch);
   };
 
   const handleClose = () => {
@@ -66,8 +75,7 @@ function StocksPage() {
         if (totalQty > 0) {
           const { [symbolId]: symbolPrices } = prices || {};
 
-          const { currentPrice, previousPrice, priceChangePercent } =
-            symbolPrices || {};
+          const { currentPrice, priceChangePercent } = symbolPrices || {};
 
           const result =
             currentPrice && !isNaN(currentPrice)
@@ -90,30 +98,12 @@ function StocksPage() {
                           : priceChangePercent > 0
                           ? "success"
                           : "error",
-                      amount:
-                        !priceChangePercent && priceChangePercent !== 0 ? (
-                          ""
-                        ) : typeof priceChangePercent !== "number" ? (
-                          priceChangePercent
-                        ) : (
-                          <NumberFormat value={priceChangePercent} type={"%"} />
-                        ),
+                      amount: (
+                        <NumberFormat value={priceChangePercent} type={"%"} />
+                      ),
                     }}
                     currentPrice={
-                      currentPrice ? (
-                        isNaN(currentPrice) ? (
-                          currentPrice
-                        ) : (
-                          <NumberFormat value={currentPrice} type={"$"} />
-                        )
-                      ) : (
-                        <Skeleton
-                          variant="rectangular"
-                          animation="wave"
-                          width="8rem"
-                          height="4rem"
-                        />
-                      )
+                      <NumberFormat value={currentPrice} type={"$"} />
                     }
                     logo={`https://cdn.toroinvestimentos.com.br/corretora/images/quote/${symbol.slice(
                       0,
@@ -133,16 +123,7 @@ function StocksPage() {
                             : result > 0
                             ? "success"
                             : "error",
-                        amount: result ? (
-                          <NumberFormat value={result} type={"$"} />
-                        ) : (
-                          <Skeleton
-                            variant="rectangular"
-                            animation="wave"
-                            width={75}
-                            height={21}
-                          />
-                        ),
+                        amount: <NumberFormat value={result} type={"$"} />,
                         label: "Resultado atual",
                       },
                       {
@@ -168,21 +149,29 @@ function StocksPage() {
       <MDBox py={3}>
         <Grid container spacing={3}>
           {portfolio ? <>{renderStockCards()}</> : renderSkeleton()}
-          <Grow in={!open}>
-            <Fab
-              onClick={handleClick}
-              variant="extended"
-              sx={{
-                position: "fixed",
-                bottom: (theme) => theme.spacing(2),
-                right: (theme) => theme.spacing(2),
-              }}
-              color="secondary"
-            >
-              <AddIcon sx={{ mr: 1 }} />
-              Add Trade
-            </Fab>
-          </Grow>
+          <Fab
+            onClick={handleAddClick}
+            sx={{
+              position: "fixed",
+              bottom: (theme) => theme.spacing(2),
+              right: (theme) => theme.spacing(2),
+            }}
+            color="primary"
+          >
+            <AddIcon fontSize="medium" />
+          </Fab>
+          <Fab
+            onClick={handleRefreshClick}
+            color="secondary"
+            aria-label="refresh"
+            sx={{
+              position: "fixed",
+              bottom: (theme) => theme.spacing(10),
+              right: (theme) => theme.spacing(2),
+            }}
+          >
+            <RefreshIcon fontSize="medium" />
+          </Fab>
           <Popover
             id={id}
             open={open}

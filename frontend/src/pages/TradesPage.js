@@ -1,6 +1,4 @@
-import { useState, useRef, useEffect, useReducer } from "react";
-
-import { useParams } from "react-router-dom";
+import { useState } from "react";
 
 // @mui material components
 import Grid from "@mui/material/Grid";
@@ -12,26 +10,13 @@ import MDBox from "components/MDBox";
 import LayoutContainer from "layouts/Containers/DashboardContainer";
 import DashboardNavbar from "layouts/Navbars/DashboardNavbar";
 
-import {
-  getPositionAtDay,
-  getHistoricalStockData,
-} from "services/portfolio.service";
-
-import {
-  useMaterialUIController,
-  usePortfolioController,
-  setTrades,
-  setPortfolio,
-  setPrices,
-} from "context";
+import { useMaterialUIController, usePortfolioController } from "context";
 
 function TradesPage() {
   const [controller, dispatch] = useMaterialUIController();
   const [portfolioController, portfolioDispatch] = usePortfolioController();
-  const [loading, setLoading] = useState(false);
 
-  const { darkMode } = controller;
-  const { authData, trades, portfolio, prices } = portfolioController;
+  const { trades } = portfolioController;
 
   return (
     <LayoutContainer>

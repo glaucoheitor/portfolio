@@ -18,7 +18,7 @@ export const getAllSymbols = async (authData) => {
     }).then((res) => res.json());
 
     if (errors) return { error: errors[0].type };
-    console.log(data.symbols);
+
     //separate stocks from the rest so they appear first
     const acoes = data.symbols
       .filter((s) => s.type === "acao")
@@ -32,7 +32,6 @@ export const getAllSymbols = async (authData) => {
       symbols: [...acoes, ...outros],
     };
   } catch (e) {
-    console.log(e);
     return;
   }
 };

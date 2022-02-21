@@ -29,7 +29,7 @@ import MDTypography from "components/MDTypography";
 
 function Breadcrumbs({ icon, title, route, light }) {
   const routes = route.slice(0, -1);
-  console.log(routes);
+
   let textTransform = "capitalize";
   if (routes.length > 0 && routes[routes.length - 1] === "stocks") {
     textTransform = "uppercase";
