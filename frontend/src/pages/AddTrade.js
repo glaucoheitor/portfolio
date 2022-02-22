@@ -111,9 +111,6 @@ function AddTrade() {
 
   const fetchTrades = async (symbol) => {
     try {
-      const dataTrades = await getTrades(authData);
-      setTrades(portfolioDispatch, dataTrades);
-      setPortfolio(portfolioDispatch, buildPortfolioFromTrades(dataTrades));
       if (!prices[symbol._id]) {
         const dataPrices = await getPrices(symbol.symbol);
         setPrices(portfolioDispatch, {
@@ -121,6 +118,9 @@ function AddTrade() {
           prices: dataPrices,
         });
       }
+      const dataTrades = await getTrades(authData);
+      setTrades(portfolioDispatch, dataTrades);
+      setPortfolio(portfolioDispatch, buildPortfolioFromTrades(dataTrades));
     } catch (e) {
       //todo: show error message
     }
