@@ -1,21 +1,24 @@
 export const getAllSymbols = async (authData) => {
   try {
-    const { data, errors } = await fetch("http://localhost:3001/graphql", {
-      method: "POST",
-      body: JSON.stringify({
-        query: `query {
+    const { data, errors } = await fetch(
+      process.env.REACT_APP_BACKEND + "/graphql",
+      {
+        method: "POST",
+        body: JSON.stringify({
+          query: `query {
             symbols {
               _id
               symbol
               type
             }
           }`,
-      }),
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + authData.token,
-      },
-    }).then((res) => res.json());
+        }),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Bearer " + authData.token,
+        },
+      }
+    ).then((res) => res.json());
 
     if (errors) return { error: errors[0].type };
 

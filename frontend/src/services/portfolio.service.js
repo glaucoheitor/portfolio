@@ -1,6 +1,6 @@
 export const getTrades = async (authData) => {
   try {
-    const { data } = await fetch("http://localhost:3001/graphql", {
+    const { data } = await fetch(process.env.REACT_APP_BACKEND + "/graphql", {
       method: "POST",
       body: JSON.stringify({
         query: `query {
@@ -36,7 +36,7 @@ export const getHistoricalStockData = async (
 ) => {
   try {
     const { data } = await fetch(
-      `http://localhost:3001/historical?symbol=${symbol}`,
+      `${process.env.REACT_APP_BACKEND}/historical?symbol=${symbol}`,
       {
         method: "GET",
         headers: {
@@ -105,13 +105,16 @@ export const buildPortfolioFromTrades = (trades) => {
 
 export const getPrices = async (symbol) => {
   try {
-    const data = await fetch("http://localhost:3001/getCurrentPrices", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ symbol }),
-    }).then((res) => res.json());
+    const data = await fetch(
+      process.env.REACT_APP_BACKEND + "/getCurrentPrices",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ symbol }),
+      }
+    ).then((res) => res.json());
 
     return data;
   } catch (e) {
@@ -126,7 +129,7 @@ export const getPrices = async (symbol) => {
 
 export const getIBOV = async () => {
   try {
-    const data = await fetch("http://localhost:3001/ibov", {
+    const data = await fetch(process.env.REACT_APP_BACKEND + "/ibov", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

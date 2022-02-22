@@ -34,10 +34,12 @@ function TradesTest() {
     async function fetchData() {
       setLoading(true);
       try {
-        const { data } = await fetch("http://localhost:3001/graphql", {
-          method: "POST",
-          body: JSON.stringify({
-            query: `query {
+        const { data } = await fetch(
+          process.env.REACT_APP_BACKEND + "/graphql",
+          {
+            method: "POST",
+            body: JSON.stringify({
+              query: `query {
               tradesByUserId(userId:"${authData.userId}") {
                 type
                 date
@@ -53,12 +55,13 @@ function TradesTest() {
                 }
               }
             }`,
-          }),
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: "Bearer " + authData.token,
-          },
-        }).then((res) => res.json());
+            }),
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: "Bearer " + authData.token,
+            },
+          }
+        ).then((res) => res.json());
 
         setTrades(data.tradesByUserId);
       } catch (e) {

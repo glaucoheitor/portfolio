@@ -62,14 +62,17 @@ function Basic() {
       setLoading(true);
 
       try {
-        const { data } = await fetch("http://localhost:3001/graphql", {
-          method: "POST",
-          body: JSON.stringify({ query: `query {verifyUser}` }),
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: "Bearer " + authData.token,
-          },
-        }).then((res) => res.json());
+        const { data } = await fetch(
+          process.env.REACT_APP_BACKEND + "/graphql",
+          {
+            method: "POST",
+            body: JSON.stringify({ query: `query {verifyUser}` }),
+            headers: {
+              "Content-Type": "application/json",
+              Authorization: "Bearer " + authData.token,
+            },
+          }
+        ).then((res) => res.json());
         data.verifyUser && navigate("/dashboard");
       } catch (e) {
         setLoading(false);
@@ -110,13 +113,16 @@ function Basic() {
       }`,
     };
     try {
-      const { data, errors } = await fetch("http://localhost:3001/graphql", {
-        method: "POST",
-        body: JSON.stringify(requestBody),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }).then((res) => res.json());
+      const { data, errors } = await fetch(
+        process.env.REACT_APP_BACKEND + "/graphql",
+        {
+          method: "POST",
+          body: JSON.stringify(requestBody),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      ).then((res) => res.json());
 
       if (!data) throw new Error(errors[0].message);
       login(portfolioDispatch, {

@@ -60,7 +60,7 @@ function Basic() {
       }`,
     };
     try {
-      const res = await fetch("http://localhost:3001/graphql", {
+      const res = await fetch(process.env.REACT_APP_BACKEND + "/graphql", {
         method: "POST",
         body: JSON.stringify(requestBody),
         headers: {
