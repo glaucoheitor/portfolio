@@ -103,7 +103,7 @@ function AddTrade() {
 
       if (errors) throw new Error(errors[0]);
       setSubmitStatus("success");
-      fetchTrades(symbol);
+      await fetchTrades(symbol);
     } catch (error) {
       setSubmitStatus("error");
     }
