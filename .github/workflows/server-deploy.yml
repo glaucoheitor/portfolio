@@ -8,7 +8,8 @@ jobs:
     name: GAE Deploy
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+      - run: rm -rf node_modules && yarn install --frozen-lockfile
       - uses: golang-enthusiast/app-yaml-env-compiler@v1.0
         env:
           MONGO_DB: ${{ secrets.MONGO_DB }}
