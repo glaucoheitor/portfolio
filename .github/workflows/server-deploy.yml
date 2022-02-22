@@ -13,7 +13,6 @@ jobs:
       - run: rm -rf node_modules && yarn install --frozen-lockfile
       - uses: golang-enthusiast/app-yaml-env-compiler@v1.0
         env:
-          PORT: ${{ secrets.PORT }}
           MONGO_DB: ${{ secrets.MONGO_DB }}
           MONGO_USER: ${{ secrets.MONGO_USER }}
           MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}

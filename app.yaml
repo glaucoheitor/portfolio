@@ -1,7 +1,6 @@
 runtime: nodejs16
 
 env_variables:
-  PORT: $PORT
   MONGO_DB: $MONGO_DB
   MONGO_USER: $MONGO_USER
   MONGO_PASSWORD: $MONGO_PASSWORD
