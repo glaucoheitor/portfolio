@@ -2,13 +2,20 @@ steps:
   - name: node
     entrypoint: yarn
     args: ["install"]
-  - name: node
-    entrypoint: yarn
-    args: ["run", "create-env"]
+  - uses: actions/checkout@v1
+  - uses: golang-enthusiast/app-yaml-env-compiler@v1.0
     env:
-      - "MY_SECRET_KEY=${_MY_SECRET_KEY}"
-  - name: "gcr.io/cloud-builders/gcloud"
-    args: ["app", "deploy"]
-    timeout: "1600s"
+      MONGO_DB: ${{ secrets.MONGO_DB }}
+      MONGO_USER: ${{ secrets.MONGO_USER }}
+      MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
+      JWT_KEY: ${{ secrets.JWT_KEY }}
+      JWT_EXP: ${{ secrets.JWT_EXP }}
+  - uses: actions-hub/gcloud@master
+    env:
+      PROJECT_ID: stocks-api-325904
+      APPLICATION_CREDENTIALS: ${{ secrets.GCLOUD_APPLICATION_CREDENTIALS }}
+      CLOUDSDK_CORE_DISABLE_PROMPTS: 1
+    with:
+      args: app deploy app.yaml
 options:
   logging: CLOUD_LOGGING_ONLY
