@@ -30,6 +30,7 @@ export default function NumFormat({
   return (
     <>
       <NumberFormat
+        {...rest}
         value={Math.abs(value)}
         displayType="text"
         thousandSeparator={"."}
@@ -48,7 +49,6 @@ export default function NumFormat({
                 )
             : undefined
         }
-        {...rest}
       />
       {children}
     </>
