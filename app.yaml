@@ -2,3 +2,8 @@ runtime: nodejs16
 
 env_variables:
   PORT: "3001"
+  MONGO_DB: $MONGO_DB
+  MONGO_USER: $MONGO_USER
+  MONGO_PASSWORD: $MONGO_PASSWORD
+  JWT_KEY: $JWT_KEY
+  JWT_EXP: $JWT_EXP
