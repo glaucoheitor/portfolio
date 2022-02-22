@@ -175,6 +175,9 @@ function AddTrade() {
             <MDBox mb={3}>
               <Field
                 component={ToggleButtonGroup}
+                onChange={(e, newType) =>
+                  newType !== null && setFieldValue("type", newType)
+                }
                 fullWidth
                 name="type"
                 type="checkbox"
