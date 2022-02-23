@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -22,10 +22,32 @@ import PropTypes from "prop-types";
 import MDBadgeRoot from "components/MDBadge/MDBadgeRoot";
 
 const MDBadge = forwardRef(
-  ({ color, variant, size, circular, indicator, border, container, children, ...rest }, ref) => (
+  (
+    {
+      color,
+      variant,
+      size,
+      circular,
+      indicator,
+      border,
+      container,
+      children,
+      ...rest
+    },
+    ref
+  ) => (
     <MDBadgeRoot
       {...rest}
-      ownerState={{ color, variant, size, circular, indicator, border, container, children }}
+      ownerState={{
+        color,
+        variant,
+        size,
+        circular,
+        indicator,
+        border,
+        container,
+        children,
+      }}
       ref={ref}
       color="default"
     >

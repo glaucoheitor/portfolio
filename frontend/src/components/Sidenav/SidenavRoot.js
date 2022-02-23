@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,7 +19,8 @@ import { styled } from "@mui/material/styles";
 
 export default styled(Drawer)(({ theme, ownerState }) => {
   const { palette, boxShadows, transitions, breakpoints, functions } = theme;
-  const { transparentSidenav, whiteSidenav, miniSidenav, darkMode } = ownerState;
+  const { transparentSidenav, whiteSidenav, miniSidenav, darkMode } =
+    ownerState;
 
   const sidebarWidth = 250;
   const { transparent, gradients, white, background } = palette;

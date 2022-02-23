@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -20,7 +20,7 @@ import typography from "assets/theme-dark/base/typography";
 const { grey } = colors;
 const { size } = typography;
 
-export default {
+const breadcrumbs = {
   styleOverrides: {
     li: {
       lineHeight: 0,
@@ -32,3 +32,4 @@ export default {
     },
   },
 };
+export default breadcrumbs;

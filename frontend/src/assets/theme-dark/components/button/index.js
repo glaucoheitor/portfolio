@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,7 +19,7 @@ import contained from "assets/theme-dark/components/button/contained";
 import outlined from "assets/theme-dark/components/button/outlined";
 import text from "assets/theme-dark/components/button/text";
 
-export default {
+const button = {
   defaultProps: {
     disableRipple: false,
   },
@@ -42,3 +42,4 @@ export default {
     textSecondary: { ...text.secondary },
   },
 };
+export default button;

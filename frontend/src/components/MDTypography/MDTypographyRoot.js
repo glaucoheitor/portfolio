@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,11 +19,23 @@ import { styled } from "@mui/material/styles";
 
 export default styled(Typography)(({ theme, ownerState }) => {
   const { palette, typography, functions } = theme;
-  const { color, textTransform, verticalAlign, fontWeight, opacity, textGradient, darkMode } =
-    ownerState;
+  const {
+    color,
+    textTransform,
+    verticalAlign,
+    fontWeight,
+    opacity,
+    textGradient,
+    darkMode,
+  } = ownerState;
 
   const { gradients, transparent, white } = palette;
-  const { fontWeightLight, fontWeightRegular, fontWeightMedium, fontWeightBold } = typography;
+  const {
+    fontWeightLight,
+    fontWeightRegular,
+    fontWeightMedium,
+    fontWeightBold,
+  } = typography;
   const { linearGradient } = functions;
 
   // fontWeight styles
@@ -37,7 +49,10 @@ export default styled(Typography)(({ theme, ownerState }) => {
   // styles for the typography with textGradient={true}
   const gradientStyles = () => ({
     backgroundImage:
-      color !== "inherit" && color !== "text" && color !== "white" && gradients[color]
+      color !== "inherit" &&
+      color !== "text" &&
+      color !== "white" &&
+      gradients[color]
         ? linearGradient(gradients[color].main, gradients[color].state)
         : linearGradient(gradients.dark.main, gradients.dark.state),
     display: "inline-block",
@@ -48,7 +63,8 @@ export default styled(Typography)(({ theme, ownerState }) => {
   });
 
   // color value
-  let colorValue = color === "inherit" || !palette[color] ? "inherit" : palette[color].main;
+  let colorValue =
+    color === "inherit" || !palette[color] ? "inherit" : palette[color].main;
 
   if (darkMode && (color === "inherit" || !palette[color])) {
     colorValue = "inherit";

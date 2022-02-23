@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -26,7 +26,7 @@ const { transparent, gradients } = colors;
 const { borderRadius } = borders;
 const { colored } = boxShadows;
 
-export default {
+const stepper = {
   styleOverrides: {
     root: {
       background: linearGradient(gradients.info.main, gradients.info.state),
@@ -40,3 +40,4 @@ export default {
     },
   },
 };
+export default stepper;

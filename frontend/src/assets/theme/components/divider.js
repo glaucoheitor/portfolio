@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -22,7 +22,7 @@ import pxToRem from "assets/theme/functions/pxToRem";
 
 const { dark, transparent, white } = colors;
 
-export default {
+const divider = {
   styleOverrides: {
     root: {
       backgroundColor: transparent.main,
@@ -38,10 +38,10 @@ export default {
 
     vertical: {
       backgroundColor: transparent.main,
-      backgroundImage: `linear-gradient(to bottom, ${rgba(dark.main, 0)}, ${rgba(
+      backgroundImage: `linear-gradient(to bottom, ${rgba(
         dark.main,
-        0.4
-      )}, ${rgba(dark.main, 0)}) !important`,
+        0
+      )}, ${rgba(dark.main, 0.4)}, ${rgba(dark.main, 0)}) !important`,
       width: pxToRem(1),
       height: "100%",
       margin: `0 ${pxToRem(16)}`,
@@ -50,17 +50,16 @@ export default {
 
     light: {
       backgroundColor: transparent.main,
-      backgroundImage: `linear-gradient(to right, ${rgba(white.main, 0)}, ${white.main}, ${rgba(
-        white.main,
-        0
-      )}) !important`,
+      backgroundImage: `linear-gradient(to right, ${rgba(white.main, 0)}, ${
+        white.main
+      }, ${rgba(white.main, 0)}) !important`,
 
       "&.MuiDivider-vertical": {
-        backgroundImage: `linear-gradient(to bottom, ${rgba(white.main, 0)}, ${white.main}, ${rgba(
-          white.main,
-          0
-        )}) !important`,
+        backgroundImage: `linear-gradient(to bottom, ${rgba(white.main, 0)}, ${
+          white.main
+        }, ${rgba(white.main, 0)}) !important`,
       },
     },
   },
 };
+export default divider;

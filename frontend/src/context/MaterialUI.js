@@ -3,7 +3,7 @@
   you can customize the states for the different components here.
 */
 
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useReducer, useMemo } from "react";
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
@@ -70,11 +70,9 @@ function MaterialUIControllerProvider({ children }) {
 
   const [controller, dispatch] = useReducer(reducer, initialState);
 
-  return (
-    <MaterialUI.Provider value={[controller, dispatch]}>
-      {children}
-    </MaterialUI.Provider>
-  );
+  const value = useMemo(() => [controller, dispatch], [controller, dispatch]);
+
+  return <MaterialUI.Provider value={value}>{children}</MaterialUI.Provider>;
 }
 
 // Material Dashboard 2 PRO React custom hook for using context

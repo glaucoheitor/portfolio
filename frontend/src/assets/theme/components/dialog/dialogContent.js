@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -25,7 +25,7 @@ const { size } = typography;
 const { text } = colors;
 const { borderWidth, borderColor } = borders;
 
-export default {
+const dialogContent = {
   styleOverrides: {
     root: {
       padding: pxToRem(16),
@@ -39,3 +39,4 @@ export default {
     },
   },
 };
+export default dialogContent;

@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -18,7 +18,7 @@ import colors from "assets/theme-dark/base/colors";
 
 const { info, dark } = colors;
 
-export default {
+const globals = {
   html: {
     scrollBehavior: "smooth",
   },
@@ -37,3 +37,4 @@ export default {
     color: `${info.main} !important`,
   },
 };
+export default globals;

@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -25,7 +25,7 @@ const { grey, white, black, info } = colors;
 const { borderRadius, borderWidth } = borders;
 const { sliderBoxShadow } = boxShadows;
 
-export default {
+const slider = {
   styleOverrides: {
     root: {
       width: "100%",
@@ -69,3 +69,4 @@ export default {
     },
   },
 };
+export default slider;

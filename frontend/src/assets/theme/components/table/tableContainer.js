@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -22,7 +22,7 @@ const { white } = colors;
 const { md } = boxShadows;
 const { borderRadius } = borders;
 
-export default {
+const tableContainer = {
   styleOverrides: {
     root: {
       backgroundColor: white.main,
@@ -31,3 +31,4 @@ export default {
     },
   },
 };
+export default tableContainer;

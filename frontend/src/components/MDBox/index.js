@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -22,11 +22,31 @@ import PropTypes from "prop-types";
 import MDBoxRoot from "components/MDBox/MDBoxRoot";
 
 const MDBox = forwardRef(
-  ({ variant, bgColor, color, opacity, borderRadius, shadow, coloredShadow, ...rest }, ref) => (
+  (
+    {
+      variant,
+      bgColor,
+      color,
+      opacity,
+      borderRadius,
+      shadow,
+      coloredShadow,
+      ...rest
+    },
+    ref
+  ) => (
     <MDBoxRoot
       {...rest}
       ref={ref}
-      ownerState={{ variant, bgColor, color, opacity, borderRadius, shadow, coloredShadow }}
+      ownerState={{
+        variant,
+        bgColor,
+        color,
+        opacity,
+        borderRadius,
+        shadow,
+        coloredShadow,
+      }}
     />
   )
 );

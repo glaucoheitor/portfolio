@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -23,7 +23,7 @@ import pxToRem from "assets/theme-dark/functions/pxToRem";
 const { borderWidth } = borders;
 const { light } = colors;
 
-export default {
+const tableCell = {
   styleOverrides: {
     root: {
       padding: `${pxToRem(12)} ${pxToRem(16)}`,
@@ -31,3 +31,4 @@ export default {
     },
   },
 };
+export default tableCell;

@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -27,7 +27,7 @@ import boxShadow from "assets/theme-dark/functions/boxShadow";
 
 const { black, dark, tabs, coloredShadows } = colors;
 
-export default {
+const boxShadows = {
   xs: boxShadow([0, 2], [9, -5], black.main, 0.15),
   sm: boxShadow([0, 5], [10, 0], black.main, 0.12),
   md: `${boxShadow([0, 2], [2, 0], black.main, 0.14)}, ${boxShadow(
@@ -101,12 +101,13 @@ export default {
     )}`,
   },
 
-  navbarBoxShadow: `${boxShadow([0, 0], [1, 1], dark.main, 0.9, "inset")}, ${boxShadow(
-    [0, 20],
-    [27, 0],
-    black.main,
-    0.05
-  )}`,
+  navbarBoxShadow: `${boxShadow(
+    [0, 0],
+    [1, 1],
+    dark.main,
+    0.9,
+    "inset"
+  )}, ${boxShadow([0, 20], [27, 0], black.main, 0.05)}`,
   sliderBoxShadow: {
     thumb: boxShadow([0, 1], [13, 0], black.main, 0.2),
   },
@@ -114,3 +115,4 @@ export default {
     indicator: boxShadow([0, 1], [5, 1], tabs.indicator.boxShadow, 1),
   },
 };
+export default boxShadows;

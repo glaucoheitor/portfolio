@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -23,7 +23,7 @@ import pxToRem from "assets/theme/functions/pxToRem";
 const { white } = colors;
 const { borderRadius } = borders;
 
-export default {
+const sidenav = {
   styleOverrides: {
     root: {
       width: pxToRem(250),
@@ -45,3 +45,4 @@ export default {
     },
   },
 };
+export default sidenav;

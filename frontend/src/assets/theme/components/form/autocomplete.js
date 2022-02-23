@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -27,7 +27,7 @@ const { size } = typography;
 const { text, white, transparent, light, dark, gradients } = colors;
 const { borderRadius } = borders;
 
-export default {
+const autocomplete = {
   styleOverrides: {
     popper: {
       boxShadow: lg,
@@ -51,10 +51,11 @@ export default {
       color: text.main,
       transition: "background-color 300ms ease, color 300ms ease",
 
-      "&:hover, &:focus, &.Mui-selected, &.Mui-selected:hover, &.Mui-selected:focus": {
-        backgroundColor: light.main,
-        color: dark.main,
-      },
+      "&:hover, &:focus, &.Mui-selected, &.Mui-selected:hover, &.Mui-selected:focus":
+        {
+          backgroundColor: light.main,
+          color: dark.main,
+        },
 
       '&[aria-selected="true"]': {
         backgroundColor: `${light.main} !important`,
@@ -89,10 +90,12 @@ export default {
         padding: `0 ${pxToRem(10)} 0 ${pxToRem(4)}`,
       },
 
-      "& .MuiSvgIcon-root, & .MuiSvgIcon-root:hover, & .MuiSvgIcon-root:focus": {
-        color: white.main,
-        marginRight: 0,
-      },
+      "& .MuiSvgIcon-root, & .MuiSvgIcon-root:hover, & .MuiSvgIcon-root:focus":
+        {
+          color: white.main,
+          marginRight: 0,
+        },
     },
   },
 };
+export default autocomplete;

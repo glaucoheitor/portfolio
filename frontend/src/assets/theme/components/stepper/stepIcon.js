@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -22,7 +22,7 @@ import boxShadow from "assets/theme/functions/boxShadow";
 
 const { white } = colors;
 
-export default {
+const stepIcon = {
   styleOverrides: {
     root: {
       background: "#9fc9ff",
@@ -53,3 +53,4 @@ export default {
     },
   },
 };
+export default stepIcon;

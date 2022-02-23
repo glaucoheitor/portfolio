@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -23,7 +23,7 @@ import colors from "assets/theme/base/colors";
 const { size } = typography;
 const { text } = colors;
 
-export default {
+const dialogContentText = {
   styleOverrides: {
     root: {
       fontSize: size.md,
@@ -31,3 +31,4 @@ export default {
     },
   },
 };
+export default dialogContentText;

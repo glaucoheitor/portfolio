@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -27,7 +27,7 @@ import pxToRem from "assets/theme/functions/pxToRem";
 
 const { grey } = colors;
 
-export default {
+const borders = {
   borderColor: grey[300],
 
   borderWidth: {
@@ -49,3 +49,4 @@ export default {
     section: pxToRem(160),
   },
 };
+export default borders;

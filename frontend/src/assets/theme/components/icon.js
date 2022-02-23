@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -16,7 +16,7 @@ Coded by www.creative-tim.com
 // Material Dashboard 2 PRO React helper functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
-export default {
+const icon = {
   defaultProps: {
     baseClassName: "material-icons-round",
     fontSize: "inherit",
@@ -36,3 +36,4 @@ export default {
     },
   },
 };
+export default icon;

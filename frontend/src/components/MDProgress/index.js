@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -24,22 +24,24 @@ import MDTypography from "components/MDTypography";
 // Custom styles for MDProgress
 import MDProgressRoot from "components/MDProgress/MDProgressRoot";
 
-const MDProgress = forwardRef(({ variant, color, value, label, ...rest }, ref) => (
-  <>
-    {label && (
-      <MDTypography variant="button" fontWeight="medium" color="text">
-        {value}%
-      </MDTypography>
-    )}
-    <MDProgressRoot
-      {...rest}
-      ref={ref}
-      variant="determinate"
-      value={value}
-      ownerState={{ color, value, variant }}
-    />
-  </>
-));
+const MDProgress = forwardRef(
+  ({ variant, color, value, label, ...rest }, ref) => (
+    <>
+      {label && (
+        <MDTypography variant="button" fontWeight="medium" color="text">
+          {value}%
+        </MDTypography>
+      )}
+      <MDProgressRoot
+        {...rest}
+        ref={ref}
+        variant="determinate"
+        value={value}
+        ownerState={{ color, value, variant }}
+      />
+    </>
+  )
+);
 
 // Setting default values for the props of MDProgress
 MDProgress.defaultProps = {

@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -19,7 +19,7 @@ Coded by www.creative-tim.com
  * You can customized the colors for the entire Soft UI Dashboard PRO Material using thie file.
  */
 
-export default {
+const colors = {
   background: {
     default: "#1a2035",
     sidenav: "#1f283e",
@@ -282,3 +282,4 @@ export default {
     activatedOpacity: 0.24,
   },
 };
+export default colors;

@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -24,7 +24,7 @@ import linearGradient from "assets/theme-dark/functions/linearGradient";
 const { borderWidth, borderColor } = borders;
 const { transparent, info } = colors;
 
-export default {
+const radio = {
   styleOverrides: {
     root: {
       "& .MuiSvgIcon-root": {
@@ -93,3 +93,4 @@ export default {
     },
   },
 };
+export default radio;

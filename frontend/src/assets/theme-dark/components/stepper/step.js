@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -16,10 +16,11 @@ Coded by www.creative-tim.com
 // Material Dashboard 2 PRO React helper functions
 import pxToRem from "assets/theme-dark/functions/pxToRem";
 
-export default {
+const step = {
   styleOverrides: {
     root: {
       padding: `0 ${pxToRem(6)}`,
     },
   },
 };
+export default step;

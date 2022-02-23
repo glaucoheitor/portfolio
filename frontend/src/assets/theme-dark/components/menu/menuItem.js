@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -26,7 +26,7 @@ const { dark, white } = colors;
 const { borderRadius } = borders;
 const { size } = typography;
 
-export default {
+const menuItem = {
   styleOverrides: {
     root: {
       minWidth: pxToRem(160),
@@ -37,10 +37,12 @@ export default {
       color: rgba(white.main, 0.8),
       transition: "background-color 300ms ease, color 300ms ease",
 
-      "&:hover, &:focus, &.Mui-selected, &.Mui-selected:hover, &.Mui-selected:focus": {
-        backgroundColor: dark.main,
-        color: white.main,
-      },
+      "&:hover, &:focus, &.Mui-selected, &.Mui-selected:hover, &.Mui-selected:focus":
+        {
+          backgroundColor: dark.main,
+          color: white.main,
+        },
     },
   },
 };
+export default menuItem;

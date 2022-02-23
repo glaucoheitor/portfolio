@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-pro-material-ui
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -84,7 +84,7 @@ import dialogContent from "assets/theme-dark/components/dialog/dialogContent";
 import dialogContentText from "assets/theme-dark/components/dialog/dialogContentText";
 import dialogActions from "assets/theme-dark/components/dialog/dialogActions";
 
-export default createTheme({
+const theme = createTheme({
   breakpoints: { ...breakpoints },
   palette: { ...colors },
   typography: { ...typography },
@@ -156,3 +156,4 @@ export default createTheme({
     MuiDialogActions: { ...dialogActions },
   },
 });
+export default theme;

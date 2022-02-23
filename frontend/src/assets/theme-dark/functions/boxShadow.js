@@ -4,7 +4,7 @@
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
 
@@ -25,10 +25,9 @@ function boxShadow(offset = [], radius = [], color, opacity, inset = "") {
   const [x, y] = offset;
   const [blur, spread] = radius;
 
-  return `${inset} ${pxToRem(x)} ${pxToRem(y)} ${pxToRem(blur)} ${pxToRem(spread)} ${rgba(
-    color,
-    opacity
-  )}`;
+  return `${inset} ${pxToRem(x)} ${pxToRem(y)} ${pxToRem(blur)} ${pxToRem(
+    spread
+  )} ${rgba(color, opacity)}`;
 }
 
 export default boxShadow;
