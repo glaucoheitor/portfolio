@@ -30,7 +30,7 @@ const getCurrentPrices = async (req, res) => {
     );
     return;
   } catch (e) {
-    console.error(e);
+    console.error(e.errors);
     res.send({
       currentPrice: null,
       historical: {},
