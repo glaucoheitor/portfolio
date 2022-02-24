@@ -36,6 +36,8 @@ const getCurrentPrices = async (req, res) => {
       historical: {},
       previousPrice: null,
       priceChangePercent: null,
+      errors: e.errors,
+      result: e.result,
     });
     return;
   }
