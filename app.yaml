@@ -1,8 +1,11 @@
 runtime: nodejs16
-
 env_variables:
   MONGO_DB: $MONGO_DB
   MONGO_USER: $MONGO_USER
   MONGO_PASSWORD: $MONGO_PASSWORD
   JWT_KEY: $JWT_KEY
   JWT_EXP: $JWT_EXP
+handlers:
+  - url: /
+    http_headers:
+      Access-Control-Allow-Origin: https://stocks.glaucoheitor.com
