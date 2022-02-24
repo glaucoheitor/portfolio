@@ -19,7 +19,7 @@ const app = express();
 
 const { PORT, MONGO_DB, MONGO_USER, MONGO_PASSWORD } = process.env;
 
-app.use(cors());
+app.use(cors({ origin: "https://stocks.glaucoheitor.com" }));
 
 app.use(bodyParser.json());
 
