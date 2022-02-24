@@ -1,6 +1,6 @@
 import yahooFinance from "yahoo-finance2";
 
-export default async (req, res) => {
+const getCurrentPrices = async (req, res) => {
   const { symbol } = req.body;
 
   const query = `${symbol}.SA`;
@@ -42,3 +42,5 @@ export default async (req, res) => {
     return;
   }
 };
+
+export default getCurrentPrices;
