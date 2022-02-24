@@ -1,11 +1,12 @@
 import yahooFinance from "yahoo-finance2";
 
 const getCurrentPrices = async (req, res) => {
-  const { symbol } = req.body;
+  const { symbol } = req.query || req.body;
 
   const query = `${symbol}.SA`;
 
   try {
+    console.log(query);
     const data = await yahooFinance.quoteCombine(query, {
       fields: [
         "regularMarketPrice",
@@ -13,7 +14,7 @@ const getCurrentPrices = async (req, res) => {
         "regularMarketChangePercent",
       ],
     });
-
+    console.log(data);
     const {
       regularMarketPrice,
       regularMarketPreviousClose,
