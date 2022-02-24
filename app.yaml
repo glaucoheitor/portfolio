@@ -6,6 +6,6 @@ env_variables:
   JWT_KEY: $JWT_KEY
   JWT_EXP: $JWT_EXP
 handlers:
-  - url: /
+  - url: /.*
     http_headers:
       Access-Control-Allow-Origin: https://stocks.glaucoheitor.com
