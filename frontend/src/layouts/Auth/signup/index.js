@@ -26,9 +26,6 @@ import BasicLayout from "layouts/Auth/components/BasicLayout";
 // Images
 import bgImage from "assets/images/bg-sign-in-basic.jpeg";
 
-//Validator
-import isEmail from "validator/lib/isEmail";
-
 function Basic() {
   const [loading, setLoading] = useState(false);
   const nameEl = useRef();
@@ -41,7 +38,7 @@ function Basic() {
     const email = emailEl.current.value;
     const password = passwordEl.current.value;
 
-    if (!isEmail(email)) return;
+    //if (!isEmail(email)) return;
 
     setLoading(true);
 

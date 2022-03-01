@@ -56,6 +56,11 @@ const inputOutlined = {
       "&::-webkit-input-placeholder": {
         color: grey[100],
       },
+      "&:-webkit-autofill": {
+        WebkitBoxShadow: "inherit",
+        WebkitTextFillColor: "inherit",
+        caretColor: "inherit",
+      },
     },
 
     inputSizeSmall: {

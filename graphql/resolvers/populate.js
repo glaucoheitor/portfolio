@@ -6,7 +6,7 @@ export const transformTrade = ({ _doc }) => {
   return {
     ..._doc,
     user: () => user(_doc.user),
-    //symbol: () => symbol(_doc.symbol),
+    symbol: () => symbol(_doc.symbol),
   };
 };
 

@@ -43,6 +43,7 @@ import cardContent from "assets/theme/components/card/cardContent";
 import button from "assets/theme/components/button";
 import iconButton from "assets/theme/components/iconButton";
 import input from "assets/theme/components/form/input";
+import inputBase from "assets/theme/components/form/inputBase";
 import inputLabel from "assets/theme/components/form/inputLabel";
 import inputOutlined from "assets/theme/components/form/inputOutlined";
 import textField from "assets/theme/components/form/textField";
@@ -115,6 +116,7 @@ const theme = createTheme({
     MuiButton: { ...button },
     MuiIconButton: { ...iconButton },
     MuiInput: { ...input },
+    MuiInputBase: { ...inputBase },
     MuiInputLabel: { ...inputLabel },
     MuiOutlinedInput: { ...inputOutlined },
     MuiTextField: { ...textField },

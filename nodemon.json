@@ -1,5 +1,6 @@
 {
   "env": {
+    "NODE_ENV": "development",
     "PORT": 3001,
     "MONGO_DB": "stocks",
     "MONGO_USER": "glauco",

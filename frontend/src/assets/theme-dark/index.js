@@ -44,6 +44,8 @@ import button from "assets/theme-dark/components/button";
 import iconButton from "assets/theme-dark/components/iconButton";
 import input from "assets/theme-dark/components/form/input";
 import inputLabel from "assets/theme-dark/components/form/inputLabel";
+import inputBase from "assets/theme-dark/components/form/inputBase";
+import inputFilled from "assets/theme-dark/components/form/inputFilled";
 import inputOutlined from "assets/theme-dark/components/form/inputOutlined";
 import textField from "assets/theme-dark/components/form/textField";
 import menu from "assets/theme-dark/components/menu";
@@ -115,6 +117,8 @@ const theme = createTheme({
     MuiButton: { ...button },
     MuiIconButton: { ...iconButton },
     MuiInput: { ...input },
+    MuiInputBase: { ...inputBase },
+    MuiFilledInput: { ...inputFilled },
     MuiInputLabel: { ...inputLabel },
     MuiOutlinedInput: { ...inputOutlined },
     MuiTextField: { ...textField },

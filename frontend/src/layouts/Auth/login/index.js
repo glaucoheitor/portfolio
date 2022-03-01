@@ -28,20 +28,26 @@ import BasicLayout from "layouts/Auth/components/BasicLayout";
 // Images
 import bgImage from "assets/images/bg-sign-in-basic.jpeg";
 
-//Validator
-import isEmail from "validator/lib/isEmail";
-
 import {
   useMaterialUIController,
   usePortfolioController,
-  login,
+  setUser,
 } from "context";
 
+//Authentication
+import {
+  verifyUser,
+  login,
+  auth,
+  logInWithGoogle,
+  logInWithEmailAndPassword,
+} from "services/auth.service";
+import { useAuthState } from "react-firebase-hooks/auth";
+
 function Basic() {
-  const [controller, dispatch] = useMaterialUIController();
   const [portfolioController, portfolioDispatch] = usePortfolioController();
+  const [user, loading, AuthError] = useAuthState(auth);
   const [rememberMe, setRememberMe] = useState(false);
-  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [emailError, setEmailError] = useState(null);
   const [passwordError, setPasswordError] = useState(null);
@@ -56,30 +62,10 @@ function Basic() {
       setUnauthenticated(true);
   }, [location]);
 
-  useEffect(async () => {
-    const { authData } = portfolioController;
-    if (authData.token) {
-      setLoading(true);
-
-      try {
-        const { data } = await fetch(
-          process.env.REACT_APP_BACKEND + "/graphql",
-          {
-            method: "POST",
-            body: JSON.stringify({ query: `query {verifyUser}` }),
-            headers: {
-              "Content-Type": "application/json",
-              Authorization: "Bearer " + authData.token,
-            },
-          }
-        ).then((res) => res.json());
-        data.verifyUser && navigate("/dashboard");
-      } catch (e) {
-        setLoading(false);
-      }
-      setLoading(false);
-    }
-  }, []);
+  useEffect(() => {
+    console.log(user);
+    //if (user) navigate("/dashboard");
+  }, [user, loading]);
 
   const handleSetRememberMe = () => setRememberMe(!rememberMe);
   const handleAlertCloseButton = () => setError(false);
@@ -90,53 +76,13 @@ function Basic() {
     const email = emailEl.current.value;
     const password = passwordEl.current.value;
 
-    if (!isEmail(email)) {
-      setEmailError(true);
-    }
-    /* if (password.length < 8) {
-      setPasswordError(true);
-      setError("Password must be at least 8 characters long.");
-    } */
-
-    //if (!isEmail(email) || password.length < 8) return;
-
-    setLoading(true);
-
-    const requestBody = {
-      query: `
-      query {
-        login(email:"${email}",password:"${password}") {
-          userId
-          token
-          tokenExpiration
-        }
-      }`,
-    };
-    try {
-      const { data, errors } = await fetch(
-        process.env.REACT_APP_BACKEND + "/graphql",
-        {
-          method: "POST",
-          body: JSON.stringify(requestBody),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      ).then((res) => res.json());
-
-      if (!data) throw new Error(errors[0].message);
-      login(portfolioDispatch, {
-        token: data.login.token,
-        userId: data.login.userId,
-      });
-      navigate("/dashboard");
-    } catch (error) {
+    const { error } = await logInWithEmailAndPassword(email, password);
+    if (error) {
       setError(error.message);
-      if (error.message.includes("User")) setEmailError(true);
-      if (error.message.includes("Password")) setPasswordError(true);
-    }
 
-    setLoading(false);
+      if (/user|email/.test(error.message)) setEmailError(true);
+      if (error.message.includes("password")) setPasswordError(true);
+    }
   };
 
   return (
@@ -169,7 +115,7 @@ function Basic() {
                 variant="body1"
                 color="white"
               >
-                <FacebookIcon color="inherit" />
+                <GoogleIcon onClick={logInWithGoogle} color="inherit" />
               </MDTypography>
             </Grid>
             <Grid item xs={2}>
@@ -179,7 +125,7 @@ function Basic() {
                 variant="body1"
                 color="white"
               >
-                <GoogleIcon color="inherit" />
+                <FacebookIcon color="inherit" />
               </MDTypography>
             </Grid>
           </Grid>
