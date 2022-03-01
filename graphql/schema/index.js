@@ -16,8 +16,11 @@ export default buildSchema(`
 
         type User {
             _id: ID!
+            uid: ID
+            authProvider: String
             name: String!
             email: String!
+            phone: String
             password: String
             role: String
             trades: [Trade!]
@@ -70,9 +73,11 @@ export default buildSchema(`
         }
 
         input UserInput {
-            name: String!
-            email: String!
-            password: String!
+            uid: ID!
+            name: String
+            authProvider: String
+            email: String
+            phone: String
             role: String
         }
 
@@ -89,6 +94,7 @@ export default buildSchema(`
             stockData(symbolId: ID!,startDate: String, endDate: String): [StockData!]!
             login(email:String!,password: String!): AuthData!
             verifyUser: Boolean!
+            getUserId(user: UserInput!): ID!
         }
 
         type RootMutation {

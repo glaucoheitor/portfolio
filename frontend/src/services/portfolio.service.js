@@ -1,6 +1,11 @@
+const URL =
+  process.env.NODE_ENV !== "production"
+    ? process.env.REACT_APP_LOCAL_BACKEND
+    : process.env.REACT_APP_BACKEND;
+
 export const getTrades = async (authData) => {
   try {
-    const { data } = await fetch(process.env.REACT_APP_BACKEND + "/graphql", {
+    const { data } = await fetch(URL + "/graphql", {
       method: "POST",
       body: JSON.stringify({
         query: `query {
@@ -35,16 +40,13 @@ export const getHistoricalStockData = async (
   endDate
 ) => {
   try {
-    const { data } = await fetch(
-      `${process.env.REACT_APP_BACKEND}/historical?symbol=${symbol}`,
-      {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: "Bearer " + authData.token,
-        },
-      }
-    ).then((res) => res.json());
+    const { data } = await fetch(`${URL}/historical?symbol=${symbol}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + authData.token,
+      },
+    }).then((res) => res.json());
 
     return data;
   } catch (e) {
@@ -105,16 +107,13 @@ export const buildPortfolioFromTrades = (trades) => {
 
 export const getPrices = async (symbol) => {
   try {
-    const data = await fetch(
-      process.env.REACT_APP_BACKEND + "/getCurrentPrices",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ symbol }),
-      }
-    ).then((res) => res.json());
+    const data = await fetch(URL + "/getCurrentPrices", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ symbol }),
+    }).then((res) => res.json());
 
     return data;
   } catch (e) {
@@ -129,7 +128,7 @@ export const getPrices = async (symbol) => {
 
 export const getIBOV = async () => {
   try {
-    const data = await fetch(process.env.REACT_APP_BACKEND + "/ibov", {
+    const data = await fetch(URL + "/ibov", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

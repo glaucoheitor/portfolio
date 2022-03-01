@@ -5,6 +5,18 @@ import jwt from "jsonwebtoken";
 
 const { JWT_KEY, JWT_EXP } = process.env;
 
+export async function getUserId({ uid, name, authProvider, ...user }) {
+  try {
+    const existingUser = await User.findOne({ uid: uid });
+    if (existingUser) return existingUser.id;
+    const newUser = new User({ uid, name, authProvider, ...user });
+    const result = await newUser.save();
+    return result.id;
+  } catch (err) {
+    throw err;
+  }
+}
+
 export async function createUser(args) {
   const { name, email, password, role } = args.userInput;
   try {

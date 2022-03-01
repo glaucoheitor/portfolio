@@ -66,20 +66,8 @@ export const login = async (email, password) => {
 
 const logInWithGoogle = async () => {
   const googleProvider = new GoogleAuthProvider();
-
   try {
-    const { user } = await signInWithPopup(auth, googleProvider);
-    const { docs } = await getDocs(
-      query(collection(firebaseDB, "users"), where("uid", "==", user.uid))
-    );
-
-    if (!docs.length)
-      await addDoc(collection(firebaseDB, "users"), {
-        uid: user.uid,
-        name: user.displayName,
-        authProvider: "google",
-        email: user.email,
-      });
+    await signInWithPopup(auth, googleProvider);
   } catch (error) {
     return { error };
   }
@@ -120,6 +108,31 @@ const sendPasswordReset = async (email) => {
   }
 };
 
+const getUserId = async (user) => {
+  try {
+    const userQuery = Object.entries(user).map(
+      ([key, value]) => `${key}: "${value}"`
+    );
+
+    const { data } = await fetch(URL + "/graphql", {
+      method: "POST",
+      body: JSON.stringify({
+        query: `query {
+          getUserId(user: { ${userQuery.join(",")} })
+        }`,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    }).then((res) => res.json());
+    console.log(data);
+    return data.getUserId;
+  } catch (e) {
+    console.error(e);
+    return false;
+  }
+};
+
 const logout = () => {
   signOut(auth);
 };
@@ -131,4 +144,5 @@ export {
   registerWithEmailAndPassword,
   sendPasswordReset,
   logout,
+  getUserId,
 };

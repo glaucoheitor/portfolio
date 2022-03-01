@@ -3,6 +3,10 @@ import mongoose from "mongoose";
 const { Schema } = mongoose;
 
 const userSchema = new Schema({
+  uid: { type: String, unique: true },
+
+  authProvider: { type: String },
+
   name: { type: String, required: true },
 
   email: {
@@ -10,6 +14,8 @@ const userSchema = new Schema({
     required: [true, "An email is required for a user"],
     unique: true,
   },
+
+  phone: { type: String, unique: true },
 
   password: {
     type: String,
