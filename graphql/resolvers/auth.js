@@ -5,7 +5,9 @@ import jwt from "jsonwebtoken";
 
 const { JWT_KEY, JWT_EXP } = process.env;
 
-export async function getUserId({ uid, name, authProvider, ...user }) {
+export async function getUserId(args) {
+  const { uid, name, authProvider, ...user } = args.user;
+  console.log(uid);
   try {
     const existingUser = await User.findOne({ uid: uid });
     if (existingUser) return existingUser.id;

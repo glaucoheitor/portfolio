@@ -108,19 +108,19 @@ const sendPasswordReset = async (email) => {
   }
 };
 
-const getUserId = async ({ providerData }) => {
+const getUserId = async ({ uid, providerData }) => {
   try {
     if (!providerData || !providerData.length) throw Error("No providerData.");
     console.log(providerData);
-    const userQuery = Object.entries(providerData[0]).map(
-      ([key, value]) => `${key}: "${value}"`
-    );
-
+    const userQuery = Object.entries(providerData[0])
+      .map(([key, value]) => (key !== "uid" ? `${key}: "${value}"` : null))
+      .filter((e) => e);
+    console.log(userQuery);
     const { data } = await fetch(URL + "/graphql", {
       method: "POST",
       body: JSON.stringify({
         query: `query {
-          getUserId(user: { ${userQuery.join(",")} })
+          getUserId(user: { uid: "${uid}", ${userQuery.join(",")} })
         }`,
       }),
       headers: {

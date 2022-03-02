@@ -31,8 +31,10 @@ import {
   setMiniSidenav,
   setTransparentSidenav,
   setWhiteSidenav,
-  logout,
+  clearUser,
 } from "context";
+
+import { logout } from "services/auth.service";
 
 function Sidenav({ color, brand, brandName, routes, ...rest }) {
   const [controller, dispatch] = useMaterialUIController();
@@ -56,8 +58,10 @@ function Sidenav({ color, brand, brandName, routes, ...rest }) {
     textColor = "inherit";
   }
 
+  //
   const handleLogout = () => {
-    logout(portfolioDispatch);
+    clearUser(portfolioDispatch);
+    logout()
     navigate("/auth/login");
   };
 

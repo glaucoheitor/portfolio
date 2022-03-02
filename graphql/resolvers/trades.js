@@ -17,13 +17,14 @@ export async function trades(args, req) {
 }
 export async function tradesByUserId({ userId }, req) {
   //if (!req.isAuth) {throw new Error("Unauthenticated!")}
-  console.time();
+
   try {
     const trades = await Trade.find({ user: userId })
       .populate("symbol")
       .sort("date");
 
-    return trades.map(transformTrade);
+    //return the _doc property of each trade
+    return trades.map(({ _doc }) => _doc);
     /*const { trades } = await User.findById(userId, "trades").populate({
       path: "trades",
       populate: { path: "symbol" },

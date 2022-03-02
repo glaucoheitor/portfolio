@@ -103,7 +103,7 @@ const setLoadedPrices = (dispatch, value) =>
   dispatch({ type: "LOADED_PRICES", value });
 const resetPrices = (dispatch) => dispatch({ type: "RESET_PRICES" });
 const login = (dispatch, value) => dispatch({ type: "LOGIN", value });
-const logout = (dispatch) => dispatch({ type: "LOGOUT" });
+const clearUser = (dispatch) => dispatch({ type: "LOGOUT" });
 
 export {
   PortfolioControllerProvider,
@@ -115,5 +115,5 @@ export {
   resetPrices,
   setTotals,
   login,
-  logout,
+  clearUser,
 };
