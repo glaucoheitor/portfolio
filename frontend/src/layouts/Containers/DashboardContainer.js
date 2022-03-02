@@ -19,6 +19,7 @@ import {
   setPrices,
   setLoadedPrices,
   setTotals,
+  login,
 } from "context";
 
 import {
@@ -28,7 +29,13 @@ import {
   getIBOV,
 } from "services/portfolio.service";
 
+//Authentication
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "services/firebase.service";
+import { getUserId } from "services/auth.service";
+
 function LayoutContainer({ children }) {
+  const [user, loading, error] = useAuthState(auth);
   const [controller, dispatch] = useMaterialUIController();
   const [portfolioController, portfolioDispatch] = usePortfolioController();
   const { miniSidenav } = controller;
@@ -38,13 +45,25 @@ function LayoutContainer({ children }) {
   const navigate = useNavigate();
 
   useEffect(() => {
-    !authData.token &&
+    !user &&
+      !loading &&
       navigate("/auth/login", {
         state: { error: "UNAUTHENTICATED" },
         replace: true,
       });
     setLayout(dispatch, "dashboard");
   }, [pathname]);
+
+  useEffect(() => {
+    const getId = async () => {
+      login(portfolioDispatch, {
+        userId: await getUserId(user),
+        userUid: user.uid,
+      });
+    };
+    console.log(user);
+    if (!authData && user) getId();
+  }, [user]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -60,12 +79,12 @@ function LayoutContainer({ children }) {
     };
 
     let active = true;
-    if (!trades) fetchData();
+    if (!trades && authData) fetchData();
 
     return () => {
       active = false;
     };
-  }, []);
+  }, [authData]);
 
   useEffect(() => {
     const fetchPrices = async () => {

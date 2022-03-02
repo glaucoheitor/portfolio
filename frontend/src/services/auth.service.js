@@ -108,9 +108,11 @@ const sendPasswordReset = async (email) => {
   }
 };
 
-const getUserId = async (user) => {
+const getUserId = async ({ providerData }) => {
   try {
-    const userQuery = Object.entries(user).map(
+    if (!providerData || !providerData.length) throw Error("No providerData.");
+    console.log(providerData);
+    const userQuery = Object.entries(providerData[0]).map(
       ([key, value]) => `${key}: "${value}"`
     );
 

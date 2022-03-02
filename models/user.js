@@ -3,24 +3,17 @@ import mongoose from "mongoose";
 const { Schema } = mongoose;
 
 const userSchema = new Schema({
-  uid: { type: String, unique: true },
+  uid: { type: String, required: true },
 
-  authProvider: { type: String },
+  providerId: { type: String },
 
-  name: { type: String, required: true },
+  displayName: { type: String },
 
-  email: {
-    type: String,
-    required: [true, "An email is required for a user"],
-    unique: true,
-  },
+  email: { type: String },
 
-  phone: { type: String, unique: true },
+  phoneNumber: { type: String },
 
-  password: {
-    type: String,
-    required: [true, "A password is required for a user"],
-  },
+  photoURL: { type: String },
 
   role: { type: String, required: true },
 

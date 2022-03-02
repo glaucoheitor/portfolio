@@ -37,27 +37,18 @@ function portfolioReducer(state, { type, value }) {
       return { ...state, loadedPrices: false, prices: {} };
     }
     case "LOGIN": {
-      const user = {
-        token: value.token,
-        userId: value.userId,
-      };
-      TokenService.setUser(user);
       return {
         ...state,
-        authData: user,
+        authData: value,
       };
     }
     case "LOGOUT": {
-      TokenService.removeUser();
       return {
         trades: null,
         portfolio: null,
         totals: null,
         prices: {},
-        authData: {
-          token: null,
-          userId: null,
-        },
+        authData: null,
       };
     }
     default:
@@ -67,21 +58,11 @@ function portfolioReducer(state, { type, value }) {
 
 // Portfolio context provider
 function PortfolioControllerProvider({ children }) {
-  const user = TokenService.getUser();
-  const authData = user
-    ? {
-        token: user.token,
-        userId: user.userId,
-      }
-    : {
-        token: null,
-        userId: null,
-      };
   const initialState = {
     trades: null,
     portfolio: null,
     prices: {},
-    authData: authData,
+    authData: null,
     loadedPrices: false,
   };
 

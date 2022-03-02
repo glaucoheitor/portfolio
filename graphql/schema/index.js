@@ -74,10 +74,11 @@ export default buildSchema(`
 
         input UserInput {
             uid: ID!
-            name: String
-            authProvider: String
+            displayName: String
+            providerId: String
             email: String
-            phone: String
+            phoneNumber: String
+            photoURL: String
             role: String
         }
 
