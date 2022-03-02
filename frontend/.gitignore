@@ -1,6 +1,6 @@
 # Zero-installs
 .yarn/*
-
+#!.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
@@ -9,7 +9,7 @@
 
 # dependencies
 /node_modules
-
+node_modules
 
 # testing
 /coverage
