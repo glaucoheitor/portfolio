@@ -18,13 +18,7 @@ import { ibov, historical } from "./services/yahooFinance.js";
 
 const app = express();
 
-const {
-  PORT,
-  MONGO_DB,
-  MONGO_USER,
-  MONGO_PASSWORD,
-  FIREBASE_ADMIN_CREDENTIALS,
-} = process.env;
+const { PORT, MONGO_DB, MONGO_USER, MONGO_PASSWORD } = process.env;
 
 app.use(
   cors(
