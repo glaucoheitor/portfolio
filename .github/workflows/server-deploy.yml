@@ -21,6 +21,7 @@ jobs:
           MONGO_PASSWORD: ${{ secrets.MONGO_PASSWORD }}
           JWT_KEY: ${{ secrets.JWT_KEY }}
           JWT_EXP: ${{ secrets.JWT_EXP }}
+          FIREBASE_ADMIN_CREDENTIALS: ${{ secrets.FIREBASE_ADMIN_CREDENTIALS }}
       - uses: actions-hub/gcloud@master
         env:
           PROJECT_ID: stocks-api-325904

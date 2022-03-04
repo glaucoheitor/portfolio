@@ -24,7 +24,8 @@ export const getTrades = async (authData) => {
       }),
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Bearer " + authData.token,
+        Authorization:
+          "Bearer " + (await authData?.user?.auth?.currentUser?.getIdToken()),
       },
     }).then((res) => res.json());
     return data.tradesByUserId;
@@ -44,7 +45,8 @@ export const getHistoricalStockData = async (
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Bearer " + authData.token,
+        Authorization:
+          "Bearer " + (await authData?.user?.auth?.currentUser?.getIdToken()),
       },
     }).then((res) => res.json());
 

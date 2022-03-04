@@ -19,6 +19,18 @@ export async function getUserId(args) {
   }
 }
 
+//internal support function, not to use with graphQL
+export async function getOnlyUserId(uid) {
+  try {
+    if (!uid) throw Error;
+    const existingUser = await User.findOne({ uid: uid });
+    if (existingUser) return existingUser.id;
+    return null;
+  } catch {
+    return null;
+  }
+}
+
 export async function createUser(args) {
   const { name, email, password, role } = args.userInput;
   try {

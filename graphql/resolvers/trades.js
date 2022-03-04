@@ -3,6 +3,7 @@ import User from "../../models/user.js";
 import Symbol from "../../models/symbol.js";
 
 import { transformTrade } from "./populate.js";
+import { getOnlyUserId } from "./auth.js";
 
 export async function trades(args, req) {
   if (!req.isAuth) {
@@ -58,9 +59,13 @@ export async function addTrade(args, req) {
   if (!req.isAuth) {
     throw new Error("Unauthenticated!");
   }
-  console.log(req.userId);
+  console.log(req.userUid);
+
   const { type, symbolId, qty, price, total, date } = args.tradeInput;
-  const { userId } = req;
+  const { userUid } = req;
+
+  const userId = await getOnlyUserId(userUid);
+
   const trade = new Trade({
     type: type,
     symbol: symbolId,

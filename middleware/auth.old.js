@@ -1,14 +1,8 @@
-import admin from "firebase-admin";
+import jwt from "jsonwebtoken";
 
-admin.initializeApp({
-  credential: admin.credential.cert(
-    JSON.parse(
-      Buffer.from(process.env.FIREBASE_ADMIN_CREDENTIALS, "base64").toString()
-    )
-  ),
-});
+const { JWT_KEY, JWT_EXP } = process.env;
 
-export default async (req, res, next) => {
+export default (req, res, next) => {
   const authHeader = req.get("Authorization");
 
   if (!authHeader) {
@@ -25,7 +19,7 @@ export default async (req, res, next) => {
 
   let decodedToken;
   try {
-    decodedToken = await admin.auth().verifyIdToken(token);
+    decodedToken = jwt.verify(token, JWT_KEY);
   } catch (err) {
     req.isAuth = false;
     return next();
@@ -35,8 +29,7 @@ export default async (req, res, next) => {
     req.isAuth = false;
     return next();
   }
-
   req.isAuth = true;
-  req.userUid = decodedToken.uid;
+  req.userId = decodedToken.userId;
   next();
 };

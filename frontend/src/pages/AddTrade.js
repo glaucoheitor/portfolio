@@ -88,20 +88,21 @@ function AddTrade() {
         }
       }`,
     };
+    const URL =
+      process.env.NODE_ENV !== "production"
+        ? process.env.REACT_APP_LOCAL_BACKEND
+        : process.env.REACT_APP_BACKEND;
     try {
-      const { data, errors } = await fetch(
-        process.env.REACT_APP_BACKEND + "/graphql",
-        {
-          method: "POST",
-          body: JSON.stringify(requestBody),
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: "Bearer " + authData?.token,
-          },
-        }
-      ).then((res) => res.json());
-
-      if (errors) throw new Error(errors[0]);
+      const { data, errors } = await fetch(URL + "/graphql", {
+        method: "POST",
+        body: JSON.stringify(requestBody),
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Bearer " + authData?.token,
+        },
+      }).then((res) => res.json());
+      console.log(Object.entries(errors));
+      if (errors) throw new Error(errors);
       setSubmitStatus("success");
       await fetchTrades(symbol);
     } catch (error) {

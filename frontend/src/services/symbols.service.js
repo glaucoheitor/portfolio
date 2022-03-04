@@ -18,7 +18,8 @@ export const getAllSymbols = async (authData) => {
       }),
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Bearer " + authData.token,
+        Authorization:
+          "Bearer " + (await authData?.user?.auth?.currentUser?.getIdToken()),
       },
     }).then((res) => res.json());
 

@@ -22,7 +22,8 @@ export const verifyUser = async (authData) => {
       body: JSON.stringify({ query: `query {verifyUser}` }),
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Bearer " + authData.token,
+        Authorization:
+          "Bearer " + (await authData?.user?.auth?.currentUser?.getIdToken()),
       },
     }).then((res) => res.json());
     console.log(data);
@@ -108,14 +109,20 @@ const sendPasswordReset = async (email) => {
   }
 };
 
-const getUserId = async ({ uid, providerData }) => {
+const getUserId = async ({ uid, providerData, auth }) => {
   try {
     if (!providerData || !providerData.length) throw Error("No providerData.");
+
     console.log(providerData);
+
     const userQuery = Object.entries(providerData[0])
       .map(([key, value]) => (key !== "uid" ? `${key}: "${value}"` : null))
       .filter((e) => e);
+
     console.log(userQuery);
+
+    const token = await auth?.currentUser?.getIdToken();
+
     const { data } = await fetch(URL + "/graphql", {
       method: "POST",
       body: JSON.stringify({
@@ -125,9 +132,12 @@ const getUserId = async ({ uid, providerData }) => {
       }),
       headers: {
         "Content-Type": "application/json",
+        Authorization: "Bearer " + token,
       },
     }).then((res) => res.json());
+
     console.log(data);
+
     return data.getUserId;
   } catch (e) {
     console.error(e);

@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
+import "dotenv/config";
 
 import { graphqlHTTP } from "express-graphql";
 
@@ -17,8 +18,14 @@ import { ibov, historical } from "./services/yahooFinance.js";
 
 const app = express();
 
-const { PORT, MONGO_DB, MONGO_USER, MONGO_PASSWORD } = process.env;
-console.log(process.env.NODE_ENV);
+const {
+  PORT,
+  MONGO_DB,
+  MONGO_USER,
+  MONGO_PASSWORD,
+  FIREBASE_ADMIN_CREDENTIALS,
+} = process.env;
+
 app.use(
   cors(
     process.env.NODE_ENV !== "production"

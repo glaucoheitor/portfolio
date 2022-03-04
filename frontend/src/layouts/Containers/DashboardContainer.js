@@ -58,7 +58,7 @@ function LayoutContainer({ children }) {
     const getId = async () => {
       login(portfolioDispatch, {
         userId: await getUserId(user),
-        userUid: user.uid,
+        user: user,
       });
     };
     console.log(user);
