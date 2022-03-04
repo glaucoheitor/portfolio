@@ -12,7 +12,7 @@ jobs:
         working-directory: ./frontend
     steps:
       - uses: actions/checkout@v2
-      - run: yarn install && REACT_APP_BACKEND=${{ secrets.REACT_APP_BACKEND }} yarn run build
+      - run: yarn install --immutable && REACT_APP_BACKEND=${{ secrets.REACT_APP_BACKEND }} yarn run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
