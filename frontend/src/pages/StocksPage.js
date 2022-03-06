@@ -3,17 +3,9 @@ import { useState } from "react";
 // @mui material components
 import Grid from "@mui/material/Grid";
 import Skeleton from "@mui/material/Skeleton";
-import Fab from "@mui/material/Fab";
-import Popover from "@mui/material/Popover";
-import Icon from "@mui/material/Icon";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
-
-//icons
-import AddIcon from "@mui/icons-material/Add";
-import RefreshIcon from "@mui/icons-material/Refresh";
 
 // react-router-dom components
 import { Link } from "react-router-dom";
@@ -21,42 +13,20 @@ import { Link } from "react-router-dom";
 import LayoutContainer from "layouts/Containers/DashboardContainer";
 import DashboardNavbar from "layouts/Navbars/DashboardNavbar";
 import StockCard from "components/Cards/StockCard";
-import AddTrade from "./AddTrade";
+import AddFab from "layouts/Fabs/AddFab";
+import RefreshFab from "layouts/Fabs/RefreshFab";
 
 import NumberFormat from "utils/NumberFormat";
 
 // Material Dashboard 2 PRO React context
-import {
-  useMaterialUIController,
-  usePortfolioController,
-  resetPrices,
-} from "context";
+import { useMaterialUIController, usePortfolioController } from "context";
 
 function StocksPage() {
   const [controller] = useMaterialUIController();
-  const [portfolioController, portfolioDispatch] = usePortfolioController();
+  const [portfolioController] = usePortfolioController();
 
   const { darkMode } = controller;
   const { portfolio, prices } = portfolioController;
-
-  const [anchorEl, setAnchorEl] = useState(null);
-  const [parentAnchorEl, setparentAnchorEl] = useState(null);
-
-  const handleAddClick = (event) => {
-    setparentAnchorEl(event.currentTarget.parentNode);
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleRefreshClick = () => {
-    resetPrices(portfolioDispatch);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const open = Boolean(anchorEl);
-  const id = open ? "simple-popover" : undefined;
 
   //create an array with 15 Skeletons
   const renderSkeleton = () =>
@@ -149,60 +119,8 @@ function StocksPage() {
       <MDBox py={3}>
         <Grid container spacing={3}>
           {portfolio ? <>{renderStockCards()}</> : renderSkeleton()}
-          <Fab
-            onClick={handleAddClick}
-            sx={{
-              position: "fixed",
-              bottom: (theme) => theme.spacing(2),
-              right: (theme) => theme.spacing(2),
-            }}
-            color="primary"
-          >
-            <AddIcon fontSize="medium" />
-          </Fab>
-          <Fab
-            onClick={handleRefreshClick}
-            color="secondary"
-            aria-label="refresh"
-            sx={{
-              position: "fixed",
-              bottom: (theme) => theme.spacing(10),
-              right: (theme) => theme.spacing(2),
-            }}
-          >
-            <RefreshIcon fontSize="medium" />
-          </Fab>
-          <Popover
-            id={id}
-            open={open}
-            anchorEl={anchorEl}
-            onClose={handleClose}
-            container={parentAnchorEl}
-            anchorOrigin={{
-              vertical: "bottom",
-              horizontal: "right",
-            }}
-            transformOrigin={{
-              vertical: "bottom",
-              horizontal: "right",
-            }}
-            PaperProps={{ sx: { backgroundColor: "background.default" } }}
-          >
-            <MDBox
-              display="block"
-              position="absolute"
-              top={0}
-              right={0}
-              p={1.625}
-              onClick={handleClose}
-              sx={{ cursor: "pointer" }}
-            >
-              <MDTypography variant="h6" color="secondary">
-                <Icon sx={{ fontWeight: "bold" }}>close</Icon>
-              </MDTypography>
-            </MDBox>
-            <AddTrade />
-          </Popover>
+          <AddFab />
+          <RefreshFab />
         </Grid>
       </MDBox>
     </LayoutContainer>

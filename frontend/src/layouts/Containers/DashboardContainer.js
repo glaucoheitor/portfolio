@@ -90,6 +90,8 @@ function LayoutContainer({ children }) {
     const fetchPrices = async () => {
       if (loadedPrices) setLoadedPrices(portfolioDispatch, false);
 
+      setTotals(portfolioDispatch, null);
+
       await Promise.all(
         Object.entries(portfolio).map(
           async ([symbolId, { symbol, totalQty }]) => {
