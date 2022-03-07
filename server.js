@@ -20,6 +20,7 @@ const app = express();
 
 const { PORT, MONGO_DB, MONGO_USER, MONGO_PASSWORD, NODE_ENV } = process.env;
 console.log(NODE_ENV);
+console.log(process.env);
 app.use(
   cors(
     NODE_ENV !== "production"
