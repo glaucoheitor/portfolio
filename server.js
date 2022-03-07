@@ -42,7 +42,7 @@ app.use(
   graphqlHTTP({
     schema: graphQlSchema,
     rootValue: graphQlResolvers,
-    graphiql: process.env.NODE_ENV !== "production",
+    graphiql: NODE_ENV !== "production",
     customFormatErrorFn: (err) => ({ type: err.message }),
   })
 );

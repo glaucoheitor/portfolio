@@ -1,12 +1,12 @@
-/*import admin from "firebase-admin";
+import admin from "firebase-admin";
 
- admin.initializeApp({
+admin.initializeApp({
   credential: admin.credential.cert(
     JSON.parse(
       Buffer.from(process.env.FIREBASE_ADMIN_CREDENTIALS, "base64").toString()
     )
   ),
-}); */
+});
 
 export default async (req, res, next) => {
   const authHeader = req.get("Authorization");
@@ -25,8 +25,7 @@ export default async (req, res, next) => {
 
   let decodedToken;
   try {
-    //decodedToken = await admin.auth().verifyIdToken(token);
-    decodedToken = true;
+    decodedToken = await admin.auth().verifyIdToken(token);
   } catch (err) {
     req.isAuth = false;
     return next();
@@ -38,6 +37,6 @@ export default async (req, res, next) => {
   }
 
   req.isAuth = true;
-  //req.userUid = decodedToken.uid;
+  req.userUid = decodedToken.uid;
   next();
 };
