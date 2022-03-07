@@ -10,6 +10,15 @@ const Portfolio = createContext();
 // Setting custom name for the context which is visible on react dev tools
 Portfolio.displayName = "PortfolioContext";
 
+const initialState = {
+  trades: null,
+  portfolio: null,
+  prices: {},
+  totals: null,
+  authData: null,
+  loadedPrices: false,
+};
+
 // Portfolio reducer
 function portfolioReducer(state, { type, value }) {
   switch (type) {
@@ -43,13 +52,7 @@ function portfolioReducer(state, { type, value }) {
       };
     }
     case "LOGOUT": {
-      return {
-        trades: null,
-        portfolio: null,
-        totals: null,
-        prices: {},
-        authData: null,
-      };
+      return initialState;
     }
     default:
       throw new Error();
@@ -58,14 +61,6 @@ function portfolioReducer(state, { type, value }) {
 
 // Portfolio context provider
 function PortfolioControllerProvider({ children }) {
-  const initialState = {
-    trades: null,
-    portfolio: null,
-    prices: {},
-    authData: null,
-    loadedPrices: false,
-  };
-
   const [controller, dispatch] = useReducer(portfolioReducer, initialState);
 
   return (

@@ -9,19 +9,21 @@ import MDTypography from "components/MDTypography";
 
 import LayoutContainer from "layouts/Containers/DashboardContainer";
 import DashboardNavbar from "layouts/Navbars/DashboardNavbar";
+import AddFab from "layouts/Fabs/AddFab";
+import RefreshFab from "layouts/Fabs/RefreshFab";
 
 import StatisticsCard from "components/Cards/StatisticsCard";
 
 import NumberFormat from "utils/NumberFormat";
 
-import { useMaterialUIController, usePortfolioController } from "context";
+import { usePortfolioController } from "context";
 
 function DashboardPage() {
   const [portfolioController] = usePortfolioController();
   const [changes, setChanges] = useState({});
   const [symbolId, setSymbolId] = useState(null);
 
-  const { prices, totals } = portfolioController;
+  const { prices, totals, loadedPrices } = portfolioController;
 
   const getColor = (amount) => {
     return !amount || amount === 0 ? "text" : amount > 0 ? "success" : "error";
@@ -32,6 +34,7 @@ function DashboardPage() {
   }, [symbolId, prices]);
 
   useEffect(() => {
+    setChanges(null);
     if (totals) {
       const { investedTotal, currentTotal, previousTotal } = totals;
       const totalChange = currentTotal - investedTotal;
@@ -44,7 +47,7 @@ function DashboardPage() {
         dailyPercent: (dailyChange / previousTotal) * 100,
       });
     }
-  }, [totals]);
+  }, [totals, loadedPrices]);
 
   return (
     <LayoutContainer>
@@ -127,6 +130,8 @@ function DashboardPage() {
               />
             </MDBox>
           </Grid>
+          <AddFab />
+          <RefreshFab />
         </Grid>
       </MDBox>
     </LayoutContainer>
