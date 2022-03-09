@@ -18,6 +18,7 @@ import StockDetailChart from "components/Charts/StockDetailChart";
 import TimelineSkeleton from "components/Cards/Timeline/TimelineSkeleton";
 
 import { getHistoricalStockData } from "services/portfolio.service";
+import { getSymbolId } from "services/symbols.service";
 
 import { useMaterialUIController, usePortfolioController } from "context";
 
@@ -34,18 +35,28 @@ function StockDetailPage() {
   const { symbol } = useParams();
 
   useEffect(() => {
-    if (portfolio) {
-      const [sId, data] =
-        Object.entries(portfolio).find(
-          ([id, s]) => s.symbol === symbol.toUpperCase()
-        ) || [];
+    const fetchSymbolId = async () => {
+      let { symbolId: sId } = Object.values(portfolio).find(
+        (s) => s.symbol === symbol.toUpperCase()
+      );
+
+      if (!sId) sId = await getSymbolId(authData, symbol.toUpperCase());
 
       if (sId) {
-        setSymbolId(sId);
+        active && setSymbolId(sId);
       } else {
-        setSymbolTrades([]);
+        active && setSymbolTrades([]);
       }
+    };
+
+    let active = true;
+    if (portfolio) {
+      fetchSymbolId();
     }
+
+    return () => {
+      active = false;
+    };
   }, [portfolio]);
 
   useEffect(() => {

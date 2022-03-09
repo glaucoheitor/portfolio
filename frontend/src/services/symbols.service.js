@@ -9,7 +9,7 @@ export const getAllSymbols = async (authData) => {
       method: "POST",
       body: JSON.stringify({
         query: `query {
-            symbols {
+            getAllSymbols {
               _id
               symbol
               type
@@ -39,5 +39,29 @@ export const getAllSymbols = async (authData) => {
     };
   } catch (e) {
     return;
+  }
+};
+
+export const getSymbolId = async (authData, symbol) => {
+  try {
+    const { data, errors } = await fetch(URL + "/graphql", {
+      method: "POST",
+      body: JSON.stringify({
+        query: `query {
+            getSymbolId(symbol: "${symbol}")
+          }`,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+        Authorization:
+          "Bearer " + (await authData?.user?.auth?.currentUser?.getIdToken()),
+      },
+    }).then((res) => res.json());
+
+    if (errors) return { error: errors[0].type };
+
+    return data?.getSymbolId;
+  } catch (e) {
+    return null;
   }
 };
