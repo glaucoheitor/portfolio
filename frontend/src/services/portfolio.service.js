@@ -80,14 +80,15 @@ export const getPositionAtDay = (symbolId, date, trades) => {
 
 export const buildPortfolioFromTrades = (trades) => {
   let portfolio = {};
+  let sales = [];
   for (const trade of trades) {
-    const s = trade.symbol._id;
+    const { type, qty, price, symbol } = trade;
+    const s = symbol._id;
     if (!portfolio.hasOwnProperty(s)) {
       portfolio[s] = {
-        symbol: trade.symbol.symbol,
-        companyName: trade.symbol.companyName
-          ? trade.symbol.companyName
-          : trade.symbol.symbol,
+        symbolId: s,
+        symbol: symbol.symbol,
+        companyName: symbol.companyName ? symbol.companyName : symbol.symbol,
         total: 0,
         totalQty: 0,
         precoMedio: 0,
@@ -95,29 +96,46 @@ export const buildPortfolioFromTrades = (trades) => {
         previousPrice: null,
       };
     }
-    if (trade.type === "buy") {
-      portfolio[s].total += Number(trade.qty) * Number(trade.price);
-      portfolio[s].totalQty += Number(trade.qty);
+    if (type === "buy") {
+      portfolio[s].total += Number(qty) * Number(price);
+      portfolio[s].totalQty += Number(qty);
       portfolio[s].precoMedio = portfolio[s].total / portfolio[s].totalQty;
-    } else if (trade.type === "sell") {
-      portfolio[s].total -= Number(trade.qty) * portfolio[s].precoMedio;
-      portfolio[s].totalQty -= Number(trade.qty);
+    } else if (type === "sell") {
+      portfolio[s].total -= Number(qty) * portfolio[s].precoMedio;
+      portfolio[s].totalQty -= Number(qty);
+      sales.push({
+        symbolId: s,
+        result: price * qty - portfolio[s].precoMedio * qty,
+        ...trade,
+      });
     }
   }
-  return sortAndReducePortfolio(portfolio);
+  return {
+    currentPosition: sortAndReducePortfolio(portfolio),
+    sales,
+  };
 };
 
-export const getPrices = async (symbol) => {
+/* array of objects in format {symbolId,symbol}  */
+export const getPrices = async (symbols) => {
   try {
     const data = await fetch(URL + "/getCurrentPrices", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ symbol }),
+      body: JSON.stringify({ symbols }),
     }).then((res) => res.json());
 
-    return data;
+    if (data.errors) throw Error();
+
+    return data.reduce(
+      (allPrices, currentPrice) => ({
+        ...allPrices,
+        [currentPrice.symbolId]: currentPrice.prices,
+      }),
+      {}
+    );
   } catch (e) {
     return {
       currentPrice: null,

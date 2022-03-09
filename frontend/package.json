@@ -36,6 +36,7 @@
     "react-transition-group": "^4.4.2",
     "react-window": "^1.8.6",
     "stylis": "4.0.13",
+    "yahoo-finance2": "^2.3.0",
     "yup": "^0.32.11"
   },
   "scripts": {

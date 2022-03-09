@@ -15,6 +15,7 @@ const initialState = {
   portfolio: null,
   prices: {},
   totals: null,
+  sales: null,
   authData: null,
   loadedPrices: false,
 };
@@ -28,7 +29,11 @@ function portfolioReducer(state, { type, value }) {
       return { ...state, portfolio: value };
     case "TOTALS":
       return { ...state, totals: value };
-    case "PRICES":
+    case "SALES":
+      return { ...state, sales: value };
+    case "ALL_PRICES":
+      return { ...state, prices: value };
+    case "SINGLE_PRICE":
       return {
         ...state,
         prices: {
@@ -93,7 +98,11 @@ const setTrades = (dispatch, value) => dispatch({ type: "TRADES", value });
 const setPortfolio = (dispatch, value) =>
   dispatch({ type: "PORTFOLIO", value });
 const setTotals = (dispatch, value) => dispatch({ type: "TOTALS", value });
-const setPrices = (dispatch, value) => dispatch({ type: "PRICES", value });
+const setSales = (dispatch, value) => dispatch({ type: "SALES", value });
+const setAllPrices = (dispatch, value) =>
+  dispatch({ type: "ALL_PRICES", value });
+const setSinglePrice = (dispatch, value) =>
+  dispatch({ type: "SINGLE_PRICE", value });
 const setLoadedPrices = (dispatch, value) =>
   dispatch({ type: "LOADED_PRICES", value });
 const resetPrices = (dispatch) => dispatch({ type: "RESET_PRICES" });
@@ -105,10 +114,12 @@ export {
   usePortfolioController,
   setTrades,
   setPortfolio,
-  setPrices,
+  setAllPrices,
+  setSinglePrice,
   setLoadedPrices,
   resetPrices,
   setTotals,
+  setSales,
   login,
   clearUser,
 };

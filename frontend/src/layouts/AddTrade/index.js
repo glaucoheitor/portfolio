@@ -36,7 +36,7 @@ import {
   usePortfolioController,
   setTrades,
   setPortfolio,
-  setPrices,
+  setSinglePrice,
 } from "context";
 
 import {
@@ -117,10 +117,13 @@ function AddTrade() {
   const fetchTrades = async (symbol) => {
     try {
       if (!prices[symbol._id]) {
-        const dataPrices = await getPrices(symbol.symbol);
-        setPrices(portfolioDispatch, {
+        const dataPrices = await getPrices([
+          { symbolId: symbol._id, symbol: symbol.symbol },
+        ]);
+
+        setSinglePrice(portfolioDispatch, {
           symbolId: symbol._id,
-          prices: dataPrices,
+          prices: dataPrices[symbol._id],
         });
       }
       const dataTrades = await getTrades(authData);

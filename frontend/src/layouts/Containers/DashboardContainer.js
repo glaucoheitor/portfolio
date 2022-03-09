@@ -16,9 +16,11 @@ import {
   setLayout,
   setTrades,
   setPortfolio,
-  setPrices,
+  setAllPrices,
+  setSinglePrice,
   setLoadedPrices,
   setTotals,
+  setSales,
   login,
 } from "context";
 
@@ -71,7 +73,9 @@ function LayoutContainer({ children }) {
         const dataTrades = await getTrades(authData);
         if (active) {
           setTrades(portfolioDispatch, dataTrades);
-          setPortfolio(portfolioDispatch, buildPortfolioFromTrades(dataTrades));
+          const buildResult = buildPortfolioFromTrades(dataTrades);
+          setPortfolio(portfolioDispatch, buildResult.currentPosition);
+          setSales(portfolioDispatch, buildResult.sales);
         }
       } catch (e) {
         //todo: show error message
@@ -92,26 +96,23 @@ function LayoutContainer({ children }) {
 
       setTotals(portfolioDispatch, null);
 
-      await Promise.all(
-        Object.entries(portfolio).map(
-          async ([symbolId, { symbol, totalQty }]) => {
-            if (totalQty > 0) {
-              try {
-                const data = await getPrices(symbol);
-
-                active &&
-                  setPrices(portfolioDispatch, { symbolId, prices: data });
-              } catch (e) {}
-            }
+      const symbolsToQuery = Object.entries(portfolio)
+        .map(([symbolId, { symbol, totalQty }]) => {
+          if (totalQty > 0) {
+            return { symbolId, symbol };
           }
-        )
-      );
+        })
+        .filter((e) => e);
+
+      try {
+        setAllPrices(portfolioDispatch, await getPrices(symbolsToQuery));
+      } catch (e) {}
 
       setLoadedPrices(portfolioDispatch, true);
 
       try {
         active &&
-          setPrices(portfolioDispatch, {
+          setSinglePrice(portfolioDispatch, {
             symbolId: "IBOV",
             prices: await getIBOV(),
           });

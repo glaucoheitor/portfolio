@@ -73,6 +73,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-transition-group", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:4.4.2"],\
             ["react-window", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:1.8.6"],\
             ["stylis", "npm:4.0.13"],\
+            ["yahoo-finance2", "npm:2.3.0"],\
             ["yup", "npm:0.32.11"]\
           ],\
           "linkType": "SOFT"\
@@ -6894,10 +6895,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:4b7d8bb1684f7f69bf042a03dae4d118ab00edf0e34f409e5270fb3cce9e5fcf8ce9581b8f5bc8597c1e50c52a23eba5d4eadeede8c58ab0be3187e2389e11d5#npm:2.1.1", {\
-          "packageLocation": "./.yarn/__virtual__/ajv-formats-virtual-967e01a5f8/0/cache/ajv-formats-npm-2.1.1-3cec02eae9-4a287d937f.zip/node_modules/ajv-formats/",\
+        ["virtual:72566eb283ef242d984c7ff9408ea4be0438957946e2b6afdd16cb0615c8404b7edbced104fa385d5efeff3b698b166702449c98d6914fd2c4c71a5b1750e9b8#npm:2.1.1", {\
+          "packageLocation": "./.yarn/__virtual__/ajv-formats-virtual-0dbb8d35b5/0/cache/ajv-formats-npm-2.1.1-3cec02eae9-4a287d937f.zip/node_modules/ajv-formats/",\
           "packageDependencies": [\
-            ["ajv-formats", "virtual:4b7d8bb1684f7f69bf042a03dae4d118ab00edf0e34f409e5270fb3cce9e5fcf8ce9581b8f5bc8597c1e50c52a23eba5d4eadeede8c58ab0be3187e2389e11d5#npm:2.1.1"],\
+            ["ajv-formats", "virtual:72566eb283ef242d984c7ff9408ea4be0438957946e2b6afdd16cb0615c8404b7edbced104fa385d5efeff3b698b166702449c98d6914fd2c4c71a5b1750e9b8#npm:2.1.1"],\
             ["@types/ajv", null],\
             ["ajv", "npm:8.10.0"]\
           ],\
@@ -11012,6 +11013,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-transition-group", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:4.4.2"],\
             ["react-window", "virtual:d9650954c7f1725ea712d2e40695de9ea5d1c0fa9b89379134c62909d440d91b03d6c37e2823804a3404472b90a5bec73c82193190dd3c4db4c9e9edd75db91e#npm:1.8.6"],\
             ["stylis", "npm:4.0.13"],\
+            ["yahoo-finance2", "npm:2.3.0"],\
             ["yup", "npm:0.32.11"]\
           ],\
           "linkType": "SOFT"\
@@ -17425,7 +17427,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["schema-utils", "npm:4.0.0"],\
             ["@types/json-schema", "npm:7.0.9"],\
             ["ajv", "npm:8.10.0"],\
-            ["ajv-formats", "virtual:4b7d8bb1684f7f69bf042a03dae4d118ab00edf0e34f409e5270fb3cce9e5fcf8ce9581b8f5bc8597c1e50c52a23eba5d4eadeede8c58ab0be3187e2389e11d5#npm:2.1.1"],\
+            ["ajv-formats", "virtual:72566eb283ef242d984c7ff9408ea4be0438957946e2b6afdd16cb0615c8404b7edbced104fa385d5efeff3b698b166702449c98d6914fd2c4c71a5b1750e9b8#npm:2.1.1"],\
             ["ajv-keywords", "virtual:4b7d8bb1684f7f69bf042a03dae4d118ab00edf0e34f409e5270fb3cce9e5fcf8ce9581b8f5bc8597c1e50c52a23eba5d4eadeede8c58ab0be3187e2389e11d5#npm:5.1.0"]\
           ],\
           "linkType": "HARD"\
@@ -19641,6 +19643,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/y18n-npm-5.0.8-5f3a0a7e62-54f0fb9562.zip/node_modules/y18n/",\
           "packageDependencies": [\
             ["y18n", "npm:5.0.8"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["yahoo-finance2", [\
+        ["npm:2.3.0", {\
+          "packageLocation": "./.yarn/cache/yahoo-finance2-npm-2.3.0-72566eb283-f110d2bf3a.zip/node_modules/yahoo-finance2/",\
+          "packageDependencies": [\
+            ["yahoo-finance2", "npm:2.3.0"],\
+            ["ajv", "npm:8.10.0"],\
+            ["ajv-formats", "virtual:72566eb283ef242d984c7ff9408ea4be0438957946e2b6afdd16cb0615c8404b7edbced104fa385d5efeff3b698b166702449c98d6914fd2c4c71a5b1750e9b8#npm:2.1.1"],\
+            ["node-fetch", "virtual:47676912633fa67a920f9fc9b595d03c89fe027f0fc0cc9ff0994f69ea0e819539570690db5845dc5ce762ebdbce15fbf7752400fbec9207defc6cc9f5beeeaa#npm:2.6.7"]\
           ],\
           "linkType": "HARD"\
         }]\

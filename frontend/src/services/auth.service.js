@@ -26,7 +26,7 @@ export const verifyUser = async (authData) => {
           "Bearer " + (await authData?.user?.auth?.currentUser?.getIdToken()),
       },
     }).then((res) => res.json());
-    console.log(data);
+
     return data.verifyUser;
   } catch (e) {
     console.error(e);
@@ -113,13 +113,9 @@ const getUserId = async ({ uid, providerData, auth }) => {
   try {
     if (!providerData || !providerData.length) throw Error("No providerData.");
 
-    console.log(providerData);
-
     const userQuery = Object.entries(providerData[0])
       .map(([key, value]) => (key !== "uid" ? `${key}: "${value}"` : null))
       .filter((e) => e);
-
-    console.log(userQuery);
 
     const token = await auth?.currentUser?.getIdToken();
 
@@ -135,8 +131,6 @@ const getUserId = async ({ uid, providerData, auth }) => {
         Authorization: "Bearer " + token,
       },
     }).then((res) => res.json());
-
-    console.log(data);
 
     return data.getUserId;
   } catch (e) {

@@ -91,11 +91,12 @@ export default buildSchema(`
             trades: [Trade!]!
             tradesByUserId(userId: ID!): [Trade!]!
             users: [User!]!
-            symbols: [Symbol!]!
+            getAllSymbols: [Symbol!]!
             stockData(symbolId: ID!,startDate: String, endDate: String): [StockData!]!
             login(email:String!,password: String!): AuthData!
             verifyUser: Boolean!
             getUserId(user: UserInput!): ID!
+            getSymbolId(symbol: String!): ID
         }
 
         type RootMutation {
