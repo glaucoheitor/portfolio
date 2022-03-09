@@ -35,6 +35,7 @@ import Forgot from "layouts/Auth/reset-password/cover";
 import StocksPage from "pages/StocksPage";
 import DashboardPage from "pages/DashboardPage";
 import TradesPage from "pages/TradesPage";
+import SalesPage from "pages/SalesPage";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -56,6 +57,14 @@ const routes = [
     icon: <AttachMoneyIcon fontSize="small" />,
     route: "/stocks",
     component: <StocksPage />,
+  },
+  {
+    type: "collapse",
+    name: "Sales",
+    key: "sales",
+    icon: <Icon fontSize="small">dashboard</Icon>,
+    route: "/sales",
+    component: <SalesPage />,
   },
   {
     type: "collapse",
