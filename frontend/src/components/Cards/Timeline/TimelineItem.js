@@ -107,6 +107,16 @@ function TimelineItem({
           ) : null}
         </MDBox>
       </MDBox>
+      <MDBox
+        pt={description ? 0.7 : 0.5}
+        lineHeight={0}
+        position="absolute"
+        top="0%"
+        right="2px"
+      >
+        <Icon fontSize="large">{icon}</Icon>
+        <Icon fontSize="large">{icon}</Icon>
+      </MDBox>
     </MDBox>
   );
 }

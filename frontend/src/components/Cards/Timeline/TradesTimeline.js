@@ -21,6 +21,7 @@ const getIcon = (type) => {
 };
 
 function TradesTimeline({ trades }) {
+  console.log(trades);
   return (
     <Card sx={{ maxHeight: "45rem", overflow: "auto" }}>
       <MDBox pt={3} px={3} mb={2}>
@@ -29,32 +30,36 @@ function TradesTimeline({ trades }) {
         </MDTypography>
       </MDBox>
       <MDBox p={2}>
-        {trades
-          .slice()
-          .reverse()
-          .map((trade, index, trades) => (
-            <TimelineItem
-              color={getColor(trade.type)}
-              icon={getIcon(trade.type)}
-              title={
-                trade.price <= 0.01
-                  ? `BONUS of ${trade.qty} shares`
-                  : `${trade.type.toUpperCase()} ${trade.qty} shares for `
-              }
-              price={
-                trade.price <= 0.01 ? null : (
-                  <NumberFormat
-                    RenderTextAs="none"
-                    value={trade.price}
-                    type="$"
-                    extraSuffix=" ea"
-                  />
-                )
-              }
-              date={format(new Date(trade.date), "dd MMM yyyy")}
-              lastItem={index === trades.length - 1 ? true : false}
-            />
-          ))}
+        {trades.length > 0 ? (
+          trades
+            .slice()
+            .reverse()
+            .map((trade, index, trades) => (
+              <TimelineItem
+                color={getColor(trade.type)}
+                icon={getIcon(trade.type)}
+                title={
+                  trade.price <= 0.01
+                    ? `BONUS of ${trade.qty} shares`
+                    : `${trade.type.toUpperCase()} ${trade.qty} shares for `
+                }
+                price={
+                  trade.price <= 0.01 ? null : (
+                    <NumberFormat
+                      RenderTextAs="none"
+                      value={trade.price}
+                      type="$"
+                      extraSuffix=" ea"
+                    />
+                  )
+                }
+                date={format(new Date(trade.date), "dd MMM yyyy")}
+                lastItem={index === trades.length - 1 ? true : false}
+              />
+            ))
+        ) : (
+          <div>No trades found.</div>
+        )}
       </MDBox>
     </Card>
   );
