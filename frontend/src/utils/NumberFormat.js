@@ -7,6 +7,7 @@ export default function NumFormat({
   value,
   type,
   extraSuffix,
+  displayType = "text",
   decimalScale = 2,
   ...props
 }) {
@@ -32,7 +33,7 @@ export default function NumFormat({
       <NumberFormat
         {...rest}
         value={Math.abs(value)}
-        displayType="text"
+        displayType={displayType}
         thousandSeparator={"."}
         decimalSeparator={","}
         prefix={prefix}

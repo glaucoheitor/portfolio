@@ -21,7 +21,6 @@ import {
 import MDBox from "components/MDBox";
 import MDInput from "components/MDInput";
 import MDButton from "components/MDButton";
-import MDTypography from "components/MDTypography";
 import MDToggleButton from "components/MDToggleButton";
 import SymbolsSelect from "components/Forms/SymbolsSelect";
 import AddTradeBackdrop from "components/Backdrops/AddTradeBackdrop";
@@ -127,10 +126,14 @@ function AddTrade() {
         });
       }
       const dataTrades = await getTrades(authData);
+
       setTrades(portfolioDispatch, dataTrades);
-      setPortfolio(portfolioDispatch, buildPortfolioFromTrades(dataTrades));
+      const buildResult = buildPortfolioFromTrades(dataTrades);
+      setPortfolio(portfolioDispatch, buildResult.currentPosition);
+      setSales(portfolioDispatch, buildResult.sales);
     } catch (e) {
       //todo: show error message
+      console.error(e);
     }
   };
 

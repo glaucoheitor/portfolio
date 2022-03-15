@@ -26,11 +26,11 @@ export const getAllSymbols = async (authData) => {
     if (errors) return { error: errors[0].type };
 
     //separate stocks from the rest so they appear first
-    const acoes = data.symbols
+    const acoes = data.getAllSymbols
       .filter((s) => s.type === "acao")
       .sort((a, b) => (a.symbol > b.symbol ? 1 : -1));
 
-    const outros = data.symbols
+    const outros = data.getAllSymbols
       .filter((s) => s.type !== "acao")
       .sort((a, b) => (a.symbol > b.symbol ? 1 : -1));
 
@@ -38,7 +38,7 @@ export const getAllSymbols = async (authData) => {
       symbols: [...acoes, ...outros],
     };
   } catch (e) {
-    return;
+    return { error: e };
   }
 };
 

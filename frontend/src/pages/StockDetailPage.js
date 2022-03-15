@@ -36,9 +36,10 @@ function StockDetailPage() {
 
   useEffect(() => {
     const fetchSymbolId = async () => {
-      let { symbolId: sId } = Object.values(portfolio).find(
-        (s) => s.symbol === symbol.toUpperCase()
-      );
+      let { symbolId: sId } =
+        Object.values(portfolio).find(
+          (s) => s.symbol === symbol.toUpperCase()
+        ) ?? {};
 
       if (!sId) sId = await getSymbolId(authData, symbol.toUpperCase());
 

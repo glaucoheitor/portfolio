@@ -105,7 +105,8 @@ function LayoutContainer({ children }) {
         .filter((e) => e);
 
       try {
-        setAllPrices(portfolioDispatch, await getPrices(symbolsToQuery));
+        active &&
+          setAllPrices(portfolioDispatch, await getPrices(symbolsToQuery));
       } catch (e) {}
 
       setLoadedPrices(portfolioDispatch, true);
