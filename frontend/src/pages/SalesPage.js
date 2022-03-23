@@ -76,6 +76,21 @@ const Sales = memo(({ sales }) => {
                       </td>
                     </tr>
                   ))}
+                  <tr key="total">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <NumberFormat
+                        value={sales.reduce(
+                          (total, { result }) => total + result,
+                          0
+                        )}
+                        type={"$"}
+                      />
+                    </td>
+                  </tr>
                 </tbody>
               </Table>
             )}

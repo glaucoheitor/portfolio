@@ -1,9 +1,9 @@
 import User from "../../models/user.js";
 
-import bcrypt from "bcryptjs";
+/* import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
-const { JWT_KEY, JWT_EXP } = process.env;
+const { JWT_KEY, JWT_EXP } = process.env; */
 
 export async function getUserId(args) {
   const { uid, name, authProvider, ...user } = args.user;
@@ -31,7 +31,7 @@ export async function getOnlyUserId(uid) {
   }
 }
 
-export async function createUser(args) {
+/* export async function createUser(args) {
   const { name, email, password, role } = args.userInput;
   try {
     const existingUser = await User.findOne({ email: email });
@@ -70,7 +70,7 @@ export async function login({ email, password }) {
     token: token,
     tokenExpiration: Number(JWT_EXP),
   };
-}
+} */
 
 export async function verifyUser(args, req) {
   if (!req.isAuth) {

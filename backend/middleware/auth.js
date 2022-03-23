@@ -1,12 +1,12 @@
 import admin from "firebase-admin";
 
-admin.initializeApp({
+admin.initializeApp(/* {
   credential: admin.credential.cert(
     JSON.parse(
       Buffer.from(process.env.FIREBASE_ADMIN_CREDENTIALS, "base64").toString()
     )
   ),
-});
+} */);
 
 export default async (req, res, next) => {
   const authHeader = req.get("Authorization");

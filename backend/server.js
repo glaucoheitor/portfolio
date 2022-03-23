@@ -12,13 +12,13 @@ import graphQlResolvers from "./graphql/resolvers/index.js";
 import isAuth from "./middleware/auth.js";
 
 import getCurrentPrices from "./getCurrentPrices.js";
-import insertTradesFromOldDB from "./insertTradesFromOldDB.js";
-import download from "./download.js";
+//import insertTradesFromOldDB from "./insertTradesFromOldDB.js";
+//import download from "./download.js";
 import { ibov, historical } from "./services/yahooFinance.js";
 
 const app = express();
 
-const { PORT, MONGO_DB, MONGO_USER, MONGO_PASSWORD, NODE_ENV } = process.env;
+const { MONGO_DB, MONGO_USER, MONGO_PASSWORD, NODE_ENV } = process.env;
 
 app.use(
   cors(
@@ -38,6 +38,12 @@ app.get("/", (req, res) => {
 
 app.use(
   "/graphql",
+  async (req, res, next) => {
+    await mongoose.connect(
+      `mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}@cluster0.pwa2d.mongodb.net/${MONGO_DB}?retryWrites=true&w=majority`
+    );
+    next();
+  },
   graphqlHTTP({
     schema: graphQlSchema,
     rootValue: graphQlResolvers,
@@ -47,12 +53,13 @@ app.use(
 );
 
 app.use("/getCurrentPrices", getCurrentPrices);
-app.use("/insertTrades", insertTradesFromOldDB);
-app.use("/download", download);
+//app.use("/insertTrades", insertTradesFromOldDB);
+//app.use("/download", download);
 app.use("/ibov", ibov);
 app.use("/historical", historical);
 
-mongoose
+export default app;
+/* mongoose
   .connect(
     `mongodb+srv://${MONGO_USER}:${MONGO_PASSWORD}@cluster0.pwa2d.mongodb.net/${MONGO_DB}?retryWrites=true&w=majority`
   )
@@ -60,4 +67,4 @@ mongoose
     app.listen(PORT);
     console.log(`MongoDB connected and server listening on port ${PORT}`);
   })
-  .catch(console.log);
+  .catch(console.log); */
